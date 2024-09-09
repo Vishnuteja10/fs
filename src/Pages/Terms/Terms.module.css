@@ -1,0 +1,89 @@
+
+
+.navBar{
+    padding-top: 5vh;
+    position: fixed;
+    background-color: white;
+}
+
+
+.terms{
+    padding-top: 15vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.header{
+    font-size: 40px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: rgba(2, 18, 101, 1);
+    margin-bottom: 2vh;
+}
+
+.terms ul li{
+    list-style: decimal;
+    margin-left: 1vw;
+    padding-left: 1vw;
+}
+
+.terms ul li{
+    margin-top: 2vh;
+}
+
+.header2{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Montserrat";
+}
+
+.terms ul li{
+    font-family: 'Poppins';
+}
+
+.terms p{
+    font-family: 'Poppins';
+}
+
+.navBar{
+    position: fixed;
+    margin-top: 0vh;
+    padding-top: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    background-color: white;
+    width: 100vw;
+    height: 16vh;   
+}
+
+
+
+@media(max-width:600px){
+
+    .navBar{
+        height: 13vh;
+        padding-top: 10vh;
+    }
+
+    .header{
+        font-size: 24px;
+    }
+
+    .header2{
+        font-size: 20px;
+    }
+
+    .terms ul li{
+        font-size: 16px;
+        padding-top: 1vh;
+        margin-left: 0.3vw;
+    }
+
+    .terms p{
+        font-size: 16px;
+        padding-top: 1vh;
+        margin-left: 0.3vw;
+    }
+}

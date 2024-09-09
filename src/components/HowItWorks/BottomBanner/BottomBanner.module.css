@@ -1,0 +1,121 @@
+
+.main{
+    display: flex;
+    background: linear-gradient(90deg, rgba(118, 58, 245, 1) 0%, rgba(2, 18, 101, 1) 100%);
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+}
+
+.content{
+    margin-top: 8vh;
+    width: 80vw;
+    padding-left: 6vw;
+}
+
+.imageContainer img{
+    width: 30vw;
+    height: 35vh;
+}
+
+.imageContainer img{
+ 
+    border-radius:90% 0 0 0;
+   
+    /* border-radius: 100px 0 0 30px; */
+    /* border-radius: 0 50px 50px 0; Top-left and bottom-left corners are straight, right side is rounded */
+    /* clip-path: polygon(0 0, 75% 0, 100% 50%, 75% 100%, 0 100%, 25% 50%); */
+    /* border-top-left-radius: 40%; */
+}
+
+.miniContent{
+    font-size: 16px;
+    color: white;
+}
+
+.header{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+.appIconsContainer{
+    margin-top: 2vh;
+}
+
+.appIconsContainer img{
+      height: 4.5vh;
+      margin-right: 1vw;
+      cursor: pointer;
+}
+
+@media(max-width:600px){
+
+    .content{
+        margin-top: 4vh;
+    }
+
+    .miniContent{
+        font-size: 13px;
+    }
+
+    .header{
+        font-size: 20px;
+    }
+
+    .imageContainer img{
+       width: 40vw;
+    }
+
+    .appIconsContainer{
+        padding-bottom: 1vh;
+    }
+
+}
+
+@media(max-width:380px){
+    .content{
+        margin-top: 6vh;
+    }
+}
+
+@media (min-width:250px) and (max-width:350px){
+
+      .imageContainer img{
+        width: 30vw;
+      }
+
+      .miniContent{
+        font-size: 12px;
+      }
+
+      .header{
+        font-size: 18px;
+      }
+
+}
+
+@media(min-width:200px) and (max-width:250px){
+
+    .miniContent{
+        font-size: 13px;
+    }
+
+    .header{
+        font-size: 20px;
+    }
+
+    .imageContainer img{
+        /* width: 20vw; */
+        display: none;
+    }
+
+    .imageContainer{
+        display: none;
+        
+    }
+
+    .content{
+        width: 100vw;
+        padding-bottom: 8vh;
+    }
+}

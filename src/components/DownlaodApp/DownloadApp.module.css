@@ -1,0 +1,99 @@
+
+
+.outerContainer{
+    padding-top: 16vh;
+    padding-bottom: 20vh;
+    background-color: #F7F7F7;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    padding-left: 3vw;
+    background-color: #6E43FB;
+    border-radius: 10px;
+    /* border: 2px solid green; */
+}
+
+.leftContainer{
+    width: 50vw;
+}
+
+.header{
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 1vh;
+    font-family: 'Montserrat';
+}
+
+.content{
+    color: white;
+}
+
+.appStoreImagesContainer{
+    margin-top: 3vh;
+    padding-bottom: 4vh;
+}
+
+.appStoreImagesContainer img{
+     width: 9vw;
+     height: 5vh;
+     margin-right: 2vw;
+     cursor: pointer;
+}
+
+.appMockup img{
+    position: absolute;
+    margin-top: -24vh;
+    margin-left: 8vw;
+    width: 20vw;
+    height: 44.6vh;
+}
+
+/* CSS for Tablet Screen */
+@media(min-width:600px) and (max-width:1024px){
+
+}
+
+@media (max-width:600px){
+
+    .header{
+        font-size: 24px;
+    }
+
+    .content{
+        font-size: 16px;
+    }
+
+    .appMockup{
+        display: none;
+    }
+
+    .leftContainer{
+        width: 75vw;
+        margin-left: 3vw;
+    }
+
+    .appStoreImagesContainer img{
+        width: 20vw;
+    }
+
+}
+
+
+@media (min-width:300px) and (max-width:400px){
+    .appStoreImagesContainer img{
+        width: 30vw;
+    }
+}
+
+@media(min-width:200px) and (max-width:300px){
+    .appStoreImagesContainer img{
+        width: 30vw;
+    }
+}

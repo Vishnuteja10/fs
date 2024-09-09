@@ -1,0 +1,134 @@
+
+.main{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 5vh;
+    padding-bottom: 8vh;
+}
+
+.container{
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container2{
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container3{
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item{
+    border: 1px solid gray;
+    /* width: 25vw;
+    height: 30vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; 
+}
+
+.item img{
+    width: 25vw;
+    height: 35vh;
+}
+
+.content{
+    text-align: center;
+    margin-top: 3vh;
+    font-weight: 600;
+}
+
+.contentContainer{
+  
+}
+
+@media (max-width:600px){
+     
+}
+
+@media (min-width:300px) and (max-width:600px){
+
+    .contentContainer{
+        width: 80vw;
+    }
+
+    .item{
+        
+    }
+
+    .container{
+        display: block;
+        margin-left: 2vw;
+        /* width: 90vw; */
+        /* width: 90vw; */
+    }
+
+    .container2{
+       display: block;
+       margin-left: 2vw;
+    }
+
+    .container3{
+       display: block;
+       margin-left: 2vw;
+    }
+
+    .item img{
+        width: 60vw;
+        
+    }
+      
+    .itemContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        margin-top: 8vh;
+       
+    }
+}
+
+@media (min-width:200px) and (max-width:300px){
+
+    .container{
+        display: block;
+        align-items:normal;
+    }
+
+    .container2{
+        display: block;
+        margin-left: 3vw;
+     }
+ 
+     .container3{
+        display: block;
+        margin-left: 3vw;
+     }
+
+    .item img{
+        width: 70vw;
+    }
+      
+    .itemContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        margin-top: 8vh;
+    }
+
+}

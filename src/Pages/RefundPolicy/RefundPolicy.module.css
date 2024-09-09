@@ -1,0 +1,58 @@
+
+
+.navBar{
+    padding-top: 5vh;
+    position: fixed;
+    background-color: white;
+}
+
+.refundPolicy{
+    padding-top: 16vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.header{
+    font-size: 40px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    padding-bottom: 2vh;
+    color: rgba(2, 18, 101, 1);
+}
+
+.refundPolicy p{
+    font-family: 'Poppins';
+}
+
+.navBar{
+    position: fixed;
+    margin-top: 0vh;
+    padding-top: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    background-color: white;
+    width: 100vw;
+    height: 16vh;  
+}
+
+
+
+@media(max-width:600px){
+
+    .navBar{
+        height: 13vh;
+        padding-top: 10vh;
+    }
+
+    .header{
+       font-size: 24px;
+    }
+
+    .refundPolicy p{
+        font-size: 16px;
+        padding-top: 1vh;
+    }
+
+}

@@ -1,0 +1,18 @@
+
+
+:root {
+    --primary-color: #021265;
+    --secondary-color: #f5f7f6;
+    --background-color: #f8f9fa;
+    --text-color: black;
+}
+
+:root{
+    --font-size-small: 12px;
+    --font-size-medium: 16px;
+    --font-size-large: 24px;
+    --font-size-xlarge: 32px;
+
+    --font-size-heading:40px;
+}
+

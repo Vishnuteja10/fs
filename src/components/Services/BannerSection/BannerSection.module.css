@@ -1,0 +1,132 @@
+
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.mainContent{
+    margin-top: 18vh;
+}
+
+.header{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.content{
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.btnContainer{
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnContainer button{
+    margin-right: 2vw;
+    border: none;
+    border-radius: 15px;
+    padding-left: 1vw;
+    padding-right: 0.5vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    cursor: pointer;
+}
+
+.seeServices{
+    background-color: rgba(2, 18, 101, 1);
+    color: white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.seeServices img{
+    width: 2vw;
+    margin-top: -0.5vh;
+}
+
+.enquire{
+    padding-left: 2vw;
+    padding-right: 3vw;
+}
+
+@media (min-width:380px) and (max-width:600px){
+
+       .btnContainer img{
+             width: 5vw;
+       }
+
+       .seeServices{
+        padding-left: 2vw;
+        padding-right: 2vw;
+        width: 30vw;
+       }
+
+       .enquire{
+        padding-left: 2vw;
+        padding-right: 2vw;
+        width: 26vw;
+       }
+
+       .header{
+        font-size: 24px;
+       }
+
+       .content{
+        font-size: 16px;
+       }
+}
+
+@media (min-width:320px) and (max-width:380px){
+
+    .btnContainer img{
+        width: 6vw;
+  }
+
+    .seeServices{
+        padding-left: 2vw;
+        padding-right: 2vw;
+        width: 35vw;
+       }
+
+       .enquire{
+        padding-left: 2vw;
+        padding-right: 2vw;
+        width: 35vw;
+       }
+
+}
+
+
+@media (min-width:200px) and (max-width:320px){
+     
+    .btnContainer img{
+        width: 6vw;
+  }
+
+  .btnContainer{
+    /* display: inline-block; */
+  }
+
+    .seeServices{
+        padding-left: 2vw;
+        padding-right: 2vw;
+        width: 38vw;
+        font-size: 12px;
+       }
+
+       .enquire{
+        padding-left: 2vw;
+        padding-right: 2vw;
+        width: 35vw;
+        font-size: 12px;
+       }
+
+}

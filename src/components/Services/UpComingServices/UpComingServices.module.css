@@ -1,0 +1,118 @@
+
+
+.main{
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+
+
+.header{
+    margin-left: 5vw;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Montserrat";
+}
+
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vh;
+    /* border-bottom: 2px solid gray; */
+    padding-bottom: 2vh;
+    cursor: pointer;
+}
+
+.services div{
+    font-weight: 600;
+}
+
+.selected{
+    padding-bottom: 1vh;
+   border-bottom: 2px solid black;
+}
+
+.containers{
+    margin-top: 5vh;
+}
+
+@media (max-width:600px){
+
+    .header{
+        font-size: 24px;
+    }
+
+    .services{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .services div{
+        font-size: 14px;
+        font-weight: 600;
+     }
+    
+}
+
+@media (min-width:320px) and (max-width:380px){
+
+    .header{
+        font-size: 24px;
+    }
+
+    .construction{
+       
+    }
+
+    .professionalServices{
+
+    }
+
+    .services div{
+        font-size: 12px;
+        font-weight: 600;
+     }
+
+}
+
+@media (min-width:200px) and (max-width:320px){
+
+    .interior{
+        /* width: 20vw; */
+    }
+
+    .header{
+        font-size: 24px;
+    }
+
+    
+    .services div{
+        font-size: 12px;
+        margin-left: 4vw;
+        /* width: 16vw; */
+        font-weight: 600;
+     }
+
+     .construction{
+        margin-top: -3vh;
+     }
+
+     .professionalServices{
+        margin-left: 8vw;
+     }
+
+     .interior{
+        /* border: 2px solid gray; */
+        width: 20vw;
+     }
+
+     .professionalServices{
+        width: 20vw;
+     }
+     
+}   
+
+
+

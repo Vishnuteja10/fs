@@ -1,0 +1,105 @@
+
+
+
+
+.navBar{
+    padding-top: 5vh;
+    position: fixed;
+    background-color: white;
+}
+
+.PrivacyPolicy{
+    /* margin-top: 20vh; */
+    padding-top: 15vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.mainHeader{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    color: rgba(2, 18, 101, 1);
+}
+
+.subHeader{
+    padding-top: 1vh;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+.subHeader2{
+    padding-top: 2vh;
+    font-weight: 700;
+    font-family: "Montserrat";
+}
+
+.PrivacyPolicy ul li{
+    list-style: disc;
+    margin-left: 1vw;
+    /* padding-left: -1vw; */
+}
+
+
+
+.PrivacyPolicy ul{
+    margin-top: -2vh;
+    /* padding-top: -2vh; */
+}
+
+.main p{
+    font-family: 'Poppins';
+}
+
+.PrivacyPolicy ul li{
+    font-family: 'Poppins';
+}
+
+.navBar{
+    position: fixed;
+    margin-top: 0vh;
+    padding-top: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    background-color: white;
+    width: 100vw;
+    height: 16vh; 
+}
+
+
+
+@media(max-width:600px){
+
+    .navBar{
+        padding-top: 10vh;
+        height: 13vh;
+    }
+
+    .mainHeader{
+        font-size: 24px;
+    }
+
+    .PrivacyPolicy p{
+        padding-top: 2vh;
+    }
+
+    .subHeader{
+        font-size: 20px;
+    }
+
+    .subHeader2{
+        font-size: 18px;
+    }
+
+    .PrivacyPolicy ul li{
+        font-size: 16px;
+    }
+
+    .main p{
+       font-size: 16px;
+    }
+
+
+}

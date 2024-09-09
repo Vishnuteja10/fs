@@ -1,0 +1,190 @@
+
+.main{
+    margin-left: 0vw;
+    padding-left: 0vw;
+    width: 98.7vw;   
+}
+
+
+.navBar{
+    position: absolute;
+    padding-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+.logo{
+    padding-left: 2vw;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+
+.services {
+    /* position: relative; */
+}
+
+.imageSlider{
+    /* width: 96vw; */
+    /* margin-left: 5vw; */
+    padding-left: 0vw;
+
+}
+
+.main2 {
+    position: absolute;
+    padding-top: 30vh;
+    z-index: 999;
+    margin-left: 3vw;
+
+    /* border: 2px solid gray; */
+}
+
+.header{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    /* width: 60vw; */
+}
+
+.exploreContainer{
+    margin-top: 15vh;
+    margin-left: 8vw;
+}
+
+.exploreContainer button{
+    background-color: white;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    width: 12vw;
+    border: 0;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.highlightsContainer{
+    position: absolute;
+    padding-top: 30vh;
+    z-index: 999;
+    margin-left: 82vw;
+}
+
+.highlights{
+    margin-top: 5vh;
+}
+
+.mainInfo{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+
+.info{
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.navBar{
+    background-color: inherit;
+}
+
+/* CSS for Tablet Screens */
+@media (min-width:600px) and (max-width:1024px){
+
+    .highlightsContainer{
+        margin-left: 75vw;
+    }
+
+}
+
+@media (max-width:600px){
+
+    .header{
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .main2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .exploreContainer{
+        margin-top: 4vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .exploreContainer button{
+        /* margin-left: 25vw; */
+        width: 16vw;
+    }
+
+      .highlightsContainer{
+           top: 30vh;
+           margin-left: 5vw;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+      }
+
+      .highlights{
+        padding-left: 5vw;
+      }
+}
+
+@media(min-width:200px) and (max-width:380px){
+
+    .header{
+       font-size: 24px;
+    }
+
+    .mainInfo{
+        font-size: 18px;
+    }
+
+    .info{
+        font-size: 16px;
+    }
+
+    .exploreContainer button{
+        /* margin-left: 25vw; */
+        width: 20vw;
+    }
+
+}
+
+@media (min-width:200px) and (max-width:330px) {
+
+    .header{
+        font-size: 24px;
+     }
+ 
+     .mainInfo{
+         font-size: 18px;
+     }
+ 
+     .info{
+         font-size: 16px;
+     }
+
+     .highlightsContainer{
+        margin-top: -12vh;
+        display: block;
+        margin-left: 0vw;
+     }
+
+     .exploreContainer button{
+        /* margin-left: 25vw; */
+        width: 30vw;
+    }
+
+}

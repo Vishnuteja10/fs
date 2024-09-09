@@ -1,0 +1,298 @@
+
+
+.appIconsContainer{
+    margin-top: 40vh;
+    position: fixed;
+    z-index: 999;
+    margin-left: 92.5vw;
+}
+
+
+.appIconsContainer div{
+    cursor: pointer;
+ }
+
+.appleStore{
+  margin-top: 15vh;
+  width: 9vw;
+  height: 5vh;
+  transform: rotate(-90deg);
+  z-index: 999;
+}
+
+.playStore{
+  width: 9vw;
+  height: 6.5vh;
+  transform: rotate(-90deg);
+  z-index: 999;
+}
+
+
+.navBar{
+    /* margin-top: 5vh; */
+}
+
+.navBar{
+    position: fixed;
+    margin-top: -5vh;
+    padding-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    background-color: white;
+    width: 100vw;
+    height: 15vh;   
+}
+
+
+
+.header{
+    padding-top: 15vh;
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+
+.imageContainer{
+    margin-top: 8vh;
+    width: 98vw;
+}
+
+.imageContainer img{
+    width: 88vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.info{
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.salesTeamContainer{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 10vh;
+    /* border: 1px solid gray; */
+}
+
+.salesTeamContainer1{
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.salesHeader1{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.itemOne{
+   margin-left: 2vw;
+   margin-top: 5vh;
+}
+
+.itemImage{
+    width: 15vw;
+    height: 30vh;
+    /* border: 2px solid gray; */
+    border-radius: 50%;
+    object-fit: cover;
+    /* background-size: cover; */
+}
+
+.name{
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
+.role{
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.linkedInContainer{
+    width: 4vw;
+    background-color:rgba(2, 18, 101, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: -3vh;
+    margin-left: 5vw;
+    padding-top: 0.3vh;
+    padding-bottom: 0.3vh;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.linkedInContainer img{
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    padding-top: 0.3vh;
+    padding-bottom: 0.3vh;
+    width: 2vw;
+    height: 4vh;
+    
+}
+
+.salesHeader{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+
+.salesTeamImages{
+    /* margin-left: 5vw; */
+    /* margin-right: 5vw; */
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+
+    /* border: 2px solid gray; */
+}
+
+.teamContainer{
+    /* margin-top: 5vh; */
+    margin-bottom: 10vh;
+}
+
+
+@media(max-width:600px){
+
+    .navBar{
+        padding-top: 10vh;
+        height: 13vh;
+    }
+
+    .appIconsContainer{
+        margin-left: 85vw;
+     }
+ 
+       .appleStore{
+          width: 20vw;
+       }
+ 
+       .playStore{
+          width: 20vw;
+       }
+
+    .itemOne{
+        width: 35vw;
+        /* border: 2px solid gray; */
+        margin-left: 8vw;
+    }
+
+    .itemImage{
+        width: 34vw;
+    }
+
+    .linkedInContainer{
+        margin-left: 12vw;
+        width: 8vw;
+    }
+
+    .linkedInContainer img{
+         width: 4vw;
+         height: 4vh;
+    }
+
+    .header{
+        font-size: 24px;
+        font-family: 'Montserrat';
+    }
+
+    .info{
+        font-family: "poppins";
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .salesHeader1{
+        font-size: 18px;
+        font-size: 600;
+        font-family: "Montserrat"; 
+        margin-left: 3vw;
+    }
+
+    .salesHeader{
+        font-size: 18px;
+        font-size: 600;
+        font-family: "Montserrat";
+    }
+
+    .name{
+        font-size: 16px;
+        font-family: 'Poppins';
+
+    }
+
+    .role{
+        font-size: 13px;
+        font-family: 'Poppins';
+    }
+
+}
+
+@media(min-width:320px) and (max-width:400px){
+
+    .imageContainer img{
+        width: 90vw;
+       height: 40vh;
+    }
+
+    .itemOne{
+        width: 40vw;
+        margin-left: 5vw;
+    }  
+
+    .itemImage{
+        width: 38vw;
+    }
+
+}
+
+@media (min-width:200px) and (max-width:300px){
+
+    .appIconsContainer{
+        margin-left: 85vw;
+     }
+ 
+       .appleStore{
+          width: 20vw;
+       }
+ 
+       .playStore{
+          width: 20vw;
+       }
+       
+    .itemOne{
+        width: 80vw;
+    }
+
+    .itemImage{
+        margin-left: 10vw;
+        width: 60vw;
+    }
+
+    .linkedInContainer{
+        margin-left: 32vw;
+        width: 15vw;
+    }
+
+    .linkedInContainer img{
+        width: 8vw;
+    }
+}

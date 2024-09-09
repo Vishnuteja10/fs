@@ -1,0 +1,197 @@
+
+
+.header{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main2{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 20vh;
+}
+
+.imageContainer{
+
+}
+
+.imageContainer img{
+    margin-top: 5vh;
+    width: 90vw;
+}
+
+.jobCategory{
+    margin-top: 5vh;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.jobItem{
+    margin-top: 3vh;
+    border: 1px solid gray;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-radius: 5px;
+}
+
+.jobRoleContainer{
+    display: flex;
+    align-items: center;
+}
+
+.jobRole{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.joblocation{
+    margin-left: 2vw;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 0.3vw;
+    padding-right: 0.3vw;
+}
+
+.description{
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+.typeImg{
+    width: 1.5vw;
+    height: 3vh;
+    margin-right: 0.5vw;
+}
+
+.footer{
+    margin-top: 8vh;
+}
+
+.jobTypeContainer{
+    display: flex;
+    align-items: center;
+}
+
+.type{
+    display: flex;
+    align-items: center;
+}
+
+.jobLoc{
+    margin-left: 2vw;
+}
+
+.applyContainer{
+   margin-top: 0.5vh;
+}
+
+.applyContainer button{
+    border: none;
+    margin-top: 0.5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color:rgba(2, 18, 101, 1);
+    color: white;
+}
+
+
+.appIconsContainer{
+    margin-top: 40vh;
+    position: fixed;
+    z-index: 999;
+    margin-left: 92.5vw;
+}
+
+
+.appIconsContainer div{
+  cursor: pointer;
+}
+
+.appleStore{
+  margin-top: 15vh;
+  width: 9vw;
+  height: 5vh;
+  transform: rotate(-90deg);
+  z-index: 999;
+}
+
+.playStore{
+  width: 9vw;
+  height: 6.5vh;
+  transform: rotate(-90deg);
+  z-index: 999;
+}
+
+.navBar{
+    position: fixed;
+    margin-top: 0vh;
+    padding-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    background-color: white;
+    width: 100vw;
+    height: 15vh;
+}
+
+.type{
+   font-weight: 600;
+}
+
+.jobLoc{
+   font-weight: 600;
+}
+
+
+@media(max-width:700px){
+
+    .jobRoleContainer{
+        display: block;
+    }
+
+    .navBar{
+        padding-top: 10vh;
+        height: 13vh;
+    }
+     
+    .appIconsContainer{
+       margin-left: 85vw;
+    }
+
+      .appleStore{
+         width: 20vw;
+      }
+
+      .playStore{
+         width: 20vw;
+      }
+
+      .main2{
+         padding-top: 15vh;
+      }
+
+      .applyContainer button{
+        width: 15vw;
+      }
+}
+
+@media(min-width:200px) and (max-width:350px){
+       
+    .appIconsContainer{
+        margin-left: 82vw;
+     }
+
+    .appleStore{
+        width: 25vw;
+     }
+
+     .playStore{
+        width: 25vw;
+     }
+}

@@ -1,0 +1,75 @@
+
+
+.main{
+    display: flex;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.videoContainer{
+    width: 50vw;
+}
+
+.videoContent{
+    width: 40vw;
+    height: 60vh;
+}
+
+.contentContainer{
+     width: 50vw;
+     margin-left: 5vw;
+}
+
+.header{
+    margin-top: 6vh;
+    font-size: 32px;
+    font-weight: 600;
+    font-style: 'Clash Display';
+}
+
+.name{
+    color:rgba(2, 18, 101, 1)
+}
+
+.content{
+    margin-top: 3vh;
+    font-size: 16px;
+}
+
+
+.fracspaceContent{
+    /* padding-left: 6vw; */
+}
+
+@media(max-width:600px){
+
+    .header{
+       font-size: 24px;
+    }
+     
+    .main2{
+        width: 100vw;
+    }
+
+    .contentContainer{
+        width: 90vw;
+        margin-top: 5vh;
+    }
+
+    .videoContainer{
+        margin-top: 5vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 90vw;
+    }
+
+    .videoContent{
+        width: 90vw;
+    }
+}
+
+@media (max-width:350px){
+  
+}

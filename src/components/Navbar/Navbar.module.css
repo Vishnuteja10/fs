@@ -1,0 +1,302 @@
+
+
+.main{
+    display: flex;
+     width: 98vw;
+     margin-top: -2vh;
+     padding-top: 0;
+
+}
+
+.logoMain2{
+    margin-top: -5vh;
+}
+
+.logoMain2 .logo2{
+    margin-top: 0vh;
+}
+
+.mobileMain{
+    display: flex;
+
+    /* border: 1px solid gray; */
+    width: 99vw;
+    margin-top: -2vh;
+    padding-top: 0;
+    background-color: white;
+}
+
+
+
+.logo2{
+    width: 20vw;
+    height: 35vh;
+    margin-left: 3vw;
+    margin-top: -10vh;
+
+
+    /* border: 1px solid gray; */
+}
+
+.logo1{
+    /* padding-top: 6vh; */
+    margin-left: 3vw;
+    width: 20vw;
+    height: 35vh;
+}
+
+
+.content{
+    margin-left: 30vw;
+    margin-top: 4vh;
+
+    /* border: 1px solid gray; */
+}
+
+.content1{
+    margin-left: 30vw;
+    /* border: 1px solid gray; */
+}
+
+
+ul li{
+    list-style: none;
+    margin-left: 3vw;
+}
+
+.content ul{
+    display: flex;
+    /* border: 1px solid gray; */
+}
+
+
+
+.content ul li{ 
+    list-style: none;
+    color: white;
+    position: relative;
+
+    /* border: 1px solid gray; */
+}
+
+.content1 ul {
+    margin-top: 9vh;
+    display: flex;
+}
+
+.link2{
+    color: rgba(2, 18, 101, 1);
+    list-style: none;
+    text-decoration: none;
+
+    /* border: 1px solid gray; */
+}
+
+
+.navBar{
+   
+}
+
+.link{
+    
+}
+
+.navBar li::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    right: 0;
+    bottom: -6px; /* Adjust this value for the desired space */
+    height: 1.6px; /* Adjust the thickness of the underline */
+    background-color:white; /* Color of the underline */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.navBar li:hover::after {
+    transform: scaleX(0.9); /* Expand the underline */
+}
+
+.navBar2{
+    padding-top: 5vh;
+   margin-top: 5vh;
+   width: 100vw;
+   background-color: white;
+   /* border: 1px solid gray; */
+}
+
+.navBar2 li::after{
+    content: "";
+    position: absolute;
+    left: 4px;
+    right: 0;
+    bottom: -6px; /* Adjust this value for the desired space */
+    height: 1.6px; /* Adjust the thickness of the underline */
+    background-color:  rgba(2, 18, 101, 1); /* Color of the underline */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.navBar2 li:hover::after {
+    transform: scaleX(0.9); /* Expand the underline */
+}
+
+
+
+.link{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.menu3{
+    display: block;
+    width: 99.5vw;
+    background-color: white;
+    position: fixed;
+    z-index: 99999;
+    margin-top: -7vh;
+}
+
+.menuItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu3 ul{
+    display: block;
+
+}
+
+.mobileMenu .link{
+    /* color: blue; */
+}
+
+.mobileMenu{
+    display: block;
+}
+
+.main2{
+    margin-left: 90vw;
+    z-index: 999;
+}
+
+.close{
+    display: none;
+}
+
+.menuButton2{
+    color: black;
+}
+
+.main3 div{
+    margin-top: -4vh;
+}
+
+/* CSS for Tablet Screens */
+@media (min-width:600px) and (max-width:1024px){
+    
+    .logo2{
+        margin-top: -9vh;
+        width: 30vw;
+        height: 30vh;
+        /* border: 1px solid green; */
+    }
+
+    .logo1{
+        margin-top: 1vh;
+        height: 30vh;
+        width: 30vw;
+    }
+
+    .content{
+        margin-left: 6vw;
+    }
+
+}
+
+
+
+@media (max-width:600px){
+
+    .navBar2{
+        width: 120vw;
+        /* border: 2px solid green; */
+    }
+
+    .menu3{
+        width: 100vw;
+       
+    }
+
+    .mobileMenuItems{
+        
+    }
+
+    .logo1{
+        width: 40vw;
+        height: 25vh;
+    }
+
+    .logo2{
+        margin-top: -5vh;
+        width: 40vw;
+        height: 25vh;
+    }
+
+    .main2{
+        margin-left: 40vw;
+        margin-top: 5vh;
+        /* color: black; */
+    }
+
+    .main2 .menuButton{
+        color: white;
+    }
+
+    .main3{
+        margin-left: 40vw;
+        margin-top: 10vh;
+    }
+
+    .main3 .menuButton{
+        color: black;
+    }
+
+    .menuButton{
+        color: black;
+        font-weight: 600;
+    }
+
+    .menu3{
+       /* margin-top: 10vh; */
+      
+    }
+
+    .mobileMenu{
+        padding-top: 1vh;
+    }
+
+    .mobileMenuItems{
+       background-color: rgba(2, 18, 101, 1);
+       height: 100vh;
+    }
+
+    .mobileMenuItems ul li{
+        padding-top: 4vh;
+        margin-left: 1vw;
+        padding-left: 3vw;
+        font-size: 18px;
+    }
+
+    .link3{
+        color: white;
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-weight: 500;
+    }
+
+}

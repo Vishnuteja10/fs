@@ -1,0 +1,209 @@
+
+.main{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 18vh;
+    background-color: #F7F7F7;
+    /* border: 2px solid green; */
+}
+
+.header{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+
+}
+
+.services{
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serviceContainer1{
+    /* border: 1px solid gray; */
+    width: 25vw;
+    height: 50vh;
+    margin-right: 4vw;
+    border-radius: 10px;
+    /* background-color:rgb(68, 68, 220); */
+    background-image: url('../../assets/Services/propertyManagement.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.serviceContainer2{
+    /* border: 1px solid gray; */
+    width: 25vw;
+    height: 50vh;
+    margin-right: 4vw;
+    border-radius: 10px;
+    /* background-color:#102A70; */
+    background-image: url('../../assets/Services/TA.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.serviceContainer3{
+    /* border: 1px solid gray;  */
+    width: 25vw;
+    height: 50vh;
+    margin-right: 4vw;
+    border-radius: 10px;
+    /* background-color:#4E4BC2; */
+    background-image: url('../../assets/Services/BuySellRent.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.serviceName{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 3vw;
+    padding-top: 2vh;
+    font-family: 'Montserrat';
+}
+
+.serviceName img{
+    
+}
+
+.flight{
+    margin-left: 1vw;
+    margin-top: 0.3vh;
+    width: 25vw;
+    height: 31vh;
+}
+
+.buySellImg{
+    margin-top: 6vh;
+    margin-left: 2vw;
+    width: 20vw;
+    height: 33vh;
+}
+
+.cloud1{
+    position: relative;
+    width: 7vw;
+    height: 8vh;
+    margin-top: 4vh;
+    margin-left: 2vw;
+}
+
+.cloud2{
+    position: relative;
+    width: 7vw;
+    height: 8vh;
+    
+}
+
+.cloud3{
+    position: relative;
+    margin-top: 4vh;
+    width: 7vw;
+    height: 8vh;
+}
+
+.propManagementImg{
+    width: 25vw;
+    height: 46.3vh;
+    margin-top: -3vh;
+}
+
+.knowMore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+
+.knowMore button{
+     border: none;
+     padding-left: 2vw;
+     padding-right: 2vw;
+     padding-top: 1vh;
+     padding-bottom: 1vh;
+     border-radius: 5px;
+     color: white;
+     background-color: #021265;
+}
+
+@media(max-width:600px){
+
+    .header{
+        font-size: 24px;
+    }
+
+    .services{
+        display: block;
+    }
+
+    .serviceContainer1{
+        width: 80vw;
+    }
+
+    .serviceContainer2{
+        margin-top: 5vh;
+        width: 80vw;
+    }
+
+    .serviceContainer3{
+        margin-top: 5vh;
+        width: 80vw;
+    }
+
+    .propManagementImg{
+        width: 50vw;
+        margin-top: -4vh;
+        /* padding-left: 10vw; */
+    }
+
+    .imageContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cloud1{
+        margin-top: 2vh;
+        margin-left: 4vw;
+        width: 20vw;
+    }
+
+    .cloud2{
+        margin-top: -6vh;
+        margin-left: 4vw;
+        width: 20vw;
+    }
+
+    .cloud3{
+        margin-top: 3vh;
+        margin-left: 4vw;
+        width: 20vw;
+    }
+
+    .flight{
+        margin-top: 0.3vh;
+        width: 70vw;
+        margin-left: 6vw;
+    }
+
+    .buySellImg{
+        width: 60vw;
+        margin-top: 4.3vh;
+        margin-left: 5vw;
+    }
+
+}
+
+@media (min-width:200px) and (max-width:280px){
+
+    .propManagementImg{
+        height: 40vh;
+        margin-top: -3vh;
+    }
+
+}

@@ -1,0 +1,87 @@
+
+
+.appIconsContainer{
+    margin-top: 40vh;
+    position: fixed;
+    z-index: 999;
+    margin-left: 92.5vw;
+}
+
+
+.appIconsContainer div{
+  cursor: pointer;
+}
+
+.appleStore{
+  margin-top: 15vh;
+  width: 9vw;
+  height: 5vh;
+  transform: rotate(-90deg);
+  z-index: 999;
+}
+
+.playStore{
+  width: 9vw;
+  height: 6.5vh;
+  transform: rotate(-90deg);
+  z-index: 999;
+}
+
+
+.navbar{
+    position: fixed;
+    padding-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    background-color: white;
+    width: 100vw;
+    height: 15vh;
+    margin-top: 0vh;
+
+}
+
+.banner{
+    padding-top: 12vh;
+    /* border: 5px solid gray; */
+}
+
+.howFsWorks{
+
+}
+
+@media(max-width:700px){
+
+  .navbar{
+    padding-top: 10vh;
+    height: 14vh;
+  }
+     
+    .appIconsContainer{
+       margin-left: 85vw;
+    }
+
+      .appleStore{
+         width: 20vw;
+      }
+
+      .playStore{
+         width: 20vw;
+      }
+}
+
+@media(min-width:200px) and (max-width:350px){
+       
+    .appIconsContainer{
+        margin-left: 82vw;
+     }
+
+    .appleStore{
+        width: 25vw;
+     }
+
+     .playStore{
+        width: 25vw;
+     }
+}
