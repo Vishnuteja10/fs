@@ -25,13 +25,7 @@ function HowFsWorks() {
             <div className={Style.content}>
               <span className={Style.fracspaceContent}>  Explore our
               property catalog through our mobile app or consult with our
-              investment experts to craft your ideal investment plan. Once
-              decided, property fractions can be reserved with an initial
-              investment of just ₹10,000. You'll earn guaranteed BROI until the
-              SPV is formed, after which you'll enjoy a minimum returns
-              guarantee. Our expert managers at Fracspace will take care of your
-              property, ensuring hassle-free management and maximizing your
-              profit returns. </span>
+              investment experts to craft your ideal investment plan. </span>
             </div>
           </div>
         </div>
