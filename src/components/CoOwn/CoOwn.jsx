@@ -14,12 +14,12 @@ function CoOwn() {
      {!isMobile ?<div className={Style.imagesContainer}>
         <div className={Style.image1}></div>
         <div className={Style.image2}>
-          <div className={Style.content}>Investing in a fraction of revenue-generating real estate to receive dividends from the profit.</div>
+          <div className={Style.content}>Invest in a fraction of revenue-generating real estate to receive dividends from the profit.</div>
         </div>
         <div className={Style.image3}></div>
       </div>:<div className={Style.imagesContainer}>
         <div className={Style.image2}>
-          <div className={Style.content}>Investing in a fraction of revenue-generating real estate to receive dividends from the profit.</div>
+          <div className={Style.content}>Invest in a fraction of revenue-generating real estate to receive dividends from the profit.</div>
         </div>
       </div> } 
     </div>

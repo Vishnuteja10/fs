@@ -33,6 +33,9 @@
 .content{
     margin-top: 3vh;
     color: white;
+    font-size: 19px;
+    font-family: "Poppins";
+    line-height: 1.6;
 }
 
 .buttonContainer{

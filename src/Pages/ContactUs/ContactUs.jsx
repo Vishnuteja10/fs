@@ -148,7 +148,7 @@ export default function ContactUs() {
               <div className={Style.contactContent}>
                 we are here to help you
               </div>
-              <div className={Style.contactCTA}>support@fracspace.com</div>
+              <a className={Style.contactCTA} href="mailto:support@fracspace.com">support@fracspace.com</a>
             </div>
           </div>
 
@@ -183,7 +183,7 @@ export default function ContactUs() {
                 </div>
               </div>
               <div className={Style.contactHeader}>Contact us</div>
-              <div className={Style.contactContent}>Mon-Sat 9am-5pm</div>
+              <div className={Style.contactContent}>Mon-Sat 9am-5:30pm</div>
               <div className={Style.contactCTA}>
                 +91-98806-26111 <br></br> +91-93555-65604
               </div>
