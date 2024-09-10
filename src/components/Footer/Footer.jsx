@@ -141,6 +141,7 @@ function Footer() {
 
             <div className={Style.email}>support@fracspace.com</div>
             <div className={Style.phone}>+91 93555 65604</div>
+            <div className={Style.phone2}>+91 98806 26111</div>
           </div>
           
         </div>

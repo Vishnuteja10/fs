@@ -162,7 +162,7 @@
 }
 
 .addressContainer .email {
-  padding-top: 1vh;
+  padding-top: 0.5vh;
   color: var(--text-color);
   font-size: var(--font-size-medium);
   font-family: "poppins";
@@ -172,9 +172,13 @@
 
 .addressContainer .phone {
   font-family: "poppins";
-  margin-top: 1.5vh;
+  margin-top: 0.5vh;
 
   /* border: 2px solid green; */
+}
+
+.phone2{
+  font-family: 'poppins';
 }
 
 .line {
@@ -488,6 +492,19 @@
   .section1 .btn {
     height: 4.5vh;
   }
+}
+
+@media (min-width:600px) and (max-width:1200px){
+   
+  .main{
+    width: 100vw;
+  }
+
+  .addressContainer{
+    margin-left: -2vw;
+  }
+
+
 }
 
 @media (max-width: 768px) and (min-height: 570px) {

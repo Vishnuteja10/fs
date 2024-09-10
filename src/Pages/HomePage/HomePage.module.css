@@ -88,6 +88,14 @@
   }
 }
 
+@media (min-width:600px) and (max-width:1200px){
+
+  .appIconsContainer{
+    margin-left: 92vw;
+  }
+
+}
+
 @media (min-width:200px) and (max-width:330px) {
 
   .appIconsContainer{
