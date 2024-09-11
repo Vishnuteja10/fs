@@ -1,7 +1,7 @@
 
 .main{
     display: flex;
-    background: linear-gradient(90deg, rgba(118, 58, 245, 1) 0%, rgba(2, 18, 101, 1) 100%);
+    background: linear-gradient(90deg, rgb(181, 63, 232) 0%, rgb(44, 1, 43) 100%);
     margin-top: 8vh;
     margin-bottom: 8vh;
 }

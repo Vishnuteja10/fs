@@ -21,7 +21,7 @@ function WhyChooseFs() {
             </div>
           </div>
           <div className={Style.headerContent}>Risk Free</div>
-          <div className={Style.content}>8% minimum return</div>
+          <div className={Style.content}>8% minimum returns</div>
         </div>
 
         <div className={Style.chooseFs}>
@@ -31,10 +31,10 @@ function WhyChooseFs() {
             </div>
           </div>
           <div className={Style.headerContent}>Hassle Free</div>
-          <div className={Style.content}>Property Management by fracspace</div>
+          <div className={Style.content}>Property management by fracspace</div>
         </div>
 
-        <div className={Style.chooseFs}>
+        {/* <div className={Style.chooseFs}>
           <div className={Style.vectorContainer}>
             <div className={Style.imgContainer}>
               <img src={img3}></img>
@@ -42,9 +42,9 @@ function WhyChooseFs() {
           </div>
           <div className={Style.headerContent}>High ROI</div>
           <div className={Style.content}>8%+ Expected ROI</div>
-        </div>
+        </div> */}
 
-        <div className={Style.chooseFs}>
+        {/* <div className={Style.chooseFs}>
           <div className={Style.vectorContainer}>
             <div className={Style.imgContainer}>
               <img src={img4}></img>
@@ -52,7 +52,7 @@ function WhyChooseFs() {
           </div>
           <div className={Style.headerContent}>Small Ticket Size</div>
           <div className={Style.content}>Fractions starting from 10 lakhs</div>
-        </div>
+        </div> */}
 
         <div className={Style.chooseFs}>
           <div className={Style.vectorContainer}>
@@ -61,7 +61,7 @@ function WhyChooseFs() {
             </div>
           </div>
           <div className={Style.headerContent}>Earn BROI </div>
-          <div className={Style.content}>Earn 6% BROI until Posession</div>
+          <div className={Style.content}>Earn 6% Bank-Rate-Of-Interest until possession</div>
         </div>
 
         <div className={Style.chooseFs}>
@@ -70,9 +70,9 @@ function WhyChooseFs() {
               <img src={img6}></img>
             </div>
           </div>
-          <div className={Style.headerContent}>Complementory Stays</div>
-          <div className={Style.content}>Enjoy Complementory Stays and 
-            Benefits on your property
+          <div className={Style.headerContent}>Complementary Stays</div>
+          <div className={Style.content}>Enjoy complementary stays and 
+            benefits on your property
           </div>
         </div>
 

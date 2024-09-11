@@ -29,7 +29,7 @@ function ProfessionalServices() {
         <div className={Style.item}>
           <img src={electricalWork}></img>
         </div>
-        <div className={Style.content}>Electrical Work & Wiring</div>
+        <div className={Style.content}>Electrical Work </div>
       </div>
 
       <div className={Style.itemContainer}>
@@ -43,7 +43,7 @@ function ProfessionalServices() {
         <div className={Style.item}>
           <img src={painting}></img>
         </div>
-        <div className={Style.content}>Masonry & Painting</div>
+        <div className={Style.content}>Painting</div>
       </div>
 
     </div>
@@ -54,16 +54,16 @@ function ProfessionalServices() {
         <div className={Style.item}>
           <img src={carpentry}></img>
         </div>
-        <div className={Style.content}>Carpentry & Furniture</div>
+        <div className={Style.content}>Carpentry</div>
       </div>
 
 
-      <div className={Style.itemContainer}>
+      {/* <div className={Style.itemContainer}>
         <div className={Style.item}>
           <img src={electricalInstallation}></img>
         </div>
         <div className={Style.content}>Electronics Installation</div>
-      </div>
+      </div> */}
 
     </div>
 

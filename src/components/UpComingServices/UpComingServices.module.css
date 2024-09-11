@@ -2,13 +2,13 @@
 .main{
     padding-left: 5vw;
     padding-right: 5vw;
-    padding-top: 18vh;
+    padding-top: 15vh;
     background-color: #F7F7F7;
     /* border: 2px solid green; */
 }
 
 .header{
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 700;
     font-family: 'Montserrat';
 

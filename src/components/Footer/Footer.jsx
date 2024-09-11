@@ -12,6 +12,10 @@ import img4 from "../../assets/footer/Youtube.png";
 import img5 from "../../assets/footer/apple.png";
 import img6 from "../../assets/footer/android.png";
 
+import contactIcon from '../../assets/ContactIcons/contact.png'
+import emailIcon from '../../assets/ContactIcons/email.png'
+import addressIcon from '../../assets/ContactIcons/location.png'
+
 import { useNavigate } from "react-router-dom";
 
 import axios from "axios";
@@ -84,7 +88,7 @@ function Footer() {
     <div className={Style.main}>
       <div className={Style.section1}>
         <div className={Style.content}>
-          Join our news letter to<br></br> keep up to date with us!
+        Subscribe to our newsletter! <br></br> to receive  updates and special offers 
         </div>
         <div className={Style.emailContainer}>
           <div>
@@ -134,14 +138,15 @@ function Footer() {
             <div className={Style.header2}>Contact Info</div>
 
             <div className={Style.address}>
-              <div>136A, Lane No-12, MLA Colony, NBT Nagar</div>
+              <div><img className={Style.icon} src={addressIcon}></img>136A, Lane No-12</div>
+              <div>MLA Colony, NBT Nagar</div>
               <div>Road No.12, Banjara Hills,</div>
               <div>Hyderabad,Telangana, 500034</div>
             </div>
 
-            <div className={Style.email}>support@fracspace.com</div>
-            <div className={Style.phone}>+91 93555 65604</div>
-            <div className={Style.phone2}>+91 98806 26111</div>
+            <div className={Style.email}> <img className={Style.icon}  src={emailIcon}></img> support@fracspace.com</div>
+            <div className={Style.phone}><img className={Style.icon}  src={contactIcon}></img> +91 93555 65604, +91 98806 26111 </div>
+            {/* <div className={Style.phone2}>  +91 98806 26111</div> */}
           </div>
           
         </div>
@@ -192,7 +197,7 @@ function Footer() {
 
       <div className={Style.section3}>
         <div className={Style.copyRights}>
-          © 2024 <span className={Style.fs}>Fracspace</span>.All rights reserved
+          © 2024 <span className={Style.fs}>Fracspace</span>. All rights reserved
         </div>
         <div className={Style.terms}>
           <div onClick={() => navigate("/privacypolicy")}>Privacy Policy</div>

@@ -14,7 +14,7 @@ function UpComingServices() {
 
   return (
     <div className={Style.main}>
-        <div className={Style.header}>Upcoming Services</div>
+        <div className={Style.header}>Coming Soon</div>
         <div className={Style.services}>
 
             <div className={Style.serviceContainer1}>
@@ -26,7 +26,7 @@ function UpComingServices() {
             </div>
 
             <div className={Style.serviceContainer3}>
-                 <div className={Style.serviceName}>Buy Sell Rent Property</div>
+                 <div className={Style.serviceName}>Buy-Sell-Rent Properties</div>
             </div>
 
             {/* <div className={Style.serviceContainer1}>

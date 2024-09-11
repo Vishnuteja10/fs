@@ -16,6 +16,8 @@ import playStore from "../../assets/appImages/playstore.png";
 import appleStore from "../../assets/appImages/apple-store.png";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
+import watsappImg from '../../assets/appImages/watsapp.png'
+
 function HowItWorks() {
   return (
     <ScrollToTop>
@@ -29,6 +31,12 @@ function HowItWorks() {
         <div onClick={() => window.open("https://apps.apple.com/in/app/fracspace/id6498551006", "_blank")}>
           <img className={Style.appleStore} src={appleStore}></img>
         </div>
+
+        <div onClick={() => window.open("https://wa.me/9355565604", "_blank")}>
+          <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
+        </div>
+
+
       </div>
 
       <div className={Style.navbar}>

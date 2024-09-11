@@ -1,5 +1,21 @@
 
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .bounce {
+    animation: bounce 2s infinite;
+  }
+
 .header{
     font-size: 30px;
     font-weight: 700;
@@ -11,6 +27,14 @@
     margin-right: 5vw;
     padding-top: 20vh;
 }
+
+.watsapp{
+    margin-top: 10vh;
+     width: 2.5vw;
+     height: 5vh;
+     z-index: 999;
+     margin-left: 3vw;
+  }
 
 .imageContainer{
 
@@ -178,6 +202,11 @@
 
       .applyContainer button{
         width: 15vw;
+      }
+
+      .watsapp{
+        width: 8vw;
+        margin-left: 5.5vw;
       }
 }
 

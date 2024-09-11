@@ -37,8 +37,8 @@ function Banner() {
       };
   
       // Start the animation
-      incrementNumber(100, setFracsSold, 6); // target 100, increment by 2
-      incrementNumber(15, setLocations, 1); // target 15, increment by 1
+      incrementNumber(100, setFracsSold, 6); // target 100, increment by value
+      incrementNumber(15, setLocations, 1); // target 15, increment by value
       incrementNumber(30, setRevenue, 2); // target value (to represent 30cr+), increment by value 
     }, []);
 
@@ -49,7 +49,7 @@ function Banner() {
         <div className={Style.main2}>
           <div className={Style.mainContent}>
             <div className={Style.header}>
-              Own a share of Luxury Real Estate
+              Experience Real Estate Freedom and <br></br> Flexibility with Fracspace!
             </div>
             <div className={Style.exploreContainer}>
               <ScrollLink to="aboutFracspace" smooth={true} duration={200}>
@@ -67,13 +67,10 @@ function Banner() {
 
           <div className={Style.highlights}>
             <div className={Style.mainInfo}>{locations}+</div>
-            <div className={Style.info}>Locations Across World</div>
+            <div className={Style.info}>Locations Across The World</div>
           </div>
 
-          <div className={Style.highlights}>
-            <div className={Style.mainInfo}>{revenue}cr+</div>
-            <div className={Style.info}>Total Annual Revenue</div>
-          </div>
+         
         </div>
 
         <SimpleImageSlider

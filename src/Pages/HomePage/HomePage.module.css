@@ -4,6 +4,22 @@
     /* flex-shrink: 0; */
   }
 
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .bounce {
+    animation: bounce 2s infinite;
+  }
+
   .main{
    
   }
@@ -32,6 +48,14 @@
     height: 6.5vh;
     transform: rotate(-90deg);
     z-index: 999;
+  }
+
+  .watsapp{
+    margin-top: 10vh;
+     width: 2.5vw;
+     height: 5vh;
+     z-index: 999;
+     margin-left: 3vw;
   }
 
 .navbar{
@@ -63,6 +87,8 @@
 }
 
 
+
+
 @media (max-width:600px) {
 
 
@@ -85,6 +111,12 @@
 
   .playStore{
      width: 20vw;
+  }
+
+  
+  .watsapp{
+    width: 8vw;
+    margin-left: 5.5vw;
   }
 }
 

@@ -16,7 +16,7 @@
 .services{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-left: 5vw;
     margin-right: 5vw;
     margin-top: 2vh;
@@ -32,6 +32,18 @@
 .selected{
     padding-bottom: 1vh;
    border-bottom: 2px solid black;
+}
+
+.construction{
+
+}
+
+.professionalServices{
+    margin-left: 3vw;
+}
+
+#professionalServices{
+    margin-left: 3vw;
 }
 
 .containers{

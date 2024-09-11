@@ -1,6 +1,10 @@
 import React from "react";
 import Style from "./WeManage.module.css";
 import WeManageImg from "../../../assets/HowItWorks/WeManage.png";
+import  WeManageImg1 from '../../../assets/HowItWorks/WeManage1.png';
+import WeManageImg2 from '../../../assets/HowItWorks/WeManage4.png'
+
+
 import VectorIcon from "../../../assets/HowItWorks/VectorIcon.png";
 
 import { useMediaQuery } from "react-responsive";
@@ -15,7 +19,7 @@ function WeManage() {
   return (
     <div className={Style.main}>
       <div className={Style.imageContainer}>
-        <img src={WeManageImg}></img>
+        <img src={WeManageImg1}></img>
       </div>
 
       <div className={Style.content}>
@@ -38,22 +42,24 @@ function WeManage() {
               </span>{" "}
               Personalized Investment Planning
             </div>
-            <div className={Style.list}>
+
+            {/* <div className={Style.list}>
               {" "}
               <span className={Style.manageImageContainer}>
                 {" "}
                 <img className={Style.vectorImage} src={VectorIcon}></img>{" "}
               </span>{" "}
               Guaranteed Returns
-            </div>
-            <div className={Style.list}>
+            </div> */}
+
+            {/* <div className={Style.list}>
               {" "}
               <span className={Style.manageImageContainer}>
                 {" "}
                 <img className={Style.vectorImage} src={VectorIcon}></img>{" "}
               </span>{" "}
               Efficient SPV Formation and Management
-            </div>
+            </div> */}
 
             <div className={Style.list}>
               {" "}

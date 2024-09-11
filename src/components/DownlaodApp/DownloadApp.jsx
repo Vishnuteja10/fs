@@ -11,10 +11,9 @@ export default function DownloadApp() {
     <div className={Style.outerContainer}>
     <div className={Style.main}>
       <div className={Style.leftContainer}>
-        <div className={Style.header}>Download app and start your search</div>
+        <div className={Style.header}> Find your perfect property deal in seconds! Download Fracspace App today!</div>
         <div className={Style.content}>
-          Explore exclusive investment opportunities, manage your properties,
-          and stay updated on the latest real estate trends all in one app.
+          {/* Find your perfect property deal in seconds! Get the Fracspace App today! */}
         </div>
         <div className={Style.appStoreImagesContainer}>
           <img src={playstore} onClick={() => window.open("https://play.google.com/store/apps/details?id=com.fracspace", "_blank")}></img>

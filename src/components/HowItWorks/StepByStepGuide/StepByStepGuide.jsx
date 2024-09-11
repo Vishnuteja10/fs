@@ -14,8 +14,8 @@ function StepByStepGuide() {
       <div className={Style.howItWorks}>
 
         <div className={Style.content}>
-          <div className={Style.contentHeader}>How it Works</div>
-          <div className={Style.description}>Discover how fracspace works</div>
+          <div className={Style.contentHeader}>How to co-own a property?</div>
+          {/* <div className={Style.description}>Discover how fracspace works</div> */}
         </div>
 
         <div className={Style.itemsContainer}>
@@ -55,7 +55,7 @@ function StepByStepGuide() {
                      </div>
                      <div>
                         <div className={Style.itemHeader}>Invest</div>
-                        <div className={Style.itemContent}>Start earning with guarenteed returns.</div>
+                        <div className={Style.itemContent}>Invest and start earning from day one.</div>
                      </div>
                  </div>
 
@@ -68,7 +68,7 @@ function StepByStepGuide() {
                      </div>
                      <div>
                         <div className={Style.itemHeader}>Manage</div>
-                        <div className={Style.itemContent}>Track property and financials through our app.</div>
+                        <div className={Style.itemContent}>Track your investment growth within our app.</div>
                      </div>
                  </div>
 

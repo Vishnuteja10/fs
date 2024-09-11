@@ -31,10 +31,11 @@ function Testimonials() {
 
   return (
     <div className={Style.main}>
-        <h2>What People Say About us ?</h2>
+        <h2>What our customer have to say?</h2>
         <div className={Style.testimonials}>
 
             <div className={Style.testimonial}>
+              
                 <div className={Style.videoContent}>
                     <video className={Style.video} controls src={video1} >
                        

@@ -11,8 +11,8 @@ function BannerSection() {
   return (
     <div className={Style.main}>
         <div className={Style.mainContent}>
-            <div className={Style.header}>Need Something done? <br></br>We Got this</div>
-            <div className={Style.content}>All the services you need under one roof, from<br></br> construction to interior design </div>
+            <div className={Style.header}>Need something done? <br></br>We got you covered</div>
+            <div className={Style.content}>All the services you need under one roof, from<br></br> construction to interior design to property management </div>
             <div className={Style.btnContainer}>
             <ScrollLink to="upcomingServices" smooth={true} duration={200}>
                 <button className={Style.seeServices}>See Services <img src={arrowRight}></img></button> 

@@ -12,8 +12,8 @@ export default function AboutFracspace() {
         <div className={Style.header}>Fracspace</div>
         <div className={Style.content}>
           Fracspace offers a unique investment experience through fractional
-          ownership in private and domestic real estate. Enjoy luxury vacations
-          while earning rental yields of 8-10% annually. With easy exit options,
+          ownership in the private and domestic real estate market. Enjoy luxury vacations
+          while earning rental yield minimum 8% annually. With easy exit options,
           comprehensive property management, and the ability to build diverse
           portfolios, Fracspace makes real estate accessible and affordable.
           After years of operation in the fractional ownership sector, Fracspace

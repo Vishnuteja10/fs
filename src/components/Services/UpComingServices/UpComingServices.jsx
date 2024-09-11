@@ -6,15 +6,15 @@ import ProfessionalServices from './ProfessionalServices/ProfessionalServices'
 
 function UpComingServices() {
 
-    const [selected,setSelected] = useState('interior') 
+    const [selected,setSelected] = useState('construction') 
 
   return (
     <div className={Style.main}>
-        <div className={Style.header}>Upcoming Services</div>
+        <div className={Style.header}>Comming Soon</div>
         <div className={Style.services}>
-            <div onClick={()=>setSelected('interior')} className={selected== 'interior' ? Style.selected : Style.interior}>Interior Designing</div>
-            <div onClick={()=>setSelected('construction')} className={ selected=='construction' ? Style.selected : Style.construction}>Construction</div>
-            <div onClick={()=>setSelected('professionalServices')} className={ selected == 'professionalServices' ? Style.selected :  Style.professionalServices}>Professional Services</div>
+            {/* <div onClick={()=>setSelected('interior')} className={selected== 'interior' ? Style.selected : Style.interior}>Interior Designing</div> */}
+            <div onClick={()=>setSelected('construction')} className={ selected=='construction' ? Style.selected : Style.construction}>Construction/Interior Design</div>
+            <div id={Style.professionalServices} onClick={()=>setSelected('professionalServices')} className={ selected == 'professionalServices' ? Style.selected :  Style.professionalServices}>Professional Services</div>
         </div>
         <div className={Style.containers}>
             <div>

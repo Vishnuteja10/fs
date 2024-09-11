@@ -46,15 +46,15 @@
 .header{
     font-size: 30px;
     color: white;
-    text-align: center;
+    /* text-align: center; */
     font-weight: 600;
     font-family: 'Montserrat';
     /* width: 60vw; */
 }
 
 .exploreContainer{
-    margin-top: 15vh;
-    margin-left: 8vw;
+    margin-top: 5vh;
+    margin-left: 10vw;
 }
 
 .exploreContainer button{
@@ -71,7 +71,7 @@
     position: absolute;
     padding-top: 30vh;
     z-index: 999;
-    margin-left: 82vw;
+    margin-left: 80vw;
 }
 
 .highlights{

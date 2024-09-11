@@ -42,6 +42,15 @@ import unnathSirImg from '../../assets/MeetOurTeam/founder/unnathSir.jpeg'
 import deepakImg from '../../assets/MeetOurTeam/fitnessteam/deepak.jpeg'
 import hemanth2Img from '../../assets/MeetOurTeam/fitnessteam/hemanth.jpeg'
 import mansoorImg from '../../assets/MeetOurTeam/fitnessteam/mansoor.jpeg'
+import pavanImg from '../../assets/MeetOurTeam/fitnessteam/pavan.jpeg'
+import lalithImg from '../../assets/MeetOurTeam/fitnessteam/lalith.jpeg'
+import gopiImg from '../../assets/MeetOurTeam/fitnessteam/gopi1.jpeg'
+
+import shivaImg from '../../assets/MeetOurTeam/officeSupport/shiva.jpeg'
+import karthikImg from '../../assets/MeetOurTeam/officeSupport/karthik.jpeg'
+import ajayImg from '../../assets/MeetOurTeam/officeSupport/ajay.jpeg'
+
+import watsappImg from '../../assets/appImages/watsapp.png'
 
 
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
@@ -57,6 +66,10 @@ export default function MeetOurTeam() {
 
         <div onClick={() => window.open("https://apps.apple.com/in/app/fracspace/id6498551006", "_blank")}>
           <img className={Style.appleStore} src={appleStore}></img>
+        </div>
+
+        <div onClick={() => window.open("https://wa.me/9355565604", "_blank")}>
+          <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
         </div>
       </div>
 
@@ -178,7 +191,7 @@ export default function MeetOurTeam() {
               >
                 <img src={linkedIn}></img>
               </div>
-              <div className={Style.name}>DNS Prasanth </div>
+              <div className={Style.name}>Prasanth </div>
               <div className={Style.role}>Revenue Captain</div>
             </div>
 
@@ -293,7 +306,7 @@ export default function MeetOurTeam() {
               <div className={Style.role}>Graphic Designer</div>
             </div>
 
-            <div className={Style.itemOne}>
+            {/* <div className={Style.itemOne}>
               <img className={Style.itemImage} src={riaImg}></img>
               <div
                 className={Style.linkedInContainer}
@@ -308,7 +321,7 @@ export default function MeetOurTeam() {
               </div>
               <div className={Style.name}>Ria</div>
               <div className={Style.role}>Graphic Designer</div>
-            </div>
+            </div> */}
 
             {/* <div className={Style.itemOne}>
               <img className={Style.itemImage} src={salesImgOne}></img>
@@ -426,7 +439,7 @@ export default function MeetOurTeam() {
               >
                 <img src={linkedIn}></img>
               </div>
-              <div className={Style.name}>Vishnu teja</div>
+              <div className={Style.name}>Vishnuteja</div>
               <div className={Style.role}>Full Stack Web Developer</div>
             </div>
 
@@ -544,7 +557,7 @@ export default function MeetOurTeam() {
         </div>
 
         <div className={Style.salesTeamContainer}>
-          <div className={Style.salesHeader}>HR & Accounts Team</div>
+          <div className={Style.salesHeader}>HR & Accounts</div>
 
           <div className={Style.salesTeamImages}>
             <div className={Style.itemOne}>
@@ -580,9 +593,37 @@ export default function MeetOurTeam() {
 
 
         <div className={Style.salesTeamContainer}>
-          <div className={Style.salesHeader}>Fitness Team</div>
+          <div className={Style.salesHeader}>Hospitality Team</div>
+          
 
           <div className={Style.salesTeamImages}>
+
+          <div className={Style.itemOne}>
+              <img className={Style.itemImage} src={pavanImg}></img>
+              <div
+                className={Style.linkedInContainer}
+                onClick={() => window.open(" ", "_blank")}
+              >
+                <img src={linkedIn}></img>
+              </div>
+              <div className={Style.name}>Pavan</div>
+              <div className={Style.role}>Hospitality Sales</div>
+            </div>
+
+          <div className={Style.itemOne}>
+              <img className={Style.itemImage} src={hemanth2Img}></img>
+              <div
+                className={Style.linkedInContainer}
+                onClick={() => window.open(" ", "_blank")}
+              >
+                <img src={linkedIn}></img>
+              </div>
+              <div className={Style.name}>Hemanth</div>
+              <div className={Style.role}>Physiotherapist</div>
+            </div>
+
+
+
             <div className={Style.itemOne}>
               <img className={Style.itemImage} src={mansoorImg}></img>
               {/* <div
@@ -613,6 +654,30 @@ export default function MeetOurTeam() {
             </div>
 
             <div className={Style.itemOne}>
+              <img className={Style.itemImage} src={lalithImg}></img>
+              {/* <div
+                className={Style.linkedInContainer}
+                onClick={() => window.open(" ", "_blank")}
+              >
+                <img src={linkedIn}></img>
+              </div> */}
+              <div className={Style.name}>Lalith</div>
+              <div className={Style.role}>Fitness Trainer</div>
+            </div>
+
+            <div className={Style.itemOne}>
+              <img className={Style.itemImage} src={gopiImg}></img>
+              {/* <div
+                className={Style.linkedInContainer}
+                onClick={() => window.open(" ", "_blank")}
+              >
+                <img src={linkedIn}></img>
+              </div> */}
+              <div className={Style.name}>Gopi</div>
+              <div className={Style.role}>Fitness Trainer</div>
+            </div>
+
+            {/* <div className={Style.itemOne}>
               <img className={Style.itemImage} src={hemanth2Img}></img>
               <div
                 className={Style.linkedInContainer}
@@ -622,6 +687,68 @@ export default function MeetOurTeam() {
               </div>
               <div className={Style.name}>Hemanth</div>
               <div className={Style.role}>Physiotherapist</div>
+            </div>
+
+            <div className={Style.itemOne}>
+              <img className={Style.itemImage} src={pavanImg}></img>
+              <div
+                className={Style.linkedInContainer}
+                onClick={() => window.open(" ", "_blank")}
+              >
+                <img src={linkedIn}></img>
+              </div>
+              <div className={Style.name}>Pavan</div>
+              <div className={Style.role}>Hospitality Sales</div>
+            </div> */}
+
+
+          </div>
+        </div>
+
+
+        <div className={Style.salesTeamContainer}>
+          <div className={Style.salesHeader}>House Team</div>
+
+          <div className={Style.salesTeamImages}>
+            <div className={Style.itemOne}>
+              <img className={Style.itemImage} src={karthikImg}></img>
+              {/* <div
+                className={Style.linkedInContainer}
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/akhila08lkd/",
+                    "_blank"
+                  )
+                }
+              >
+                <img src={linkedIn}></img>
+              </div> */}
+              <div className={Style.name}>Karthik</div>
+              {/* <div className={Style.role}>HR Executive</div> */}
+            </div>
+
+            <div className={Style.itemOne}>
+              <img className={Style.itemImage} src={shivaImg}></img>
+              {/* <div
+                className={Style.linkedInContainer}
+                onClick={() => window.open(" ", "_blank")}
+              >
+                <img src={linkedIn}></img>
+              </div> */}
+              <div className={Style.name}>Shiva</div>
+              {/* <div className={Style.role}>Finance Head</div> */}
+            </div>
+
+            <div className={Style.itemOne}>
+              <img className={Style.itemImage} src={ajayImg}></img>
+              {/* <div
+                className={Style.linkedInContainer}
+                onClick={() => window.open(" ", "_blank")}
+              >
+                <img src={linkedIn}></img>
+              </div> */}
+              <div className={Style.name}>Ajay</div>
+              {/* <div className={Style.role}>Finance Head</div> */}
             </div>
 
 

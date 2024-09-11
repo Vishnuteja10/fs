@@ -17,6 +17,8 @@ import PhoneInput from "react-phone-input-2";
 import axios from "axios";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
+import watsappImg from '../../assets/appImages/watsapp.png'
+
 export default function ContactUs() {
   const initialFormData = {
     lastName: "",
@@ -116,12 +118,17 @@ export default function ContactUs() {
         >
           <img className={Style.appleStore} src={appleStore}></img>
         </div>
+
+        <div onClick={() => window.open("https://wa.me/9355565604", "_blank")}>
+          <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
+        </div>
+
       </div>
       <div className={Style.navBar}>
         <Navbar2 />
       </div>
       <div className={Style.main2}>
-        <div className={Style.header}>Contact Our Friendly Team</div>
+        <div className={Style.header}>Reach out to our Concierge for Assistance</div>
         <div className={Style.content}>Let us know how we can help you</div>
 
         <div className={Style.contactContainer}>
@@ -144,7 +151,7 @@ export default function ContactUs() {
                 </div>
               </div>
 
-              <div className={Style.contactHeader}>Chat to support</div>
+              <div className={Style.contactHeader}>Write us</div>
               <div className={Style.contactContent}>
                 we are here to help you
               </div>
@@ -195,7 +202,7 @@ export default function ContactUs() {
       <div className={Style.contactForm}>
         <div className={Style.contactOuterContainer}>
           <div className={Style.contactInnerContainer}>
-            <div className={Style.contactFormHeader}>Get In Touch</div>
+            <div className={Style.contactFormHeader}>Get in touch</div>
             <div className={Style.contactFormMiniContent}>
               Let us know how can we help you
             </div>
@@ -232,7 +239,7 @@ export default function ContactUs() {
                 />
 
                 <PhoneInput
-                  country={"us"}
+                  country={"in"}
                   value={formData.contact}
                   onChange={handlePhoneChange}
                   inputStyle={{
@@ -262,15 +269,21 @@ export default function ContactUs() {
                   className={Style.inputEmail} // You can use a different class if needed
                 >
                   <option value="">Select a Service Type</option>
-                  <option value="Co Ownership">Co Ownership</option>
+                  <option value="Co Ownership">Co-Ownership</option>
                   <option value="Travel & Accomodation">
                     Travel & Accomodation
                   </option>
-                  <option value="Buy, Sell, Rent a Property">
-                    Buy, Sell , Rent a Property
+                  <option value="List Your Property">
+                    List Your Property
                   </option>
                   <option value="Property Management">
                     Property Management
+                  </option>
+                  <option value="Construction">
+                    Construction
+                  </option>
+                  <option value="Interior Design">
+                    Interior Design
                   </option>
                 </select>
 

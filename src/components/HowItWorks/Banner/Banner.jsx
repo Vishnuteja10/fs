@@ -9,7 +9,7 @@ function Banner() {
       <div className={Style.imageContainer}>
         <img src={img1}></img>
         <div className={Style.imageContent}>
-          <div className={Style.header}>What's Fracspace's Co Ownership?</div>
+          <div className={Style.header}>About Fracspace</div>
           <div className={Style.content}>
             Invest in luxury holiday homes with Fracspace: Enjoy risk-free,
             flexible co-ownership, high rental yields, small ticket sizes, and
