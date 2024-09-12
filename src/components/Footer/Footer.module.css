@@ -526,6 +526,10 @@
 
 @media (max-width: 600px) {
 
+  .icon{
+    width: 4vw;
+  }
+
   .main {
 
     width: 100vw;
