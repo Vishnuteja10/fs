@@ -13,10 +13,10 @@
 }
 
 .logo img{
-    width: 12vw;
-    height: 16vh;
+    width: 20vw;
+    height: 35vh;
     margin-left: 3vw;
-    margin-top: -1vh;
+    margin-top: -10vh;
 }
 
 .content{
@@ -166,21 +166,21 @@
     }
 
     .logo img{
-        margin-top: -3vh;
-        width: 16vw;
-        height: 18vh;
+        margin-top: -7vh;
+        width: 40vw;
+        height: 25vh;
         /* border: 2px solid gray; */
     }
 
     .main2{
-        margin-left: 65vw;
+        margin-left: 50vw;
         margin-top: 3vh;
     }
 
     .menu3{
         background-color: rgba(2, 18, 101, 1);
         width: 120vw;
-        margin-left: -30vw;
+        margin-left: -45vw;
         margin-top: 5vh;
         margin-right: 0vw;
         padding-left: 0vw;

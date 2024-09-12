@@ -106,8 +106,8 @@ ul li {
 }
 
 .navBar2 {
-  padding-top: 1vh;
-  margin-top: 1vh;
+  padding-top: 5vh;
+  margin-top: 5vh;
   width: 100vw;
   background-color: white;
   /* border: 1px solid gray; */
@@ -186,6 +186,19 @@ ul li {
     width: 99vw;
   }
 
+  .logo2{
+    margin-top: -9vh;
+    width: 25vw;
+    height: 30vh;
+    /* border: 1px solid green; */
+}
+
+.logo1{
+    margin-top: 1vh;
+    height: 30vh;
+    width: 25vw;
+}
+
   .content {
     margin-left: 6vw;
   }
@@ -225,13 +238,13 @@ ul li {
 
   .navBar2 {
     width: 120vw;
-    padding-bottom: 2vh;
+    /* padding-bottom: 2vh; */
     /* border: 2px solid green; */
   }
 
   .menu3 {
     width: 100vw;
-    margin-top: 0vh;
+    /* margin-top: 0vh; */
   }
 
   .mobileMenuItems {
@@ -249,7 +262,7 @@ ul li {
 
   .main3 {
     margin-left: 40vw;
-    margin-top: 6vh;
+    margin-top: 10vh;
   }
 
   .main3 .menuButton {
@@ -267,7 +280,7 @@ ul li {
 
   .mobileMenu {
     padding-top: 1vh;
-    padding-bottom: 1vh;
+    /* padding-bottom: 1vh; */
   }
 
   .mobileMenuItems {

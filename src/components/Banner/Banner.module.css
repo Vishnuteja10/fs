@@ -105,7 +105,12 @@
 
 @media (max-width:600px){
 
+    .mainContent{
+        margin-top: -3vh;
+    }
+
     .header{
+        font-size: 24px;
         padding-left: 2vw;
         padding-right: 2vw;
     }
@@ -120,16 +125,17 @@
         margin-top: 4vh;
         display: flex;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     .exploreContainer button{
-        /* margin-left: 25vw; */
+        margin-left: 25vw;
         width: 18vw;
+        
     }
 
       .highlightsContainer{
-           top: 30vh;
+           top: 35vh;
            margin-left: 5vw;
            display: flex;
            align-items: center;
@@ -165,7 +171,7 @@
 @media (min-width:200px) and (max-width:330px) {
 
     .header{
-        font-size: 24px;
+        font-size: 20px;
      }
  
      .mainInfo{
@@ -177,14 +183,17 @@
      }
 
      .highlightsContainer{
-        margin-top: -12vh;
+        margin-top: -8vh;
         display: block;
         margin-left: 0vw;
      }
 
      .exploreContainer button{
         /* margin-left: 25vw; */
-        width: 30vw;
+        width: 25vw;
+        height: 5vh;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
 }
