@@ -121,3 +121,12 @@
         margin-top: -75vh;
     }
 }
+
+@media (min-width:340px) and (max-width:385px) and (min-height:810px) and (max-height:890px){
+
+    .imageContent{
+        margin-top: -60vh;
+        height: 35vh;
+    }
+
+}

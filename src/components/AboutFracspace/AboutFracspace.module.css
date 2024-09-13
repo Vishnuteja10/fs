@@ -99,16 +99,23 @@
 
 @media (max-width:600px){
 
+    .main{
+        /* height: 70vh; */
+        /* border: 2px solid green; */
+    }
+
     .header{
         font-size: 24px;
     }
 
     .content{
         font-size: 16px;
+        /* border: 2px solid green; */
     }
 
     .contentContainer{
         width: 90vw;
+        /* border: 2px solid green; */
     }
      
     .main{
@@ -119,6 +126,8 @@
     .imagesContainer{
         margin-top: 5vh;
         width: 90vw;
+        /* border: 2px solid green; */
+        height: 80vh;
     }
 
     .imageContainer1 img{

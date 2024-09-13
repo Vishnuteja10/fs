@@ -131,7 +131,7 @@
 @media (min-width:200px) and (max-width:330px) {
 
   .appIconsContainer{
-    margin-left: 82vw;
+    margin-left: 80vw;
 }
 
 
@@ -149,5 +149,56 @@
   margin-left: 8vw;
 }
 
+
+}
+
+@media (min-width:340px) and (max-width:385px) and (min-height:810px) and (max-height:890px){
+
+  .appIconsContainer{
+    margin-left: 78vw;
+    margin-top: 20vh;
+}
+
+
+  .appleStore{
+    width: 30vw;
+    height: 4vh;
+  
+ }
+
+ .playStore{
+    width: 30vw;
+    height: 5vh;
+ }
+
+ .watsapp{
+  width: 10vw;
+  margin-left: 9vw;
+}
+
+}
+
+@media (min-width:200px) and (max-width:400px) and (min-height:600px) and (max-height:900px){
+
+  /* .appIconsContainer{
+    margin-left: 73vw;
+}
+
+
+  .appleStore{
+    width: 35vw;
+    height: 5vh;
+  
+ }
+
+ .playStore{
+    width: 35vw;
+    height: 6vh;
+ }
+
+ .watsapp{
+  width: 12vw;
+  margin-left: 12vw;
+} */
 
 }

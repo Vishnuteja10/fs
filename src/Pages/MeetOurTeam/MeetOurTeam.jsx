@@ -119,12 +119,14 @@ export default function MeetOurTeam() {
 
           <div className={Style.salesTeamImages}>
             <div className={Style.itemOne}>
+              <div>
               <img className={Style.itemImage} src={divyaImg}></img>
               {/* <div className={Style.linkedInContainer}>
                 <img src={linkedIn}></img>
               </div> */}
               <div className={Style.name}>Divya</div>
               <div className={Style.role}>Business Head</div>
+              </div>
             </div>
 
             <div className={Style.itemOne}>

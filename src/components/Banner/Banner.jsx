@@ -80,7 +80,7 @@ function Banner() {
           images={images}
           showNavs={false}
           autoPlay={true}
-          autoPlayDelay={1.0}
+          autoPlayDelay={6.0}
         />
         
       </div>

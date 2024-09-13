@@ -177,7 +177,7 @@
     }
 
     .main2{
-        margin-left: 50vw;
+        margin-left: 40vw;
         margin-top: 3vh;
     }
 
@@ -235,4 +235,11 @@
     .menu3{
        
     }
+}
+
+@media (min-width:200px) and (max-width:400px){
+
+
+
+
 }
