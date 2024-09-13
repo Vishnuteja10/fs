@@ -5,6 +5,10 @@
   padding-top: 0;
 }
 
+.logo div img{
+  cursor: pointer;
+}
+
 .logoMain2 {
   margin-top: -5vh;
 }

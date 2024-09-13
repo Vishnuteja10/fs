@@ -27,7 +27,7 @@ function Careers() {
           </div>
 
           
-        <div onClick={() => window.open("https://wa.me/9355565604", "_blank")}>
+        <div onClick={() => window.open("https://wa.me/9880626111", "_blank")}>
           <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
         </div>
 

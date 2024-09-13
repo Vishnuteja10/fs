@@ -68,7 +68,7 @@ export default function MeetOurTeam() {
           <img className={Style.appleStore} src={appleStore}></img>
         </div>
 
-        <div onClick={() => window.open("https://wa.me/9355565604", "_blank")}>
+        <div onClick={() => window.open("https://wa.me/9880626111", "_blank")}>
           <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
         </div>
       </div>
@@ -79,7 +79,7 @@ export default function MeetOurTeam() {
 
       <div className={Style.header}>Meet Our Team</div>
       <div className={Style.imageContainer}>
-        <img src={teamImage}></img>
+        <img src={teamImage} loading="lazy" alt="team"></img>
       </div>
 
       <div className={Style.teamContainer}>
@@ -94,12 +94,12 @@ export default function MeetOurTeam() {
 
           <div className={Style.salesTeamImages}>
             <div className={Style.itemOne}>
-              <img className={Style.itemImage} src={unnathSirImg}></img>
+              <img loading="lazy" alt="image" className={Style.itemImage} src={unnathSirImg}></img>
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
                   window.open(
-                    "",
+                    "https://www.linkedin.com/in/unnath-reddy-7b4614188/",
                     "_blank"
                   )
                 }
@@ -537,7 +537,7 @@ export default function MeetOurTeam() {
               <img className={Style.itemImage} src={tharunImg}></img>
               <div
                 className={Style.linkedInContainer}
-                onClick={() => window.open("", "_blank")}
+                onClick={() => window.open("https://www.linkedin.com/in/tarun-ragam-9a9887326/", "_blank")}
               >
                 <img src={linkedIn}></img>
               </div>
@@ -602,7 +602,7 @@ export default function MeetOurTeam() {
               <img className={Style.itemImage} src={pavanImg}></img>
               <div
                 className={Style.linkedInContainer}
-                onClick={() => window.open(" ", "_blank")}
+                onClick={() => window.open("https://www.linkedin.com/in/sapa-pavan-kumar-a35a62205/ ", "_blank")}
               >
                 <img src={linkedIn}></img>
               </div>
@@ -614,7 +614,7 @@ export default function MeetOurTeam() {
               <img className={Style.itemImage} src={hemanth2Img}></img>
               <div
                 className={Style.linkedInContainer}
-                onClick={() => window.open(" ", "_blank")}
+                onClick={() => window.open("https://www.linkedin.com/in/hemanth-kumar-4ab4782bb/ ", "_blank")}
               >
                 <img src={linkedIn}></img>
               </div>
@@ -622,7 +622,17 @@ export default function MeetOurTeam() {
               <div className={Style.role}>Physiotherapist</div>
             </div>
 
-
+            <div className={Style.itemOne}>
+              <img className={Style.itemImage} src={lalithImg}></img>
+              {/* <div
+                className={Style.linkedInContainer}
+                onClick={() => window.open(" ", "_blank")}
+              >
+                <img src={linkedIn}></img>
+              </div> */}
+              <div className={Style.name}>Lalith</div>
+              <div className={Style.role}>Front Office</div>
+            </div>
 
             <div className={Style.itemOne}>
               <img className={Style.itemImage} src={mansoorImg}></img>
@@ -653,17 +663,7 @@ export default function MeetOurTeam() {
               <div className={Style.role}>Fitness Trainer</div>
             </div>
 
-            <div className={Style.itemOne}>
-              <img className={Style.itemImage} src={lalithImg}></img>
-              {/* <div
-                className={Style.linkedInContainer}
-                onClick={() => window.open(" ", "_blank")}
-              >
-                <img src={linkedIn}></img>
-              </div> */}
-              <div className={Style.name}>Lalith</div>
-              <div className={Style.role}>Fitness Trainer</div>
-            </div>
+           
 
             <div className={Style.itemOne}>
               <img className={Style.itemImage} src={gopiImg}></img>

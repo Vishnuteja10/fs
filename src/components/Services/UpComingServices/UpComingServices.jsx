@@ -10,7 +10,7 @@ function UpComingServices() {
 
   return (
     <div className={Style.main}>
-        <div className={Style.header}>Comming Soon</div>
+        <div className={Style.header}>Coming Soon</div>
         <div className={Style.services}>
             {/* <div onClick={()=>setSelected('interior')} className={selected== 'interior' ? Style.selected : Style.interior}>Interior Designing</div> */}
             <div onClick={()=>setSelected('construction')} className={ selected=='construction' ? Style.selected : Style.construction}>Construction/Interior Design</div>

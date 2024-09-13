@@ -23,7 +23,7 @@ function WeManage() {
       </div>
 
       <div className={Style.content}>
-        <div className={Style.header}>We Take Care Of Everything!</div>
+        <div className={Style.header}>We take care of everything!</div>
         <div className={Style.manageList}>
           <div>
             <div className={Style.list}>

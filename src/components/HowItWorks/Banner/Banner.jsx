@@ -16,7 +16,9 @@ function Banner() {
             complimentary stays.
           </div>
           <div className={Style.buttonContainer}>
+            <a href="/brochure.pdf" download>
             <button>Download Brochure</button>
+            </a>
           </div>
         </div>
       </div>

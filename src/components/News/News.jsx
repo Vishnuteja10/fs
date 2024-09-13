@@ -68,7 +68,7 @@ export default function News() {
             <div className={Style.imageContainer}>
               <img className={Style.image} src={newsImg1}></img>
             </div>
-            <div className={Style.content}>Fracspace:Your Passport to Premium Property Investment</div>
+            <div className={Style.content}>FracSpace Limited: Transforming Real Estate</div>
             <div className={Style.readMore}  onClick={() => window.open("https://theenterpriseworld.com/unnath-reddy-a-visionary-leader-reforming/", "_blank")}
             >Read More</div>
         </div>
@@ -113,7 +113,7 @@ export default function News() {
             <div className={Style.imageContainer}>
               <img className={Style.image} src={newsImg1}></img>
             </div>
-            <div className={Style.content}>Fracspace:Your Passport to Premium Property Investment</div>
+            <div className={Style.content}>FracSpace Limited: Transforming Real Estate</div>
             <div className={Style.readMore}  onClick={() => window.open("https://theenterpriseworld.com/unnath-reddy-a-visionary-leader-reforming/", "_blank")}
             >Read More</div>
         </div>
@@ -157,7 +157,7 @@ export default function News() {
             <div className={Style.imageContainer}>
               <img className={Style.image} src={newsImg1}></img>
             </div>
-            <div className={Style.content}>Fracspace:Your Passport to Premium Property Investment</div>
+            <div className={Style.content}>FracSpace Limited: Transforming Real Estate</div>
             <div className={Style.readMore}  onClick={() => window.open("https://theenterpriseworld.com/unnath-reddy-a-visionary-leader-reforming/", "_blank")}
             >Read More</div>
         </div>

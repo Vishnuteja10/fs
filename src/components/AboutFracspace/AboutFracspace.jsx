@@ -23,7 +23,9 @@ export default function AboutFracspace() {
           management, and more.
         </div>
         <div className={Style.buttonContainer}>
+          <a href="/brochure.pdf" download>
           <button>Download Brochure</button>
+          </a>
         </div>
       </div>
 

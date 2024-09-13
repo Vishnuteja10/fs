@@ -12,6 +12,10 @@
      /* padding-bottom: 3vh; */
 }
 
+.logo{
+    cursor: pointer;
+}
+
 .logo img{
     width: 20vw;
     height: 35vh;
