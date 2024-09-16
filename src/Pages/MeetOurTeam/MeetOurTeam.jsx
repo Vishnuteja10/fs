@@ -79,7 +79,7 @@ export default function MeetOurTeam() {
 
       <div className={Style.header}>Meet Our Team</div>
       <div className={Style.imageContainer}>
-        <img src={teamImage} loading="lazy" alt="team"></img>
+        <img src={teamImage} className={Style.teamImage} loading="lazy" alt="team"></img>
       </div>
 
       <div className={Style.teamContainer}>

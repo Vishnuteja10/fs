@@ -198,6 +198,29 @@
 
 @media(max-width:600px){
 
+    .teamContainer{
+        margin-top: -6vh;
+    }
+
+
+    .imageContainer{
+        /* margin-top: -2vh; */
+        height: auto;
+        width: 98vw;
+        /* border: 2px solid green; */
+    }
+
+    .teamContainer{
+        /* margin-top: -10vh; */
+    }
+
+    .teamImage{
+        object-fit: contain;
+        /* height: 6vh; */
+        width: 96vw;
+        /* border: 2px solid gray; */
+    }
+
     .appIconsContainer{
         margin-left: 78vw;
     }
@@ -355,9 +378,13 @@
         height: 40vh;
     }
 
+    .teamContainer{
+        margin-top: -8vh;
+    }
+
     .imageContainer img{
-        width: 90vw;
-       height: 50vh;
+        /* width: 90vw;
+       height: 50vh; */
     }
 
     .itemOne{
@@ -405,6 +432,10 @@
 }
 
 @media (min-width:340px) and (max-width:385px) and (min-height:810px) and (max-height:890px){
+
+    .teamContainer{
+        margin-top: -10vh;
+    }
 
     .appIconsContainer{
         margin-left: 78vw;
