@@ -18,6 +18,7 @@ import axios from "axios";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 import watsappImg from '../../assets/appImages/watsapp.png'
+import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
 
 export default function ContactUs() {
   const initialFormData = {
@@ -96,7 +97,10 @@ export default function ContactUs() {
   return (
     <ScrollToTop>
     <div className={Style.main}>
-      <div className={Style.appIconsContainer}>
+
+      <AppIconsComponent />
+
+      {/* <div className={Style.appIconsContainer}>
         <div
           onClick={() =>
             window.open(
@@ -123,7 +127,9 @@ export default function ContactUs() {
           <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
         </div>
 
-      </div>
+      </div> */}
+
+
       <div className={Style.navBar}>
         <Navbar2 />
       </div>

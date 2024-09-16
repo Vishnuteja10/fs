@@ -12,13 +12,16 @@ import playStore from "../../assets/appImages/playstore.png";
 import appleStore from "../../assets/appImages/apple-store.png";
 
 import watsappImg from "../../assets/appImages/watsapp.png";
+import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
 
 function Terms() {
   return (
     <ScrollToTop>
     <div className={Style.main}>
 
-    <div className={Style.appIconsContainer}>
+      <AppIconsComponent />
+
+    {/* <div className={Style.appIconsContainer}>
           <div
             onClick={() =>
               window.open(
@@ -49,7 +52,7 @@ function Terms() {
               src={watsappImg}
             ></img>
           </div>
-        </div>
+        </div> */}
 
        <div className={Style.navBar}>
             <Navbar2 />

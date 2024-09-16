@@ -54,12 +54,16 @@ import watsappImg from '../../assets/appImages/watsapp.png'
 
 
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
+import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
 
 export default function MeetOurTeam() {
   return (
     <ScrollToTop>
     <div>
-      <div className={Style.appIconsContainer}>
+
+      <AppIconsComponent />
+
+      {/* <div className={Style.appIconsContainer}>
         <div onClick={() => window.open("https://play.google.com/store/apps/details?id=com.fracspace", "_blank")}>
           <img className={Style.playStore} src={playStore}></img>
         </div>
@@ -71,7 +75,7 @@ export default function MeetOurTeam() {
         <div onClick={() => window.open("https://wa.me/9880626111", "_blank")}>
           <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
         </div>
-      </div>
+      </div> */}
 
       <div className={Style.navBar}>
         <Navbar2 />

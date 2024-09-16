@@ -12,12 +12,16 @@ import appleStore from "../../assets/appImages/apple-store.png";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 import watsappImg from '../../assets/appImages/watsapp.png'
+import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
 
 function Careers() {
   return (
     <ScrollToTop>
       <div className={Style.main}>
-        <div className={Style.appIconsContainer}>
+
+        <AppIconsComponent />
+
+        {/* <div className={Style.appIconsContainer}>
           <div onClick={() => window.open("https://play.google.com/store/apps/details?id=com.fracspace", "_blank")}>
             <img className={Style.playStore} src={playStore}></img>
           </div>
@@ -31,7 +35,7 @@ function Careers() {
           <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
         </div>
 
-        </div>
+        </div> */}
 
         <div className={Style.navBar}>
           <Navbar2 />
