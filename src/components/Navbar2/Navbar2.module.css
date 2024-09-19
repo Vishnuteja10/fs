@@ -119,6 +119,62 @@
     padding-left: 3vw;
 }
 
+/* css for smaller tabs */
+@media (min-width:600px) and (max-width:840px) and (min-height:920px) and (max-height:1280px){
+
+    .logo img{
+        width: 25vw;
+        height: 30vh;
+        margin-left: 4vw;
+    }
+
+}
+
+/* css for  medium screen tabs */
+@media (min-width:768px) and (max-width:1025px) and (min-height:1024px) and (max-height:1366px){
+
+    
+    .logo img{
+        width: 25vw;
+        height: 30vh;
+        margin-left: 4vw;
+    }
+    
+
+    /* .link2{
+        font-size: 21px;
+    } */
+
+}
+
+/* media query for mid standard laptops */
+
+@media(min-width:1400px) and (max-width:1600px) and (min-height:900px) and (max-height:1200px){
+
+    .link{
+       font-size: 1.2rem;
+    }
+  
+    .link2{
+       font-size: 1.2rem;
+    }
+      
+  }
+
+/*  media query for high end standard laptops */
+@media (min-width:1600px) and (max-width:1930px) and (min-height:900px) and (max-height:1200px){
+
+   
+    .link{
+        font-size: 1.3rem;
+     }
+   
+     .link2{
+        font-size: 1.3rem;
+     }
+
+}
+
 /* CSS for Tablet Screens */
 @media (min-width:600px) and (max-width:1034px){
 
@@ -171,7 +227,7 @@
 
     .logo img{
         margin-top: -7vh;
-        width: 40vw;
+        width: 45vw;
         height: 25vh;
         /* border: 2px solid gray; */
     }
@@ -184,7 +240,7 @@
     .menu3{
         background-color: rgba(2, 18, 101, 1);
         width: 120vw;
-        margin-left: -45vw;
+        margin-left: -50vw;
         margin-top: 5vh;
         margin-right: 0vw;
         padding-left: 0vw;
@@ -215,8 +271,6 @@
     }
 
     .link2{
-        /* width: 100vw; */
-        /* padding-right: 2vw; */
         color: white;
         font-family: 'Montserrat';
         font-weight: 500;
@@ -237,9 +291,19 @@
     }
 }
 
-@media (min-width:200px) and (max-width:400px){
+@media (min-width:200px) and (max-width:330px){
 
+    .logo img{
+        width: 50vw;
+    }
 
+    .main2{
+        margin-left: 30vw;
+    }
+
+    .menu3{
+        margin-left: -55vw;
+    }
 
 
 }

@@ -46,7 +46,7 @@ function Footer() {
         }
       });
 
-      console.log("response is",response?.data?.success)
+      // console.log("response is",response?.data?.success)
 
       if(response?.data?.success){
 
@@ -76,7 +76,7 @@ function Footer() {
     } else if (!validateEmail(email)) {
       setError("Please enter a valid email address.");
     } else {
-      console.log("Email is:", email);
+      // console.log("Email is:", email);
       // setError("Thanks for subscribing!");
       
       submitEmailDetails() 

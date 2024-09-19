@@ -124,6 +124,11 @@ function Navbar() {
                     Contact
                   </Link>
                 </li>
+                {/* <li>
+                  <Link to="/agents" className={Style.link2}>
+                    Agents
+                  </Link>
+                </li> */}
               </ul>
             )}
           </div>

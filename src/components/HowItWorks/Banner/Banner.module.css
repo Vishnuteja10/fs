@@ -53,6 +53,37 @@
      color: white;
 }
 
+/* css for small tab screen */
+@media (min-width:600px) and (max-width:840px) and (min-height:920px) and (max-height:1280px){
+
+    .imageContent{
+        margin-top: -40vh;
+        height: 30vh;
+        margin-left: 5vw;
+    }
+
+    .imageContainer img{
+        height: 60vh;
+    }
+
+
+}
+
+/* css for small tab screen */
+@media (min-width:768px) and (max-width:1025px) and (min-height:1024px) and (max-height:1366px){
+
+    .imageContent{
+        margin-top: -40vh;
+        height: 30vh;
+        margin-left: 5vw;
+    }
+
+    .imageContainer img{
+        height: 60vh;
+    }
+
+}
+
 @media (max-width:600px){
 
     .main{

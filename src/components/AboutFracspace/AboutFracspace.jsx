@@ -8,6 +8,7 @@ import img2 from "../../assets/AboutFracspace/img2.png";
 export default function AboutFracspace() {
   return (
     <div className={Style.main}>
+      
       <div className={Style.contentContainer}>
         <div className={Style.header}>Fracspace</div>
         <div className={Style.content}>
@@ -43,6 +44,7 @@ export default function AboutFracspace() {
           </div>
         </div>
       </div>
+
     </div>
   );
 }

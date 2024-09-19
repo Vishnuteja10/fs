@@ -9,6 +9,13 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { version } from "react";
 
+import img1 from '../../assets/newsImages/dc-logo-2.png'
+import img2 from '../../assets/newsImages/the-enterprise-world.png'
+import img3 from '../../assets/newsImages/et.png'
+import img4 from '../../assets/newsImages/5.png'
+import img5 from '../../assets/newsImages/ET_Now.jpg'
+import img6 from '../../assets/newsImages/aroundtelugu-logo.png'
+
 
 
 export default function News() {
@@ -76,140 +83,133 @@ export default function News() {
       <div className={Style.header}>In the News</div>
 
       <div className={Style.newsContainer}   ref={newsContainerRef}>  
-        <div className={Style.card}>
-            <div className={Style.imageContainer}>
-              <img className={Style.image} src={newsImg1}></img>
-            </div>
-            <div className={Style.content}>FracSpace Limited: Transforming Real Estate</div>
-            <div className={Style.readMore}  onClick={() => window.open("https://theenterpriseworld.com/unnath-reddy-a-visionary-leader-reforming/", "_blank")}
-            >Read More</div>
-        </div>
 
-        <div className={Style.card}>
-            <div className={Style.imageContainer}>
-              <img className={Style.image} src={newsImg4}></img>
-            </div>
-            <div className={Style.content}>Fracspace:Your Passport to Premium Property Investment</div>
-            <div className={Style.readMore}>Read More</div>
-        </div>
+        <a className={Style.newsImage} href="https://www.deccanchronicle.com/general/fracspace-revolutionizes-real-estate-ownership-with-mobile-app-897133"
+                            target="_blank"> <img src={img1}></img></a>
 
-        <div className={Style.card}>
-            <div className={Style.imageContainer}>
-              <img className={Style.image} src={newsImg2}></img>
-            </div>
-            <div className={Style.content}>Revolutionizing Real Estate Investment </div>
-            <div className={Style.readMore} onClick={() => window.open("https://entrepreneurstoday.in/unnath-reddys-fracspace-revolutionizing-real-estate-investment-and-empowering-dreams/", "_blank")}>Read More</div>
-        </div>
+          <a className={Style.newsImage} href="https://theenterpriseworld.com/unnath-reddy-a-visionary-leader-reforming/"
+                                target="_blank"><img src={img2} alt=""
+                                    ></img></a>
 
-        <div className={Style.card}>
-            <div className={Style.imageContainer}>
-              <img className={Style.image} src={newsImg3}></img>
-            </div>
-            <div className={Style.content}>FracSpace allows fractional ownership of properties</div>
-            <div className={Style.readMore} onClick={() => window.open("https://www.bizzbuzz.news/industry/fracspace-allows-fractional-ownership-of-properties-1212346", "_blank")}>Read More</div>
-        </div>
+                            <a className={Style.newsImage} href="https://www.youtube.com/watch?v=Z1JVsH6AwDI" target="_blank"><img
+                                    src={img3} alt=""></img></a>
 
+                            <a className={Style.newsImage} href="https://www.bizzbuzz.news/industry/fracspace-allows-fractional-ownership-of-properties-1212346"
+                                target="_blank"><img src={img4} alt="" ></img></a>
 
-        <div className={Style.card}>
-            <div className={Style.imageContainer}>
-              <img className={Style.image} src={newsImg1}></img>
-            </div>
-            <div className={Style.content}>Fracspace:Your Passport to Premium Property Investment</div>
-            <div className={Style.readMore}>Read More</div>
-        </div>
+                            <a className={Style.newsImage} href="https://entrepreneurstoday.in/unnath-reddys-fracspace-revolutionizing-real-estate-investment-and-empowering-dreams/"
+                                target="_blank"><img src={img5} alt=""></img></a>
 
+                                <a className={Style.newsImage} href="https://youtu.be/DMCjEC1BQQE?si=DjmgtonohyGQfboG"
+                                target="_blank"><img src={img6} alt=""></img></a> 
 
-        {/* repeat1 */}
+      
+      {/* repeat - 2 */}
 
-        <div className={Style.card}>
-            <div className={Style.imageContainer}>
-              <img className={Style.image} src={newsImg1}></img>
-            </div>
-            <div className={Style.content}>FracSpace Limited: Transforming Real Estate</div>
-            <div className={Style.readMore}  onClick={() => window.open("https://theenterpriseworld.com/unnath-reddy-a-visionary-leader-reforming/", "_blank")}
-            >Read More</div>
-        </div>
+      <a className={Style.newsImage} href="https://www.deccanchronicle.com/general/fracspace-revolutionizes-real-estate-ownership-with-mobile-app-897133"
+                            target="_blank"> <img src={img1}></img></a>
 
-        <div className={Style.card}>
-            <div className={Style.imageContainer}>
-              <img className={Style.image} src={newsImg4}></img>
-            </div>
-            <div className={Style.content}>Fracspace:Your Passport to Premium Property Investment</div>
-            <div className={Style.readMore}>Read More</div>
-        </div>
+          <a className={Style.newsImage} href="https://theenterpriseworld.com/unnath-reddy-a-visionary-leader-reforming/"
+                                target="_blank"><img src={img2} alt=""
+                                    ></img></a>
 
-        <div className={Style.card}>
-            <div className={Style.imageContainer}>
-              <img className={Style.image} src={newsImg2}></img>
-            </div>
-            <div className={Style.content}>Revolutionizing Real Estate Investment</div>
-            <div className={Style.readMore} onClick={() => window.open("https://entrepreneurstoday.in/unnath-reddys-fracspace-revolutionizing-real-estate-investment-and-empowering-dreams/", "_blank")}>Read More</div>
-        </div>
+                            <a className={Style.newsImage} href="https://www.youtube.com/watch?v=Z1JVsH6AwDI" target="_blank"><img
+                                    src={img3} alt=""></img></a>
 
-        <div className={Style.card}>
-            <div className={Style.imageContainer}>
-              <img className={Style.image} src={newsImg3}></img>
-            </div>
-            <div className={Style.content}>FracSpace allows fractional ownership of properties</div>
-            <div className={Style.readMore} onClick={() => window.open("https://www.bizzbuzz.news/industry/fracspace-allows-fractional-ownership-of-properties-1212346", "_blank")}>Read More</div>
-        </div>
+                            <a className={Style.newsImage} href="https://www.bizzbuzz.news/industry/fracspace-allows-fractional-ownership-of-properties-1212346"
+                                target="_blank"><img src={img4} alt="" ></img></a>
 
+                            <a className={Style.newsImage} href="https://entrepreneurstoday.in/unnath-reddys-fracspace-revolutionizing-real-estate-investment-and-empowering-dreams/"
+                                target="_blank"><img src={img5} alt=""></img></a>
 
-        <div className={Style.card}>
-            <div className={Style.imageContainer}>
-              <img className={Style.image} src={newsImg1}></img>
-            </div>
-            <div className={Style.content}>Fracspace:Your Passport to Premium Property Investment</div>
-            <div className={Style.readMore}>Read More</div>
-        </div>
-
-        {/* repeat 2 */}
-
-        <div className={Style.card}>
-            <div className={Style.imageContainer}>
-              <img className={Style.image} src={newsImg1}></img>
-            </div>
-            <div className={Style.content}>FracSpace Limited: Transforming Real Estate</div>
-            <div className={Style.readMore}  onClick={() => window.open("https://theenterpriseworld.com/unnath-reddy-a-visionary-leader-reforming/", "_blank")}
-            >Read More</div>
-        </div>
-
-        <div className={Style.card}>
-            <div className={Style.imageContainer}>
-              <img className={Style.image} src={newsImg4}></img>
-            </div>
-            <div className={Style.content}>Fracspace:Your Passport to Premium Property Investment</div>
-            <div className={Style.readMore}>Read More</div>
-        </div>
-
-        <div className={Style.card}>
-            <div className={Style.imageContainer}>
-              <img className={Style.image} src={newsImg2}></img>
-            </div>
-            <div className={Style.content}>Revolutionizing Real Estate Investment </div>
-            <div className={Style.readMore} onClick={() => window.open("https://entrepreneurstoday.in/unnath-reddys-fracspace-revolutionizing-real-estate-investment-and-empowering-dreams/", "_blank")}>Read More</div>
-        </div>
-
-        <div className={Style.card}>
-            <div className={Style.imageContainer}>
-              <img className={Style.image} src={newsImg3}></img>
-            </div>
-            <div className={Style.content}>FracSpace allows fractional ownership of properties</div>
-            <div className={Style.readMore} onClick={() => window.open("https://www.bizzbuzz.news/industry/fracspace-allows-fractional-ownership-of-properties-1212346", "_blank")}>Read More</div>
-        </div>
-
-
-        <div className={Style.card}>
-            <div className={Style.imageContainer}>
-              <img className={Style.image} src={newsImg1}></img>
-            </div>
-            <div className={Style.content}>Fracspace:Your Passport to Premium Property Investment</div>
-            <div className={Style.readMore}>Read More</div>
-        </div>
+                                <a className={Style.newsImage} href="https://youtu.be/DMCjEC1BQQE?si=DjmgtonohyGQfboG"
+                                target="_blank"><img src={img6} alt=""></img></a> 
 
         {/* repeat 3 */}
 
+        <a className={Style.newsImage} href="https://www.deccanchronicle.com/general/fracspace-revolutionizes-real-estate-ownership-with-mobile-app-897133"
+                            target="_blank"> <img src={img1}></img></a>
 
+          <a className={Style.newsImage} href="https://theenterpriseworld.com/unnath-reddy-a-visionary-leader-reforming/"
+                                target="_blank"><img src={img2} alt=""
+                                    ></img></a>
+
+                            <a className={Style.newsImage} href="https://www.youtube.com/watch?v=Z1JVsH6AwDI" target="_blank"><img
+                                    src={img3} alt=""></img></a>
+
+                            <a className={Style.newsImage} href="https://www.bizzbuzz.news/industry/fracspace-allows-fractional-ownership-of-properties-1212346"
+                                target="_blank"><img src={img4} alt="" ></img></a>
+
+                            <a className={Style.newsImage} href="https://entrepreneurstoday.in/unnath-reddys-fracspace-revolutionizing-real-estate-investment-and-empowering-dreams/"
+                                target="_blank"><img src={img5} alt=""></img></a>
+
+                                <a className={Style.newsImage} href="https://youtu.be/DMCjEC1BQQE?si=DjmgtonohyGQfboG"
+                                target="_blank"><img src={img6} alt=""></img></a> 
+
+      {/* repeat 4 */}
+
+      <a className={Style.newsImage} href="https://www.deccanchronicle.com/general/fracspace-revolutionizes-real-estate-ownership-with-mobile-app-897133"
+                            target="_blank"> <img src={img1}></img></a>
+
+          <a className={Style.newsImage} href="https://theenterpriseworld.com/unnath-reddy-a-visionary-leader-reforming/"
+                                target="_blank"><img src={img2} alt=""
+                                    ></img></a>
+
+                            <a className={Style.newsImage} href="https://www.youtube.com/watch?v=Z1JVsH6AwDI" target="_blank"><img
+                                    src={img3} alt=""></img></a>
+
+                            <a className={Style.newsImage} href="https://www.bizzbuzz.news/industry/fracspace-allows-fractional-ownership-of-properties-1212346"
+                                target="_blank"><img src={img4} alt="" ></img></a>
+
+                            <a className={Style.newsImage} href="https://entrepreneurstoday.in/unnath-reddys-fracspace-revolutionizing-real-estate-investment-and-empowering-dreams/"
+                                target="_blank"><img src={img5} alt=""></img></a>
+
+                                <a className={Style.newsImage} href="https://youtu.be/DMCjEC1BQQE?si=DjmgtonohyGQfboG"
+                                target="_blank"><img src={img6} alt=""></img></a> 
+
+      {/* repeat 5 */}
+
+      <a className={Style.newsImage} href="https://www.deccanchronicle.com/general/fracspace-revolutionizes-real-estate-ownership-with-mobile-app-897133"
+                            target="_blank"> <img src={img1}></img></a>
+
+          <a className={Style.newsImage} href="https://theenterpriseworld.com/unnath-reddy-a-visionary-leader-reforming/"
+                                target="_blank"><img src={img2} alt=""
+                                    ></img></a>
+
+                            <a className={Style.newsImage} href="https://www.youtube.com/watch?v=Z1JVsH6AwDI" target="_blank"><img
+                                    src={img3} alt=""></img></a>
+
+                            <a className={Style.newsImage} href="https://www.bizzbuzz.news/industry/fracspace-allows-fractional-ownership-of-properties-1212346"
+                                target="_blank"><img src={img4} alt="" ></img></a>
+
+                            <a className={Style.newsImage} href="https://entrepreneurstoday.in/unnath-reddys-fracspace-revolutionizing-real-estate-investment-and-empowering-dreams/"
+                                target="_blank"><img src={img5} alt=""></img></a>
+
+                                <a className={Style.newsImage} href="https://youtu.be/DMCjEC1BQQE?si=DjmgtonohyGQfboG"
+                                target="_blank"><img src={img6} alt=""></img></a> 
+
+    {/* repeat 6 */}
+
+    <a className={Style.newsImage} href="https://www.deccanchronicle.com/general/fracspace-revolutionizes-real-estate-ownership-with-mobile-app-897133"
+                            target="_blank"> <img src={img1}></img></a>
+
+          <a className={Style.newsImage} href="https://theenterpriseworld.com/unnath-reddy-a-visionary-leader-reforming/"
+                                target="_blank"><img src={img2} alt=""
+                                    ></img></a>
+
+                            <a className={Style.newsImage} href="https://www.youtube.com/watch?v=Z1JVsH6AwDI" target="_blank"><img
+                                    src={img3} alt=""></img></a>
+
+                            <a className={Style.newsImage} href="https://www.bizzbuzz.news/industry/fracspace-allows-fractional-ownership-of-properties-1212346"
+                                target="_blank"><img src={img4} alt="" ></img></a>
+
+                            <a className={Style.newsImage} href="https://entrepreneurstoday.in/unnath-reddys-fracspace-revolutionizing-real-estate-investment-and-empowering-dreams/"
+                                target="_blank"><img src={img5} alt=""></img></a>
+
+                                <a className={Style.newsImage} href="https://youtu.be/DMCjEC1BQQE?si=DjmgtonohyGQfboG"
+                                target="_blank"><img src={img6} alt=""></img></a> 
+
+{/* 
         <div className={Style.card}>
             <div className={Style.imageContainer}>
               <img className={Style.image} src={newsImg1}></img>
@@ -250,9 +250,7 @@ export default function News() {
             </div>
             <div className={Style.content}>Fracspace:Your Passport to Premium Property Investment</div>
             <div className={Style.readMore}>Read More</div>
-        </div>
-
-
+        </div> */}
 
       </div>
 

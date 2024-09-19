@@ -102,6 +102,50 @@
     background-color: white;
 }
 
+/* css for small tab screen */
+@media (min-width:600px) and (max-width:840px) and (min-height:920px) and (max-height:1280px){
+  
+    .number{
+        padding-top: 0.5vh;
+        width: 5vw;
+    }
+
+    .item{
+        width: 30vw;
+    }
+
+    .imageContainer img{
+        width: 15vw;
+    }
+
+    .itemsContainer{
+        margin-top: -12vh;
+    }
+
+}
+
+/* css for medium tab screens */
+@media (min-width:768px) and (max-width:1025px) and (min-height:1024px) and (max-height:1366px){
+
+    .number{
+        padding-top: 0.5vh;
+        width: 5vw;
+    }
+
+    .item{
+        width: 30vw;
+    }
+
+    .imageContainer img{
+        width: 15vw;
+    }
+
+    .itemsContainer{
+        margin-top: -12vh;
+    }
+
+}
+
 @media(max-width:600px){
 
     .header{

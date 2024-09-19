@@ -46,9 +46,9 @@ export default function ContactUs() {
           "x-api-key": "Fracspace@2024"
         }
       });
-      console.log(response.data);
+      // console.log(response.data);
     } catch (error) {
-      console.log("error is", error);
+      // console.log("error is", error);
     }
   };
 
@@ -74,7 +74,7 @@ export default function ContactUs() {
 
     // alert("Form submitted!");
     setFormData(initialFormData);
-    console.log("Form data:", formData);
+    // console.log("Form data:", formData);
 
     setTimeout(() => {
       setShowSuccessMessage(false);
@@ -84,7 +84,7 @@ export default function ContactUs() {
   const handlePhoneChange = (value, country) => {
     const countryCode = country.dialCode;
     const phone = value.slice(country.dialCode.length);
-    console.log("phone num is", phone);
+    // console.log("phone num is", phone);
 
     setFormData({
       ...formData,
@@ -251,7 +251,7 @@ export default function ContactUs() {
                   inputStyle={{
                     width: "100%",
                     height: "6vh",
-                    fontSize: "12px"
+                    fontSize: "1rem"
                   }}
                   // inputStyle={Style.phoneInput}
                   required
