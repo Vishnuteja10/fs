@@ -1,0 +1,33 @@
+
+
+.header{
+    margin-top: 2vh;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.subheader{
+    margin-top: 2vh;
+    font-size: 1.3rem;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.imageContainer{
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageContainer img{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 85vw;
+    height: auto;
+    object-fit: contain;
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+
+
+.main{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.imageContainer img{
+    width: 30vw;
+    height: 50vh;
+}
+
+.rightContainer{
+    margin-left: 3vw;
+}
+
+.contentContainer{
+    margin-top: 2vh;
+    font-size: 2rem;
+    font-family: 'Poppins';
+}
+
+.detailsContainer{
+    margin-top: 2vh;
+}

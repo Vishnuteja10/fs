@@ -59,6 +59,11 @@ function Navbar2() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link to="/agents" className={Style.link2}>
+                  Agents
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -105,6 +110,11 @@ function Navbar2() {
               <li>
                 <Link to="/contact" className={Style.link2}>
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link to="/agents" className={Style.link2}>
+                  Agents
                 </Link>
               </li>
             </ul>

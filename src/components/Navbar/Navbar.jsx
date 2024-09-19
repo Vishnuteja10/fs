@@ -96,6 +96,11 @@ function Navbar() {
                     Contact
                   </Link>
                 </li>
+                <li>
+                  <Link to="/agents" className={Style.link}>
+                    Agents
+                  </Link>
+                </li>
               </ul>
             ) : (
               <ul className={Style.navBar2}>
@@ -124,11 +129,11 @@ function Navbar() {
                     Contact
                   </Link>
                 </li>
-                {/* <li>
+                <li>
                   <Link to="/agents" className={Style.link2}>
                     Agents
                   </Link>
-                </li> */}
+                </li>
               </ul>
             )}
           </div>
@@ -168,6 +173,11 @@ function Navbar() {
               <li>
                 <Link to="/contact" className={Style.link3}>
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link to="/agents" className={Style.link3}>
+                  Agents
                 </Link>
               </li>
             </ul>
