@@ -45,3 +45,25 @@
 .leftContainer{
     padding-bottom: 3vh;
 }
+
+
+@media(max-width:600px){
+
+    .header{
+        font-size: 1.6rem;
+    }
+
+    .main{
+        display: block;
+    }
+
+    .buttonContainer{
+        margin-top: 1vh;
+         width: 30vw;
+    }
+
+    .buttonContainer button{
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+}

@@ -128,3 +128,36 @@
     overflow: hidden; /* Ensure overflow is hidden to hide white space */
     width: 90vw;
   }
+
+
+  @media (max-width:600px){
+
+    .leftArrowContainer{
+        height: 6vh;
+        width: 10vw;
+    }
+
+    .rightArrowContainer{
+        height: 6vh;
+        width: 10vw;
+    }
+
+    .leftArrowContainer img{
+         width: 4vw;
+    }
+
+    .rightArrowContainer img{
+         width: 4vw;
+    }
+
+    .arrowContainer{
+         margin-top: 3vh;
+          margin-left: 40vw;
+    }
+
+    .contentBox{
+        width: 85vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+  }

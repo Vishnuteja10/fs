@@ -89,3 +89,37 @@
 .rightArrowContainer:hover img{
     content: url('../../../assets/Agents/right-arrow.png');
 }
+
+@media (max-width:600px){
+
+    .header{
+        font-weight: 600;
+    }
+
+    .main{
+        display: block;
+    }
+
+    .imageContainer{
+        margin-top: 2vh;
+    }
+
+    .imageContainer img{
+        object-fit: contain;
+        height: auto;
+        width: 80vw;
+    }
+
+    .contentContainer{
+        font-size: 1.1rem;
+        width: 80vw;
+    }
+
+    .name{
+        font-weight: 600;
+    }
+
+    .role{
+        font-weight: 600;
+    }
+}

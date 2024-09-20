@@ -31,3 +31,20 @@
     object-fit: contain;
     text-align: center;
 }
+
+@media (max-width:600px){
+
+    .header{
+        font-size: 24px;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .subheader{
+        font-size: 20px;
+    }
+
+    .main{
+        margin-bottom: 5vh;
+    }
+}

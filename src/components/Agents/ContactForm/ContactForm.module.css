@@ -127,3 +127,18 @@
 .successMessage{
     color: green;
 }
+
+@media (max-width:600px){
+
+    .contactFormHeader{
+        font-size: 1.3rem;
+    }
+
+    .contactOuterContainer{
+        width: 90vw;
+    }
+
+    .contactInnerContainer{
+        width: 80vw;
+    }
+}
