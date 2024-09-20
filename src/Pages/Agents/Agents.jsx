@@ -9,6 +9,10 @@ import MainComponent from '../../components/Agents/MainComponent/MainComponent';
 import JoinOurTeam from '../../components/Agents/JoinOurTeam/JoinOurTeam';
 import WhyChooseFs from '../../components/Agents/WhyChooseFs/WhyChooseFs';
 import AgentStories from '../../components/Agents/AgentStories/AgentStories';
+import BottomBanner from '../../components/Agents/BottomBanner/BottomBanner';
+
+import Footer from '../../components/Footer/Footer';
+import ContactForm from '../../components/Agents/ContactForm/ContactForm';
 
 
 function Agents() {
@@ -56,6 +60,18 @@ function Agents() {
 
         <div>
             <AgentStories />
+        </div>
+
+        <div>
+            <BottomBanner />
+        </div>
+
+        <div>
+            <ContactForm />
+        </div>
+
+        <div>
+            <Footer />
         </div>
 
       </div>

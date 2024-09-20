@@ -47,8 +47,8 @@ function WhyChooseFs() {
         Why Choose <span className={Style.highlight}>Fracspace</span>?
       </div>
 
-      <div className={Style.arrowContainer} onClick={handlePrev}>
-        <div className={Style.leftArrowContainer}>
+      <div className={Style.arrowContainer} >
+        <div className={Style.leftArrowContainer} onClick={handlePrev}>
           <img src={leftArrow}></img>
         </div>
 
