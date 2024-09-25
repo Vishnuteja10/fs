@@ -62,7 +62,7 @@
 
 
 .terms{
-    padding-top: 15vh;
+    padding-top: 20vh;
     padding-left: 5vw;
     padding-right: 5vw;
 }
@@ -110,6 +110,19 @@
     background-color: white;
     width: 100vw;
     height: 16vh;   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+      /* Glassmorphism background */
+
+      /* background: rgba(255, 255, 255, 0.15); 
+      backdrop-filter: blur(10px); 
+      -webkit-backdrop-filter: blur(10px);  
+      border: 1px solid rgba(255, 255, 255, 0.2);  */
+
+      /* Transparent white */
+       /* Blur effect */
+       /* For Safari support */
+       /* Optional: adds frosted glass border */
 }
 
 

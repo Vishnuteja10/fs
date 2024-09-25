@@ -20,7 +20,7 @@
   .appIconsContainer{
     margin-top: 40vh;
     position: fixed;
-    z-index: 999;
+    z-index: 1000;
     margin-left: 92.5vw;
 }
 

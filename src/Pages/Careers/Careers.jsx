@@ -21,38 +21,24 @@ function Careers() {
 
         <AppIconsComponent />
 
-        {/* <div className={Style.appIconsContainer}>
-          <div onClick={() => window.open("https://play.google.com/store/apps/details?id=com.fracspace", "_blank")}>
-            <img className={Style.playStore} src={playStore}></img>
-          </div>
-
-          <div onClick={() => window.open("https://apps.apple.com/in/app/fracspace/id6498551006", "_blank")}>
-            <img className={Style.appleStore} src={appleStore}></img>
-          </div>
-
-          
-        <div onClick={() => window.open("https://wa.me/9880626111", "_blank")}>
-          <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
-        </div>
-
-        </div> */}
 
         <div className={Style.navBar}>
           <Navbar2 />
         </div>
 
-        <div className={Style.main2}>
+        <section className={Style.main2}>
           {/* <div>Careers</div> */}
-          <div className={Style.header}>We're Looking For Talented People</div>
+          <header className={Style.header}>We're Looking For Talented People</header>
           <div className={Style.imageContainer}>
-            <img src={bgImg}></img>
+            <img alt="background image" src={bgImg}></img>
           </div>
 
           <div className={Style.Container}>
-            <div className={Style.jobCategory}>Job Openings</div>
+            <h2 className={Style.jobCategory}>Job Openings</h2>
 
             <div className={Style.jobsContainer}>
-              <div className={Style.jobItem}>
+
+              <article className={Style.jobItem}>
                 <div className={Style.jobRoleContainer}>
                   <div className={Style.jobRole}>Jr HR</div>
                   {/* <div className={Style.joblocation}>
@@ -84,47 +70,9 @@ function Careers() {
                     Apply
                   </button>
                 </div>
-              </div>
+              </article>
 
-              {/* <div className={Style.jobItem}>
-                <div className={Style.jobRoleContainer}>
-                  <div className={Style.jobRole}>
-                    Sr Digital Marketing Executive
-                  </div>
-                  <div className={Style.joblocation}>
-                    {" "}
-                    Hyderabad,Telangana,India
-                  </div>
-                </div>
-                <div className={Style.description}>
-                  FracSpace Private Limited is seeking a talented Sr Digital
-                  Marketing Executive to join our dynamic team. This mid-level
-                  position, based in Hyderabad, requires a proficient individual
-                  who can develop and execute strategies to drive business in
-                  new and existing markets. The ideal candidate will have a
-                  strong background in digital marketing and a passion for real
-                  estate.
-                </div>
-
-                <div className={Style.jobTypeContainer}>
-                  <div className={Style.type}>Full time</div>
-                  <div className={Style.jobLoc}>On Site</div>
-                </div>
-
-                <div className={Style.applyContainer}>
-                  <button
-                    onClick={() =>
-                      window.open(
-                        "https://www.linkedin.com/jobs/search/?currentJobId=4019918205&keywords=fracspace&origin=BLENDED_SEARCH_RESULT_NAVIGATION_JOB_CARD&originToLandingJobPostings=4019919199%2C4019911699%2C4019914692",
-                        "_blank"
-                      )
-                    }
-                  >
-                    Apply
-                  </button>
-                </div>
-              </div> */}
-
+             
             </div>
           </div>
 
@@ -132,7 +80,7 @@ function Careers() {
             <div className={Style.jobCategory}></div>
 
             <div className={Style.jobsContainer}>
-              <div className={Style.jobItem}>
+              <article className={Style.jobItem}>
               <div className={Style.jobRoleContainer}>
                   <div className={Style.jobRole}>
                     Sr Digital Marketing Executive
@@ -166,9 +114,9 @@ function Careers() {
                     Apply
                   </button>
                 </div>
-              </div>
+              </article>
 
-              <div className={Style.jobItem}>
+              <article className={Style.jobItem}>
                 <div className={Style.jobRoleContainer}>
                   <div className={Style.jobRole}>Inside Sales Presales </div>
                   {/* <div className={Style.joblocation}>
@@ -196,9 +144,9 @@ function Careers() {
                       )
                     }>Apply</button>
                 </div>
-              </div>
+              </article>
 
-              <div className={Style.jobItem}>
+              <article className={Style.jobItem}>
                 <div className={Style.jobRoleContainer}>
                   <div className={Style.jobRole}>Junior Executive Personal Assistant (Male preffered)</div>
                   {/* <div className={Style.joblocation}>
@@ -226,10 +174,10 @@ function Careers() {
                       )
                     }>Apply</button>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
-        </div>
+        </section>
 
         <div className={Style.employeeStories}>{/* <EmployeeStories /> */}</div>
 

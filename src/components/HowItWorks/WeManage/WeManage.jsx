@@ -17,31 +17,33 @@ function WeManage() {
   const navigate = useNavigate()
 
   return (
-    <div className={Style.main}>
+    <section className={Style.main}>
       <div className={Style.imageContainer}>
         <img src={WeManageImg1}></img>
       </div>
 
       <div className={Style.content}>
-        <div className={Style.header}>We take care of everything!</div>
+        <h2 className={Style.header}>We take care of everything!</h2>
         <div className={Style.manageList}>
           <div>
-            <div className={Style.list}>
+
+            <article className={Style.list}>
               {" "}
               <span className={Style.manageImageContainer}>
                 {" "}
-                <img className={Style.vectorImage} src={VectorIcon}></img>{" "}
+                <img className={Style.vectorImage} src={VectorIcon} alt="Comprehensive property management illustration"></img>{" "}
               </span>{" "}
               Comprehensive Property Management
-            </div>
-            <div className={Style.list}>
+            </article>
+
+            <article className={Style.list}>
               {" "}
               <span className={Style.manageImageContainer}>
                 {" "}
                 <img className={Style.vectorImage} src={VectorIcon}></img>{" "}
               </span>{" "}
               Personalized Investment Planning
-            </div>
+            </article>
 
             {/* <div className={Style.list}>
               {" "}
@@ -61,14 +63,14 @@ function WeManage() {
               Efficient SPV Formation and Management
             </div> */}
 
-            <div className={Style.list}>
+            <article className={Style.list}>
               {" "}
               <span className={Style.manageImageContainer}>
                 {" "}
                 <img className={Style.vectorImage} src={VectorIcon}></img>{" "}
               </span>{" "}
               Free legal assistance
-            </div>
+            </article>
           </div>
         </div>
 
@@ -76,7 +78,7 @@ function WeManage() {
           <button onClick={()=>navigate('/contact')}>Enquire Now</button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -3,6 +3,8 @@ import Style from "./JoinOurTeam.module.css";
 import img2 from "../../../assets/Agents/img2.jpeg";
 import img3 from "../../../assets/Agents/arrow-up.png";
 
+import { Link as ScrollLink } from "react-scroll";
+
 import { useMediaQuery } from "react-responsive";
 
 function JoinOurTeam() {
@@ -26,9 +28,11 @@ function JoinOurTeam() {
               thrive.
             </div>
             <div className={Style.buttonContainer}>
+            <ScrollLink to="agentContactForm" smooth={true} duration={200}>
               <button>
                 Join now <img className={Style.arrow} src={img3}></img>
               </button>
+              </ScrollLink>
             </div>
           </div>
 
@@ -55,9 +59,11 @@ function JoinOurTeam() {
               thrive.
             </div>
             <div className={Style.mobileButtonContainer}>
+              <ScrollLink to="agentContactForm" smooth={true} duration={200}>
               <button>
                 Join now <img className={Style.arrow} src={img3}></img>
               </button>
+              </ScrollLink>
             </div>
           </div>
         </div>

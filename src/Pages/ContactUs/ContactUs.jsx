@@ -20,7 +20,10 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 import watsappImg from '../../assets/appImages/watsapp.png'
 import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
 
+import { Helmet } from "react-helmet";
+
 export default function ContactUs() {
+  
   const initialFormData = {
     lastName: "",
     firstName: "",
@@ -46,9 +49,9 @@ export default function ContactUs() {
           "x-api-key": "Fracspace@2024"
         }
       });
-      // console.log(response.data);
+      console.log(response.data);
     } catch (error) {
-      // console.log("error is", error);
+      console.log("error is", error);
     }
   };
 
@@ -96,6 +99,11 @@ export default function ContactUs() {
 
   return (
     <ScrollToTop>
+         <Helmet>
+        <title>Contact Us</title>
+        <meta name="description" content="Reach out to our Concierge for assistance with property management, construction, and interior design services. We're here to help you!" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
     <div className={Style.main}>
 
       <AppIconsComponent />
@@ -134,10 +142,12 @@ export default function ContactUs() {
         <Navbar2 />
       </div>
       <div className={Style.main2}>
-        <div className={Style.header}>Reach out to our Concierge for Assistance</div>
-        <div className={Style.content}>Let us know how we can help you</div>
+        <header>
+        <h1 className={Style.header}>Reach out to our Concierge for Assistance</h1>
+        <p className={Style.content}>Let us know how we can help you</p>
+        </header>
 
-        <div className={Style.contactContainer}>
+        <section className={Style.contactContainer}>
           {/* <div className={Style.contactBox}>
             <div className={Style.imageContainer}>
               <img className={Style.videoImg} src={videoImg}></img>
@@ -149,7 +159,7 @@ export default function ContactUs() {
             <div className={Style.contactCTA}>Book Your Slot</div>
           </div> */}
 
-          <div className={Style.contactBox}>
+          <article className={Style.contactBox}>
             <div className={Style.container}>
               <div className={Style.container1}>
                 <div className={Style.imageContainer}>
@@ -163,9 +173,9 @@ export default function ContactUs() {
               </div>
               <a className={Style.contactCTA} href="mailto:support@fracspace.com">support@fracspace.com</a>
             </div>
-          </div>
+          </article>
 
-          <div className={Style.contactBox}>
+          <article className={Style.contactBox}>
             <div className={Style.container}>
               <div className={Style.container1}>
                 <div className={Style.imageContainer}>
@@ -186,9 +196,9 @@ export default function ContactUs() {
                 View on google maps
               </div>
             </div>
-          </div>
+          </article>
 
-          <div className={Style.contactBox}>
+          <article className={Style.contactBox}>
             <div className={Style.container}>
               <div className={Style.container1}>
                 <div className={Style.imageContainer}>
@@ -201,11 +211,12 @@ export default function ContactUs() {
                 +91-98806-26111 <br></br> +91-93555-65604
               </div>
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
+
       </div>
 
-      <div className={Style.contactForm}>
+      <section className={Style.contactForm}>
         <div className={Style.contactOuterContainer}>
           <div className={Style.contactInnerContainer}>
             <div className={Style.contactFormHeader}>Get in touch</div>
@@ -331,7 +342,7 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <div>
         <Footer />

@@ -13,10 +13,16 @@ import logo2 from "../../assets/logo/logo2.png";
 
 import { Link as ScrollLink } from "react-scroll";
 
+import { Helmet } from "react-helmet";
+
 function Banner() {
   const images = [{ url: img1 }, { url: img2 }];
 
   const isMobile = useMediaQuery({ query: "(max-width: 600px)" });
+
+  const isTablet = useMediaQuery({
+    query: "(min-width: 600px) and (max-width: 1024px)"
+  });
 
   // States to hold the values for counting animation
   const [fracsSold, setFracsSold] = useState(0);
@@ -46,8 +52,25 @@ function Banner() {
 
   return (
     <>
-      <div className={Style.main}>
-        <div className={Style.main2}>
+      <Helmet>
+        <title>Home | Fracspace</title>
+        <meta
+          name="description"
+          content="Experience real estate freedom and flexibility with Fracspace."
+        />
+        <meta
+          property="og:title"
+          content="Fracspace - Real Estate Flexibility"
+        />
+        <meta
+          property="og:description"
+          content="Discover flexible real estate opportunities with Fracspace."
+        />
+        <meta property="og:image" content={img1} />
+      </Helmet>
+
+      <header className={Style.main}>
+        <section className={Style.main2}>
           <div className={Style.mainContent}>
             <div className={Style.header}>
               Experience Real Estate Freedom and <br></br> Flexibility with
@@ -59,9 +82,9 @@ function Banner() {
               </ScrollLink>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className={Style.highlightsContainer}>
+        <section className={Style.highlightsContainer}>
           <div className={Style.highlights}>
             <div className={Style.mainInfo}>{fracsSold}+</div>
             <div className={Style.info}>Fracs Sold</div>
@@ -71,12 +94,51 @@ function Banner() {
             <div className={Style.mainInfo}>{locations}+</div>
             <div className={Style.info}>Locations Across The World</div>
           </div>
-        </div>
+        </section>
 
-        {!isMobile ? (
+        {!isMobile && !isTablet && (
           <SimpleImageSlider
             className={Style.imageSlider}
             width={"98.6vw"}
+            overflow={"hidden"}
+            height={"100vh"}
+            images={images}
+            showNavs={false}
+            autoPlay={true}
+            autoPlayDelay={6.0}
+          />
+        )}
+
+        {isMobile && (
+          <SimpleImageSlider
+            className={Style.imageSlider}
+            width={"99.4vw"}
+            height={"100vh"}
+            images={images}
+            showNavs={false}
+            autoPlay={true}
+            autoPlayDelay={6.0}
+          />
+        )}
+
+        {isTablet && (
+          <SimpleImageSlider
+            className={Style.imageSlider}
+            width={"100vw"}
+            overflow={"hidden"}
+            height={"100vh"}
+            images={images}
+            showNavs={false}
+            autoPlay={true}
+            autoPlayDelay={6.0}
+          />
+        )}
+
+        {/* {!isMobile ? (
+          <SimpleImageSlider
+            className={Style.imageSlider}
+            width={"98.6vw"}
+            overflow={"hidden"}
             height={"100vh"}
             images={images}
             showNavs={false}
@@ -93,8 +155,8 @@ function Banner() {
             autoPlay={true}
             autoPlayDelay={6.0}
           />
-        )}
-      </div>
+        )} */}
+      </header>
     </>
   );
 }

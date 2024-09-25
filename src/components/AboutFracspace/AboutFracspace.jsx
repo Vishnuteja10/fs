@@ -7,10 +7,10 @@ import img2 from "../../assets/AboutFracspace/img2.png";
 
 export default function AboutFracspace() {
   return (
-    <div className={Style.main}>
+    <section className={Style.main}>
       
       <div className={Style.contentContainer}>
-        <div className={Style.header}>Fracspace</div>
+        <h1 className={Style.header}>Fracspace</h1>
         <div className={Style.content}>
           Fracspace offers a unique investment experience through fractional
           ownership in the private and domestic real estate market. Enjoy luxury vacations
@@ -32,10 +32,10 @@ export default function AboutFracspace() {
 
       <div className={Style.imagesContainer}>
         <div className={Style.imageContainer1}>
-          <img src={img1}></img>
+          <img src={img1} alt="Fracspace Property Example"></img>
         </div>
         <div className={Style.imageContainer2}>
-          <img src={img2}></img>
+          <img src={img2} alt="Fracspace Property Example"></img>
           <div className={Style.imageContent}>
             <span className={Style.numberContent}>100+ </span>{" "}
             <span className={Style.info}>Fracs Sold</span>{" "}
@@ -45,6 +45,6 @@ export default function AboutFracspace() {
         </div>
       </div>
 
-    </div>
+    </section>
   );
 }

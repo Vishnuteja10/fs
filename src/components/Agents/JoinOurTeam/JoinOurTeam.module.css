@@ -23,7 +23,7 @@
 .content{
     margin-top: 3vh;
     font-size: 1.1rem;
-    text-indent: 2em;
+    /* text-indent: 2em; */
     line-height: 1.6;
 }
 
@@ -51,8 +51,10 @@
     }
 
     .mobileHeader{
+        font-weight: 600;
         font-size: 20px;
         text-align: center;
+        font-family: 'Montserrat';
     }
 
     .mobileImageContainer img{
@@ -69,6 +71,7 @@
         margin-right: 5vw;
         font-size: 16px;
         margin-top: 2vh;
+        font-family: 'Poppins';
     }
 
     .mobileButtonContainer{

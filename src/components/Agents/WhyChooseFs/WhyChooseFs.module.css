@@ -38,12 +38,14 @@
 .contentHeader{
     font-size: 1.2rem;
     font-family: 'Montserrat';
+    font-weight: 600;
     color: white;
 }
 
 .content{
     color: white;
     padding-top: 2vh;
+    font-family: 'Poppins';
 }
 
 .contentBox{
@@ -131,6 +133,15 @@
 
 
   @media (max-width:600px){
+
+    .contentHeader{
+        font-weight: 600;
+    }
+
+    .content{
+        font-family: 'Poppins';
+        line-height: 1.5;
+    }
 
     .leftArrowContainer{
         height: 6vh;

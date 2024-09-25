@@ -1,0 +1,49 @@
+
+.main{
+    background-color: #F7F7F7;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    border: 2px solid #F7F7F7;
+}
+
+
+.reviewsContainer {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 90vw;
+    max-width: 90vw;
+  
+  }
+  
+  .reviewsFLowLeftToRight,
+  .reviewsFLowRightToLeft {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  
+    width: 90vw;
+  }
+  
+  .reviewsFLowRightToLeft{
+     margin-top: 5vh;
+  }
+  
+  .reviewImage {
+    height: 30vh; /* Adjust as needed */
+    padding: 0 10px; /* Spacing between images */
+    flex-shrink: 0;
+    margin-left: 2vw;
+    /* border: 2px solid gray; */
+    /* margin-left: 2vw; */
+    
+  }
+  
+ 
+
+  @media (max-width:600px){
+     .reviewImage{
+        height: 15vh;
+     }
+  }

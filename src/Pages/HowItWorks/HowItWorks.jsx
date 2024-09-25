@@ -16,6 +16,8 @@ import playStore from "../../assets/appImages/playstore.png";
 import appleStore from "../../assets/appImages/apple-store.png";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
+import { Helmet } from "react-helmet";
+
 import watsappImg from '../../assets/appImages/watsapp.png'
 import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
 
@@ -23,6 +25,12 @@ function HowItWorks() {
   return (
     <ScrollToTop>
     <div>
+
+    <Helmet>
+        <title>How It Works | Fracspace</title>
+        <meta name="description" content="Discover how Fracspace works for you. Explore our step-by-step guide to seamless property management and services." />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
 
       <AppIconsComponent />
       

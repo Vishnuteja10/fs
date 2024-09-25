@@ -7,22 +7,22 @@ import img2 from "../../../assets/ServicesPage/obj2.png";
 
 function IntroSection() {
   return (
-    <div className={Style.outerContainer}>
+    <section className={Style.outerContainer}>
 
       <div className={Style.main}>
         <div className={Style.imageContainer}>
-          <img src={image}></img>
+          <img src={image} alt="Illustration representing fracspace services"></img>
         </div>
       </div>
 
       <div className={Style.image1}>
-        <img src={img1}></img>
+        <img src={img1} alt="background image"></img>
       </div>
       <div className={Style.image2}>
-        <img src={img2}></img>
+        <img src={img2} alt="background image"></img>
       </div>
 
-    </div>
+    </section>
   );
 }
 

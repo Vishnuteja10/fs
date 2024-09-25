@@ -12,12 +12,13 @@
     padding-right: 3vw;
     padding-top: 3vh;
     padding-bottom: 3vh;
-    background: linear-gradient(90deg, #6340E8 0%, #021265 100%);
+    background: linear-gradient(90deg, rgb(142, 151, 236) 0%, rgb(1, 27, 87) 100%);
     
 }
 
 .header{
     color: white;
+    font-weight: 500;
     font-size: 2rem;
     font-family: 'Montserrat';
 }
@@ -50,7 +51,7 @@
 @media(max-width:600px){
 
     .header{
-        font-size: 1.6rem;
+        font-size: 24px;
     }
 
     .main{

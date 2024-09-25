@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     /* flex-shrink: 0; */
+  
   }
 
   @keyframes bounce {
@@ -79,6 +80,7 @@
     width: 98.7vw;
     height: 15vh;
     background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 
 }
 
@@ -87,6 +89,15 @@
 }
 
 
+/* CSS for Tablet Screens */
+@media (min-width: 600px) and (max-width: 1034px) {
+
+  .nav{
+    width: 100vw;
+    overflow: hidden;
+  }
+
+}
 
 
 @media (max-width:600px) {

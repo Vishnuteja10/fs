@@ -94,6 +94,7 @@
 
     .header{
         font-weight: 600;
+        font-size: 20px;
     }
 
     .main{
@@ -111,7 +112,7 @@
     }
 
     .contentContainer{
-        font-size: 1.1rem;
+        font-size: 18px;
         width: 80vw;
     }
 

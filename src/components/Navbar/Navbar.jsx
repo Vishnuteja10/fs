@@ -44,7 +44,7 @@ function Navbar() {
   };
 
   return (
-    <div>
+    <nav>
       <div className={`${menuOpen ? Style.mobileMain : Style.main}`}>
 
         {!isMobile && <div className= {Style.logo }>
@@ -187,7 +187,7 @@ function Navbar() {
         ""
       )}
       
-    </div>
+    </nav>
   );
 }
 

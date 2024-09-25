@@ -4,6 +4,8 @@ import Style from "./ContactForm.module.css";
 import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
 
+import axios from "axios";
+
 function ContactForm() {
   const initialFormData = {
     lastName: "",
@@ -19,6 +21,37 @@ function ContactForm() {
   const [formData, setFormData] = useState(initialFormData);
 
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
+  const URL = 'https://apitest.fracspace.com/api/v1/webApi/submitFormForChannelPartner';
+
+  const PDF_URL = '/channelpartner.pdf'
+
+
+  // // Function to trigger the PDF download
+  // const downloadPDF = () => {
+  //   const link = document.createElement("a");
+  //   link.href = PDF_URL;
+  //   link.download = "Channel_Partner_Registration.pdf"; // Name of the file when downloaded
+  //   document.body.appendChild(link); // Append link to the body
+  //   link.click();
+  //   document.body.removeChild(link); 
+  // };
+
+  const submitContactDetails = async () => {
+    try {
+      const response = await axios.post(URL, formData, {
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": "Fracspace@2024"
+        }
+      });
+
+      // downloadPDF()
+      console.log("response is",response);
+    } catch (error) {
+      console.log("error is", error);
+    }
+  };
 
   // Handle input changes for text fields
   const handleChange = (e) => {
@@ -38,7 +71,9 @@ function ContactForm() {
       return;
     }
 
-    // submitContactDetails();
+    console.log("form data is",formData)
+
+    submitContactDetails();
     setShowSuccessMessage(true);
 
     // alert("Form submitted!");
@@ -72,7 +107,7 @@ function ContactForm() {
               Channel Partner Registration
             </div>
             <div className={Style.contactFormMiniContent}>
-              Fill out the application form below
+              Fill out the registration form below
             </div>
             <div className={Style.formContainer}>
               <form onSubmit={handleSubmit} className={Style.form}>
@@ -144,10 +179,10 @@ function ContactForm() {
                   Submit
                 </button>
 
-                <div className={Style.successMessage}>
-                  Thank you for reaching out! We’ve received your inquiry and
-                  our team is already on it. Expect a response from us shortly.
-                </div>
+              {showSuccessMessage && <div className={Style.successMessage}>
+                We have successfully received your information, and our team will 
+                      get back to you shortly.
+                </div>}
               </form>
             </div>
           </div>

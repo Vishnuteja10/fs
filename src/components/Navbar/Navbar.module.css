@@ -70,8 +70,6 @@ ul li {
   list-style: none;
   color: white;
   position: relative;
-
-  /* border: 1px solid gray; */
 }
 
 .content1 ul {
@@ -88,9 +86,11 @@ ul li {
 }
 
 .navBar {
+
 }
 
 .link {
+
 }
 
 .navBar li::after {
@@ -115,7 +115,7 @@ ul li {
   margin-top: 5vh;
   width: 100vw;
   overflow: hidden;
-  background-color: white;
+  /* background-color: white; */
   /* border: 1px solid gray; */
 }
 
@@ -260,8 +260,11 @@ ul li {
 
 /* CSS for Tablet Screens */
 @media (min-width: 600px) and (max-width: 1034px) {
+
   .main {
-    width: 99vw;
+    width: 110vw;
+    overflow: hidden;
+    /* border: 2px solid green; */
   }
 
   .logo2{
@@ -278,7 +281,15 @@ ul li {
 }
 
   .content {
-    margin-left: 6vw;
+    margin-left: 1vw;
+    /* border: 2px solid gray; */
+  }
+
+  .navBar2{
+    padding-left: -1vw;
+    width: 120vw;
+    overflow: hidden;
+   
   }
 
   .navBar {

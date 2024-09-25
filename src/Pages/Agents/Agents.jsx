@@ -14,6 +14,10 @@ import BottomBanner from '../../components/Agents/BottomBanner/BottomBanner';
 import Footer from '../../components/Footer/Footer';
 import ContactForm from '../../components/Agents/ContactForm/ContactForm';
 
+import { Element } from "react-scroll";
+
+import { Helmet } from 'react-helmet';
+
 
 function Agents() {
 
@@ -39,6 +43,11 @@ function Agents() {
   return (
     <ScrollToTop>
       <div className={Style.main}>
+      <Helmet>
+        <title>Agents | Fracspace</title>
+        <meta name="description" content="Join our team of dedicated agents at Fracspace. We offer a vibrant and collaborative environment for real estate professionals." />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
 
         <AppIconsComponent />
 
@@ -58,17 +67,21 @@ function Agents() {
             <WhyChooseFs />
         </div>
 
-        <div>
+       
+        {/* <div>
             <AgentStories />
-        </div>
-
+        </div> */}
+       
+{/* 
         <div>
             <BottomBanner />
-        </div>
+        </div> */}
 
+        <Element name='agentContactForm'>
         <div>
             <ContactForm />
         </div>
+        </Element>
 
         <div>
             <Footer />

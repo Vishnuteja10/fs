@@ -9,9 +9,9 @@ import { useNavigate } from 'react-router-dom';
 function BannerSection() {
   const navigate = useNavigate()
   return (
-    <div className={Style.main}>
+    <section className={Style.main}>
         <div className={Style.mainContent}>
-            <div className={Style.header}>Need something done? <br></br>We got you covered</div>
+            <h2 className={Style.header}>Need something done? <br></br>We got you covered</h2>
             <div className={Style.content}>All the services you need under one roof, from<br></br> construction to interior design to property management </div>
             <div className={Style.btnContainer}>
             <ScrollLink to="upcomingServices" smooth={true} duration={200}>
@@ -20,7 +20,7 @@ function BannerSection() {
                   <button className={Style.enquire} onClick={()=>navigate('/contact')}>Enquire Now</button>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 
