@@ -100,14 +100,20 @@
 }
 
 
+ 
+
+
 @media (max-width:600px) {
 
-
+  .navbar{
+    padding-top: 10vh;
+    height: 10vh;
+   }
 
 
   .nav{
     padding-top: 8vh;
-    height: 13vh;
+    height: 10vh;
     padding-bottom: 2vh;
     width: 100vw;
   }

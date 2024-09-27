@@ -45,7 +45,7 @@ function Banner() {
     };
 
     // Start the animation
-    incrementNumber(100, setFracsSold, 6); // target 100, increment by value
+    incrementNumber(150, setFracsSold, 12); // target 100, increment by value
     incrementNumber(15, setLocations, 1); // target 15, increment by value
     incrementNumber(30, setRevenue, 2); // target value (to represent 30cr+), increment by value
   }, []);

@@ -386,7 +386,7 @@
 
     .navBar{
         padding-top: 10vh;
-        height: 13vh;
+        height: 10vh;
     }
 
     .header{
@@ -473,6 +473,12 @@
     }
 
 }
+
+@media (max-width:400px) and (max-height:700px){
+    .navBar{
+      height: 12vh;
+    }
+  }
 
 @media (min-width:200px) and (max-width:350px){
 

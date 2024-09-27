@@ -8,7 +8,7 @@ function MainComponent() {
         <h3 className={Style.header}>Welcome to Fracspace <br></br>Your Partner in Real Estate Excellence </h3>
         {/* <p className={Style.subheader}>Join our team of dedicated agents</p> */}
         <div className={Style.imageContainer}>
-            <img  src={img1}></img>
+            <img alt='Real estate Channel Partners Image' loading='lazy' src={img1}></img>
         </div>
     </div>
   )

@@ -81,6 +81,11 @@
     margin-top: -65vh;
   } */
 
+  .navBar{
+    padding-top: 10vh;
+    height: 10vh;
+  }
+
   .appIconsContainer{
     margin-left: 85vw;
 }
@@ -98,6 +103,12 @@
   margin-left: 5.5vw;
 }
 
+}
+
+@media (max-width:400px) and (max-height:700px){
+  .navBar{
+    height: 12vh;
+  }
 }
 
 @media (min-width:200px) and (max-width:330px) {

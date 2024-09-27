@@ -36,6 +36,7 @@
 @media (max-width:600px){
 
     .header{
+        margin-top: 1vh;
         font-size: 24px;
         margin-left: 2vw;
         margin-right: 2vw;

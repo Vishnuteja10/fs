@@ -68,7 +68,7 @@ ul li {
 
 .content ul li {
   list-style: none;
-  color: white;
+  /* color: white; */
   position: relative;
 }
 
@@ -119,6 +119,9 @@ ul li {
   /* border: 1px solid gray; */
 }
 
+
+
+
 .navBar2 li::after {
   content: "";
   position: absolute;
@@ -130,7 +133,9 @@ ul li {
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease; /* Smooth transition */
+ 
 }
+
 
 .navBar2 li:hover::after {
   transform: scaleX(0.9); /* Expand the underline */

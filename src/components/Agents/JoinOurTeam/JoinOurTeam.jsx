@@ -37,7 +37,7 @@ function JoinOurTeam() {
           </div>
 
           <div className={Style.imageContainer}>
-            <img src={img2}></img>
+            <img alt="Agents Image" loading="lazy" src={img2}></img>
           </div>
         </div>
       ) : (
@@ -47,7 +47,7 @@ function JoinOurTeam() {
               Join our team of dedicated agents
             </div>
             <div className={Style.mobileImageContainer}>
-              <img src={img2}></img>
+              <img alt="Agents Image" loading="lazy" src={img2}></img>
             </div>
             <div className={Style.mobileContent}>
               At Fracspace, we believe that exceptional real estate experiences

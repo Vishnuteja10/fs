@@ -37,7 +37,7 @@ export default function AboutFracspace() {
         <div className={Style.imageContainer2}>
           <img src={img2} alt="Fracspace Property Example"></img>
           <div className={Style.imageContent}>
-            <span className={Style.numberContent}>100+ </span>{" "}
+            <span className={Style.numberContent}>150+ </span>{" "}
             <span className={Style.info}>Fracs Sold</span>{" "}
             <span className={Style.numberContent}>15+ </span>{" "}
             <span className={Style.info}>Locations</span>

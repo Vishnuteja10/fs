@@ -148,7 +148,7 @@
     }
 
     .navBar{
-        height: 13vh;
+        height: 10vh;
         padding-top: 10vh;
     }
 
@@ -171,4 +171,10 @@
         padding-top: 1vh;
         margin-left: 0.3vw;
     }
+}
+
+@media (max-width:400px) and (max-height:700px){
+  .navBar{
+    height: 12vh;
+  }
 }

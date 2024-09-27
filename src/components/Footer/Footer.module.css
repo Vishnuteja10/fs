@@ -670,6 +670,13 @@
 }
 
 @media (max-width: 350px) {
+
+  .main{
+    width: 100vw;
+    margin-right: 0vw;
+  }
+
+
   .btnsContainer img {
     width: 6vw;
     height: 3vh;

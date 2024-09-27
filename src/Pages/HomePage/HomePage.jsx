@@ -108,9 +108,9 @@ export default function HomePage() {
         <Testimonials />
       </div>
 
-      <div>
+      {/* <div>
          <Reviews />
-      </div>
+      </div> */}
 
       <div>
         <DownloadApp />
