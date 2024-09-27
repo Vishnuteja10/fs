@@ -13,21 +13,21 @@ function UpComingServices() {
 
 
   return (
-    <div className={Style.main}>
-        <div className={Style.header}>Coming Soon</div>
+    <section className={Style.main}>
+        <h1 className={Style.header}>Coming Soon</h1>
         <div className={Style.services}>
 
-            <div className={Style.serviceContainer1}>
-                 <div className={Style.serviceName}>Property Management</div>
-            </div>
+            <article className={Style.serviceContainer1}>
+                 <h2 className={Style.serviceName}>Property Management</h2>
+            </article>
 
-            <div className={Style.serviceContainer2}>
-                 <div className={Style.serviceName}>Travel & Accomodation</div>
-            </div>
+            <article className={Style.serviceContainer2}>
+                 <h2 className={Style.serviceName}>Travel & Accomodation</h2>
+            </article>
 
-            <div className={Style.serviceContainer3}>
-                 <div className={Style.serviceName}>Buy-Sell-Rent Properties</div>
-            </div>
+            <article className={Style.serviceContainer3}>
+                 <h2 className={Style.serviceName}>Buy-Sell-Rent Properties</h2>
+            </article>
 
             {/* <div className={Style.serviceContainer1}>
                 <div className={Style.serviceName}>Property Management</div>
@@ -59,7 +59,7 @@ function UpComingServices() {
             <button  onClick={()=>navigate('/services')}>Know More</button>
          </div>
 
-    </div>
+    </section>
   )
 }
 

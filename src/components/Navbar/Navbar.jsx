@@ -10,8 +10,12 @@ import { useMediaQuery } from "react-responsive";
 import logo1 from "../../assets/logo/logo1.png";
 import logo2 from "../../assets/logo/logo2.png";
 
+import { useNavigate } from "react-router-dom";
+
 function Navbar() {
   const isMobile = useMediaQuery({ query: "(max-width: 600px)" });
+
+  const navigate = useNavigate()
 
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -40,11 +44,11 @@ function Navbar() {
   };
 
   return (
-    <div>
+    <nav>
       <div className={`${menuOpen ? Style.mobileMain : Style.main}`}>
 
         {!isMobile && <div className= {Style.logo }>
-          <div>        
+          <div onClick={() => navigate('/')}>        
             {!scrolled && !menuOpen ? (
                <img className={Style.logo2} src={logo2}></img>
             ) : (             
@@ -54,7 +58,7 @@ function Navbar() {
         </div> } 
 
         {isMobile && <div className= {Style.logoMain2 }>
-          <div>        
+          <div onClick={() => navigate('/')}>        
             {!scrolled && !menuOpen ? (
                <img className={Style.logo2} src={logo2}></img>
             ) : (             
@@ -92,6 +96,11 @@ function Navbar() {
                     Contact
                   </Link>
                 </li>
+                <li>
+                  <Link to="/agents" className={Style.link}>
+                    Agents
+                  </Link>
+                </li>
               </ul>
             ) : (
               <ul className={Style.navBar2}>
@@ -118,6 +127,11 @@ function Navbar() {
                 <li>
                   <Link to="/contact" className={Style.link2}>
                     Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/agents" className={Style.link2}>
+                    Agents
                   </Link>
                 </li>
               </ul>
@@ -161,6 +175,11 @@ function Navbar() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link to="/agents" className={Style.link3}>
+                  Agents
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -168,7 +187,7 @@ function Navbar() {
         ""
       )}
       
-    </div>
+    </nav>
   );
 }
 

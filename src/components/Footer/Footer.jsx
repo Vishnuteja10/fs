@@ -46,7 +46,7 @@ function Footer() {
         }
       });
 
-      console.log("response is",response?.data?.success)
+      // console.log("response is",response?.data?.success)
 
       if(response?.data?.success){
 
@@ -76,7 +76,7 @@ function Footer() {
     } else if (!validateEmail(email)) {
       setError("Please enter a valid email address.");
     } else {
-      console.log("Email is:", email);
+      // console.log("Email is:", email);
       // setError("Thanks for subscribing!");
       
       submitEmailDetails() 
@@ -87,9 +87,9 @@ function Footer() {
   return (
     <div className={Style.main}>
       <div className={Style.section1}>
-        <div className={Style.content}>
-        Subscribe to our newsletter! <br></br> to receive  updates and special offers 
-        </div>
+        <h2 className={Style.content}>
+        Subscribe to our newsletter! <br></br> To receive  updates and special offers 
+        </h2>
         <div className={Style.emailContainer}>
           <div>
             <input
@@ -112,7 +112,7 @@ function Footer() {
 
       <div className={Style.section2}>
         <div className={Style.container1}>
-          <div className={Style.header}>Fracspace</div>
+          <h2 className={Style.header}>Fracspace</h2>
           <div className={Style.fracspaceContent}>
             Fracspace offers innovative fractional investment opportunities,
             allowing you to own a share of luxury properties and unique real
@@ -124,18 +124,19 @@ function Footer() {
         <div className={Style.container2}>
           <div className={Style.quickLinks}>
             <div className={Style.header2}>Quick Links</div>
-            <div className={Style.links}>
+            <nav className={Style.links}>
               <div onClick={() => navigate("/")}>Home</div>
               <div onClick={() => navigate("/howitworks")}>How it works</div>
               <div onClick={() => navigate("/services")}>Services</div>
               <div onClick={() => navigate("/meetourteam")}>Our Team</div>
               <div onClick={() => navigate("/contact")}>Contact</div>
+              <div onClick={() => navigate("/agents")}>Agents</div>
               <div onClick={() => navigate("/careers")}>Careers</div>
-            </div>
+            </nav>
           </div>
 
           <div className={Style.addressContainer}>
-            <div className={Style.header2}>Contact Info</div>
+            <h3 className={Style.header2}>Contact Info</h3>
 
             <div className={Style.address}>
               <div><img className={Style.icon} src={addressIcon}></img>136A, Lane No-12</div>
@@ -158,11 +159,11 @@ function Footer() {
         <div className={Style.images}>
 
           <span className={Style.imageContainer} onClick={() => window.open("https://www.instagram.com/fracspace/", "_blank")}>
-            <img src={img1} className={Style.instagramIcon}></img>
+            <img alt="Instagram" src={img1} className={Style.instagramIcon}></img>
           </span>
 
           <span className={Style.imageContainer} onClick={() => window.open("https://m.facebook.com/p/Fracspace-100085853381915/", "_blank")}>
-            <img src={img2} className={Style.facebookIcon}></img>
+            <img alt="Facebook" src={img2} className={Style.facebookIcon}></img>
           </span>
 
           {/* <span className={Style.imageContainer} onClick={() => window.open("https://apps.apple.com/in/app/fracspace/id6498551006", "_blank")}>
@@ -170,7 +171,7 @@ function Footer() {
           </span> */}
 
           <span className={Style.imageContainer} onClick={() => window.open("https://www.youtube.com/@FracspaceLimited", "_blank")}>
-            <img src={img4} className={Style.youtubeIcon}></img>
+            <img alt="Youtube" src={img4} className={Style.youtubeIcon}></img>
           </span>
 
         </div>

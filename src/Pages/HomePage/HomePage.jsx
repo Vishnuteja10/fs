@@ -22,6 +22,8 @@ import { useState, useEffect } from "react";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 import { Element } from "react-scroll";
+import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
+import Reviews from "../../components/Reviews/Reviews";
 
 export default function HomePage() {
   const [scrolled, setScrolled] = useState(false);
@@ -45,8 +47,10 @@ export default function HomePage() {
   return (
     <ScrollToTop>
     <div className={Style.main}>
+
+      <AppIconsComponent />
       
-      <div className={Style.appIconsContainer}>
+      {/* <div className={Style.appIconsContainer}>
 
         <div onClick={() => window.open("https://play.google.com/store/apps/details?id=com.fracspace", "_blank")}>
           <img className={Style.playStore} src={playStore}></img>
@@ -56,11 +60,11 @@ export default function HomePage() {
           <img className={Style.appleStore} src={appleStore}></img>
         </div>
 
-        <div onClick={() => window.open("https://wa.me/9355565604", "_blank")}>
+        <div onClick={() => window.open("https://wa.me/9880626111", "_blank")}>
           <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
         </div>
 
-      </div>
+      </div> */}
 
       {/* <div onClick={() => window.open("https://apps.apple.com/in/app/fracspace/id6498551006", "_blank")}>
           <img className={Style.watsapp} src={watsappImg}></img>
@@ -103,6 +107,10 @@ export default function HomePage() {
       <div>
         <Testimonials />
       </div>
+
+      {/* <div>
+         <Reviews />
+      </div> */}
 
       <div>
         <DownloadApp />

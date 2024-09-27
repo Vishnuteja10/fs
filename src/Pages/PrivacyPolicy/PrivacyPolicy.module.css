@@ -1,5 +1,58 @@
 
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .bounce {
+    animation: bounce 2s infinite;
+  }
+
+  .main{
+   
+  }
+
+  .appIconsContainer{
+      margin-top: 40vh;
+      position: fixed;
+      z-index: 999;
+      margin-left: 92.5vw;
+  }
+
+  .appIconsContainer div{
+     cursor: pointer;
+  }
+
+  .appleStore{
+    margin-top: 15vh;
+    width: 9vw;
+    height: 5vh;
+    transform: rotate(-90deg);
+    z-index: 999;
+  }
+
+  .playStore{
+    width: 9vw;
+    height: 6.5vh;
+    transform: rotate(-90deg);
+    z-index: 999;
+  }
+
+  .watsapp{
+    margin-top: 10vh;
+     width: 2.5vw;
+     height: 5vh;
+     z-index: 999;
+     margin-left: 3vw;
+  }
 
 
 .navBar{
@@ -10,7 +63,7 @@
 
 .PrivacyPolicy{
     /* margin-top: 20vh; */
-    padding-top: 15vh;
+    padding-top: 20vh;
     padding-left: 5vw;
     padding-right: 5vw;
 }
@@ -66,15 +119,34 @@
     background-color: white;
     width: 100vw;
     height: 16vh; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 
 
 @media(max-width:600px){
 
+    .appIconsContainer{
+        margin-left: 85vw;
+    }
+  
+    .appleStore{
+       width: 20vw;
+    }
+  
+    .playStore{
+       width: 20vw;
+    }
+  
+    
+    .watsapp{
+      width: 8vw;
+      margin-left: 5.5vw;
+    }
+
     .navBar{
         padding-top: 10vh;
-        height: 13vh;
+        height: 10vh;
     }
 
     .mainHeader{
@@ -103,3 +175,9 @@
 
 
 }
+
+@media (max-width:400px) and (max-height:700px){
+    .navBar{
+      height: 12vh;
+    }
+  }

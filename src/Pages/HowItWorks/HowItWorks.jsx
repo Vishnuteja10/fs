@@ -16,14 +16,25 @@ import playStore from "../../assets/appImages/playstore.png";
 import appleStore from "../../assets/appImages/apple-store.png";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
+import { Helmet } from "react-helmet";
+
 import watsappImg from '../../assets/appImages/watsapp.png'
+import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
 
 function HowItWorks() {
   return (
     <ScrollToTop>
     <div>
+
+    <Helmet>
+        <title>How It Works | Fracspace</title>
+        <meta name="description" content="Discover how Fracspace works for you. Explore our step-by-step guide to seamless property management and services." />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
+      <AppIconsComponent />
       
-      <div className={Style.appIconsContainer} >
+      {/* <div className={Style.appIconsContainer} >
         <div onClick={() => window.open("https://play.google.com/store/apps/details?id=com.fracspace", "_blank")}>
           <img className={Style.playStore} src={playStore}></img>
         </div>
@@ -32,12 +43,12 @@ function HowItWorks() {
           <img className={Style.appleStore} src={appleStore}></img>
         </div>
 
-        <div onClick={() => window.open("https://wa.me/9355565604", "_blank")}>
+        <div onClick={() => window.open("https://wa.me/9880626111", "_blank")}>
           <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
-        </div>
+        </div> 
 
 
-      </div>
+      </div> */}
 
       <div className={Style.navbar}>
         <Navbar2 />

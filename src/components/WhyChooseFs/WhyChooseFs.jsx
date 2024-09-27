@@ -10,29 +10,29 @@ import img6 from '../../assets/WhyChooseFs/img6.png';
 
 function WhyChooseFs() {
   return (
-    <div className={Style.main}>
-      <div className={Style.header}>Why Choose <span className={Style.headerHighlight}>Fracspace</span>?</div>
+    <section className={Style.main}>
+      <h1 className={Style.header}>Why Choose <span className={Style.headerHighlight}>Fracspace</span>?</h1>
       <div className={Style.container}>
 
-        <div className={Style.chooseFs}>
+        <article className={Style.chooseFs}>
           <div className={Style.vectorContainer}>
             <div className={Style.imgContainer}>
-              <img src={img1}></img>
+              <img src={img1} alt="Risk-free investment with 8% minimum returns" ></img>
             </div>
           </div>
-          <div className={Style.headerContent}>Risk Free</div>
+          <h2 className={Style.headerContent}>Risk Free</h2>
           <div className={Style.content}>8% minimum returns</div>
-        </div>
+        </article>
 
-        <div className={Style.chooseFs}>
+        <article className={Style.chooseFs}>
           <div className={Style.vectorContainer}>
             <div className={Style.imgContainer}>
-              <img src={img2}></img>
+              <img src={img2}  alt="Hassle-free property management by Fracspace"></img>
             </div>
           </div>
-          <div className={Style.headerContent}>Hassle Free</div>
+          <h2 className={Style.headerContent}>Hassle Free</h2>
           <div className={Style.content}>Property management by fracspace</div>
-        </div>
+        </article>
 
         {/* <div className={Style.chooseFs}>
           <div className={Style.vectorContainer}>
@@ -54,30 +54,30 @@ function WhyChooseFs() {
           <div className={Style.content}>Fractions starting from 10 lakhs</div>
         </div> */}
 
-        <div className={Style.chooseFs}>
+        <article className={Style.chooseFs}>
           <div className={Style.vectorContainer}>
             <div className={Style.imgContainer}>
-              <img src={img5}></img>
+              <img src={img5}  alt="Earn 6% Bank Rate of Interest until possession"></img>
             </div>
           </div>
-          <div className={Style.headerContent}>Earn BROI </div>
+          <h2 className={Style.headerContent}>Earn BROI </h2>
           <div className={Style.content}>Earn 6% Bank-Rate-Of-Interest until possession</div>
-        </div>
+        </article>
 
-        <div className={Style.chooseFs}>
+        <article className={Style.chooseFs}>
           <div className={Style.vectorContainer}>
             <div className={Style.imgContainer}>
-              <img src={img6}></img>
+              <img src={img6} alt="Enjoy complementary stays and benefits on your property" ></img>
             </div>
           </div>
-          <div className={Style.headerContent}>Complementary Stays</div>
+          <h2 className={Style.headerContent}>Complementary Stays</h2>
           <div className={Style.content}>Enjoy complementary stays and 
             benefits on your property
           </div>
-        </div>
+        </article>
 
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -14,13 +14,24 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 import watsappImg from '../../assets/appImages/watsapp.png'
 
 import { Element } from "react-scroll";
+import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
+
+import { Helmet } from "react-helmet";
 
 function Services() {
   return (
     <ScrollToTop>
     <div className={Style.main}>
+
+    <Helmet>
+        <title>Our Services | Fracspace</title>
+        <meta name="description" content="Explore the range of services offered by Fracspace including construction, interior design, and property management." />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
+      <AppIconsComponent />
       
-      <div className={Style.appIconsContainer}>
+      {/* <div className={Style.appIconsContainer}>
         <div onClick={() => window.open("https://play.google.com/store/apps/details?id=com.fracspace", "_blank")}>
           <img className={Style.playStore} src={playStore}></img>
         </div>
@@ -32,9 +43,7 @@ function Services() {
         <div onClick={() => window.open("https://wa.me/9355565604", "_blank")}>
           <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
         </div>
-
-
-      </div>
+      </div> */}
 
       <div className={Style.navBar}>
         <Navbar2 />

@@ -8,7 +8,7 @@ function HowFsWorks() {
   const isMobile = useMediaQuery({ query: "(max-width: 600px)" });
 
   return (
-    <div className={Style.main1}>
+    <section className={Style.main1}>
       {!isMobile ? (
         <div className={Style.main}>
           {/* <div className={Style.videoContainer}>
@@ -19,9 +19,9 @@ function HowFsWorks() {
             ></video>
           </div> */}
           <div className={Style.contentContainer}>
-            <div className={Style.header}>
+            <h2 className={Style.header}>
               How does <span className={Style.name}>Fracspace</span> Work ?
-            </div>
+            </h2>
 
             <div className={Style.videoContainer}>
               <video
@@ -44,9 +44,9 @@ function HowFsWorks() {
       ) : (
         <div className={Style.main2}>
           <div className={Style.contentContainer}>
-            <div className={Style.header}>
+            <h2 className={Style.header}>
               How does <span className={Style.name}>Fracspace</span> Work?
-            </div>
+            </h2>
             <div className={Style.content}>
               <span className={Style.fracspaceContent}> </span>Fracspace is the
               premier event for luxury real brought to you by Fracspace. 
@@ -61,7 +61,7 @@ function HowFsWorks() {
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 }
 

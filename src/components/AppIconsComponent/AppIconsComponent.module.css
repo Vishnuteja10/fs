@@ -1,0 +1,268 @@
+
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .bounce {
+    animation: bounce 2s infinite;
+  }
+
+  .appIconsContainer{
+    margin-top: 40vh;
+    position: fixed;
+    z-index: 1000;
+    margin-left: 92.5vw;
+}
+
+.appleStore{
+    margin-top: 15vh;
+    width: 9vw;
+    height: 5vh;
+    transform: rotate(-90deg);
+    z-index: 999;
+  }
+
+  .playStore{
+    width: 9vw;
+    height: 6.5vh;
+    transform: rotate(-90deg);
+    z-index: 999;
+  }
+
+  .watsapp{
+    margin-top: 10vh;
+     width: 2.5vw;
+     height: 5vh;
+     z-index: 999;
+     margin-left: 3vw;
+  }
+
+
+  /* css for smaller tabs */
+@media (min-width:600px) and (max-width:800px) and (min-height:920px) and (max-height:1280px){
+ 
+  
+  .appIconsContainer{
+    margin-left: 30vw;
+    /* border: 2px solid green; */
+}
+
+
+}
+
+  
+
+@media (max-width:600px) {
+
+
+
+
+    .nav{
+      padding-top: 8vh;
+      height: 13vh;
+      padding-bottom: 2vh;
+      width: 100vw;
+    }
+  
+    .appIconsContainer{
+        margin-left: 85vw;
+    }
+  
+    .appleStore{
+       width: 20vw;
+       /* border: 2px solid green; */
+    }
+  
+    .playStore{
+       width: 20vw;
+    }
+  
+    
+    .watsapp{
+      width: 8vw;
+      margin-left: 5.5vw;
+    }
+  }
+  
+  @media (min-width:600px) and (max-width:1200px){
+  
+    .appIconsContainer{
+      margin-left: 92vw;
+    }
+  
+  }
+  
+  @media (min-width:200px) and (max-width:330px) {
+  
+    .appIconsContainer{
+      margin-left: 80vw;
+  }
+  
+  
+    .appleStore{
+      width: 25vw;
+    
+   }
+  
+   .playStore{
+      width: 25vw;
+   }
+  
+   .watsapp{
+    width: 8vw;
+    margin-left: 8vw;
+  }
+  
+  
+  }
+  
+  /* samsung z fold */
+  @media (min-width:340px) and (max-width:385px) and (min-height:810px) and (max-height:890px){
+  
+    .appIconsContainer{
+      margin-left: 78vw;
+      margin-top: 20vh;
+  }
+  
+  
+    .appleStore{
+      width: 31vw;
+      height: 4vh;
+    
+   }
+  
+   .playStore{
+      width: 31vw;
+      height: 5vh;
+      /* border: 2px solid green; */
+   }
+  
+   .watsapp{
+    width: 10vw;
+    margin-left: 9vw;
+  }
+  
+  }
+
+  @media (min-width:360px) and (max-width:430px) and (min-height:840px) and (max-height:980px){
+
+    .appIconsContainer{
+      margin-left: 78vw;
+      margin-top: 30vh;
+  }
+
+    .appleStore{
+      width: 32vw;
+      height: 4vh;
+      /* border: 2px solid green; */
+   }
+  
+   .playStore{
+      width: 32vw;
+      height: 5vh;
+   }
+
+   .watsapp{
+    width: 10vw;
+    margin-left: 10vw;
+  }
+
+
+  }
+
+
+  @media (min-width:350px) and (max-width:400px) and (min-height:600px) and (max-height:830px){
+
+    .appIconsContainer{
+      margin-left: 79vw;
+      margin-top: 30vh;
+  }
+  
+  
+    .appleStore{
+      width: 30vw;
+      height: 5vh;
+    
+   }
+  
+   .playStore{
+      width: 30vw;
+      height: 6.5vh;
+      /* border: 2px solid green; */
+   }
+  
+   .watsapp{
+    width: 10vw;
+    margin-left: 9vw;
+  }
+
+  }
+
+  
+  /* css for smaller tabs */
+@media (min-width:600px) and (max-width:840px) and (min-height:920px) and (max-height:1280px){
+ 
+  
+  .appIconsContainer{
+    margin-left: 85vw;
+    margin-top: 30vh;
+    /* border: 2px solid green; */
+}
+
+.appleStore{
+  width: 20vw;
+  height: 4vh;
+
+}
+
+.playStore{
+  width: 20vw;
+  height: 5.5vh;
+  /* border: 2px solid green; */
+}
+
+.watsapp{
+width: 6vw;
+margin-left: 7vw;
+}
+
+}
+
+/* css for small tabs */
+@media (min-width:768px) and (max-width:1025px) and (min-height:1024px) and (max-height:1366px){
+
+  
+  .appIconsContainer{
+    margin-left: 85vw;
+    margin-top: 30vh;
+    /* border: 2px solid green; */
+}
+
+.appleStore{
+  width: 20vw;
+  height: 4vh;
+
+}
+
+.playStore{
+  width: 20vw;
+  height: 5.5vh;
+  /* border: 2px solid green; */
+}
+
+.watsapp{
+width: 6vw;
+margin-left: 7vw;
+}
+
+}

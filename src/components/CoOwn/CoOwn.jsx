@@ -9,9 +9,11 @@ function CoOwn() {
 
 
   return (
-    <div className={Style.main}>
+    <section className={Style.main}>
       {/* <div className={Style.header}>  Invest In Fractional Ownership</div> */}
-      <div className={Style.header}>The concept of Co-ownership</div>
+      <header>
+      <h1 className={Style.header}>The concept of Co-ownership</h1>
+      </header>
      {!isMobile ?<div className={Style.imagesContainer}>
         <div className={Style.image1}></div>
         <div className={Style.image2}>
@@ -23,7 +25,7 @@ function CoOwn() {
           <div className={Style.content}>Invest in a fraction of revenue-generating real estate and receive dividends.</div>
         </div>
       </div> } 
-    </div>
+    </section>
   );
 }
 

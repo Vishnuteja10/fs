@@ -131,6 +131,24 @@
      background-color: #021265;
 }
 
+/* css for smaller tabs */
+@media (min-width:600px) and (max-width:840px) and (min-height:920px) and (max-height:1280px){
+
+    .serviceContainer1{
+         height: 30vh;
+    }
+
+    .serviceContainer2{
+         height: 30vh;
+    }
+
+    .serviceContainer3{
+        height: 30vh;
+    }
+
+
+}
+
 @media(max-width:600px){
 
     .header{

@@ -1,5 +1,6 @@
 .main {
   padding-top: 18vh;
+  padding-bottom: 10vh;
   padding-left: 4vw;
   padding-right: 4vw;
   background-color: #F7F7F7;
@@ -17,6 +18,15 @@
   display: flex;
   overflow: scroll;
   padding-bottom: 5vh;
+}
+
+.newsImage img{
+  width: auto;
+  height: 5rem;
+}
+
+.newsImage{
+  margin-left: 6vw;
 }
 
 .newsContainer div {
@@ -75,6 +85,25 @@
 
 @media (max-width:600px){
 
+  .main{
+    padding-top: 8vh;
+    padding-bottom: 6vh;
+  }
+
+  .newsContainer{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .newsImage img{
+    width: auto;
+    height: 3rem;
+  }
+
+  .newsImage{
+     margin-left: 10vw;
+  }
+
   .header{
     font-size: 24px;
   }
@@ -96,6 +125,18 @@
 }
 
 @media (min-width:200px) and (max-width:270px){
+
+     
+  .main{
+    padding-top: 8vh;
+    padding-bottom: 6vh;
+  }
+
+  .newsContainer{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
       .card{
         width: 80vw;
         height: 50vh;
@@ -115,6 +156,18 @@
 }
 
 @media (min-width:270px) and (max-width:400px){
+
+  
+  .main{
+    padding-top: 8vh;
+    padding-bottom: 6vh;
+  }
+
+  .newsContainer{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
   .card{
     width: 80vw;
     height: 45vh;
@@ -129,7 +182,10 @@
 }
 
  .readMore{
-    font-size: 14px;
+    font-size: 13px;
+    /* padding-bottom: 1vh; */
   }
+
+
 
 }

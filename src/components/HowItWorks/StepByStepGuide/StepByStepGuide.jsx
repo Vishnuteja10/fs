@@ -9,18 +9,18 @@ import Manage from '../../../assets/HowItWorks/Manage.png';
 
 function StepByStepGuide() {
   return (
-    <div className={Style.main}>
+    <section className={Style.main}>
       {/* <div className={Style.header}>Step By Step Guide With <span className={Style.name}>Fracspace</span></div> */}
       <div className={Style.howItWorks}>
 
         <div className={Style.content}>
-          <div className={Style.contentHeader}>How to co-own a property?</div>
+          <h2 className={Style.contentHeader}>How to co-own a property?</h2>
           {/* <div className={Style.description}>Discover how fracspace works</div> */}
         </div>
 
         <div className={Style.itemsContainer}>
 
-                 <div className={Style.item}>
+                 <article className={Style.item}>
                     <div className={Style.number}>
                         1
                     </div>
@@ -31,9 +31,9 @@ function StepByStepGuide() {
                         <div className={Style.itemHeader}>Browse</div>
                         <div className={Style.itemContent}>Explore properties through our app.</div>
                      </div>
-                 </div>
+                 </article>
 
-                 <div className={Style.item}>
+                 <article className={Style.item}>
                  <div className={Style.number}>
                         2
                     </div>
@@ -44,9 +44,9 @@ function StepByStepGuide() {
                         <div className={Style.itemHeader}>Consult</div>
                         <div className={Style.itemContent}>Get Investment advice from our experts.</div>
                      </div>
-                 </div>
+                 </article>
 
-                 <div className={Style.item}>
+                 <article className={Style.item}>
                  <div className={Style.number}>
                         3
                     </div>
@@ -57,9 +57,9 @@ function StepByStepGuide() {
                         <div className={Style.itemHeader}>Invest</div>
                         <div className={Style.itemContent}>Invest and start earning from day one.</div>
                      </div>
-                 </div>
+                 </article>
 
-                 <div className={Style.item}>
+                 <article className={Style.item}>
                  <div className={Style.number}>
                         4
                     </div>
@@ -70,12 +70,12 @@ function StepByStepGuide() {
                         <div className={Style.itemHeader}>Manage</div>
                         <div className={Style.itemContent}>Track your investment growth within our app.</div>
                      </div>
-                 </div>
+                 </article>
 
         </div>
 
       </div>
-    </div>
+    </section>
   );
 }
 

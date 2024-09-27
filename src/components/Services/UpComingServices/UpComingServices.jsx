@@ -9,8 +9,8 @@ function UpComingServices() {
     const [selected,setSelected] = useState('construction') 
 
   return (
-    <div className={Style.main}>
-        <div className={Style.header}>Comming Soon</div>
+    <section className={Style.main}>
+        <h2 className={Style.header}>Coming Soon</h2>
         <div className={Style.services}>
             {/* <div onClick={()=>setSelected('interior')} className={selected== 'interior' ? Style.selected : Style.interior}>Interior Designing</div> */}
             <div onClick={()=>setSelected('construction')} className={ selected=='construction' ? Style.selected : Style.construction}>Construction/Interior Design</div>
@@ -23,7 +23,7 @@ function UpComingServices() {
                {selected == 'professionalServices' && <ProfessionalServices />}
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

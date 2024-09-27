@@ -1,0 +1,126 @@
+
+.container{
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+}
+
+
+.main{
+    display: flex;
+    width: 80vw;
+    /* margin-left: 5vw;
+    margin-right: 5vw; */
+}
+
+.imageContainer img{
+    width: 30vw;
+    height: 50vh;
+}
+
+.rightContainer{
+    margin-left: 3vw;
+}
+
+.contentContainer{
+    margin-top: 2vh;
+    font-size: 2rem;
+    font-family: 'Poppins';
+}
+
+.detailsContainer{
+    margin-top: 2vh;
+}
+
+
+.arrowContainer{
+    margin-left: 45vw;
+    display: flex;
+    align-items: center;
+}
+
+.leftArrowContainer{
+    border: 1px solid gray;
+    width: 5vw;
+    height: 8vh;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.leftArrowContainer img{
+    height: 3vh;
+    width: 2vw;
+}
+
+.leftArrowContainer:hover{
+    background-color: rgba(14, 37, 159, 1);
+}
+
+.leftArrowContainer:hover img{
+    content: url('../../../assets/Agents/left-arrow-2.png');
+}
+
+.rightArrowContainer{
+    margin-left: 3vw;
+    border: 1px solid gray;
+    width: 5vw;
+    height: 8vh;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* background-color: rgba(14, 37, 159, 1); */
+}
+
+
+.rightArrowContainer img{
+    height: 3vh;
+    width: 2vw;
+}
+
+
+.rightArrowContainer:hover{
+    background-color: rgba(14, 37, 159, 1);
+}
+
+.rightArrowContainer:hover img{
+    content: url('../../../assets/Agents/right-arrow.png');
+}
+
+@media (max-width:600px){
+
+    .header{
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .main{
+        display: block;
+    }
+
+    .imageContainer{
+        margin-top: 2vh;
+    }
+
+    .imageContainer img{
+        object-fit: contain;
+        height: auto;
+        width: 80vw;
+    }
+
+    .contentContainer{
+        font-size: 18px;
+        width: 80vw;
+    }
+
+    .name{
+        font-weight: 600;
+    }
+
+    .role{
+        font-weight: 600;
+    }
+}

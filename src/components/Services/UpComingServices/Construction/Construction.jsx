@@ -16,57 +16,57 @@ import Resorts1 from "../../../../assets/NewServices/construction/resort.jpeg";
 
 function Construction() {
   return (
-    <div className={Style.main}>
+    <section className={Style.main}>
       <div className={Style.container}>
 
-        <div className={Style.itemContainer}>
+        <article className={Style.itemContainer}>
           <div className={Style.contentContainer}>
             <div className={Style.item}>
-              <img src={apartment}></img>
+              <img src={apartment} alt="apartment" ></img>
             </div>
             <div className={Style.content}>Apartments</div>
           </div>
-        </div>
+        </article>
 
-        <div className={Style.itemContainer}>
+        <article className={Style.itemContainer}>
           <div className={Style.contentContainer}>
             <div className={Style.item}>
-              <img src={Resorts}></img>
+              <img src={Resorts} alt="resort"></img>
             </div>
             <div className={Style.content}>Resorts</div>
           </div>
-        </div>
+        </article>
 
-        <div className={Style.itemContainer}>
+        <article className={Style.itemContainer}>
           <div className={Style.contentContainer}>
             <div className={Style.item}>
-              <img src={GatedVillas}></img>
+              <img src={GatedVillas} alt="Gated villas"></img>
             </div>
             <div className={Style.content}>Gated Villas</div>
           </div>
-        </div>
+        </article>
 
       </div>
 
       <div className={Style.container2}>
 
-        <div className={Style.itemContainer}>
+        <article className={Style.itemContainer}>
           <div className={Style.contentContainer}>
             <div className={Style.item}>
-              <img src={commercialBuildings}></img>
+              <img src={commercialBuildings} alt="commercial buildings"></img>
             </div>
             <div className={Style.content}>Commercial Buildings</div>
           </div>
-        </div>
+        </article>
 
-        <div className={Style.itemContainer}>
+        <article className={Style.itemContainer}>
           <div className={Style.contentContainer}>
             <div className={Style.item}>
-              <img src={ResidentialHouses}></img>
+              <img src={ResidentialHouses} alt="residential building"></img>
             </div>
             <div className={Style.content}>Residential Houses</div>
           </div>
-        </div>
+        </article>
 
       </div>
 
@@ -79,7 +79,7 @@ function Construction() {
         </div>
 
       </div> */}
-    </div>
+    </section>
   );
 }
 

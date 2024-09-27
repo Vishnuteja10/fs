@@ -14,6 +14,7 @@ import Services from './Pages/Services/Services.jsx'
 import ContactUs from './Pages/ContactUs/ContactUs.jsx'
 import MeetOurTeam from './Pages/MeetOurTeam/MeetOurTeam.jsx'
 import Careers from './Pages/Careers/Careers.jsx'
+import Agents from './Pages/Agents/Agents.jsx'
 
 const router = createBrowserRouter([
      {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
      {
       path:'/careers',
       element:<Careers />
+     },
+     {
+      path:'/agents',
+      element:<Agents />
      }
 ])
 

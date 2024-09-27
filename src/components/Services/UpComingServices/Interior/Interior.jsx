@@ -33,84 +33,84 @@ import WallDesign from '../../../../assets/UpComingServices/Interior/WallDesign.
 
 function Interior() {
   return (
-    <div className={Style.main}>
+    <section className={Style.main}>
 
       <div className={Style.container}>
 
-        <div className={Style.itemContainer}>
+        <article className={Style.itemContainer}>
           <div className={Style.contentContainer}>
             <div className={Style.item}>
-              <img src={Lighting}></img>
+              <img src={Lighting} alt="lighting"></img>
             </div>
             <div className={Style.content}>Lighting</div>
           </div>
-        </div>
+        </article>
 
-        <div className={Style.itemContainer}>
+        <article className={Style.itemContainer}>
           <div className={Style.contentContainer}>
             <div className={Style.item}>
-              <img src={furniture}></img>
+              <img src={furniture} alt="furniture"></img>
             </div>
             <div className={Style.content}>Furniture</div>
           </div>
-        </div>
+        </article>
 
-        <div className={Style.itemContainer}>
+        <article className={Style.itemContainer}>
           <div className={Style.contentContainer}>
             <div className={Style.item}>
-              <img src={WallDesign}></img>
+              <img src={WallDesign} alt="wall design"></img>
             </div>
             <div className={Style.content}>Wall Design</div>
           </div>
-        </div>
+        </article>
 
       </div>
 
       <div className={Style.container2}>
 
-        <div className={Style.itemContainer}>
+        <article className={Style.itemContainer}>
           <div className={Style.contentContainer}>
             <div className={Style.item}>
-              <img src={fallCeiling}></img>
+              <img src={fallCeiling} alt="fall ceiling"></img>
             </div>
             <div className={Style.content}>Fall Ceiling</div>
           </div>
-        </div>
+        </article>
 
-        <div className={Style.itemContainer}>
+        <article className={Style.itemContainer}>
           <div className={Style.contentContainer}>
             <div className={Style.item}>
-              <img src={kitchenDesign}></img>
+              <img src={kitchenDesign} alt="kitchen design"></img>
             </div>
             <div className={Style.content}>Kitchen Designs</div>
           </div>
-        </div>
+        </article>
 
-        <div className={Style.itemContainer}>
+        <article className={Style.itemContainer}>
           <div className={Style.contentContainer}>
             <div className={Style.item}>
-              <img src={bathroomDesign}></img>
+              <img src={bathroomDesign} alt="Bathroom designs"></img>
             </div>
             <div className={Style.content}>Bathroom Designs</div>
           </div>
-        </div>
+        </article>
 
       </div>
 
       <div className={Style.container3}>
 
-        <div className={Style.itemContainer}>
+        <article className={Style.itemContainer}>
           <div className={Style.contentContainer}>
             <div className={Style.item}>
-              <img src={kidsRoomDesign}></img>
+              <img src={kidsRoomDesign} alt="kids room design"></img>
             </div>
             <div className={Style.content}>Kids Room Design</div>
           </div>
-        </div>
+        </article>
 
       </div>
 
-    </div>
+    </section>
   );
 }
 

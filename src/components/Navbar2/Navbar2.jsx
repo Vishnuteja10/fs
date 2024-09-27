@@ -6,10 +6,14 @@ import logo1 from "../../assets/logo/logo1.png";
 import { useMediaQuery } from "react-responsive";
 import { faL } from "@fortawesome/free-solid-svg-icons";
 
+import { useNavigate } from "react-router-dom";
+
 function Navbar2() {
   const isMobile = useMediaQuery({ query: "(max-width: 600px)" });
 
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const navigate = useNavigate()
 
   const toggleMenu = (e) => {
     e.preventDefault();
@@ -23,7 +27,7 @@ function Navbar2() {
         <div className={Style.main}>
 
           <div className={Style.logo}>
-            <div>
+            <div onClick={() => navigate('/')}>
               <img className={Style.logo1} src={logo1}></img>
             </div>
           </div>
@@ -55,6 +59,11 @@ function Navbar2() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link to="/agents" className={Style.link2}>
+                  Agents
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -62,7 +71,7 @@ function Navbar2() {
         <div className={Style.main}>
 
           <div className={Style.logo}>
-            <div>
+            <div onClick={() => navigate('/')}>
               <img className={Style.logo1} src={logo1}></img>
             </div>
           </div>
@@ -101,6 +110,11 @@ function Navbar2() {
               <li>
                 <Link to="/contact" className={Style.link2}>
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link to="/agents" className={Style.link2}>
+                  Agents
                 </Link>
               </li>
             </ul>

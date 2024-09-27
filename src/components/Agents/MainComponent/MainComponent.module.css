@@ -1,0 +1,53 @@
+
+
+.header{
+    margin-top: 2vh;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.subheader{
+    margin-top: 2vh;
+    font-size: 1.3rem;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.imageContainer{
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageContainer img{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 85vw;
+    height: auto;
+    object-fit: contain;
+    text-align: center;
+}
+
+@media (max-width:600px){
+
+    .header{
+        margin-top: 1vh;
+        font-size: 24px;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-family: 'Montserrat';
+    }
+
+    .subheader{
+        font-size: 20px;
+    }
+
+    .main{
+        margin-bottom: 5vh;
+    }
+}

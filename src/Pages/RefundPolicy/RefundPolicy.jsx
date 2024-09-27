@@ -4,15 +4,58 @@ import Style from "./RefundPolicy.module.css";
 
 import Footer from "../../components/Footer/Footer";
 
-import playStore from "../../assets/appImages/playstore.png";
-import appleStore from "../../assets/appImages/apple-store.png";
+// import playStore from "../../assets/appImages/playstore.png";
+// import appleStore from "../../assets/appImages/apple-store.png";
+
 import Navbar2 from "../../components/Navbar2/Navbar2";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
+
+import playStore from "../../assets/appImages/playstore.png";
+import appleStore from "../../assets/appImages/apple-store.png";
+
+import watsappImg from "../../assets/appImages/watsapp.png";
+import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
 
 function RefundPolicy() {
   return (
     <ScrollToTop>
     <div className={Style.main}>
+
+      <AppIconsComponent />
+
+    {/* <div className={Style.appIconsContainer}>
+          <div
+            onClick={() =>
+              window.open(
+                "https://play.google.com/store/apps/details?id=com.fracspace",
+                "_blank"
+              )
+            }
+          >
+            <img className={Style.playStore} src={playStore}></img>
+          </div>
+
+          <div
+            onClick={() =>
+              window.open(
+                "https://apps.apple.com/in/app/fracspace/id6498551006",
+                "_blank"
+              )
+            }
+          >
+            <img className={Style.appleStore} src={appleStore}></img>
+          </div>
+
+          <div
+            onClick={() => window.open("https://wa.me/9880626111", "_blank")}
+          >
+            <img
+              className={`${Style.watsapp} ${Style.bounce}`}
+              src={watsappImg}
+            ></img>
+          </div>
+        </div> */}
+
        <div className={Style.navBar}>
            <Navbar2 />
        </div>

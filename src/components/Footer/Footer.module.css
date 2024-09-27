@@ -526,6 +526,10 @@
 
 @media (max-width: 600px) {
 
+  .icon{
+    width: 4vw;
+  }
+
   .main {
 
     width: 100vw;
@@ -619,7 +623,7 @@
   }
 
   .getApp{
-    width: 30vw;
+    width: 50vw;
   }
 
   .btnsContainer .btn {
@@ -666,6 +670,13 @@
 }
 
 @media (max-width: 350px) {
+
+  .main{
+    width: 100vw;
+    margin-right: 0vw;
+  }
+
+
   .btnsContainer img {
     width: 6vw;
     height: 3vh;
