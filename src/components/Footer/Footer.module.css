@@ -667,7 +667,9 @@
     margin-top: 1vh;
     cursor: pointer;
   }
-}
+}  
+
+
 
 @media (max-width: 350px) {
 

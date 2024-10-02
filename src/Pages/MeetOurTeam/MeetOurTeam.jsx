@@ -279,24 +279,6 @@ export default function MeetOurTeam() {
               <div className={Style.role}>Graphic Designer</div>
             </article>
 
-            
-            <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={siddharthImg}></img>
-              <div
-                className={Style.linkedInContainer}
-                onClick={() =>
-                  window.open(
-                    "",
-                    "_blank"
-                  )
-                }
-              >
-                <img src={linkedIn}></img>
-              </div>
-              <div className={Style.name}>Siddharth</div>
-              <div className={Style.role}>Hospitality Sales</div>
-            </article>
-
           </div>
         </section>
 
@@ -411,7 +393,7 @@ export default function MeetOurTeam() {
                 className={Style.linkedInContainer}
                 onClick={() =>
                   window.open(
-                    "",
+                    "https://www.linkedin.com/in/thanikal-jovin-varghese-6bbb10305/",
                     "_blank"
                   )
                 }
@@ -534,6 +516,23 @@ export default function MeetOurTeam() {
               <div className={Style.role}>Hospitality Sales</div>
             </article>
 
+            <article className={Style.itemOne}>
+              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={siddharthImg}></img>
+              <div
+                className={Style.linkedInContainer}
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/siddharth-sarkar-385132244/",
+                    "_blank"
+                  )
+                }
+              >
+                <img src={linkedIn}></img>
+              </div>
+              <div className={Style.name}>Siddharth</div>
+              <div className={Style.role}>Hospitality Sales</div>
+            </article>
+
           <article className={Style.itemOne}>
               <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={hemanth2Img}></img>
               <div
@@ -546,19 +545,10 @@ export default function MeetOurTeam() {
               <div className={Style.role}>Physiotherapist</div>
             </article>
 
-            <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={lalithImg}></img>
-              {/* <div
-                className={Style.linkedInContainer}
-                onClick={() => window.open(" ", "_blank")}
-              >
-                <img src={linkedIn}></img>
-              </div> */}
-              <div className={Style.name}>Lalith</div>
-              <div className={Style.role}>Front Office</div>
-            </article>
+           
 
             <article className={Style.itemOne}>
+
               <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={mansoorImg}></img>
               {/* <div
                 className={Style.linkedInContainer}
