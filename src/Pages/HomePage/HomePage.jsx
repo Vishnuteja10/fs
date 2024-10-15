@@ -24,6 +24,7 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 import { Element } from "react-scroll";
 import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
 import Reviews from "../../components/Reviews/Reviews";
+import OurPortfolio from "../../components/OurPortfolio/OurPortfolio";
 
 export default function HomePage() {
   const [scrolled, setScrolled] = useState(false);
@@ -80,6 +81,10 @@ export default function HomePage() {
 
       <div>
         <CoOwn />
+      </div>
+
+      <div>
+         <OurPortfolio />
       </div>
 
       <div>

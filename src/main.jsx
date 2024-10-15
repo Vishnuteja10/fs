@@ -15,6 +15,7 @@ import ContactUs from './Pages/ContactUs/ContactUs.jsx'
 import MeetOurTeam from './Pages/MeetOurTeam/MeetOurTeam.jsx'
 import Careers from './Pages/Careers/Careers.jsx'
 import Agents from './Pages/Agents/Agents.jsx'
+import EachProperty from './Pages/EachProperty/EachProperty.jsx'
 
 const router = createBrowserRouter([
      {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
      {
       path:'/agents',
       element:<Agents />
+     },
+     {
+      path:'/eachproperty/:id',
+      element:<EachProperty />
      }
 ])
 

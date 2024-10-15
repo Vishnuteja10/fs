@@ -1,0 +1,329 @@
+
+.main{
+    background-color: #f7f7f7;
+}
+
+.navbar{
+    position: fixed;
+    padding-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    background-color: white;
+    width: 100vw;
+    height: 15vh;
+    margin-top: 0vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+}
+
+.main2{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: #f7f7f7;
+}
+
+.imageCarouselContainer{
+    padding-top: 2vh;
+    width: 90vw;
+    border-radius: 20px;
+}
+
+.header h2{
+    margin-left: 5vw;
+    padding-top: 25vh;
+    font-family: 'Montserrat';
+    margin-bottom: 2vh;
+    font-weight: 600;
+}
+
+.distinctiveAmenities ul{
+    margin: 0;
+    padding: 0;
+}
+
+.distinctiveAmenities ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.amenityImageContainer img{
+    width: 8vw;
+    height: 10vh;
+}
+
+.eachAmenity{
+  text-align: center;
+  width: 12vw;
+  height: 15vh;
+}
+
+.propertyDetailsContainer{
+    display: flex;
+}
+
+.propertyDetails{
+    width: 50vw;
+}
+
+.enquiryFormContainer{
+    width: 50vw;
+}
+
+.enquiryFormContainer {
+    width: 50vw;
+    display: none; /* Initially hidden */
+    position: fixed;
+    
+    top: 15vh;
+    transform: translateX(-50%);
+    z-index: 999;
+    margin-bottom: 15vh;
+}
+
+.visible {
+    top:20%;
+    display: block; /* Show form once it becomes visible */
+    left: 90%;
+}
+
+
+.attributesContainer{
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 3vw;
+    padding-right: 1vw;
+    background-color: white;
+}
+
+
+
+.atrributes{
+    padding-top: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35vw;
+}
+
+.attribute{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+
+.value{
+    /* border: 2px solid green; */
+    /* margin-left: 9vw; */
+    font-family: "Poppins";
+    width:20vw ;
+    /* text-align: center; */
+    /* text-wrap: wrap; */
+}
+
+/* .enquiryFormContainer {
+    position: fixed;
+    left: 50%;
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+} */
+
+.enquiryForm {
+   
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.enquiryForm h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.enquiryForm input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+   
+    font-size: 1rem;
+}
+
+.enquiryForm input:focus {
+    border-color: #6200ea;
+    outline: none;
+}
+
+.enquiryForm button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #6200ea, #9c27b0);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.enquiryForm button:hover {
+    background: linear-gradient(to right, #5b00d2, #8d20a3);
+} 
+
+.locationHighlights{
+    margin-top: 5vh;
+}
+
+.locationHighlights h2{
+    margin-bottom: 4vh;
+}
+
+.propertyImage{
+    object-fit: cover;
+}
+
+.locationItem{
+    /* display: flex;
+    align-items: center; */
+    /* margin-top: 2vh; */
+}
+
+.locationsContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locationItem{
+    margin-bottom: 8vh;
+    width: 18vw;
+    height: 28vh;
+}
+
+.locationItem img{
+    width: 15vw;
+    height: 25vh;
+    border-radius: 10px;
+}
+
+.content{
+    /* margin-left: 2vw; */
+}
+
+.footerContainer{
+    z-index: 1000000;
+}
+
+@media (max-width:600px){
+
+    .header h2{
+        padding-top: 20vh;
+        line-height: 1.5;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .propertyDetailsContainer{
+           display: block;
+    }
+
+    .enquiryFormContainer {
+          display: block;
+          position: relative;
+          transform: none;
+          padding-bottom: 10vw;
+    }
+
+    .visible{
+        left: 5%;
+    }
+
+    .enquiryForm{
+        width: 80vw;
+    }
+
+    .propertyDetails{
+        width: 90vw;
+    }
+
+    .atrributes {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    .value{
+        width: 70vw;
+    }
+
+    .container{
+        padding-left: 3vw;
+    }
+
+    .distinctiveAmenities ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .amenityImageContainer img{
+        width: 25vw;
+        height: 15vh;
+    }
+
+    .eachAmenity{
+      text-align: center;
+      width: 26vw;
+      height: 20vh;
+    }
+
+    .amenityName{
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .locationHighlights{
+        padding-top: 10vh;
+    }
+
+    .locationImageContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content{
+        margin-top: 1vh;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .locationItem{
+        margin-bottom: 8vh;
+        width: 90vw;
+        height: 40vh;
+    }
+    
+    .locationItem img{
+        width: 80vw;
+        height: 35vh;
+        border-radius: 10px;
+    }
+
+}

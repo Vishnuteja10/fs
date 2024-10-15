@@ -19,6 +19,8 @@ import dnsImg from "../../assets/MeetOurTeam/sales/dns.jpeg";
 import prashanthImg from "../../assets/MeetOurTeam/sales/prashanth.jpeg";
 import surajImg from "../../assets/MeetOurTeam/sales/suraj.jpeg";
 import divyaImg from "../../assets/MeetOurTeam/sales/divya.jpeg";
+import rishabImg from '../../assets/MeetOurTeam/sales/rishab.jpeg';
+import shreyaImg from '../../assets/MeetOurTeam/sales/shreya.jpeg'
 
 import dikshaImg from "../../assets/MeetOurTeam/marketing/diksha.jpeg";
 import riaImg from "../../assets/MeetOurTeam/marketing/ria.jpeg";
@@ -37,6 +39,7 @@ import moinImg from "../../assets/MeetOurTeam/construction/moin.jpeg";
 import shivaniImg from "../../assets/MeetOurTeam/construction/shivani.jpeg";
 import tharunImg from "../../assets/MeetOurTeam/construction/tharun.jpeg";
 
+import amulyaImg from '../../assets/MeetOurTeam/hrAndAccounts/amulya.jpeg'
 import akhilaImg from "../../assets/MeetOurTeam/hrAndAccounts/akhila.jpeg";
 import naveenSirImg from "../../assets/MeetOurTeam/hrAndAccounts/naveenSir.jpeg";
 import unnathSirImg from '../../assets/MeetOurTeam/founder/unnathSir.jpeg'
@@ -205,6 +208,23 @@ export default function MeetOurTeam() {
             </article>
 
             <article className={Style.itemOne}>
+              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={rishabImg}></img>
+              <div
+                className={Style.linkedInContainer}
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/rishab-tirunahari-94216a271/",
+                    "_blank"
+                  )
+                }
+              >
+                <img src={linkedIn}></img>
+              </div>
+              <div className={Style.name}>Rishab</div>
+              <div className={Style.role}>Revenue Captain</div>
+            </article>
+
+            <article className={Style.itemOne}>
               <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={prashanthImg}></img>
               <div
                 className={Style.linkedInContainer}
@@ -236,6 +256,23 @@ export default function MeetOurTeam() {
               </div>
               <div className={Style.name}>Suraj</div>
               <div className={Style.role}>Customer Cultivator</div>
+            </article>
+
+            <article className={Style.itemOne}>
+              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={shreyaImg}></img>
+              {/* <div
+                className={Style.linkedInContainer}
+                onClick={() =>
+                  window.open(
+                    "",
+                    "_blank"
+                  )
+                }
+              >
+                <img src={linkedIn}></img>
+              </div> */}
+              <div className={Style.name}>Shreya</div>
+              <div className={Style.role}>Customer Relationship Manager</div>
             </article>
 
           </div>
@@ -481,6 +518,23 @@ export default function MeetOurTeam() {
               </div>
               <div className={Style.name}>Akhila</div>
               <div className={Style.role}>HR Executive</div>
+            </article>
+
+            <article className={Style.itemOne}>
+              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={amulyaImg}></img>
+              <div
+                className={Style.linkedInContainer}
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/amulya-kinthada-067aa9321/",
+                    "_blank"
+                  )
+                }
+              >
+                <img src={linkedIn}></img>
+              </div>
+              <div className={Style.name}>Amulya</div>
+              <div className={Style.role}>Jr HR Executive</div>
             </article>
 
             <article className={Style.itemOne}>
