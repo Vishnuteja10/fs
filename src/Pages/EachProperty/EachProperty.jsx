@@ -29,11 +29,17 @@ function EachProperty() {
 
   const PROPERTY_API = `https://apitest.fracspace.com/api/users/getPropertyDetailsById?_id=${id}`;
 
-  const ENQUIRY_API = 'https://apitest.fracspace.com/api/v1/webApi/enquiryFormRegardingCoownership'
+  const ENQUIRY_API =
+    "https://apitest.fracspace.com/api/v1/webApi/enquiryFormRegardingCoownership";
 
   const initialState = {
-    name:"",email:"",contact:"",countryCode:"",phoneNumber:""
-  }
+    name: "",
+    email: "",
+    contact: "",
+    countryCode: "",
+    phoneNumber: "",
+    agreeToContact: false
+  };
 
   const [formData, setFormData] = useState(initialState);
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -64,9 +70,9 @@ function EachProperty() {
       return;
     }
 
-    submitContactDetails()
+    submitContactDetails();
     setFormSubmitted(true);
-    setFormData(initialState)
+    setFormData(initialState);
     // You can handle the form submission here, e.g., sending data to the server.
   };
 
@@ -127,9 +133,12 @@ function EachProperty() {
       const navbarHeight = document.querySelector(
         `.${Style.navbar}`
       ).offsetHeight;
-  
+
       // If scrolled past the property details section but not reaching the footer, show the form
-      if (scrollTop + navbarHeight >= propertyDetailsSection && scrollTop + window.innerHeight < footerSection) {
+      if (
+        scrollTop + navbarHeight >= propertyDetailsSection &&
+        scrollTop + window.innerHeight < footerSection
+      ) {
         setFormVisible(true);
       } else {
         setFormVisible(false); // Hide form near footer or above property section
@@ -143,145 +152,154 @@ function EachProperty() {
     };
   }, []);
 
-    // UseEffect to hide the thank-you message after 3 seconds
-    useEffect(() => {
-      if (formSubmitted) {
-        const timer = setTimeout(() => {
-          setFormSubmitted(false); // Reset the formSubmitted state after 3 seconds
-        }, 5000);
-  
-        // Cleanup function to clear the timeout if the component unmounts before 3 seconds
-        return () => clearTimeout(timer);
-      }
-    }, [formSubmitted]);
+  // UseEffect to hide the thank-you message after 3 seconds
+  useEffect(() => {
+    if (formSubmitted) {
+      const timer = setTimeout(() => {
+        setFormSubmitted(false); // Reset the formSubmitted state after 3 seconds
+      }, 5000);
+
+      // Cleanup function to clear the timeout if the component unmounts before 3 seconds
+      return () => clearTimeout(timer);
+    }
+  }, [formSubmitted]);
 
   return (
     <ScrollToTop>
-    <div className={Style.main}>
-      <div className={Style.navbar}>
-        <Navbar2 />
-      </div>
-
-      <AppIconsComponent />
-     
-      <div className={Style.main2}>
-        
-        <div className={Style.header}>
-          <h2>{propertyDetails?.name}</h2>
+      <div className={Style.main}>
+        <div className={Style.navbar}>
+          <Navbar2 />
         </div>
 
-        <div className={Style.imageCarouselContainer}>
-          <Carousel width="90vw" swipeable={true} autoPlay={true} infiniteLoop={true} dynamicHeight={true}>
-            {propertyDetails?.image &&
-              Object.values(propertyDetails.image).map((img, index) => (
-                <div key={index}>
-                  <img className={Style.propertyImage} src={img} alt={`Property Image ${index + 1}`} />
-                </div>
-              ))}
-           
-          
-          </Carousel>
-        </div>
+        <AppIconsComponent />
 
-        <div className={Style.propertyDetailsContainer}>
-          <section className={Style.propertyDetails}>
-            <div>
-              <h3>About this property</h3>
-              <p>{propertyDetails?.Description}</p>
-            </div>
+        <div className={Style.main2}>
+          <div className={Style.header}>
+            <h2>{propertyDetails?.name}</h2>
+          </div>
 
-            <div className={Style.attributesContainer}>
-              <div className={Style.container}>
-                <div className={Style.atrributes}>
-                  <span className={Style.attribute}>Attributes</span>{" "}
-                  <span className={Style.value}>
-                    {propertyDetails?.Type} | {propertyDetails?.area}{" "}
-                  </span>
-                </div>
-                <div className={Style.atrributes}>
-                  <span className={Style.attribute}>Location</span>{" "}
-                  <span className={Style.value}>
-                    {propertyDetails?.Location}
-                  </span>
-                </div>
-                <div className={Style.atrributes}>
-                  <span className={Style.attribute}>Total Fracs</span>{" "}
-                  <span className={Style.value}>
-                    {propertyDetails?.TotalFractions}
-                  </span>
-                </div>
-                <div className={Style.atrributes}>
-                  <span className={Style.attribute}>Available Fracs</span>{" "}
-                  <span className={Style.value}>
-                    {propertyDetails?.AvailableFractions}
-                  </span>
-                </div>
-                <div className={Style.atrributes}>
-                  <span className={Style.attribute}>Frac Price</span>{" "}
-                  <span className={Style.value}>
-                  ₹  {propertyDetails?.FC_Price}
-                  </span>
-                </div>
-              </div>
-            </div>
+          <div className={Style.imageCarouselContainer}>
+            <Carousel
+              width="90vw"
+              swipeable={true}
+              autoPlay={true}
+              infiniteLoop={true}
+              dynamicHeight={true}
+            >
+              {propertyDetails?.image &&
+                Object.values(propertyDetails.image).map((img, index) => (
+                  <div key={index}>
+                    <img
+                      className={Style.propertyImage}
+                      src={img}
+                      alt={`Property Image ${index + 1}`}
+                    />
+                  </div>
+                ))}
+            </Carousel>
+          </div>
 
-            <div className={Style.amenitiesContainer}>
-              <h3>Distinctive Amenities</h3>
-              <div className={Style.distinctiveAmenities}>
-                <ul>
-                  {propertyDetails?.DistinctiveAmenities?.map(
-                    (amenity, index) => (
-                      <li key={index} className={Style.eachAmenity}>
-                        <div className={Style.amenityImageContainer}>
-                          <img src={amenity?.image}></img>
-                        </div>
-                        <div className={Style.amenityName}>
-                          {" "}
-                          {amenity?.name}
-                        </div>
-                      </li>
-                    )
-                  )}
-                </ul>
-              </div>
-            </div>
-
-            <div className={Style.locationHighlights}>
-              <h2>Location Highlights</h2>
-              <div className={Style.locationsContainer}>
-              {propertyDetails?.locationHighlights?.map((location,index)=>(
-                <div key={index} className={Style.locationItem}>
-                <div className={Style.locationImageContainer}>
-                   <img src={location?.image}></img>
-                </div>
-                <div className={Style.content}>{location?.name}</div>
-              </div>
-              ))}
-              </div>
-            </div>
-
-           
-
-          </section>
-
-          <section
-            className={`${Style.enquiryFormContainer} ${
-              formVisible ? Style.visible : ""
-            }`}
-          >
-            <article>
+          <div className={Style.propertyDetailsContainer}>
+            <section className={Style.propertyDetails}>
               <div>
-                <form onSubmit={handleSubmit} className={Style.enquiryForm}>
-                  <h2>Enquiry Form</h2>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Enter Your Name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                  />
-                  {/* <input
+                <h3>About this property</h3>
+                <p>{propertyDetails?.Description}</p>
+              </div>
+
+              <div className={Style.attributesContainer}>
+                <div className={Style.container}>
+                  <div className={Style.atrributes}>
+                    <span className={Style.attribute}>Attributes</span>{" "}
+                    <span className={Style.value}>
+                      {propertyDetails?.Type} | {propertyDetails?.area}{" "}
+                    </span>
+                  </div>
+                  <div className={Style.atrributes}>
+                    <span className={Style.attribute}>Location</span>{" "}
+                    <span className={Style.value}>
+                      {propertyDetails?.Location}
+                    </span>
+                  </div>
+                  <div className={Style.atrributes}>
+                    <span className={Style.attribute}>Total Fracs</span>{" "}
+                    <span className={Style.value}>
+                      {propertyDetails?.TotalFractions}
+                    </span>
+                  </div>
+                  <div className={Style.atrributes}>
+                    <span className={Style.attribute}>Available Fracs</span>{" "}
+                    <span className={Style.value}>
+                      {propertyDetails?.AvailableFractions}
+                    </span>
+                  </div>
+                  <div className={Style.atrributes}>
+                    <span className={Style.attribute}>Frac Price</span>{" "}
+                    <span className={Style.value}>
+                      ₹ {propertyDetails?.FC_Price}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className={Style.amenitiesContainer}>
+                <h3>Distinctive Amenities</h3>
+                <div className={Style.distinctiveAmenities}>
+                  <ul>
+                    {propertyDetails?.DistinctiveAmenities?.map(
+                      (amenity, index) => (
+                        <li key={index} className={Style.eachAmenity}>
+                          <div className={Style.amenityImageContainer}>
+                            <img src={amenity?.image}></img>
+                          </div>
+                          <div className={Style.amenityName}>
+                            {" "}
+                            {amenity?.name}
+                          </div>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </div>
+              </div>
+
+              {propertyDetails?.locationHighlights?.length > 0 && (
+                <div className={Style.locationHighlights}>
+                  <h2>Location Highlights</h2>
+                  <div className={Style.locationsContainer}>
+                    {propertyDetails?.locationHighlights?.map(
+                      (location, index) => (
+                        <div key={index} className={Style.locationItem}>
+                          <div className={Style.locationImageContainer}>
+                            <img src={location?.image}></img>
+                          </div>
+                          <div className={Style.content}>{location?.name}</div>
+                        </div>
+                      )
+                    )}
+                  </div>
+                </div>
+              )}
+            </section>
+
+            <section
+              className={`${Style.enquiryFormContainer} ${
+                formVisible ? Style.visible : ""
+              }`}
+            >
+              <article>
+                <div>
+                  <form onSubmit={handleSubmit} className={Style.enquiryForm}>
+                    <h2>Enquiry Form</h2>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Enter Your Name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      className={Style.formInput}
+                    />
+                    {/* <input
                     type="number"
                     name="mobile"
                     placeholder="Enter Mobile Number"
@@ -289,43 +307,67 @@ function EachProperty() {
                     onChange={handleChange}
                     required
                   /> */}
-                      <PhoneInput
-                  country={"in"}
-                  value={formData.contact}
-                  onChange={handlePhoneChange}
-                  inputStyle={{
-                    width: "100%",
-                    height: "6vh",
-                    fontSize: "1rem"
-                  }}
-                  // inputStyle={Style.phoneInput}
-                  required
-                  className={Style.formControl}
-                />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Enter Email ID"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-                  <button type="submit">Submit</button>
+                    <PhoneInput
+                      country={"in"}
+                      value={formData.contact}
+                      onChange={handlePhoneChange}
+                      inputStyle={{
+                        width: "100%",
+                        height: "6vh",
+                        fontSize: "1rem"
+                      }}
+                      // inputStyle={Style.phoneInput}
+                      required
+                      className={Style.formControl}
+                    />
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Enter Email ID"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className={Style.formInput}
+                    />
+                    <div className={Style.checkboxContainer}>
+                      <input
+                        className={Style.checkBox}
+                        type="checkbox"
+                        name="agreeToContact"
+                        checked={formData.agreeToContact}
+                        onChange={(e) =>
+                          setFormData({
+                            ...formData,
+                            agreeToContact: e.target.checked
+                          })
+                        }
+                        required
+                      />
+                      <label className={Style.checkboxLabel}>
+                      By submitting your contact details, you authorize Fracspace and its representatives to contact you.
+                      </label>
+                    </div>
+                    <button type="submit">Submit</button>
 
-                {formSubmitted && <div className={Style.thankYouMessage}>
-                    <p>We have received your enquiry and will get back to you shortly!</p>
-                  </div> }
-                </form>
-              </div>
-            </article>
-          </section>
+                    {formSubmitted && (
+                      <div className={Style.thankYouMessage}>
+                        <p>
+                          We have received your enquiry and will get back to you
+                          shortly!
+                        </p>
+                      </div>
+                    )}
+                  </form>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+
+        <div className={Style.footerContainer}>
+          <Footer />
         </div>
       </div>
-
-      <div className={Style.footerContainer}>
-         <Footer />
-      </div>
-    </div>
     </ScrollToTop>
   );
 }

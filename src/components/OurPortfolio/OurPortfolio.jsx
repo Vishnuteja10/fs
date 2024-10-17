@@ -12,8 +12,8 @@ import rightArrow from "../../assets/Portfolio/rightArrow.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-import SoldOut from '../../assets/images/SoldOut.png'
-import HotProperty from '../../assets/images/HotProperty.png'
+import SoldOut from "../../assets/images/SoldOut.png";
+import HotProperty from "../../assets/images/HotProperty.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -21,15 +21,19 @@ import {
   faChevronRight
 } from "@fortawesome/free-solid-svg-icons";
 
-function OurPortfolio() {
-   
-  const navigate = useNavigate()
+import { useMediaQuery } from "react-responsive";
 
-  const [selectedLoction, setSelectedLocation] = useState("hyderabad");
+function OurPortfolio() {
+  const isMobile = useMediaQuery({ maxWidth: 600 });
+
+  const navigate = useNavigate();
+
+  const [selectedLoction, setSelectedLocation] = useState("goa");
 
   const [goaProperties, setGoaProperties] = useState([{}]);
   const [hyderabadProperties, setHyderabadProperties] = useState([{}]);
   const [keralaProperties, setKeralaProperties] = useState([{}]);
+  const [karnatakaProperties, setKarnatakaProperties] = useState([{}]);
 
   const [allProperties, setAllProperties] = useState([{}]);
 
@@ -40,42 +44,45 @@ function OurPortfolio() {
   const PROPERTIES_API =
     "https://apitest.fracspace.com/api/users/getPropertyDetails";
 
-  const PROPERTIY_API = 'https://apitest.fracspace.com/api/users/getPropertyDetailsById?_id=65ba3687d41d5864da966265'
+  const PROPERTIY_API =
+    "https://apitest.fracspace.com/api/users/getPropertyDetailsById?_id=65ba3687d41d5864da966265";
 
   let properties;
 
   let goaProp;
   let hydProp;
   let keralaProp;
+  let karnatakaProp;
 
   useEffect(() => {
-
-  
-
     axios.get(PROPERTIES_API).then(
       (response) => {
         setAllProperties(response?.data?.properties);
         properties = response?.data?.properties;
-        goaProp = properties.filter(
-          (property) => property?.city?.toLowerCase() == "goa"
-        ).sort((a, b) => a.num - b.num);;
-        hydProp = properties.filter(
-          (property) => property?.city?.toLowerCase() == "hyderabad"
-        ).sort((a, b) => a.num - b.num);;
-        keralaProp = properties.filter(
-          (property) => property?.city?.toLowerCase() == "munnar"
-        ).sort((a, b) => a.num - b.num);;
+        goaProp = properties
+          .filter((property) => property?.city?.toLowerCase() == "goa")
+          .sort((a, b) => a.num - b.num);
+        hydProp = properties
+          .filter((property) => property?.city?.toLowerCase() == "hyderabad")
+          .sort((a, b) => a.num - b.num);
+        keralaProp = properties
+          .filter((property) => property?.city?.toLowerCase() == "munnar")
+          .sort((a, b) => a.num - b.num);
+
+        karnatakaProp = properties
+          .filter((property) => property?.city?.toLowerCase() == "sakhleshpur")
+          .sort((a, b) => a.num - b.num);
 
         setGoaProperties(goaProp);
         setHyderabadProperties(hydProp);
         setKeralaProperties(keralaProp);
+        setKarnatakaProperties(karnatakaProp);
         // console.log("kerala properties", keralaProp);
-        // console.log(
-        //   "response while fetching properties",
-        //   properties,
-        //   allProperties,
-        //   goaProp
-        // );
+        console.log(
+          "response while fetching properties",
+          allProperties,
+          karnatakaProp
+        );
       },
       (error) => {
         // console.log("error while fetching properties", error);
@@ -117,7 +124,25 @@ function OurPortfolio() {
 
       <section className={Style.propertyLocations}>
         <div
-          className={Style.location}
+          className={`${Style.location} ${
+            selectedLoction == "goa" ? Style.selected : ""
+          }`}
+          onClick={() => {
+            setSelectedLocation("goa");
+          }}
+        >
+          <img
+            className={Style.locationIcon}
+            src={locationIcon}
+            alt="location icon"
+          ></img>
+          Goa
+        </div>
+
+        <div
+          className={`${Style.location} ${
+            selectedLoction == "hyderabad" ? Style.selected : ""
+          }`}
           onClick={() => {
             setSelectedLocation("hyderabad");
           }}
@@ -131,7 +156,25 @@ function OurPortfolio() {
         </div>
 
         <div
-          className={Style.location}
+          className={`${Style.location} ${
+            selectedLoction == "karnataka" ? Style.selected : ""
+          }`}
+          onClick={() => {
+            setSelectedLocation("karnataka");
+          }}
+        >
+          <img
+            className={Style.locationIcon}
+            src={locationIcon}
+            alt="location icon"
+          ></img>
+          Karnataka
+        </div>
+
+        <div
+          className={`${Style.location} ${
+            selectedLoction == "kerala" ? Style.selected : ""
+          }`}
           onClick={() => {
             setSelectedLocation("kerala");
           }}
@@ -143,33 +186,25 @@ function OurPortfolio() {
           ></img>
           Kerala
         </div>
-
-        <div
-          className={Style.location}
-          onClick={() => {
-            setSelectedLocation("goa");
-          }}
-        >
-          <img
-            className={Style.locationIcon}
-            src={locationIcon}
-            alt="location icon"
-          ></img>
-          Goa
-        </div>
       </section>
 
       <div className={Style.arrowContainer}>
         <div className={Style.leftArrowContainer} onClick={handlePrev}>
           {/* <FontAwesomeIcon icon={faChevronLeft} style={{color: "#fcfcfc",}} /> */}
-          <FontAwesomeIcon icon={faChevronLeft} className={Style.arrowIconLeft} />
+          <FontAwesomeIcon
+            icon={faChevronLeft}
+            className={Style.arrowIconLeft}
+          />
           {/* <img src={leftArrow}></img> */}
         </div>
 
         <div className={Style.rightArrowContainer} onClick={handleNext}>
           {/* <img src={rightArrow}></img> */}
           {/* <FontAwesomeIcon icon={faChevronRight} style={{color: "#f9fafb",}} /> */}
-          <FontAwesomeIcon icon={faChevronRight} className={Style.arrowIconRight} />
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            className={Style.arrowIconRight}
+          />
         </div>
       </div>
 
@@ -179,23 +214,65 @@ function OurPortfolio() {
             {hyderabadProperties?.map((property, index) => (
               <article key={index} className={Style.eachProperty}>
                 <div className={Style.propertyImages}>
-                  <img className={Style.propertyImage} src={property?.image?.Image1}></img>
-                 {property?.H_property == true ? <img src={HotProperty} className={Style.hotProperty}></img> : <img src={SoldOut} className={Style.soldOut}></img>} 
-                  
+                  <img
+                    className={Style.propertyImage}
+                    src={property?.image?.Image1}
+                  ></img>
+                  {property?.H_property == true ? (
+                    <img src={HotProperty} className={Style.hotProperty}></img>
+                  ) : (
+                    <img src={SoldOut} className={Style.soldOut}></img>
+                  )}
                 </div>
 
                 <div className={Style.propertyDetails}>
                   <h6>{property?.name}</h6>
-                  <div>
-                    <div>Frac Price : ₹ {property?.FC_Price}</div>
-                  </div>
-                  <div>{property?.Location}</div>
-                  <div>
-                    {property?.Type} | {property?.area}
-                  </div>
-                  <div className={Style.btnContainer}>
-                    <button onClick={()=>navigate(`/eachproperty/${property?._id}`)}>View Details</button>
-                  </div>
+
+                  {!isMobile ? (
+                    <div className={Style.detailsContainer}>
+                      <div className={Style.leftContainer}>
+                        <div>
+                          <div>Frac Price : ₹ {property?.FC_Price}</div>
+                          <div>
+                            {property?.Type} | {property?.area}
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className={Style.rightContainer}>
+                        <div>{property?.Location}</div>
+
+                        <div className={Style.btnContainer}>
+                          <button
+                            onClick={() =>
+                              navigate(`/eachproperty/${property?._id}`)
+                            }
+                          >
+                            View Details
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div>
+                      <div>
+                        <div>Frac Price : {property?.FC_Price}</div>
+                      </div>
+                      <div>{property?.Location}</div>
+                      <div>
+                        {property?.Type} | {property?.area}
+                      </div>
+                      <div className={Style.btnContainer}>
+                        <button
+                          onClick={() =>
+                            navigate(`/eachProperty/${property?._id}`)
+                          }
+                        >
+                          View Details
+                        </button>
+                      </div>{" "}
+                    </div>
+                  )}
                 </div>
               </article>
             ))}
@@ -225,22 +302,135 @@ function OurPortfolio() {
             {keralaProperties?.map((property, index) => (
               <article key={index} className={Style.eachProperty}>
                 <div className={Style.propertyImages}>
-                  <img className={Style.propertyImage} src={property?.image?.Image1}></img>
-                  {property?.H_property == true ? <img src={HotProperty} className={Style.hotProperty}></img> : <img src={SoldOut} className={Style.soldOut}></img>} 
+                  <img
+                    className={Style.propertyImage}
+                    src={property?.image?.Image1}
+                  ></img>
+                  {property?.H_property == true ? (
+                    <img src={HotProperty} className={Style.hotProperty}></img>
+                  ) : (
+                    <img src={SoldOut} className={Style.soldOut}></img>
+                  )}
                 </div>
 
                 <div className={Style.propertyDetails}>
                   <h6>{property?.name}</h6>
-                  <div>
-                    <div>Frac Price : {property?.FC_Price}</div>
-                  </div>
-                  <div>{property?.Location}</div>
-                  <div>
-                    {property?.Type} | {property?.area}
-                  </div>
-                  <div className={Style.btnContainer}>
-                    <button onClick={()=>navigate(`/eachProperty/${property?._id}`)}>View Details</button>
-                  </div>
+
+                  {!isMobile ? (
+                    <div className={Style.detailsContainer}>
+                      <div className={Style.leftContainer}>
+                        <div>
+                          <div>Frac Price : ₹ {property?.FC_Price}</div>
+                          <div>
+                            {property?.Type} | {property?.area}
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className={Style.rightContainer}>
+                        <div>{property?.Location}</div>
+
+                        <div className={Style.btnContainer}>
+                          <button
+                            onClick={() =>
+                              navigate(`/eachproperty/${property?._id}`)
+                            }
+                          >
+                            View Details
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div>
+                      <div>
+                        <div>Frac Price : {property?.FC_Price}</div>
+                      </div>
+                      <div>{property?.Location}</div>
+                      <div>
+                        {property?.Type} | {property?.area}
+                      </div>
+                      <div className={Style.btnContainer}>
+                        <button
+                          onClick={() =>
+                            navigate(`/eachProperty/${property?._id}`)
+                          }
+                        >
+                          View Details
+                        </button>
+                      </div>{" "}
+                    </div>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+        )}
+
+        {selectedLoction === "karnataka" && (
+          <div className={Style.properties}>
+            {karnatakaProperties?.map((property, index) => (
+              <article key={index} className={Style.eachProperty}>
+                <div className={Style.propertyImages}>
+                  <img
+                    className={Style.propertyImage}
+                    src={property?.image?.Image1}
+                  ></img>
+                  {property?.H_property == true ? (
+                    <img src={HotProperty} className={Style.hotProperty}></img>
+                  ) : (
+                    <img src={SoldOut} className={Style.soldOut}></img>
+                  )}
+                </div>
+
+                <div className={Style.propertyDetails}>
+                  <h6>{property?.name}</h6>
+
+                  {!isMobile ? (
+                    <div className={Style.detailsContainer}>
+                      <div className={Style.leftContainer}>
+                        <div>
+                          <div>Frac Price : ₹ {property?.FC_Price}</div>
+                          <div>
+                            {property?.Type} | {property?.area}
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className={Style.rightContainer}>
+                        <div>{property?.Location}</div>
+
+                        <div className={Style.btnContainer}>
+                          <button
+                            onClick={() =>
+                              navigate(`/eachproperty/${property?._id}`)
+                            }
+                          >
+                            View Details
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div>
+                      <div>
+                        <div>Frac Price : {property?.FC_Price}</div>
+                      </div>
+                      <div>{property?.Location}</div>
+                      <div>
+                        {property?.Type} | {property?.area}
+                      </div>
+                      <div className={Style.btnContainer}>
+                        <button
+                          onClick={() =>
+                            navigate(`/eachProperty/${property?._id}`)
+                          }
+                        >
+                          View Details
+                        </button>
+                      </div>{" "}
+                    </div>
+                  )}
                 </div>
               </article>
             ))}
@@ -252,13 +442,66 @@ function OurPortfolio() {
             {goaProperties?.map((property, index) => (
               <article key={index} className={Style.eachProperty}>
                 <div className={Style.propertyImages}>
-                  <img className={Style.propertyImage} src={property?.image?.Image1}></img>
-                  {property?.H_property == true ? <img src={HotProperty} className={Style.hotProperty}></img> : <img src={SoldOut} className={Style.soldOut}></img>} 
+                  <img
+                    className={Style.propertyImage}
+                    src={property?.image?.Image1}
+                  ></img>
+                  {property?.H_property == true ? (
+                    <img src={HotProperty} className={Style.hotProperty}></img>
+                  ) : (
+                    <img src={SoldOut} className={Style.soldOut}></img>
+                  )}
                 </div>
 
                 <div className={Style.propertyDetails}>
                   <h6>{property?.name}</h6>
-                  <div>
+
+                  {!isMobile ? (
+                    <div className={Style.detailsContainer}>
+                      <div className={Style.leftContainer}>
+                        <div>
+                          <div>Frac Price : ₹ {property?.FC_Price}</div>
+                          <div>
+                            {property?.Type} | {property?.area}
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className={Style.rightContainer}>
+                        <div>{property?.Location}</div>
+
+                        <div className={Style.btnContainer}>
+                          <button
+                            onClick={() =>
+                              navigate(`/eachproperty/${property?._id}`)
+                            }
+                          >
+                            View Details
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div>
+                      <div>
+                        <div>Frac Price : {property?.FC_Price}</div>
+                      </div>
+                      <div>{property?.Location}</div>
+                      <div>
+                        {property?.Type} | {property?.area}
+                      </div>
+                      <div className={Style.btnContainer}>
+                        <button
+                          onClick={() =>
+                            navigate(`/eachProperty/${property?._id}`)
+                          }
+                        >
+                          View Details
+                        </button>
+                      </div>{" "}
+                    </div>
+                  )}
+                  {/* <div>
                     <div>Frac Price : {property?.FC_Price}</div>
                   </div>
                   <div>{property?.Location}</div>
@@ -266,8 +509,12 @@ function OurPortfolio() {
                     {property?.Type} | {property?.area}
                   </div>
                   <div className={Style.btnContainer}>
-                    <button onClick={()=>navigate(`/eachproperty/${property?._id}`)}>View Details</button>
-                  </div>
+                    <button
+                      onClick={() => navigate(`/eachproperty/${property?._id}`)}
+                    >
+                      View Details
+                    </button>
+                  </div> */}
                 </div>
               </article>
             ))}

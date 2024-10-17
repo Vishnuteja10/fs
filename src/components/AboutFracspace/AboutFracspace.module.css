@@ -142,11 +142,12 @@
 @media (max-width:600px){
 
     .main{
-        /* height: 70vh; */
-        /* border: 2px solid green; */
+        padding-top: 3vh;
+       
     }
 
     .header{
+        margin-top: 2vh;
         font-size: 24px;
     }
 
@@ -189,6 +190,11 @@
 }
 
 @media (min-width:200px) and (max-width:300px){
+
+    .main{
+        padding-top: 3vh;
+       
+    }
 
     .imagesContainer{
         margin-left: 1vw;

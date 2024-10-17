@@ -32,7 +32,8 @@ export default function ContactUs() {
     serviceType: "",
     contact: "",
     countryCode: "",
-    phoneNumber: ""
+    phoneNumber: "",
+    agreeTerms: false,
   };
 
   const [formData, setFormData] = useState(initialFormData);
@@ -65,10 +66,18 @@ export default function ContactUs() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+
+
     // Handle form submission
 
     if (!formData.contact) {
       alert("Contact is required");
+      return;
+    }
+
+    if (!formData.agreeTerms) {
+      alert("Please click the checkbox to confirm that Fracspace can contact you before submitting your details.");
       return;
     }
 
@@ -313,19 +322,19 @@ export default function ContactUs() {
                   required
                 />
 
-                {/* <div className={Style.checkboxContainer}>
+                <div className={Style.checkboxContainer}>
                   <input
                     type="checkbox"
                     name="agreeTerms"
                     checked={formData?.agreeTerms}
                     onChange={handleChange}
                     className={Style.checkbox}
+                    required
                   />
-                  <label>
-                    By clicking this, I agree to the{" "}
-                    <a href="/terms">terms and conditions</a>
+                  <label className={Style.checkBoxLabel}>
+                  By submitting your contact details, you authorize Fracspace and its representatives to contact you.
                   </label>
-                </div> */}
+                </div>
 
                 <button type="submit" className={Style.submitButton}>
                   Submit

@@ -154,7 +154,7 @@
     margin-bottom: 20px;
 }
 
-.enquiryForm input {
+.formInput {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -227,8 +227,45 @@
 }
 
 .footerContainer{
+    margin-top: 3vh;
     z-index: 1000000;
 }
+
+.checkboxContainer {
+    display: flex;
+    align-items: baseline; /* Center align the checkbox and label */
+    margin-top: 15px; /* Space above the checkbox */
+    /* margin-left: 2vw; */
+}
+
+.checkBox {
+   
+    width: 1rem; /* Adjusted width */
+    height: 1rem; /* Adjusted height */
+     /* Space between checkbox and label */
+     
+}
+
+.checkboxLabel {
+    font-size: 15px; /* Adjust font size */
+    font-family: "Poppins"; 
+    margin-left: 0.5vw;
+}
+
+/* .checkboxContainer{
+   display: flex;
+}
+
+.checkBox{
+    width: 3vw;
+    height: 2vh;
+    margin-left: -1vw;
+}
+
+.checkboxLabel{
+    margin-left: -1vw;
+    padding-left: -1vw;
+} */
 
 @media (max-width:600px){
 
@@ -327,3 +364,4 @@
     }
 
 }
+

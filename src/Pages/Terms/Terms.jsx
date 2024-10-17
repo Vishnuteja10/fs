@@ -126,6 +126,9 @@ function Terms() {
             Importantly, this maintenance cost will not impact the guaranteed 8%
             return on the investment amount.
           </li>
+          <li>
+          By submitting your contact details, you authorize Fracspace and its representatives to contact you for transactional purposes. Please note, this call is not promotional in nature.
+          </li>
         </ul>
         <h3 className={Style.header2}>Cancellation & Refund Policy</h3>
         <ul>

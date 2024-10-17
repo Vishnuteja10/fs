@@ -16,7 +16,7 @@
 
 .propertyLocations{
     display: flex;
-    margin-left: 55vw;
+    margin-left: 40vw;
 }
 
 .location{
@@ -30,6 +30,29 @@
 
 .location:hover{
     transform: scaleX(1.1);
+}
+
+/* .location::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    left: 40%;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: rgba(2, 18, 101, 1); 
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+} */
+
+/* Keep the underline visible when selected */
+.selected::after {
+    transform: scaleX(1); /* Fully display underline for selected location */
+}
+
+.location:hover::after {
+    transform: scaleX(1); 
 }
 
 .propertiesContainer{
@@ -87,6 +110,7 @@
     justify-content: center;
     cursor: pointer;
     transition: background-color 0.5s ease, color 0.5s ease;
+    z-index: 999;
 }
 
 .leftArrowContainer img{
@@ -109,6 +133,7 @@
     justify-content: center;
     cursor: pointer;
     transition: background-color 0.5s ease, color 0.5s ease;
+    z-index: 999;
 }
 
 .rightArrowContainer img{
@@ -128,14 +153,41 @@
 }
 
 .eachProperty{
+    margin-top: 3vh;
     margin-right: 3vw;
+    margin-bottom: 5vh;
     width: 40vw;
     height: auto;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     padding: 1vw;
     
     scroll-snap-align: start;
-    
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.detailsContainer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.leftContainer{
+   width: 50%;
+}
+
+.rightContainer{
+   width: 50%;
+   text-align: right;
+}
+
+.rightContainer div{
+    font-weight: 400;
+}
+
+.leftContainer div{
+    font-weight: 400;
 }
 
 .propertyImage{
@@ -190,10 +242,13 @@
     .propertyLocations{
         margin-top: 3vh;
         margin-left: 1vw;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .location{
-        margin-right: 1vw;
+        margin-right: 4vw;
+        margin-top: 3vh;
     }
 
     .locationIcon{
@@ -251,6 +306,13 @@
 }
 
 @media (max-width:350px){
+
+    
+    .locationIcon{
+        width: 5vw;
+        height: 3vh;
+    }
+
     .soldOut{
         margin-top: -50vh;
         margin-left: 51vw;
