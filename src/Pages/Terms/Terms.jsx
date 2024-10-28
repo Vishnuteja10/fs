@@ -83,14 +83,9 @@ function Terms() {
             toward the entitlement fees.
           </li>
           <li>
-            I/We acknowledge that in case of my/our cancellation request,
-            Fracspace reserves the right to deduct cancellation charges as
-            outlined in the Terms and Conditions. Only the remaining balance
-            will be refunded. The booking amount serves as "Earnest Money" in
-            the event of cancellation after payment, Fracspace will forfeit 10%
-            of the "Earnest Money". However, there is a seven-day free look
-            period from the Onboarding date.
+          Booking Cancellation: I/We acknowledge that in case of my/our cancellation request, Fracspace reserves the right to deduct cancellation charges as outlined in the Terms and Conditions. The seven-day free look period applies only to the booking amount of ₹10,000 or ₹25,000. After the 7th day, if the customer chooses to opt out, the booking amount will not be refunded.
           </li>
+          <li>Exit Before Stipulated Lock-In Period: In the event of an exit before the stipulated lock-in period, Fracspace will forfeit 10% of the frac amount as part of the cancellation charges, with only the remaining balance being refunded.</li>
           <li>
             I/We acknowledge that I/we will become a FRAC Owner of FRACSPACE
             only upon the full realization of the entire amount and the two
@@ -125,6 +120,12 @@ function Terms() {
             distributing the remaining 70% among the property shareholders.
             Importantly, this maintenance cost will not impact the guaranteed 8%
             return on the investment amount.
+          </li>
+          <li>
+          By submitting your contact details, you authorize Fracspace and its representatives to contact you for transactional purposes. Please note, this call is not promotional in nature.
+          </li>
+          <li>
+          Fracspace reserves the right to grant or deny admission to, and to dismiss, any customer at its sole discretion.
           </li>
         </ul>
         <h3 className={Style.header2}>Cancellation & Refund Policy</h3>

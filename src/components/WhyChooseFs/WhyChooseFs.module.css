@@ -95,6 +95,7 @@
 /* CSS for Tablet Screens */
 @media(min-width:600px) and (max-width:1024px){
 
+
      .chooseFs{
         width: 30vw;
      }
@@ -110,6 +111,10 @@
 }
 
 @media (max-width:600px){
+
+    .main{
+        padding-top: 18vh;
+    }
 
     .header{
         font-size: 24px;
@@ -165,6 +170,9 @@
 
 @media (min-width:320px) and (max-width:390px){
 
+    .main{
+        padding-top: 25vh;
+    }
     
     .header{
         font-size: 24px;
@@ -185,6 +193,10 @@
 }
 
 @media (min-width:200px) and (max-width:320px){
+
+    .main{
+        padding-top: 26vh;
+    }
 
     
     .header{

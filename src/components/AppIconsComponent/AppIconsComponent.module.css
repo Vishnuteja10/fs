@@ -30,6 +30,7 @@
     height: 5vh;
     transform: rotate(-90deg);
     z-index: 999;
+    cursor: pointer;
   }
 
   .playStore{
@@ -37,6 +38,7 @@
     height: 6.5vh;
     transform: rotate(-90deg);
     z-index: 999;
+    cursor: pointer;
   }
 
   .watsapp{
@@ -45,6 +47,7 @@
      height: 5vh;
      z-index: 999;
      margin-left: 3vw;
+     cursor: pointer;
   }
 
 
