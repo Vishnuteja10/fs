@@ -72,6 +72,9 @@ function PrivacyPolicy() {
              <span className={Style.boldContent}>Service Preferences:</span>  Data related to your preferences for property
               management and consulting services.
             </li>
+            <li>
+             <span className={Style.boldContent}>Location Information:</span> We may collect geolocation data to auto-fill forms, personalize property listings, and offer location-based services, with your consent.
+            </li>
           </ul>
           <p>b. Non-Personal Information</p>
           <p>

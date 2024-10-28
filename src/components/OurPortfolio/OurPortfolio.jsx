@@ -212,7 +212,9 @@ function OurPortfolio() {
         {selectedLoction === "hyderabad" && (
           <div className={Style.properties}>
             {hyderabadProperties?.map((property, index) => (
-              <article key={index} className={Style.eachProperty}>
+              <article key={index} className={Style.eachProperty}  onClick={() =>
+                navigate(`/eachProperty/${property?._id}`)
+              }>
                 <div className={Style.propertyImages}>
                   <img
                     className={Style.propertyImage}
@@ -300,7 +302,9 @@ function OurPortfolio() {
         {selectedLoction === "kerala" && (
           <div className={Style.properties}>
             {keralaProperties?.map((property, index) => (
-              <article key={index} className={Style.eachProperty}>
+              <article key={index} className={Style.eachProperty} onClick={() =>
+                navigate(`/eachProperty/${property?._id}`)
+              }>
                 <div className={Style.propertyImages}>
                   <img
                     className={Style.propertyImage}
@@ -370,7 +374,9 @@ function OurPortfolio() {
         {selectedLoction === "karnataka" && (
           <div className={Style.properties}>
             {karnatakaProperties?.map((property, index) => (
-              <article key={index} className={Style.eachProperty}>
+              <article key={index} className={Style.eachProperty} onClick={() =>
+                navigate(`/eachProperty/${property?._id}`)
+              }>
                 <div className={Style.propertyImages}>
                   <img
                     className={Style.propertyImage}
@@ -440,7 +446,9 @@ function OurPortfolio() {
         {selectedLoction === "goa" && (
           <div className={Style.properties}>
             {goaProperties?.map((property, index) => (
-              <article key={index} className={Style.eachProperty}>
+              <article key={index} className={Style.eachProperty} onClick={() =>
+                navigate(`/eachProperty/${property?._id}`)
+              }>
                 <div className={Style.propertyImages}>
                   <img
                     className={Style.propertyImage}

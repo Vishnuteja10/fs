@@ -31,7 +31,7 @@
 }
 
 .header h2{
-    margin-left: 5vw;
+    /* margin-left: 5vw; */
     padding-top: 25vh;
     font-family: 'Montserrat';
     margin-bottom: 2vh;
@@ -136,7 +136,8 @@
 } */
 
 .enquiryForm {
-   
+    
+    margin-top: -5vh;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
@@ -166,7 +167,7 @@
 }
 
 .enquiryForm input:focus {
-    border-color: #6200ea;
+    /* border-color: #6200ea; */
     outline: none;
 }
 
@@ -197,6 +198,7 @@
 
 .propertyImage{
     object-fit: cover;
+    max-height: 90vh;
 }
 
 .locationItem{
@@ -266,6 +268,23 @@
     margin-left: -1vw;
     padding-left: -1vw;
 } */
+
+/* Target the arrow controls */
+.carousel.carousel-slider .control-arrow {
+    color: white;
+    width: 50px;         /* Adjust arrow width */
+    height: 50px;        /* Adjust arrow height */
+    font-size: 70px;     /* Increase font size for larger arrows */
+    background: rgba(0, 0, 0, 0.7); /* Background color with transparency */
+    padding-left: 4vw;
+}
+
+.carousel-control-dots{
+    padding-left: 6vw;
+
+}
+
+
 
 @media (max-width:600px){
 

@@ -38,6 +38,7 @@ function EachProperty() {
     contact: "",
     countryCode: "",
     phoneNumber: "",
+    budget:"",
     agreeToContact: false
   };
 
@@ -52,9 +53,9 @@ function EachProperty() {
           "x-api-key": "Fracspace@2024"
         }
       });
-      console.log(response.data);
+      // console.log(response.data);
     } catch (error) {
-      console.log("error is", error);
+      // console.log("error is", error);
     }
   };
 
@@ -64,7 +65,7 @@ function EachProperty() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    // console.log("Form submitted:", formData);
     if (!formData.contact) {
       alert("Contact is required");
       return;
@@ -180,11 +181,14 @@ function EachProperty() {
 
           <div className={Style.imageCarouselContainer}>
             <Carousel
-              width="90vw"
+              width="88vw"
               swipeable={true}
               autoPlay={true}
               infiniteLoop={true}
               dynamicHeight={true}
+              interval={3000}
+              showArrows={true}
+              stopOnHover={false}
             >
               {propertyDetails?.image &&
                 Object.values(propertyDetails.image).map((img, index) => (
@@ -299,14 +303,7 @@ function EachProperty() {
                       required
                       className={Style.formInput}
                     />
-                    {/* <input
-                    type="number"
-                    name="mobile"
-                    placeholder="Enter Mobile Number"
-                    value={formData.mobile}
-                    onChange={handleChange}
-                    required
-                  /> */}
+                    
                     <PhoneInput
                       country={"in"}
                       value={formData.contact}
@@ -329,6 +326,25 @@ function EachProperty() {
                       required
                       className={Style.formInput}
                     />
+
+                    {/* New Budget Dropdown */}
+                    <select
+                      name="budget"
+                      value={formData.budget}
+                      onChange={handleChange}
+                      required
+                      className={Style.formInput}
+                    >
+                      <option value="" >
+                        Select Your Budget
+                      </option>
+                      <option value="below 10,00,000">Below 10,00,000</option>
+                      <option value="10,00,000 - 20,00,000">
+                        10,00,000 - 20,00,000
+                      </option>
+                      <option value="above 20,00,000">Above 20,00,000</option>
+                    </select>
+
                     <div className={Style.checkboxContainer}>
                       <input
                         className={Style.checkBox}
@@ -344,7 +360,8 @@ function EachProperty() {
                         required
                       />
                       <label className={Style.checkboxLabel}>
-                      By submitting your contact details, you authorize Fracspace and its representatives to contact you.
+                        By submitting your contact details, you authorize
+                        Fracspace and its representatives to contact you.
                       </label>
                     </div>
                     <button type="submit">Submit</button>
@@ -357,6 +374,7 @@ function EachProperty() {
                         </p>
                       </div>
                     )}
+
                   </form>
                 </div>
               </article>

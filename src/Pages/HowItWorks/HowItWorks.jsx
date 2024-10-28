@@ -46,8 +46,6 @@ function HowItWorks() {
         <div onClick={() => window.open("https://wa.me/9880626111", "_blank")}>
           <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
         </div> 
-
-
       </div> */}
 
       <div className={Style.navbar}>
@@ -83,3 +81,4 @@ function HowItWorks() {
 }
 
 export default HowItWorks;
+

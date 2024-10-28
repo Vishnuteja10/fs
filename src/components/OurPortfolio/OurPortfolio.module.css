@@ -99,7 +99,7 @@
 
 .leftArrowContainer{
     /* background: rgba(2, 18, 101, 1); */
-    background: white;
+    background: #f7f7f7;
     border-radius: 50%;
     width: 4vw;
     height: 7vh;
@@ -122,7 +122,7 @@
 
 .rightArrowContainer{
     cursor: pointer;
-    background-color: white;
+    background-color: #f7f7f7;
     border-radius: 50%;
     width: 4vw;
     height: 7vh;

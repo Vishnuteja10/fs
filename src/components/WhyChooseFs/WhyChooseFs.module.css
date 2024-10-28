@@ -170,6 +170,9 @@
 
 @media (min-width:320px) and (max-width:390px){
 
+    .main{
+        padding-top: 25vh;
+    }
     
     .header{
         font-size: 24px;
@@ -190,6 +193,10 @@
 }
 
 @media (min-width:200px) and (max-width:320px){
+
+    .main{
+        padding-top: 26vh;
+    }
 
     
     .header{

@@ -84,6 +84,8 @@ export default function ContactUs() {
     submitContactDetails();
     setShowSuccessMessage(true);
 
+    //  console.log("Form data:", formData);
+
     // alert("Form submitted!");
     setFormData(initialFormData);
     // console.log("Form data:", formData);
