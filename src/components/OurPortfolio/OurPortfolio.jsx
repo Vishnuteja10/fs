@@ -155,21 +155,6 @@ function OurPortfolio() {
           Hyderabad
         </div>
 
-        <div
-          className={`${Style.location} ${
-            selectedLoction == "karnataka" ? Style.selected : ""
-          }`}
-          onClick={() => {
-            setSelectedLocation("karnataka");
-          }}
-        >
-          <img
-            className={Style.locationIcon}
-            src={locationIcon}
-            alt="location icon"
-          ></img>
-          Karnataka
-        </div>
 
         <div
           className={`${Style.location} ${
@@ -184,8 +169,25 @@ function OurPortfolio() {
             src={locationIcon}
             alt="location icon"
           ></img>
-          Kerala
+          Munnar
         </div>
+
+        <div
+          className={`${Style.location} ${
+            selectedLoction == "karnataka" ? Style.selected : ""
+          }`}
+          onClick={() => {
+            setSelectedLocation("karnataka");
+          }}
+        >
+          <img
+            className={Style.locationIcon}
+            src={locationIcon}
+            alt="location icon"
+          ></img>
+          Sakleshpura
+        </div>
+        
       </section>
 
       <div className={Style.arrowContainer}>
