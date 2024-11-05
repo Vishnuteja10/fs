@@ -34,6 +34,9 @@
     padding-bottom: 3vh;
     /* border: 1px solid gray; */
 
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
 }
 
 .container::-webkit-scrollbar{
@@ -91,6 +94,52 @@
 
 }
 
+.arrowsContainer{
+    display: flex;
+    margin-left: 70vw;
+}
+
+.leftArrowContainer{
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    width: 4vw;
+    height: 7vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    z-index: 999;
+}
+
+.rightArrowContainer{
+    margin-left: 6vw;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    width: 4vw;
+    height: 7vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    z-index: 999;
+}
+
+.leftArrowContainer:hover, .rightArrowContainer:hover {
+    background-color: rgb(10, 10, 130); /* Change background color to blue on hover */
+  }
+
+  .leftArrowContainer:hover .arrowIconLeft,.rightArrowContainer:hover .arrowIconRight{
+    color: white;
+}
+
 
 /* CSS for Tablet Screens */
 @media(min-width:600px) and (max-width:1024px){
@@ -143,6 +192,21 @@
     .chooseFs{
         width: 40vw;
         margin-top: 3vh;
+    }
+
+    .arrowsContainer{
+        margin-top: 5vh;
+        margin-left: 30vw;
+    }
+
+    .leftArrowContainer{
+       width: 12vw;
+       height: 5vh;
+    }
+
+    .rightArrowContainer{
+        width: 12vw;
+        height: 5vh;
     }
 
 

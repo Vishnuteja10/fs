@@ -11,9 +11,9 @@ import { version } from "react";
 
 import img1 from "../../assets/newsImages/dc-logo-2.png";
 import img2 from "../../assets/newsImages/the-enterprise-world.png";
-import img3 from "../../assets/newsImages/et.png";
+import img3 from "../../assets/newsImages/ET_Now.jpg";
 import img4 from "../../assets/newsImages/5.png";
-import img5 from "../../assets/newsImages/ET_Now.jpg";
+import img5 from "../../assets/newsImages/et.png";
 import img6 from "../../assets/newsImages/aroundtelugu-logo.png";
 import img7 from '../../assets/newsImages/Et_Insights.png'
 

@@ -77,7 +77,7 @@ function Banner() {
               Fracspace!
             </div>
             <div className={Style.exploreContainer}>
-              <ScrollLink to="aboutFracspace" smooth={true} duration={200}>
+              <ScrollLink to="portfolio" smooth={true} duration={200}>
                 <button>Explore</button>
               </ScrollLink>
             </div>

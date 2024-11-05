@@ -420,7 +420,7 @@ export default function MeetOurTeam() {
                 <img src={linkedIn}></img>
               </div>
               <div className={Style.name}>Aparna</div>
-              <div className={Style.role}>UI/UX Design Intern</div>
+              <div className={Style.role}>UI/UX Designer</div>
             </article>
 
             

@@ -47,6 +47,9 @@
     /* height: 50vh; */
     overflow: scroll;
     /* border: 2px solid green; */
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 .testimonials::-webkit-scrollbar{
@@ -76,6 +79,56 @@
     padding-left: 1vw;
     padding-bottom: 2vh;
 }
+
+
+.arrowsContainer{
+    position: relative;
+    margin-left: 80vw;
+    display: flex;
+    margin-bottom: 6vh;   
+}
+
+.leftArrowContainer{
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    width: 4vw;
+    height: 7vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    z-index: 999;
+}
+
+.rightArrowContainer{
+    margin-left: 6vw;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    width: 4vw;
+    height: 7vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    z-index: 999;
+}
+
+.leftArrowContainer:hover, .rightArrowContainer:hover {
+    background-color: rgb(10, 10, 130); /* Change background color to blue on hover */
+  }
+
+  .leftArrowContainer:hover .arrowIconLeft,.rightArrowContainer:hover .arrowIconRight{
+    color: white;
+}
+
 
 /* CSS for Tablet Screen */
 @media(min-width:600px) and (max-width:1024px){
@@ -133,6 +186,26 @@
 
     .videoContent video{
         margin-top: -6.5vh;
+    }
+
+    .arrowsContainer{
+        display: flex;
+        margin-left: 30vw;
+        top: -2vh;
+        /* justify-content: space-around; */
+    }
+
+    .leftArrowContainer{
+        width: 12vw;
+        height: 6vh;
+        background-color: white;
+    }
+
+    .rightArrowContainer{
+        /* margin-left: -30vw; */
+        width: 12vw;
+        height: 6vh;
+        background-color: white;
     }
 }
 

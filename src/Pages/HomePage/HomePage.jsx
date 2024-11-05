@@ -83,9 +83,11 @@ export default function HomePage() {
         <CoOwn />
       </div>
 
+    <Element name="portfolio">
       <div>
          <OurPortfolio />
       </div>
+      </Element>
 
       <div>
         <WhyChooseFs />
