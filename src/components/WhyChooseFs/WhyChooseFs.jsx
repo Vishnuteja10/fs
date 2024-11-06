@@ -147,9 +147,9 @@ function WhyChooseFs() {
               ></img>
             </div>
           </div>
-          <h2 className={Style.headerContent}>Complementary Stays</h2>
+          <h2 className={Style.headerContent}>Complimentary Stays</h2>
           <div className={Style.content}>
-            Enjoy complementary stays and benefits on your property
+            Enjoy complimentary stays and benefits on your property
           </div>
         </article>
 
