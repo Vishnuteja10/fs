@@ -42,7 +42,7 @@ function StepByStepGuide() {
                      </div>
                      <div>
                         <div className={Style.itemHeader}>Consult</div>
-                        <div className={Style.itemContent}>Get Investment advice from our experts.</div>
+                        <div className={Style.itemContent}>Get investment advice from our experts.</div>
                      </div>
                  </article>
 

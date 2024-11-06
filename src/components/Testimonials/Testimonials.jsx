@@ -108,7 +108,7 @@ function Testimonials() {
 
             <div className={Style.testimonial}>
                 <div className={Style.videoContent}>
-                    <video controls src={video2}></video>
+                    <video className={Style.video}  controls src={video2}></video>
                 </div>
                 <div>
                    <h3>Mr.Prashanth Gudipudi</h3>
@@ -118,7 +118,7 @@ function Testimonials() {
 
             <div className={Style.testimonial}>
                 <div className={Style.videoContent}>
-                    <video  controls src={video3}></video>
+                    <video className={Style.video}   controls src={video3}></video>
                 </div>
                 <div>
                    <h3>Mr.Srinivas</h3>

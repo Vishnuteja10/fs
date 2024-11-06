@@ -38,11 +38,12 @@
 }
 
 .appStoreImagesContainer{
+    display: flex;
     margin-top: 3vh;
     padding-bottom: 4vh;
 }
 
-.appStoreImagesContainer img{
+.appIcon{
      width: 9vw;
      height: 5vh;
      margin-right: 2vw;
@@ -58,15 +59,28 @@
     /* height: auto; */
 }
 
+.qrCode{
+    width: 8vw;
+  height: 8vh;
+  padding-top: 1vh;
+  padding-left: 2vw;
+}
+
+
 
 
 
 
 /* css for small tabs */
 @media (min-width:768px) and (max-width:1025px) and (min-height:1024px) and (max-height:1366px){
+
+    .header{
+        font-size: 1.5rem;
+    }
       
     .appMockup img{
-        height: 45vh;
+        
+        height: 38vh;
         width: 35vw;
         margin-left: 2vw;
     }
@@ -79,8 +93,14 @@
 /* css for small tab screen */
 @media (min-width:600px) and (max-width:840px) and (min-height:920px) and (max-height:1280px){
 
+    .header{
+        font-size: 1.5rem;
+    }
+
     .appMockup img{
+       
         width: 35vw;
+        height: 38vh;
         margin-left: 2vw;
     }
 

@@ -97,23 +97,51 @@
    font-size: 14px;
 }
 
-/* css for smaller tabs */
-@media (min-width:600px) and (max-width:800px) and (min-height:920px) and (max-height:1280px){
+/* css for small tabs */
+@media (min-width:768px) and (max-width:1025px) and (min-height:1024px) and (max-height:1366px){
 
     .imageContainer1 img{
-          height: 50vh;
+        margin-top: 3vh;
+          height: 45vh;
           width: 40vw;
     }
 
     .imageContainer2 img{
+        margin-top: 4vh;
          margin-top: 5vh;
-          height: 50vh;
+          height: 45vh;
           width: 35vw;
           margin-left: -8vw;
     }
 
     .imageContainer2 .imageContent{
-        margin-top: -6vh;
+        margin-top: -5vh;
+        width: 32vw;
+        margin-left: -6vw;
+    }
+
+
+}
+
+/* css for smaller tabs */
+@media (min-width:600px) and (max-width:800px) and (min-height:920px) and (max-height:1280px){
+
+    .imageContainer1 img{
+        margin-top: 3vh;
+          height: 45vh;
+          width: 40vw;
+    }
+
+    .imageContainer2 img{
+        margin-top: 4vh;
+         margin-top: 5vh;
+          height: 45vh;
+          width: 35vw;
+          margin-left: -8vw;
+    }
+
+    .imageContainer2 .imageContent{
+        margin-top: -7vh;
         width: 32vw;
         margin-left: -6vw;
     }

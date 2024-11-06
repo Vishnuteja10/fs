@@ -17,6 +17,7 @@
 .propertyLocations{
     display: flex;
     margin-left: 40vw;
+    /* overflow: scroll; */
 }
 
 .location{
@@ -233,6 +234,61 @@
     color: white;
 }
 
+/* css for tablets */
+@media(min-width:610px) and (max-width:1024px){
+
+    .main{
+        padding-bottom: 1vh;
+    }
+
+    .propertiesContainer{
+        padding-bottom: 2vh;
+    }
+
+    .propertyLocations{
+        margin-top: 5vh;
+        margin-left: 20vw;
+    }
+
+    .locationIcon{
+        width: 3.5vw;
+        height: 3vh;
+    }
+
+    .propertyImage{
+        height: 30vh;
+    }
+
+    .soldOut{
+       margin-top: -50vh;
+       width: 6.5vw;
+       height: 6vh;
+    }
+
+    .eachProperty{
+        width: 60vw;
+    }
+
+    .propertyImages{
+
+    }
+
+    .arrowContainer{
+        top: 30vh;
+    }
+
+    .leftArrowContainer{
+        width: 6vw;
+        height: 4vh;
+    }
+
+    .rightArrowContainer{
+        width: 6vw;
+        height: 4vh;
+    }
+    
+}
+
 @media (max-width:600px){
 
     .main{
@@ -243,7 +299,14 @@
         margin-top: 3vh;
         margin-left: 1vw;
         display: flex;
-        flex-wrap: wrap;
+        overflow: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;
+        /* flex-wrap: wrap; */
+    }
+
+    .propertyLocations::-webkit-scrollbar {
+        display: none;
     }
 
     .location{

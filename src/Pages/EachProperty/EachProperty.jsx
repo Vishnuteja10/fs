@@ -19,8 +19,13 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
+// import { useMediaQuery } from "react-responsive";
 
 function EachProperty() {
+
+  // const isTablet = useMediaQuery('(min-width:600px) and (max-width:1024px)');
+
+
   const { id } = useParams();
 
   const [formVisible, setFormVisible] = useState(false);

@@ -144,6 +144,17 @@
 /* CSS for Tablet Screens */
 @media(min-width:600px) and (max-width:1024px){
 
+    .arrowIconLeft{
+        height: 2.5vh;
+    }
+
+    .arrowIconRight{
+        height: 2.5vh;
+    }
+
+    .main{
+        margin-top: -18vh; 
+    }
 
      .chooseFs{
         width: 30vw;
@@ -155,6 +166,19 @@
 
     .imgContainer img{
         width: 6vw;
+    }
+
+    .arrowsContainer{
+        margin-top: 2vh;
+        margin-left: 60vw;
+    }
+
+    .leftArrowContainer{
+       width: 9vw;
+    }
+
+    .rightArrowContainer{
+       width: 9vw;
     }
 
 }

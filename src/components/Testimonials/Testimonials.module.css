@@ -133,6 +133,14 @@
 /* CSS for Tablet Screen */
 @media(min-width:600px) and (max-width:1024px){
 
+    .arrowIconLeft{
+        height: 2.5vh;
+    }
+
+    .arrowIconRight{
+        height: 2.5vh;
+    }
+
     .testimonials  > *{
         flex-shrink: 0;
      }
@@ -150,6 +158,18 @@
    .videoContent .video{
         width: 60vw;
          /* height: 30vh; */
+   }
+
+   .arrowsContainer{
+    margin-left: 60vw;
+   }
+
+   .leftArrowContainer{
+      width: 12vw;
+   }
+
+   .rightArrowContainer{
+      width: 12vw;
    }
 
 }

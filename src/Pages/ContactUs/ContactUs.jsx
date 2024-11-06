@@ -345,8 +345,7 @@ export default function ContactUs() {
                 {showSuccessMessage && (
                   <div className={Style.successMessage}>
                     Thank you for reaching out! We’ve received your inquiry and
-                    our team is already on it. Expect a response from us
-                    shortly.
+                    our team is already on it. 
                   </div>
                 )}
               </form>

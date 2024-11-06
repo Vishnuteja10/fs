@@ -25,6 +25,7 @@
     /* border: 1px solid gray; */
     width: 25vw;
     height: 50vh;
+    max-height: 350px;
     margin-right: 4vw;
     border-radius: 10px;
     /* background-color:rgb(68, 68, 220); */
@@ -37,6 +38,7 @@
     /* border: 1px solid gray; */
     width: 25vw;
     height: 50vh;
+    max-height: 350px;
     margin-right: 4vw;
     border-radius: 10px;
     /* background-color:#102A70; */
@@ -49,6 +51,7 @@
     /* border: 1px solid gray;  */
     width: 25vw;
     height: 50vh;
+    max-height: 350px;
     margin-right: 4vw;
     border-radius: 10px;
     /* background-color:#4E4BC2; */
@@ -136,6 +139,7 @@
 
     .serviceContainer1{
          height: 30vh;
+        
     }
 
     .serviceContainer2{

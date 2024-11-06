@@ -496,7 +496,52 @@
    
 }
 
+
+/* css for small tab screen */
+@media (min-width:600px) and (max-width:840px) and (min-height:920px) and (max-height:1280px){
+
+  .btnsContainer img{
+     width: 3vw;
+     height: 2.5vh;
+     margin-right: 3px;
+  }
+
+  .imageContainer img{
+     width: 4vw;
+  }
+
+  .icon{
+    width: 2.5vw;
+  }
+
+  .quickLinks{
+    margin-right: 1vw;
+  }
+
+  .getAppContainer{
+     margin-left: 70vw;
+  }
+
+}
+
+/* css for medium tab screens */
+@media (min-width:768px) and (max-width:1025px) and (min-height:1024px) and (max-height:1366px){
+
+  .btnsContainer img{
+    width: 3vw;
+    margin-right: 3px;
+ }
+
+ .imageContainer img{
+  width: 4vw;
+}
+
+}
+
+
+
 @media (min-width: 1440px) and (min-height: 900px) {
+  
 }
 
 @media (min-width: 1920px) and (min-height: 1080px) {

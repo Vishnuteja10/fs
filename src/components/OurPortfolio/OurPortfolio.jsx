@@ -78,6 +78,7 @@ function OurPortfolio() {
         setKeralaProperties(keralaProp);
         setKarnatakaProperties(karnatakaProp);
         // console.log("kerala properties", keralaProp);
+
         console.log(
           "response while fetching properties",
           allProperties,
@@ -123,6 +124,7 @@ function OurPortfolio() {
       <h2>Our Portfolio</h2>
 
       <section className={Style.propertyLocations}>
+        
         <div
           className={`${Style.location} ${
             selectedLoction == "goa" ? Style.selected : ""
@@ -478,7 +480,7 @@ function OurPortfolio() {
                       </div>
 
                       <div className={Style.rightContainer}>
-                        <div>{property?.Location}</div>
+                        <div>{property?.name == "STREAM BY INDULGE POWERED BY FRACSPACE" ? "Revora, Goa" : property?.Location}</div>
 
                         <div className={Style.btnContainer}>
                           <button
@@ -496,7 +498,7 @@ function OurPortfolio() {
                       <div>
                         <div>Frac Price : {property?.FC_Price}</div>
                       </div>
-                      <div>{property?.Location}</div>
+                      <div>{property?.name == "STREAM BY INDULGE POWERED BY FRACSPACE" ? "Revora, Goa" : property?.Location}</div>
                       <div>
                         {property?.Type} | {property?.area}
                       </div>
