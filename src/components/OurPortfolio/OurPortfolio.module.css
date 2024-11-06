@@ -234,6 +234,29 @@
     color: white;
 }
 
+
+
+/* laptop10 notebook 1024 x 600 to laptop13 notebook */
+@media screen and (min-width: 1024px) and (max-width: 1290px) and (min-height: 600px) and (max-height: 810px) {
+ 
+    .propertyLocations{
+        margin-left: 30vw;
+   }
+
+   .locationIcon{
+      width: 25px;
+      height: 30px;
+   }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1930px){
+    .locationIcon{
+        width: 25px;
+        height: 30px;
+     }
+}
+
 /* css for tablets */
 @media(min-width:610px) and (max-width:1024px){
 
@@ -275,6 +298,7 @@
 
     .arrowContainer{
         top: 30vh;
+        
     }
 
     .leftArrowContainer{

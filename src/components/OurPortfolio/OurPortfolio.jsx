@@ -18,7 +18,8 @@ import HotProperty from "../../assets/images/HotProperty.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
-  faChevronRight
+  faChevronRight,
+  faLocationDot
 } from "@fortawesome/free-solid-svg-icons";
 
 import { useMediaQuery } from "react-responsive";
@@ -133,11 +134,13 @@ function OurPortfolio() {
             setSelectedLocation("goa");
           }}
         >
+
           <img
             className={Style.locationIcon}
             src={locationIcon}
             alt="location icon"
           ></img>
+
           Goa
         </div>
 

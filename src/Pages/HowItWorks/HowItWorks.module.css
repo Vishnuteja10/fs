@@ -75,6 +75,16 @@
 
 }
 
+/* laptop13  */
+@media (min-width:1020px) and (max-width:1028px) and (min-height:760px) and (max-height:778px){
+
+     .banner{
+      padding-top: 12vh;
+     }
+
+    
+}
+
 @media(max-width:700px){
 
   .navbar{
