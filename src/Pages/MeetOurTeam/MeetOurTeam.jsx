@@ -35,6 +35,7 @@ import aparnaImg from "../../assets/MeetOurTeam/tech/aparna.jpeg";
 import rohithImg from "../../assets/MeetOurTeam/tech/rohith.jpeg";
 import jovinImg from '../../assets/MeetOurTeam/tech/jovin.jpeg';
 
+import tarunReddyImg from '../../assets/MeetOurTeam/construction/tarunReddy.jpg'
 import moinImg from "../../assets/MeetOurTeam/construction/moin.jpeg";
 import shivaniImg from "../../assets/MeetOurTeam/construction/shivani.jpeg";
 import tharunImg from "../../assets/MeetOurTeam/construction/tharun.jpeg";
@@ -450,6 +451,23 @@ export default function MeetOurTeam() {
           <div className={Style.salesTeamImages}>
 
           <article className={Style.itemOne}>
+              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={tarunReddyImg}></img>
+              <div
+                className={Style.linkedInContainer}
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/tarun-reddy-23a875272",
+                    "_blank"
+                  )
+                }
+              >
+                <img src={linkedIn}></img>
+              </div>
+              <div className={Style.name}>Tarun Reddy</div>
+              <div className={Style.role}>Project Commander</div>
+            </article>
+
+          <article className={Style.itemOne}>
               <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={shivaniImg}></img>
               <div
                 className={Style.linkedInContainer}
@@ -542,19 +560,7 @@ export default function MeetOurTeam() {
 
           <div className={Style.salesTeamImages}>
 
-          <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={pavanImg}></img>
-              <div
-                className={Style.linkedInContainer}
-                onClick={() => window.open("https://www.linkedin.com/in/sapa-pavan-kumar-a35a62205/ ", "_blank")}
-              >
-                <img src={linkedIn}></img>
-              </div>
-              <div className={Style.name}>Pavan</div>
-              <div className={Style.role}>Hospitality Sales</div>
-            </article>
-
-            <article className={Style.itemOne}>
+            {/* <article className={Style.itemOne}>
               <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={siddharthImg}></img>
               <div
                 className={Style.linkedInContainer}
@@ -569,7 +575,7 @@ export default function MeetOurTeam() {
               </div>
               <div className={Style.name}>Siddharth</div>
               <div className={Style.role}>Hospitality Sales</div>
-            </article>
+            </article> */}
 
           <article className={Style.itemOne}>
               <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={hemanth2Img}></img>
