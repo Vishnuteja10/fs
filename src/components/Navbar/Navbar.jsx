@@ -96,7 +96,7 @@ function Navbar() {
                     Contact
                   </Link>
                 </li>
-                <li>
+                <li className={Style.agents}>
                   <Link to="/agents" className={Style.link}>
                     Agents
                   </Link>
@@ -129,7 +129,7 @@ function Navbar() {
                     Contact
                   </Link>
                 </li>
-                <li>
+                <li className={Style.agents2}>
                   <Link to="/agents" className={Style.link2}>
                     Agents
                   </Link>

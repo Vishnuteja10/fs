@@ -191,6 +191,34 @@ ul li {
   margin-top: -4vh;
 }
 
+.agents{
+  padding-top: 0.1vh;
+  padding-bottom: 0.5vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-radius: 15px;
+  background-color: rgb(161, 162, 165);
+  border: 1px solid gray;
+}
+
+.agents .link{
+    color: white;
+}
+
+.agents2{
+  padding-top: 0.1vh;
+  padding-bottom: 0.5vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-radius: 15px;
+  background-color: rgba(2, 18, 101, 1);
+  border: 1px solid black;
+}
+
+.agents2 .link2{
+    color: white;
+}
+
 /* css for smaller tabs */
 @media (min-width:600px) and (max-width:840px) and (min-height:960px) and (max-height:1280px){
 
