@@ -5,6 +5,7 @@
     margin-bottom: 5vh;
 
     position: relative;
+    max-width: 100%;
 }
 
 .header{
@@ -129,6 +130,21 @@
 .slider {
     overflow: hidden; /* Ensure overflow is hidden to hide white space */
     width: 90vw;
+  }
+
+  @media (min-width:1600px) and (max-width:1930px){
+
+    .rightArrowContainer{
+        width: 4vw;
+        height: 6vh;
+    }
+
+    .leftArrowContainer{
+        width: 4vw;
+        height: 6vh;
+    }
+
+    
   }
 
 
