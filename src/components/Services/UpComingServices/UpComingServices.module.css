@@ -50,6 +50,15 @@
     margin-top: 5vh;
 }
 
+#buysellrent{
+    margin-left: 3vw;
+}
+
+
+#comingsoon{
+    margin-left: 3vw;
+}
+
 @media (max-width:600px){
 
     .header{

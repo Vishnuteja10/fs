@@ -3,6 +3,8 @@ import Style from './UpComingServices.module.css'
 import Interior from './Interior/Interior'
 import Construction from './Construction/Construction'
 import ProfessionalServices from './ProfessionalServices/ProfessionalServices'
+import BuySellRent from './BuySellRent/BuySellRent'
+import TravelAccomodation from './TravelAccomodation/TravelAccomodation'
 
 function UpComingServices() {
 
@@ -10,19 +12,28 @@ function UpComingServices() {
 
   return (
     <section className={Style.main}>
-        <h2 className={Style.header}>Coming Soon</h2>
+        <h2 className={Style.header}>Services</h2>
+
         <div className={Style.services}>
             {/* <div onClick={()=>setSelected('interior')} className={selected== 'interior' ? Style.selected : Style.interior}>Interior Designing</div> */}
             <div onClick={()=>setSelected('construction')} className={ selected=='construction' ? Style.selected : Style.construction}>Construction/Interior Design</div>
-            <div id={Style.professionalServices} onClick={()=>setSelected('professionalServices')} className={ selected == 'professionalServices' ? Style.selected :  Style.professionalServices}>Professional Services</div>
+            <div id={Style.professionalServices} onClick={()=>setSelected('professionalServices')} className={ selected == 'professionalServices' ? Style.selected :  Style.professionalServices}>Property Management</div>
+
+            <div id={Style.buysellrent} onClick={()=>setSelected('buysellrent')} className={ selected=='buysellrent' ? Style.selected : Style.buysellrent}>Buy-Sell-Rent Properties</div>
+
+            <div id={Style.comingsoon} onClick={()=>setSelected('comingsoon')} className={ selected=='comingsoon' ? Style.selected : Style.comingsoon}>Coming soon</div>
         </div>
+
         <div className={Style.containers}>
             <div>
                {selected == 'interior' && <Interior />}
                {selected == 'construction' && <Construction />}
                {selected == 'professionalServices' && <ProfessionalServices />}
+               {selected == 'buysellrent' && <BuySellRent />}
+               {selected == 'comingsoon' && <TravelAccomodation />}
             </div>
         </div>
+
     </section>
   )
 }

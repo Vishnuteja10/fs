@@ -14,7 +14,7 @@ function UpComingServices() {
 
   return (
     <section className={Style.main}>
-        <h1 className={Style.header}>Coming Soon</h1>
+        <h1 className={Style.header}>Services</h1>
         <div className={Style.services}>
 
             <article className={Style.serviceContainer1}>
@@ -23,6 +23,7 @@ function UpComingServices() {
 
             <article className={Style.serviceContainer2}>
                  <h2 className={Style.serviceName}>Travel & Accomodation</h2>
+                 <p className={Style.addOn}>coming soon</p>
             </article>
 
             <article className={Style.serviceContainer3}>

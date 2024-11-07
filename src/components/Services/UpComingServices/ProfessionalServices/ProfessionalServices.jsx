@@ -8,6 +8,7 @@ import houseKeeping from '../../../../assets/UpComingServices/ProfessionalServic
 import electricalWork from "../../../../assets/UpComingServices/ProfessionalServices/ework.png";
 import electricalInstallation from '../../../../assets/UpComingServices/ProfessionalServices/ElectricalInstallation.png';
 import painting from '../../../../assets/UpComingServices/ProfessionalServices/Painting.png';
+import security from '../../../../assets/UpComingServices/ProfessionalServices/security.png'
 
 import carpentry1 from '../../../../assets/NewServices/professional/furnitureCarpentry.jpeg';
 import electricalWork1 from '../../../../assets/NewServices/professional/electricalworks.jpeg';
@@ -59,12 +60,12 @@ function ProfessionalServices() {
       </div>
 
       
-      <div className={Style.itemContainer}>
+      {/* <div className={Style.itemContainer}>
         <div className={Style.item}>
           <img src={masonry}></img>
         </div>
         <div className={Style.content}>Masonry</div>
-      </div>
+      </div> */}
 
       <div className={Style.itemContainer}>
         <div className={Style.item}>
@@ -72,6 +73,13 @@ function ProfessionalServices() {
         </div>
         <div className={Style.content}>Housekeeping</div>
       </div>
+
+      {/* <div className={Style.itemContainer}>
+        <div className={Style.item}>
+          <img src={security}></img>
+        </div>
+        <div className={Style.content}>Security</div>
+      </div> */}
 
 
       {/* <div className={Style.itemContainer}>
