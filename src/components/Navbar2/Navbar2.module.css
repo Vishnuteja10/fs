@@ -119,6 +119,57 @@
     padding-left: 3vw;
 }
 
+/* Add keyframes for the background animation */
+@keyframes slideBg {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+  
+  /* Apply the animation to the Agents button */
+  .linkAnimated {
+    position: relative;
+    overflow: hidden;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: white;
+    /* font-weight: bold; */
+    transition: color 0.3s ease;
+  
+    /* Set up initial background with gradient */
+    background: linear-gradient(to right, #021265, #4a90e2, #021265);
+    background-size: 200% 100%;
+    background-position: 0 0;
+  
+    /* Apply the animation */
+    animation: slideBg 3s linear infinite;
+  
+    /* Smooth transition for hover state */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .linkAnimated:hover {
+    color: #021265; /* Change text color on hover */
+  }
+  
+  .agents2{
+    padding-top: 0.1vh;
+    padding-bottom: 0.5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 15px;
+    background-color: rgba(2, 18, 101, 1);
+    /* border: 1px solid black; */
+  }
+  
+  .agents2 .link2{
+      color: white;
+  }
+
+
 /* css for smaller tabs */
 @media (min-width:600px) and (max-width:840px) and (min-height:920px) and (max-height:1280px){
 

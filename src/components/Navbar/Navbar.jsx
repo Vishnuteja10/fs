@@ -129,7 +129,7 @@ function Navbar() {
                     Contact
                   </Link>
                 </li>
-                <li className={Style.agents2}>
+                <li className={`${Style.agents2} ${Style.linkAnimated}`}>
                   <Link to="/agents" className={Style.link2}>
                     Agents
                   </Link>

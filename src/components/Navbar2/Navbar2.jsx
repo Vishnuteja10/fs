@@ -59,7 +59,7 @@ function Navbar2() {
                   Contact
                 </Link>
               </li>
-              <li>
+              <li className={`${Style.agents2} ${Style.linkAnimated}`}>
                 <Link to="/agents" className={Style.link2}>
                   Agents
                 </Link>
