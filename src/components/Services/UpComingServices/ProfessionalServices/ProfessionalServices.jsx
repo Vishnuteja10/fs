@@ -59,7 +59,7 @@ function ProfessionalServices() {
       </div>
 
       
-      <div className={Style.itemContainer}>
+      {/* <div className={Style.itemContainer}>
         <div className={Style.item}>
           <img src={masonry}></img>
         </div>
@@ -71,7 +71,7 @@ function ProfessionalServices() {
           <img src={houseKeeping}></img>
         </div>
         <div className={Style.content}>Housekeeping</div>
-      </div>
+      </div> */}
 
 
       {/* <div className={Style.itemContainer}>
