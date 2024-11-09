@@ -23,7 +23,7 @@ function UpComingServices() {
 
             <article className={Style.serviceContainer2}>
                  <h2 className={Style.serviceName}>Travel & Accomodation</h2>
-                 <p className={Style.addOn}>coming soon</p>
+                 {/* <p className={Style.addOn}>coming soon</p> */}
             </article>
 
             <article className={Style.serviceContainer3}>

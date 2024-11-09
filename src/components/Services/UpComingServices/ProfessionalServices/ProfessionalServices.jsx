@@ -67,12 +67,12 @@ function ProfessionalServices() {
         <div className={Style.content}>Masonry</div>
       </div> */}
 
-      <div className={Style.itemContainer}>
+      {/* <div className={Style.itemContainer}>
         <div className={Style.item}>
           <img src={houseKeeping}></img>
         </div>
         <div className={Style.content}>Housekeeping</div>
-      </div>
+      </div> */}
 
       {/* <div className={Style.itemContainer}>
         <div className={Style.item}>
