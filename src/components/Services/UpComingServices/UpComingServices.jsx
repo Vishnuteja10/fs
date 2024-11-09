@@ -16,7 +16,7 @@ function UpComingServices() {
 
         <div className={Style.services}>
             {/* <div onClick={()=>setSelected('interior')} className={selected== 'interior' ? Style.selected : Style.interior}>Interior Designing</div> */}
-            <div onClick={()=>setSelected('construction')} className={ selected=='construction' ? Style.selected : Style.construction}>Construction/Interior Design</div>
+            <div id={Style.constructionService} onClick={()=>setSelected('construction')} className={ selected=='construction' ? Style.selected : Style.construction}>Construction/Interior Design</div>
             <div id={Style.professionalServices} onClick={()=>setSelected('professionalServices')} className={ selected == 'professionalServices' ? Style.selected :  Style.professionalServices}>Property Management</div>
 
             <div id={Style.buysellrent} onClick={()=>setSelected('buysellrent')} className={ selected=='buysellrent' ? Style.selected : Style.buysellrent}>Buy-Sell-Rent Properties</div>

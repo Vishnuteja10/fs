@@ -47,8 +47,8 @@
 }
 
 .item img{
-    width: 25vw;
-    height: 30vh;
+    width: 16vw;
+    height: 25vh;
 }
 
 .content{
@@ -79,14 +79,14 @@
     }
 
     .item img{
-        width: 60vw;
+        width: 40vw;
     }
 }
 
 @media (min-width:320px) and (max-width:370px) {
       
     .item img{
-        width: 70vw;
+        width: 50vw;
     }
 
 }
@@ -94,7 +94,7 @@
 @media (min-width:200px) and (max-width:320px){
 
     .item img{
-        width: 70vw;
+        width: 50vw;
     }
 
 }

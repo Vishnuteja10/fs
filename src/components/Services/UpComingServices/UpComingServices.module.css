@@ -61,18 +61,33 @@
 
 @media (max-width:600px){
 
+    #constructionService, #professionalService, #buysellrent, #comingsoon {
+         margin-left: 5vw;
+         margin-right: 5vw; 
+    }
+
+    #comingsoon{
+        margin-right: 10vw;
+    }
+
     .header{
         font-size: 24px;
     }
 
+
     .services{
         display: flex;
         justify-content: space-between;
+        flex-wrap: nowrap;
+        overflow: scroll;
     }
 
     .services div{
+        width: 80vw;
         font-size: 14px;
         font-weight: 600;
+        margin-left: 4vw;
+        white-space: nowrap;
      }
     
 }
@@ -94,6 +109,7 @@
     .services div{
         font-size: 12px;
         font-weight: 600;
+        margin-left: 5vw;
      }
 
 }
@@ -111,9 +127,10 @@
     
     .services div{
         font-size: 12px;
-        margin-left: 4vw;
+        margin-left: 5vw;
         /* width: 16vw; */
         font-weight: 600;
+        
      }
 
      .construction{
