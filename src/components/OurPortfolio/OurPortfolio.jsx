@@ -177,7 +177,7 @@ function OurPortfolio() {
           Munnar
         </div>
 
-        <div
+        {/* <div
           className={`${Style.location} ${
             selectedLoction == "karnataka" ? Style.selected : ""
           }`}
@@ -191,7 +191,7 @@ function OurPortfolio() {
             alt="location icon"
           ></img>
           Sakleshpura
-        </div>
+        </div> */}
         
       </section>
 
@@ -378,7 +378,7 @@ function OurPortfolio() {
           </div>
         )}
 
-        {selectedLoction === "karnataka" && (
+        {/* {selectedLoction === "karnataka" && (
           <div className={Style.properties}>
             {karnatakaProperties?.map((property, index) => (
               <article key={index} className={Style.eachProperty} onClick={() =>
@@ -448,7 +448,7 @@ function OurPortfolio() {
               </article>
             ))}
           </div>
-        )}
+        )} */}
 
         {selectedLoction === "goa" && (
           <div className={Style.properties}>
