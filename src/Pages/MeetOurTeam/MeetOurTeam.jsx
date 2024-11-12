@@ -64,6 +64,8 @@ import compressedImage from '../../assets/shrimmer/ourteam/compressedImg.jpeg'
 
 import compressedImage2 from '../../assets/shrimmer/ourteam/compressed2.jpeg'
 
+import teamCompressedImage from '../../assets/shrimmer/ourteam/teamCompressed.jpeg'
+
 
 
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
@@ -103,7 +105,7 @@ export default function MeetOurTeam() {
 
       <header className={Style.header}>Meet Our Team</header>
       <div className={Style.imageContainer}>
-        <img src={teamImage} className={Style.teamImage} loading="lazy" alt="team"></img>
+        <img src={ isImageLoaded ? teamImage : teamCompressedImage} loading="lazy" alt="team"  onLoad={handleImageLoad} className={isImageLoaded ? Style.teamImage : Style.placeholderImage} ></img>
       </div>
 
       <div className={Style.teamContainer}>
@@ -118,7 +120,7 @@ export default function MeetOurTeam() {
 
           <div className={Style.salesTeamImages}>
             <div className={Style.itemOne}>
-              <img loading="lazy" alt="image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? unnathSirImg : compressedImage } />
+              <img loading="lazy" alt="image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage}   src={ isImageLoaded? unnathSirImg : compressedImage } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
