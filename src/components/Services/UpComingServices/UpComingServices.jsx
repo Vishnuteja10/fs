@@ -21,7 +21,7 @@ function UpComingServices() {
 
             <div id={Style.buysellrent} onClick={()=>setSelected('buysellrent')} className={ selected=='buysellrent' ? Style.selected : Style.buysellrent}>Buy-Sell-Rent Properties</div>
 
-            <div id={Style.comingsoon} onClick={()=>setSelected('comingsoon')} className={ selected=='comingsoon' ? Style.selected : Style.comingsoon}>Coming soon</div>
+            <div id={Style.comingsoon} onClick={()=>setSelected('comingsoon')} className={ selected=='comingsoon' ? Style.selected : Style.comingsoon}>Travel & Accomodation</div>
         </div>
 
         <div className={Style.containers}>
