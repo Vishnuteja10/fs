@@ -134,6 +134,48 @@
      background-color: #021265;
 }
 
+/* .addOn{
+    margin-top: 2vh;
+    text-align: center;
+    background-color: gainsboro;
+    
+} */
+/* 
+@keyframes slideBg {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+  
+ 
+  .addOn{
+    top: 5vh;
+    position: relative;
+    overflow: hidden;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  
+   
+    background: linear-gradient(to right, rgba(245, 245, 248, 0.874), rgba(74, 144, 226, 0.5), rgba(2, 18, 101, 0.5));
+    background-size: 200% 100%;
+    background-position: 0 0;
+  
+    
+    animation: slideBg 3s linear infinite;
+  
+   
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .addOn:hover {
+    color: #021265; 
+  } */
 
 @media (min-width:1430px) and (max-width:1620px){
 
