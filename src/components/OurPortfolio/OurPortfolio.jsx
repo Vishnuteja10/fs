@@ -80,11 +80,12 @@ function OurPortfolio() {
         setKarnatakaProperties(karnatakaProp);
         // console.log("kerala properties", keralaProp);
 
-        console.log(
-          "response while fetching properties",
-          allProperties,
-          karnatakaProp
-        );
+        // console.log(
+        //   "response while fetching properties",
+        //   allProperties,
+        //   karnatakaProp
+        // );
+
       },
       (error) => {
         // console.log("error while fetching properties", error);

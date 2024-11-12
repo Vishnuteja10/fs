@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import Navbar2 from "../../components/Navbar2/Navbar2";
 import Style from "./MeetOurTeam.module.css";
 import teamImg from "../../assets/MeetOurTeam/grp.png";
@@ -59,6 +59,14 @@ import ranjithImg from '../../assets/MeetOurTeam/officeSupport/ranjith.jpeg'
 
 import watsappImg from '../../assets/appImages/watsapp.png'
 
+import compressedImage1 from '../../assets/shrimmer/ourteam/compressed1.jpeg'
+import compressedImage from '../../assets/shrimmer/ourteam/compressedImg.jpeg'
+
+import compressedImage2 from '../../assets/shrimmer/ourteam/compressed2.jpeg'
+
+import teamCompressedImage from '../../assets/shrimmer/ourteam/teamCompressed.jpeg'
+
+
 
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
@@ -66,6 +74,15 @@ import AppIconsComponent from "../../components/AppIconsComponent/AppIconsCompon
 import { Helmet } from "react-helmet";
 
 export default function MeetOurTeam() {
+
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setIsImageLoaded(true); // Update state when image has loaded
+  };
+
+
+
   return (
     <ScrollToTop>
     <div>
@@ -88,7 +105,7 @@ export default function MeetOurTeam() {
 
       <header className={Style.header}>Meet Our Team</header>
       <div className={Style.imageContainer}>
-        <img src={teamImage} className={Style.teamImage} loading="lazy" alt="team"></img>
+        <img src={ isImageLoaded ? teamImage : teamCompressedImage} loading="lazy" alt="team"  onLoad={handleImageLoad} className={isImageLoaded ? Style.teamImage : Style.placeholderImage} ></img>
       </div>
 
       <div className={Style.teamContainer}>
@@ -103,7 +120,7 @@ export default function MeetOurTeam() {
 
           <div className={Style.salesTeamImages}>
             <div className={Style.itemOne}>
-              <img loading="lazy" alt="image" className={Style.itemImage} src={unnathSirImg}></img>
+              <img loading="lazy" alt="image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage}   src={ isImageLoaded? unnathSirImg : compressedImage } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -130,7 +147,7 @@ export default function MeetOurTeam() {
 
             <article className={Style.itemOne}>
               <div>
-              <img loading="lazy" alt="team mate image" className={Style.itemImage} src={divyaImg}></img>
+              <img loading="lazy" alt="team mate image" onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? divyaImg : compressedImage2 } />
               {/* <div className={Style.linkedInContainer}>
                 <img src={linkedIn}></img>
               </div> */}
@@ -140,7 +157,7 @@ export default function MeetOurTeam() {
             </article>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={sameekshaImg}></img>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? sameekshaImg : compressedImage2 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -156,9 +173,10 @@ export default function MeetOurTeam() {
               <div className={Style.role}>Revenue Captain</div>
             </article>
 
-            <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={ganeshImg}></img>
-              <div
+            <article  className={Style.itemOne}>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? ganeshImg : compressedImage1 } />
+            
+             <div
                 className={Style.linkedInContainer}
                 onClick={() =>
                   window.open(
@@ -169,12 +187,35 @@ export default function MeetOurTeam() {
               >
                 <img src={linkedIn}></img>
               </div>
-              <div className={Style.name}>Ganesh</div>
-              <div className={Style.role}>Customer Cultivator</div>
+                 <div className={Style.name}>Ganesh</div>
+                 <div className={Style.role}>Customer Cultivator</div>
+               
             </article>
 
+            {/* <article  className={!isImageLoaded ? Style.skeleton : Style.itemOne}>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ganeshImg }></img>
+             {isImageLoaded?
+             <>
+             <div
+                className={Style.linkedInContainer}
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/ganesh-gaddagunti-ab4222212/",
+                    "_blank"
+                  )
+                }
+              >
+                <img src={linkedIn}></img>
+              </div>
+                 <div className={Style.name}>Ganesh</div>
+                 <div className={Style.role}>Customer Cultivator</div>
+                 </>
+               :""} 
+           
+            </article> */}
+
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={hemanthImg}></img>
+              <img loading="lazy" alt="team mate image"   onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? hemanthImg : compressedImage1 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -191,7 +232,7 @@ export default function MeetOurTeam() {
             </article>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={dnsImg}></img>
+              <img loading="lazy" alt="team mate image"   onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? dnsImg : compressedImage1 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -208,7 +249,7 @@ export default function MeetOurTeam() {
             </article>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={rishabImg}></img>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? rishabImg : compressedImage1 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -225,7 +266,7 @@ export default function MeetOurTeam() {
             </article>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={prashanthImg}></img>
+              <img loading="lazy" alt="team mate image"   onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? prashanthImg : compressedImage1 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -242,7 +283,7 @@ export default function MeetOurTeam() {
             </article>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={surajImg}></img>
+              <img loading="lazy" alt="team mate image"   onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? surajImg : compressedImage1 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -259,7 +300,7 @@ export default function MeetOurTeam() {
             </article>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={shreyaImg}></img>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? shreyaImg : compressedImage1 } />
               {/* <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -283,7 +324,7 @@ export default function MeetOurTeam() {
 
           <div className={Style.salesTeamImages}>
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={dikshaImg}></img>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? dikshaImg : compressedImage1 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -300,7 +341,7 @@ export default function MeetOurTeam() {
             </article>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={sudheerImg}></img>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? sudheerImg : compressedImage1 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -325,7 +366,7 @@ export default function MeetOurTeam() {
           <div className={Style.salesTeamImages}>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={abhaImg}></img>
+              <img loading="lazy" alt="team mate image"   onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? abhaImg : compressedImage2 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -342,7 +383,7 @@ export default function MeetOurTeam() {
             </article>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={rakeshImg}></img>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? rakeshImg : compressedImage1 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -359,7 +400,7 @@ export default function MeetOurTeam() {
             </article>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={vishnuImg}></img>
+              <img loading="lazy" alt="team mate image"   onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? vishnuImg : compressedImage1 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -376,7 +417,7 @@ export default function MeetOurTeam() {
             </article>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={rohithImg}></img>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? rohithImg : compressedImage1 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -390,7 +431,7 @@ export default function MeetOurTeam() {
             </article>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={deekshaImg}></img>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? deekshaImg : compressedImage2 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -407,7 +448,7 @@ export default function MeetOurTeam() {
             </article>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={aparnaImg}></img>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? aparnaImg : compressedImage2 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -425,7 +466,7 @@ export default function MeetOurTeam() {
 
             
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={jovinImg}></img>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? jovinImg : compressedImage1 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -451,7 +492,7 @@ export default function MeetOurTeam() {
           <div className={Style.salesTeamImages}>
 
           <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={tarunReddyImg}></img>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? tarunReddyImg : compressedImage2 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -468,7 +509,7 @@ export default function MeetOurTeam() {
             </article>
 
           <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={shivaniImg}></img>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? shivaniImg : compressedImage2 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -486,7 +527,7 @@ export default function MeetOurTeam() {
 
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={moinImg}></img>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? moinImg : compressedImage1 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -503,7 +544,7 @@ export default function MeetOurTeam() {
             </article>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={tharunImg}></img>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? tharunImg : compressedImage1 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() => window.open("https://www.linkedin.com/in/tarun-ragam-9a9887326/", "_blank")}
@@ -521,7 +562,7 @@ export default function MeetOurTeam() {
 
           <div className={Style.salesTeamImages}>
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={akhilaImg}></img>
+              <img loading="lazy" alt="team mate image"   onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? akhilaImg : compressedImage1 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -540,7 +581,7 @@ export default function MeetOurTeam() {
             
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={naveenSirImg}></img>
+              <img loading="lazy" alt="team mate image"   onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? naveenSirImg : compressedImage1 } />
               {/* <div
                 className={Style.linkedInContainer}
                 onClick={() => window.open(" ", "_blank")}
@@ -578,7 +619,7 @@ export default function MeetOurTeam() {
             </article> */}
 
           <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={hemanth2Img}></img>
+              <img loading="lazy" alt="team mate image"   onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? hemanth2Img : compressedImage1 } />
               <div
                 className={Style.linkedInContainer}
                 onClick={() => window.open("https://www.linkedin.com/in/hemanth-kumar-4ab4782bb/ ", "_blank")}
@@ -593,7 +634,7 @@ export default function MeetOurTeam() {
 
             <article className={Style.itemOne}>
 
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={mansoorImg}></img>
+              <img loading="lazy" alt="team mate image"   onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? mansoorImg : compressedImage1 } />
               {/* <div
                 className={Style.linkedInContainer}
                 onClick={() =>
@@ -610,7 +651,7 @@ export default function MeetOurTeam() {
             </article>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={deepakImg}></img>
+              <img loading="lazy" alt="team mate image"   onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? deepakImg : compressedImage1 } />
               {/* <div
                 className={Style.linkedInContainer}
                 onClick={() => window.open(" ", "_blank")}
@@ -624,7 +665,7 @@ export default function MeetOurTeam() {
            
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={gopiImg}></img>
+              <img loading="lazy" alt="team mate image"   onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? gopiImg : compressedImage1 } />
               {/* <div
                 className={Style.linkedInContainer}
                 onClick={() => window.open(" ", "_blank")}
@@ -646,26 +687,26 @@ export default function MeetOurTeam() {
           <div className={Style.salesTeamImages}>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={karthikImg}></img>
+              <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? karthikImg : compressedImage1 } />
               <div className={Style.name}>Karthik</div>
             </article>
 
 
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={shivaImg}></img>
+              <img loading="lazy" alt="team mate image"   onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? shivaImg : compressedImage1 } />
             
               <div className={Style.name}>Shiva</div>
               {/* <div className={Style.role}>Finance Head</div> */}
             </article>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={srinivasImg}></img>
+              <img loading="lazy" alt="team mate image"   onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? srinivasImg : compressedImage1 } />
               <div className={Style.name}>Srinivas</div>
             </article>
 
             <article className={Style.itemOne}>
-              <img loading="lazy" alt="team mate image"  className={Style.itemImage} src={ranjithImg}></img>
+              <img loading="lazy" alt="team mate image"   onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? ranjithImg : compressedImage1 } />
               <div className={Style.name}>Ranjith</div>
             </article>
 
