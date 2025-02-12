@@ -47,6 +47,20 @@ function Agents() {
         <title>Agents | Fracspace</title>
         <meta name="description" content="Join our team of dedicated agents at Fracspace. We offer a vibrant and collaborative environment for real estate professionals." />
         <meta name="robots" content="index, follow" />
+
+    
+        
+          {/* Google Analytics (GA) Script */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DRDNCGMB0"></script>
+          <script>
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-9DRDNCGMB0');
+            `}
+          </script>
+
       </Helmet>
 
         <AppIconsComponent />

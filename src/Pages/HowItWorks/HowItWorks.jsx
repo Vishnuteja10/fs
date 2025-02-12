@@ -30,6 +30,17 @@ function HowItWorks() {
         <title>How It Works | Fracspace</title>
         <meta name="description" content="Discover how Fracspace works for you. Explore our step-by-step guide to seamless property management and services." />
         <meta name="robots" content="index, follow" />
+
+          {/* Google Analytics (GA) Script */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DRDNCGMB0"></script>
+          <script>
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-9DRDNCGMB0');
+            `}
+          </script>
       </Helmet>
 
       <AppIconsComponent />

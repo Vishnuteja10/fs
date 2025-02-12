@@ -23,13 +23,13 @@ function HowFsWorks() {
               How does <span className={Style.name}>Fracspace</span> Work ?
             </h2>
 
-            <div className={Style.videoContainer}>
+            {/* <div className={Style.videoContainer}>
               <video
                 className={Style.videoContent}
                 controls
                 src={fsVideo}
               ></video>
-            </div>
+            </div> */}
 
             <div className={Style.content}>
               <span className={Style.fracspaceContent}>
@@ -52,13 +52,13 @@ function HowFsWorks() {
               premier event for luxury real brought to you by Fracspace. 
             </div>
           </div>
-          <div className={Style.videoContainer}>
+          {/* <div className={Style.videoContainer}>
             <video
               className={Style.videoContent}
               controls
               src={fsVideo}
             ></video>
-          </div>
+          </div> */}
         </div>
       )}
     </section>

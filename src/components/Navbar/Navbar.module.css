@@ -371,14 +371,14 @@ ul li {
 
     .logo1{
         width: 40vw;
-        height: 25vh;
+        height: 26vh;
     }
 
 
     .logo2{
         margin-top: -7vh;
         width: 40vw;
-        height: 25vh;
+        height: 26vh;
     }
 
 /* 
@@ -487,10 +487,12 @@ ul li {
    
   .logo1{
      width: 50vw;
+     height: 26vh;
   }
 
   .logo2{
      width:50vw;
+     height: 26vh;
   }
 
   .main2 {

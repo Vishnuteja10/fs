@@ -97,8 +97,12 @@ function EachProperty() {
 
   let propDetails;
 
+  const headers = {
+    'x-api-key' : 'Fracspace@2024'
+  }
+
   useEffect(() => {
-    axios.get(PROPERTY_API).then(
+    axios.get(PROPERTY_API,{headers}).then(
       (response) => {
         propDetails = response?.data?.data;
         setPropertyDetails(response?.data?.data);

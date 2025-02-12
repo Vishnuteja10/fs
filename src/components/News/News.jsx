@@ -17,6 +17,10 @@ import img5 from "../../assets/newsImages/et.png";
 import img6 from "../../assets/newsImages/aroundtelugu-logo.png";
 import img7 from '../../assets/newsImages/Et_Insights.png'
 
+import img01 from '../../assets/newsImages/forbes1.png'
+import img02 from '../../assets/newsImages/forbes2.png'
+
+
 export default function News() {
   const newsContainerRef = useRef(null);
   const scrollIntervalRef = useRef(null); // Ref to store the scroll interval
@@ -78,6 +82,31 @@ export default function News() {
       <div className={Style.header}>In the News</div>
 
       <div className={Style.newsContainer} ref={newsContainerRef}>
+
+      <a
+          className={Style.newsImage}
+          href="https://www.etnownews.com/companies/tech-horizons-unveiling-forbes-picks-for-the-next-global-players-article-115661660"
+          target="_blank"
+        >
+          {" "}
+          <img
+            src={img01}
+            alt="Tech Horizons: Unveiling Forbes' Picks for the Next Global Players"
+          ></img>
+        </a>
+
+        <a
+          className={Style.newsImage}
+          href="https://images.news18.com/ms/prod/forbesindia/Fracspace_01a7eb15b7.pdf"
+          target="_blank"
+        >
+          {" "}
+          <img
+            src={img02}
+            alt="Tech Horizons: Unveiling Forbes' Picks for the Next Global Players"
+          ></img>
+        </a>
+
         <a
           className={Style.newsImage}
           href="https://www.deccanchronicle.com/general/fracspace-revolutionizes-real-estate-ownership-with-mobile-app-897133"
@@ -148,6 +177,29 @@ export default function News() {
         </a>
 
         {/* repeat - 2 */}
+        <a
+          className={Style.newsImage}
+          href="https://www.etnownews.com/companies/tech-horizons-unveiling-forbes-picks-for-the-next-global-players-article-115661660"
+          target="_blank"
+        >
+          {" "}
+          <img
+            src={img01}
+            alt="Tech Horizons: Unveiling Forbes' Picks for the Next Global Players"
+          ></img>
+        </a>
+
+        <a
+          className={Style.newsImage}
+          href="https://images.news18.com/ms/prod/forbesindia/Fracspace_01a7eb15b7.pdf"
+          target="_blank"
+        >
+          {" "}
+          <img
+            src={img02}
+            alt="Tech Horizons: Unveiling Forbes' Picks for the Next Global Players"
+          ></img>
+        </a>
 
         <a
           className={Style.newsImage}
@@ -219,6 +271,30 @@ export default function News() {
         </a>
 
         {/* repeat 3 */}
+
+        <a
+          className={Style.newsImage}
+          href="https://www.etnownews.com/companies/tech-horizons-unveiling-forbes-picks-for-the-next-global-players-article-115661660"
+          target="_blank"
+        >
+          {" "}
+          <img
+            src={img01}
+            alt="Tech Horizons: Unveiling Forbes' Picks for the Next Global Players"
+          ></img>
+        </a>
+
+        <a
+          className={Style.newsImage}
+          href="https://images.news18.com/ms/prod/forbesindia/Fracspace_01a7eb15b7.pdf"
+          target="_blank"
+        >
+          {" "}
+          <img
+            src={img02}
+            alt="Tech Horizons: Unveiling Forbes' Picks for the Next Global Players"
+          ></img>
+        </a>
 
         <a
           className={Style.newsImage}
@@ -294,6 +370,30 @@ export default function News() {
 
         <a
           className={Style.newsImage}
+          href="https://www.etnownews.com/companies/tech-horizons-unveiling-forbes-picks-for-the-next-global-players-article-115661660"
+          target="_blank"
+        >
+          {" "}
+          <img
+            src={img01}
+            alt="Tech Horizons: Unveiling Forbes' Picks for the Next Global Players"
+          ></img>
+        </a>
+
+        <a
+          className={Style.newsImage}
+          href="https://images.news18.com/ms/prod/forbesindia/Fracspace_01a7eb15b7.pdf"
+          target="_blank"
+        >
+          {" "}
+          <img
+            src={img02}
+            alt="Tech Horizons: Unveiling Forbes' Picks for the Next Global Players"
+          ></img>
+        </a>
+
+        <a
+          className={Style.newsImage}
           href="https://www.deccanchronicle.com/general/fracspace-revolutionizes-real-estate-ownership-with-mobile-app-897133"
           target="_blank"
         >
@@ -362,6 +462,30 @@ export default function News() {
         </a>
 
         {/* repeat 5 */}
+
+        <a
+          className={Style.newsImage}
+          href="https://www.etnownews.com/companies/tech-horizons-unveiling-forbes-picks-for-the-next-global-players-article-115661660"
+          target="_blank"
+        >
+          {" "}
+          <img
+            src={img01}
+            alt="Tech Horizons: Unveiling Forbes' Picks for the Next Global Players"
+          ></img>
+        </a>
+
+        <a
+          className={Style.newsImage}
+          href="https://images.news18.com/ms/prod/forbesindia/Fracspace_01a7eb15b7.pdf"
+          target="_blank"
+        >
+          {" "}
+          <img
+            src={img02}
+            alt="Tech Horizons: Unveiling Forbes' Picks for the Next Global Players"
+          ></img>
+        </a>
 
         <a
           className={Style.newsImage}

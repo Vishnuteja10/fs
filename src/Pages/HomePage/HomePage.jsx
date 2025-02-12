@@ -26,6 +26,9 @@ import AppIconsComponent from "../../components/AppIconsComponent/AppIconsCompon
 import Reviews from "../../components/Reviews/Reviews";
 import OurPortfolio from "../../components/OurPortfolio/OurPortfolio";
 
+import { Helmet } from 'react-helmet';
+import SpecialOffers from "../../components/SpecialOffers/SpecialOffers";
+
 export default function HomePage() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -48,6 +51,26 @@ export default function HomePage() {
   return (
     <ScrollToTop>
     <div className={Style.main}>
+
+    <Helmet>
+        <title>Home | Fracspace</title>
+        <meta name="description" content="Discover fractional ownership in luxury real estate with Fracspace. Invest in high-end properties, enjoy premium vacations, and earn rental income with projected yields of 8% annually." />
+        <meta name="robots" content="index, follow" />
+
+    
+        
+          {/* Google Analytics (GA) Script */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DRDNCGMB0"></script>
+          <script>
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-9DRDNCGMB0');
+            `}
+          </script>
+
+      </Helmet>
 
       <AppIconsComponent />
       
@@ -72,7 +95,10 @@ export default function HomePage() {
         </div> */}
 
       <div className={scrolled ? Style.nav : Style.navbar}>
+      <SpecialOffers />
+      
         <Navbar />
+
       </div>
 
       <div className={Style.banner}>

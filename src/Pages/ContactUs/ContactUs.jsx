@@ -114,6 +114,16 @@ export default function ContactUs() {
         <title>Contact Us</title>
         <meta name="description" content="Reach out to our Concierge for assistance with property management, construction, and interior design services. We're here to help you!" />
         <meta name="robots" content="index, follow" />
+          {/* Google Analytics (GA) Script */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DRDNCGMB0"></script>
+          <script>
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-9DRDNCGMB0');
+            `}
+          </script>
       </Helmet>
     <div className={Style.main}>
 
