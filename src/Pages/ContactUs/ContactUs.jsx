@@ -285,7 +285,6 @@ export default function ContactUs() {
                     height: "6vh",
                     fontSize: "1rem"
                   }}
-                  // inputStyle={Style.phoneInput}
                   required
                   className={Style.formControl}
                 />
