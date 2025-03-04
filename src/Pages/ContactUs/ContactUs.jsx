@@ -67,8 +67,6 @@ export default function ContactUs() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-
-
     // Handle form submission
 
     if (!formData.contact) {
