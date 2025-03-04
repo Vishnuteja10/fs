@@ -28,6 +28,7 @@ import OurPortfolio from "../../components/OurPortfolio/OurPortfolio";
 
 import { Helmet } from 'react-helmet';
 import SpecialOffers from "../../components/SpecialOffers/SpecialOffers";
+import OffersBanner from "../../components/OffersBanner/OffersBanner";
 
 export default function HomePage() {
   const [scrolled, setScrolled] = useState(false);
@@ -107,6 +108,10 @@ export default function HomePage() {
 
       <div>
         <CoOwn />
+      </div>
+
+      <div>
+        <OffersBanner />
       </div>
 
     <Element name="portfolio">

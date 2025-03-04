@@ -1,3 +1,9 @@
+
+.offers{
+  width: 80vw !important;
+  border: 1px solid green;
+}
+
 .main {
   display: flex;
   width: 98vw;
