@@ -78,6 +78,7 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
 
 import { Helmet } from "react-helmet";
+import OffersTopBanner from "../../components/OffersTopBanner/OffersTopBanner";
 
 export default function MeetOurTeam() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -113,6 +114,10 @@ export default function MeetOurTeam() {
         </Helmet>
 
         <AppIconsComponent />
+
+        <div className={Style.topBanner}>
+          <OffersTopBanner />
+        </div>
 
         <div className={Style.navBar}>
           <Navbar2 />

@@ -1,0 +1,97 @@
+
+/* .main{
+    display: flex;
+    align-items: center;
+    padding-left: 30vw;
+    background-color: rgb(4, 4, 82);
+    width: 100vw;
+    height: 5vh;
+    color: white;
+} */
+
+/* @keyframes movingLine {
+    0% { background-position: -100% 0; }
+    100% { background-position: 100% 0; }
+  }
+  
+  .main {
+      display: flex;
+      align-items: center;
+      padding-left: 30vw;
+      width: 100vw;
+      height: 5vh;
+      color: white;
+      background: linear-gradient(90deg, rgba(90, 156, 197, 0.8) 30%, rgba(255, 255, 255, 0.3) 50%, rgba(106, 172, 201, 0.8) 70%);
+      background-size: 200% 100%;
+      animation: movingLine 3s linear infinite;
+  }
+
+
+.knowMore{
+    cursor: pointer;
+} */
+
+@keyframes movingLine {
+    0% { background-position: -100% 0; }
+    100% { background-position: 100% 0; }
+  }
+  
+  .main {
+      display: flex;
+      align-items: center;
+      padding-left: 30vw;
+      width: 100vw;
+      height: 5vh;
+      color: white;
+      /* background: linear-gradient(90deg, rgba(0, 87, 146, 0.9) 30%, rgba(255, 255, 255, 0.7) 50%, rgba(1, 57, 103, 0.8) 70%); */
+
+      background: rgba(128, 128, 128, 0.3);
+      background-size: 200% 100%;
+      animation: movingLine 3s linear infinite;
+      backdrop-filter: blur(10px); /* Blurred background effect */
+      -webkit-backdrop-filter: blur(10px); /* Safari support */
+  }
+
+
+  .knowMore {
+    cursor: pointer;
+    background-color: #99aab1;
+    color: rgb(254, 254, 254);
+    padding: 3px 9px;
+    border-radius: 12px;
+    /* font-weight: bold; */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.knowMore:hover {
+    background-color: #d1d8da;
+    transform: scale(1.1);
+}
+
+@media (max-width:600px){
+    /* .main{
+        height: auto;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        background: gray;
+    } */
+
+    .main{
+        height: auto;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        background: rgba(128, 128, 128, 0.3); /* Semi-transparent gray */
+        backdrop-filter: blur(10px); /* Blurred background effect */
+        -webkit-backdrop-filter: blur(10px); /* Safari support */
+        border-radius: 5px;
+    }
+
+    .knowMore{
+        top: 3vh;
+        margin-left: 4vw;
+    }
+}

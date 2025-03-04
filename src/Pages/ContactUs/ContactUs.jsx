@@ -21,6 +21,7 @@ import watsappImg from "../../assets/appImages/watsapp.png";
 import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
 
 import { Helmet } from "react-helmet";
+import OffersTopBanner from "../../components/OffersTopBanner/OffersTopBanner";
 
 export default function ContactUs() {
   const initialFormData = {
@@ -161,6 +162,10 @@ export default function ContactUs() {
         </div>
 
       </div> */}
+
+      <div className={Style.topBanner}>
+        <OffersTopBanner />
+      </div>
 
         <div className={Style.navBar}>
           <Navbar2 />

@@ -1,6 +1,7 @@
 
 
 .navbar{
+  top: 2vh;
     position: fixed;
     padding-top: 8vh;
     display: flex;
@@ -20,6 +21,13 @@
     padding-top: 20vh;
 }
 
+.topBanner{
+  top: 0;
+  position: fixed;
+  z-index: 99999;
+  height: 3vh;
+}
+
 @media (max-width:600px){
 
     .mainComponent{
@@ -27,6 +35,7 @@
     }
 
     .navbar{
+      top: 9vh;
         padding-top: 10vh;
        height: 10vh;
     }    

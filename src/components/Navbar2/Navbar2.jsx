@@ -28,7 +28,6 @@ function Navbar2() {
         <>
           {/* <OffersTopBanner /> */}
           <div className={Style.main}>
-          <OffersTopBanner />
             <div className={Style.logo}>
               <div onClick={() => navigate("/")}>
                 <img className={Style.logo1} src={logo1}></img>
