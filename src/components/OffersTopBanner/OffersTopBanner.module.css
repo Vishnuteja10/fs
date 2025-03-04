@@ -48,8 +48,8 @@
       background: rgba(128, 128, 128, 0.3);
       background-size: 200% 100%;
       animation: movingLine 3s linear infinite;
-      backdrop-filter: blur(10px); /* Blurred background effect */
-      -webkit-backdrop-filter: blur(10px); /* Safari support */
+      backdrop-filter: blur(10px); 
+      -webkit-backdrop-filter: blur(10px); 
   }
 
 

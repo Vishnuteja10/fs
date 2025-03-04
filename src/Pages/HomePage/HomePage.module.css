@@ -115,14 +115,14 @@
 @media (max-width:600px) {
 
   .navbar{
-    top: 8vh;
+    top: 6vh;
     padding-top: 10vh;
     height: 10vh;
    }
 
 
   .nav{
-    top: 8vh;
+    top: 6vh;
     padding-top: 8vh;
     height: 10vh;
     padding-bottom: 2vh;

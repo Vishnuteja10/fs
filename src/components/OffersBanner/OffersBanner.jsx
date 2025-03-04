@@ -31,7 +31,8 @@ function OffersBanner() {
 
         <Carousel.Item>
           <div className={Style.bannerText}>
-            <h3>🔥 Buy Any 2 Fractions - Bigger Rewards! 🔥</h3>
+            <h3>🎉 Exclusive Offers for the First 10 Customers 🎉</h3>
+            <p>🔥 Buy Any 2 Fractions - Bigger Rewards! 🔥</p>
             <ul>
               <li>💵 Get 25% discount on the total fraction cost.</li>
               <li>

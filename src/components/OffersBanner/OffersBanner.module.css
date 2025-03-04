@@ -1,6 +1,6 @@
 .bannerContainer {
   width: 100%;
-  /* background-color: rgba(0, 0, 0, 0.85); */
+  background-color: rgba(244, 243, 243, 0.85);
   color: rgb(8, 12, 70);
   text-align: center;
   padding: 20px 0;
@@ -59,3 +59,8 @@
 .bannerContainer .carousel-control-next-icon:hover {
   opacity: 1;
 }
+
+.bannerContainer{
+    padding-bottom: 5vh;
+}
+
