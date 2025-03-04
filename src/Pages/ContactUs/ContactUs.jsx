@@ -17,13 +17,12 @@ import PhoneInput from "react-phone-input-2";
 import axios from "axios";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
-import watsappImg from '../../assets/appImages/watsapp.png'
+import watsappImg from "../../assets/appImages/watsapp.png";
 import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
 
 import { Helmet } from "react-helmet";
 
 export default function ContactUs() {
-  
   const initialFormData = {
     lastName: "",
     firstName: "",
@@ -33,7 +32,7 @@ export default function ContactUs() {
     contact: "",
     countryCode: "",
     phoneNumber: "",
-    agreeTerms: false,
+    agreeTerms: false
   };
 
   const [formData, setFormData] = useState(initialFormData);
@@ -75,7 +74,9 @@ export default function ContactUs() {
     }
 
     if (!formData.agreeTerms) {
-      alert("Please click the checkbox to confirm that Fracspace can contact you before submitting your details.");
+      alert(
+        "Please click the checkbox to confirm that Fracspace can contact you before submitting your details."
+      );
       return;
     }
 
@@ -108,26 +109,31 @@ export default function ContactUs() {
 
   return (
     <ScrollToTop>
-         <Helmet>
+      <Helmet>
         <title>Contact Us</title>
-        <meta name="description" content="Reach out to our Concierge for assistance with property management, construction, and interior design services. We're here to help you!" />
+        <meta
+          name="description"
+          content="Reach out to our Concierge for assistance with property management, construction, and interior design services. We're here to help you!"
+        />
         <meta name="robots" content="index, follow" />
-          {/* Google Analytics (GA) Script */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DRDNCGMB0"></script>
-          <script>
-            {`
+        {/* Google Analytics (GA) Script */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-9DRDNCGMB0"
+        ></script>
+        <script>
+          {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-9DRDNCGMB0');
             `}
-          </script>
+        </script>
       </Helmet>
-    <div className={Style.main}>
+      <div className={Style.main}>
+        <AppIconsComponent />
 
-      <AppIconsComponent />
-
-      {/* <div className={Style.appIconsContainer}>
+        {/* <div className={Style.appIconsContainer}>
         <div
           onClick={() =>
             window.open(
@@ -156,138 +162,132 @@ export default function ContactUs() {
 
       </div> */}
 
+        <div className={Style.navBar}>
+          <Navbar2 />
+        </div>
+        <div className={Style.main2}>
+          <header>
+            <h1 className={Style.header}>
+              Reach out to our Concierge for Assistance
+            </h1>
+            <p className={Style.content}>Let us know how we can help you</p>
+          </header>
 
-      <div className={Style.navBar}>
-        <Navbar2 />
-      </div>
-      <div className={Style.main2}>
-        <header>
-        <h1 className={Style.header}>Reach out to our Concierge for Assistance</h1>
-        <p className={Style.content}>Let us know how we can help you</p>
-        </header>
+          <section className={Style.contactContainer}>
+            <article className={Style.contactBox}>
+              <div className={Style.container}>
+                <div className={Style.container1}>
+                  <div className={Style.imageContainer}>
+                    <img className={Style.videoImg} src={smsImg}></img>
+                  </div>
+                </div>
 
-        <section className={Style.contactContainer}>
-          {/* <div className={Style.contactBox}>
-            <div className={Style.imageContainer}>
-              <img className={Style.videoImg} src={videoImg}></img>
-            </div>
-            <div className={Style.contactHeader}>Schedule a meet</div>
-            <div className={Style.contactContent}>
-              Speak to our friendly team
-            </div>
-            <div className={Style.contactCTA}>Book Your Slot</div>
-          </div> */}
+                <div className={Style.contactHeader}>Write us</div>
+                <div className={Style.contactContent}>
+                  we are here to help you
+                </div>
+                <a
+                  className={Style.contactCTA}
+                  href="mailto:support@fracspace.com"
+                >
+                  support@fracspace.com
+                </a>
+              </div>
+            </article>
 
-          <article className={Style.contactBox}>
-            <div className={Style.container}>
-              <div className={Style.container1}>
-                <div className={Style.imageContainer}>
-                  <img className={Style.videoImg} src={smsImg}></img>
+            <article className={Style.contactBox}>
+              <div className={Style.container}>
+                <div className={Style.container1}>
+                  <div className={Style.imageContainer}>
+                    <img className={Style.videoImg} src={locationImg}></img>
+                  </div>
+                </div>
+                <div className={Style.contactHeader}>Make a visit</div>
+                <div className={Style.contactContent}>visit our office</div>
+                <div
+                  className={Style.contactCTA}
+                  onClick={() =>
+                    window.open(
+                      "https://maps.app.goo.gl/3JZiFx6aVkVHrxj29",
+                      "_blank"
+                    )
+                  }
+                >
+                  View on google maps
                 </div>
               </div>
+            </article>
 
-              <div className={Style.contactHeader}>Write us</div>
-              <div className={Style.contactContent}>
-                we are here to help you
-              </div>
-              <a className={Style.contactCTA} href="mailto:support@fracspace.com">support@fracspace.com</a>
-            </div>
-          </article>
-
-          <article className={Style.contactBox}>
-            <div className={Style.container}>
-              <div className={Style.container1}>
-                <div className={Style.imageContainer}>
-                  <img className={Style.videoImg} src={locationImg}></img>
+            <article className={Style.contactBox}>
+              <div className={Style.container}>
+                <div className={Style.container1}>
+                  <div className={Style.imageContainer}>
+                    <img className={Style.videoImg} src={callImg}></img>
+                  </div>
+                </div>
+                <div className={Style.contactHeader}>Contact us</div>
+                <div className={Style.contactContent}>Mon-Sat 9am-5:30pm</div>
+                <div className={Style.contactCTA}>
+                  +91-98806-26111 <br></br> +91-93555-65604
                 </div>
               </div>
-              <div className={Style.contactHeader}>Make a visit</div>
-              <div className={Style.contactContent}>visit our office</div>
-              <div
-                className={Style.contactCTA}
-                onClick={() =>
-                  window.open(
-                    "https://maps.app.goo.gl/3JZiFx6aVkVHrxj29",
-                    "_blank"
-                  )
-                }
-              >
-                View on google maps
-              </div>
-            </div>
-          </article>
+            </article>
+          </section>
+        </div>
 
-          <article className={Style.contactBox}>
-            <div className={Style.container}>
-              <div className={Style.container1}>
-                <div className={Style.imageContainer}>
-                  <img className={Style.videoImg} src={callImg}></img>
-                </div>
+        <section className={Style.contactForm}>
+          <div className={Style.contactOuterContainer}>
+            <div className={Style.contactInnerContainer}>
+              <div className={Style.contactFormHeader}>Get in touch</div>
+              <div className={Style.contactFormMiniContent}>
+                Let us know how can we help you
               </div>
-              <div className={Style.contactHeader}>Contact us</div>
-              <div className={Style.contactContent}>Mon-Sat 9am-5:30pm</div>
-              <div className={Style.contactCTA}>
-                +91-98806-26111 <br></br> +91-93555-65604
-              </div>
-            </div>
-          </article>
-        </section>
+              <div className={Style.formContainer}>
+                <form onSubmit={handleSubmit} className={Style.form}>
+                  <div className={Style.row}>
+                    <input
+                      type="text"
+                      name="firstName"
+                      placeholder="First Name"
+                      required
+                      value={formData?.firstName}
+                      onChange={handleChange}
+                      className={Style.input}
+                    />
 
-      </div>
-
-      <section className={Style.contactForm}>
-        <div className={Style.contactOuterContainer}>
-          <div className={Style.contactInnerContainer}>
-            <div className={Style.contactFormHeader}>Get in touch</div>
-            <div className={Style.contactFormMiniContent}>
-              Let us know how can we help you
-            </div>
-            <div className={Style.formContainer}>
-              <form onSubmit={handleSubmit} className={Style.form}>
-                <div className={Style.row}>
+                    <input
+                      type="text"
+                      name="lastName"
+                      placeholder="Last Name"
+                      value={formData?.lastName}
+                      onChange={handleChange}
+                      className={Style.input}
+                    />
+                  </div>
                   <input
-                    type="text"
-                    name="firstName"
-                    placeholder="First Name"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
                     required
-                    value={formData?.firstName}
+                    value={formData?.email}
                     onChange={handleChange}
-                    className={Style.input}
+                    className={Style.inputEmail}
                   />
 
-                  <input
-                    type="text"
-                    name="lastName"
-                    placeholder="Last Name"
-                    value={formData?.lastName}
-                    onChange={handleChange}
-                    className={Style.input}
+                  <PhoneInput
+                    country={"in"}
+                    value={formData.contact}
+                    onChange={handlePhoneChange}
+                    inputStyle={{
+                      width: "100%",
+                      height: "6vh",
+                      fontSize: "1rem"
+                    }}
+                    required
+                    className={Style.formControl}
                   />
-                </div>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  required
-                  value={formData?.email}
-                  onChange={handleChange}
-                  className={Style.inputEmail}
-                />
 
-                <PhoneInput
-                  country={"in"}
-                  value={formData.contact}
-                  onChange={handlePhoneChange}
-                  inputStyle={{
-                    width: "100%",
-                    height: "6vh",
-                    fontSize: "1rem"
-                  }}
-                  required
-                  className={Style.formControl}
-                />
-
-                {/* <input
+                  {/* <input
                   type="tel"
                   name="phoneNumber"
                   placeholder="+91 Phone Number"
@@ -296,75 +296,72 @@ export default function ContactUs() {
                   className={Style.inputPhone}
                 /> */}
 
-                <select
-                  name="serviceType"
-                  value={formData?.serviceType}
-                  onChange={handleChange}
-                  required
-                  className={Style.inputEmail} // You can use a different class if needed
-                >
-                  <option value="">Select a Service Type</option>
-                  <option value="Co Ownership">Co-Ownership</option>
-                  <option value="Travel & Accomodation">
-                    Travel & Accomodation
-                  </option>
-                  <option value="List Your Property">
-                    List Your Property
-                  </option>
-                  <option value="Property Management">
-                    Property Management
-                  </option>
-                  <option value="Construction">
-                    Construction
-                  </option>
-                  <option value="Interior Design">
-                    Interior Design
-                  </option>
-                </select>
-
-                <textarea
-                  name="message"
-                  placeholder="Message"
-                  value={formData?.message}
-                  onChange={handleChange}
-                  className={Style.textarea}
-                  required
-                />
-
-                <div className={Style.checkboxContainer}>
-                  <input
-                    type="checkbox"
-                    name="agreeTerms"
-                    checked={formData?.agreeTerms}
+                  <select
+                    name="serviceType"
+                    value={formData?.serviceType}
                     onChange={handleChange}
-                    className={Style.checkbox}
+                    required
+                    className={Style.inputEmail} // You can use a different class if needed
+                  >
+                    <option value="">Select a Service Type</option>
+                    <option value="Co Ownership">Co-Ownership</option>
+                    <option value="Travel & Accomodation">
+                      Travel & Accomodation
+                    </option>
+                    <option value="List Your Property">
+                      List Your Property
+                    </option>
+                    <option value="Property Management">
+                      Property Management
+                    </option>
+                    <option value="Construction">Construction</option>
+                    <option value="Interior Design">Interior Design</option>
+                  </select>
+
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    value={formData?.message}
+                    onChange={handleChange}
+                    className={Style.textarea}
                     required
                   />
-                  <label className={Style.checkBoxLabel}>
-                  By submitting your contact details, you authorize Fracspace and its representatives to contact you.
-                  </label>
-                </div>
 
-                <button type="submit" className={Style.submitButton}>
-                  Submit
-                </button>
-
-                {showSuccessMessage && (
-                  <div className={Style.successMessage}>
-                    Thank you for reaching out! We’ve received your inquiry and
-                    our team is already on it. 
+                  <div className={Style.checkboxContainer}>
+                    <input
+                      type="checkbox"
+                      name="agreeTerms"
+                      checked={formData?.agreeTerms}
+                      onChange={handleChange}
+                      className={Style.checkbox}
+                      required
+                    />
+                    <label className={Style.checkBoxLabel}>
+                      By submitting your contact details, you authorize
+                      Fracspace and its representatives to contact you.
+                    </label>
                   </div>
-                )}
-              </form>
+
+                  <button type="submit" className={Style.submitButton}>
+                    Submit
+                  </button>
+
+                  {showSuccessMessage && (
+                    <div className={Style.successMessage}>
+                      Thank you for reaching out! We’ve received your inquiry
+                      and our team is already on it.
+                    </div>
+                  )}
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div>
-        <Footer />
+        <div>
+          <Footer />
+        </div>
       </div>
-    </div>
     </ScrollToTop>
   );
 }
