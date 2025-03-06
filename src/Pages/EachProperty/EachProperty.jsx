@@ -199,6 +199,7 @@ function EachProperty() {
               showArrows={true}
               stopOnHover={false}
             >
+              
               {propertyDetails?.image &&
                 Object.values(propertyDetails.image).map((img, index) => (
                  <div key={index}>
@@ -209,6 +210,7 @@ function EachProperty() {
                     />
                   </div>
                 ))}
+
             </Carousel>
           </div>
 
