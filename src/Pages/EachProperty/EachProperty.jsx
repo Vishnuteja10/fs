@@ -201,8 +201,8 @@ function EachProperty() {
             >
               {propertyDetails?.image &&
                 Object.values(propertyDetails.image).map((img, index) => (
-                  <div key={index}>
-                    <img
+                 <div key={index}>
+                   <img
                       className={Style.propertyImage}
                       src={img}
                       alt={`Property Image ${index + 1}`}
