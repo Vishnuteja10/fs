@@ -276,8 +276,9 @@
     .main{
         /* border: 2px solid gray; */
         width: 100vw;
-        height: 10vh;
-        margin-top: -12vh;
+        height: 14vh;
+        /* margin-top: -12vh; */
+        /* background-color: white; */
     }
 
     .logo{

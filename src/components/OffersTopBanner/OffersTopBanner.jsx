@@ -39,7 +39,7 @@ function OffersTopBanner() {
       {!isMobile ? (
         <div className={Style.main}>
           <div>
-            🌟 Unlock Exclusive March Deals – Invest & Enjoy! 🌟{" "}
+          ✨Unlock Exclusive  Deals – Invest & Enjoy! 🎉{" "}
             <span className={Style.knowMore} onClick={handleKnowMoreClick}>
               Know More
             </span>
@@ -47,12 +47,13 @@ function OffersTopBanner() {
         </div>
       ) : (
         <div className={Style.main}>
-          <div>
-            🌟 Unlock Exclusive March Deals – Invest & Enjoy! 🌟 
-            <span className={Style.knowMore} onClick={handleKnowMoreClick}>
+          <div className={Style.content}>
+          ✨Unlock Exclusive  Deals !
+            <span className={Style.knowMoreBtn} onClick={handleKnowMoreClick}>
               Know More
             </span>
           </div>
+          {/* <div className={Style.knowMoreBtn}>Know More</div> */}
         </div>
       )}
     </>

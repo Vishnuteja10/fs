@@ -1,3 +1,19 @@
+
+.main{
+
+}
+
+.header{
+  padding-top: 3vh;
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 700;
+  padding-left: 5vw;
+  background-color: rgba(244, 243, 243, 0.85);
+}
+
+
+
 .bannerContainer {
   width: 100%;
   background-color: rgba(244, 243, 243, 0.85);
@@ -6,8 +22,12 @@
   padding: 20px 0;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 20px; /* Adds spacing between banner and other sections */
+  /* margin-bottom: 20px; Adds spacing between banner and other sections */
   border-radius: 10px; /* Slight rounded corners */
+}
+
+.bannerImageContainer{
+  border-radius: 5px;
 }
 
 .bannerText {
@@ -61,6 +81,30 @@
 }
 
 .bannerContainer{
-    padding-bottom: 5vh;
+    /* padding-bottom: 5vh; */
+    padding-left: 8vw;
+    padding-right: 8vw;
+    border-radius: 10px;
 }
 
+.bannerContainer img{
+  border-radius: 5px;
+  width: 60vw;
+}
+
+.imageContainer img{
+   object-fit: contain;
+}
+
+@media (max-width:600px){
+
+   .bannerImageContainer img{
+       height: 35vh;
+   }
+
+   .header{
+    font-size: 24px;
+    margin-right: 5vw;
+   }
+
+}

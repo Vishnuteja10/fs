@@ -4,50 +4,54 @@ import Style from "./OffersBanner.module.css";
 
 import { Carousel } from "react-bootstrap";
 
-function OffersBanner() {
-  return (
-    <div className={Style.bannerContainer}>
-      <Carousel controls={true} indicators={true} interval={5000} fade>
-        <Carousel.Item>
-          <div className={Style.bannerText}>
-            <h3>🎉 Exclusive Offers for the First 10 Customers 🎉</h3>
-            <p>Buy Any 1 Fraction</p>
-            <ul>
-              <li>
-                💰 Get an instant discount of ₹2 lakhs (only for one-shot
-                payments).
-              </li>
-              <li>
-                🏡 Enjoy one week complimentary stay at the property invested
-                in.
-              </li>
-              <li>
-                🌍 Additional one-week complimentary stay at any Fracspace
-                domestic property.
-              </li>
-            </ul>
-          </div>
-        </Carousel.Item>
+import banner1 from "../../assets/Banner/banner1.png";
+import banner2 from "../../assets/Banner/banner2.png";
 
-        <Carousel.Item>
-          <div className={Style.bannerText}>
-            <h3>🎉 Exclusive Offers for the First 10 Customers 🎉</h3>
-            <p>🔥 Buy Any 2 Fractions - Bigger Rewards! 🔥</p>
-            <ul>
-              <li>💵 Get 25% discount on the total fraction cost.</li>
-              <li>
-                🏡 Enjoy one week complimentary stay at the property invested
-                in.
-              </li>
-              <li>
-                🌍 Additional one-week complimentary stay at any Fracspace
-                domestic property.
-              </li>
-              <li>📈 Minimum 8% return on the invested amount only.</li>
-            </ul>
-          </div>
-        </Carousel.Item>
-      </Carousel>
+import mobileBanner1 from '../../assets/Banner/mobileBanner01.png';
+import mobileBanner2 from '../../assets/Banner/mobileBanner2.png';
+
+import { useMediaQuery } from "react-responsive";
+
+function OffersBanner() {
+  
+  const isMobile = useMediaQuery({maxWidth:'600px'});
+
+  return (
+    <div className={Style.main}>
+      <div className={Style.header}>Fracspace Anniversary Deals!</div>
+
+     {!isMobile ?  <div className={Style.bannerContainer}>
+        <Carousel controls={true} indicators={true} interval={5000} fade>
+          <Carousel.Item>
+            <div className={Style.bannerImageContainer}>
+             <img src={banner1}></img>
+            </div>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <div className={Style.bannerImageContainer}>
+              <img src={banner2}></img>
+            </div>
+          </Carousel.Item>
+        </Carousel>
+      </div>
+      :
+      <div className={Style.bannerContainer}>
+        <Carousel controls={true} indicators={true} interval={5000} fade>
+          <Carousel.Item>
+            <div className={Style.bannerImageContainer}>
+             <img src={mobileBanner1}></img>
+            </div>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <div className={Style.bannerImageContainer}>
+              <img src={mobileBanner2}></img>
+            </div>
+          </Carousel.Item>
+        </Carousel>
+      </div> }
+
     </div>
   );
 }
