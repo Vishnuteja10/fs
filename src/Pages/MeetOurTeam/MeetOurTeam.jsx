@@ -399,7 +399,8 @@ export default function MeetOurTeam() {
             <div className={Style.salesHeader}>Marketing Team</div>
 
             <div className={Style.salesTeamImages}>
-              <article className={Style.itemOne}>
+
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -422,7 +423,7 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Diksha</div>
                 <div className={Style.role}>Marketing Head</div>
-              </article>
+              </article> */}
               {/* 
             <article className={Style.itemOne}>
               <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? simhadriImg : compressedImage1 } />
@@ -660,7 +661,7 @@ export default function MeetOurTeam() {
                 <div className={Style.name}>Aparna</div>
                 <div className={Style.role}>UI/UX Designer</div>
               </article>
-
+{/* 
               <article className={Style.itemOne}>
                 <img
                   loading="lazy"
@@ -684,7 +685,7 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Saiteja</div>
                 <div className={Style.role}>SDE Intern</div>
-              </article>
+              </article> */}
 
               <article className={Style.itemOne}>
                 <img
@@ -799,7 +800,7 @@ export default function MeetOurTeam() {
           </section>
 
           <section className={Style.salesTeamContainer}>
-            <div className={Style.salesHeader}> Accounts and HR Team</div>
+            <div className={Style.salesHeader}> Accounts Team</div>
 
             <div className={Style.salesTeamImages}>
               {/* <article className={Style.itemOne}>
@@ -839,7 +840,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>Finance Head</div>
               </article>
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -862,7 +863,8 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Srujana</div>
                 <div className={Style.role}>Jr HR</div>
-              </article>
+              </article> */}
+
             </div>
           </section>
 
