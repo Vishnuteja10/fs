@@ -187,7 +187,7 @@ export default function MeetOurTeam() {
                 <img src={linkedIn}></img>
               </div> */}
                   <div className={Style.name}>Divya</div>
-                  <div className={Style.role}>Business Head</div>
+                  <div className={Style.role}>Second in Command</div>
                 </div>
               </article>
 
@@ -213,7 +213,9 @@ export default function MeetOurTeam() {
                   <img src={linkedIn}></img>
                 </div>
                 <div className={Style.name}>Sameeksha</div>
-                <div className={Style.role}>Revenue Captain</div>
+                <div className={Style.role}>
+                  Director of sales - Dreamscape Expo
+                </div>
               </article>
 
               <article className={Style.itemOne}>
@@ -239,7 +241,7 @@ export default function MeetOurTeam() {
                   <img src={linkedIn}></img>
                 </div>
                 <div className={Style.name}>Ganesh</div>
-                <div className={Style.role}>Customer Cultivator</div>
+                <div className={Style.role}>Resource Commander</div>
               </article>
 
               {/* <article  className={!isImageLoaded ? Style.skeleton : Style.itemOne}>
@@ -264,7 +266,7 @@ export default function MeetOurTeam() {
            
             </article> */}
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -287,7 +289,7 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Hemanth</div>
                 <div className={Style.role}>Customer Cultivator</div>
-              </article>
+              </article> */}
 
               <article className={Style.itemOne}>
                 <img
@@ -311,7 +313,7 @@ export default function MeetOurTeam() {
                   <img src={linkedIn}></img>
                 </div>
                 <div className={Style.name}>Prasanth </div>
-                <div className={Style.role}>Revenue Captain</div>
+                <div className={Style.role}>Special Projects Commander</div>
               </article>
 
               <article className={Style.itemOne}>
@@ -336,7 +338,7 @@ export default function MeetOurTeam() {
                   <img src={linkedIn}></img>
                 </div>
                 <div className={Style.name}>Rishab</div>
-                <div className={Style.role}>Revenue Captain</div>
+                <div className={Style.role}>Director of Sales - Fracspace</div>
               </article>
 
               <article className={Style.itemOne}>
@@ -361,7 +363,7 @@ export default function MeetOurTeam() {
                   <img src={linkedIn}></img>
                 </div>
                 <div className={Style.name}>Prashanth</div>
-                <div className={Style.role}>Customer Cultivator</div>
+                <div className={Style.role}>Hospitality & Growth Manager</div>
               </article>
 
               {/* <article className={Style.itemOne}>
@@ -394,7 +396,6 @@ export default function MeetOurTeam() {
             <div className={Style.salesHeader}>Marketing Team</div>
 
             <div className={Style.salesTeamImages}>
-
               {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
@@ -460,7 +461,7 @@ export default function MeetOurTeam() {
                   <img src={linkedIn}></img>
                 </div>
                 <div className={Style.name}>Sudheer</div>
-                <div className={Style.role}>Graphic Designer</div>
+                <div className={Style.role}> Sr Graphic Designer</div>
               </article>
 
               <article className={Style.itemOne}>
@@ -516,7 +517,7 @@ export default function MeetOurTeam() {
                   <img src={linkedIn}></img>
                 </div>
                 <div className={Style.name}>Abha Tiwari</div>
-                <div className={Style.role}>App Developer</div>
+                <div className={Style.role}>Tech Lead</div>
               </article>
 
               <article className={Style.itemOne}>
@@ -541,7 +542,7 @@ export default function MeetOurTeam() {
                   <img src={linkedIn}></img>
                 </div>
                 <div className={Style.name}>Rakesh</div>
-                <div className={Style.role}>Backend Developer</div>
+                <div className={Style.role}>Second Engineer In Command(SDE-2)</div>
               </article>
 
               <article className={Style.itemOne}>
@@ -566,10 +567,10 @@ export default function MeetOurTeam() {
                   <img src={linkedIn}></img>
                 </div>
                 <div className={Style.name}>Vishnuteja</div>
-                <div className={Style.role}>Full Stack Web Developer</div>
+                <div className={Style.role}>Sr Full Stack Web Developer</div>
               </article>
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -592,7 +593,7 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Arun</div>
                 <div className={Style.role}>Jr Backend Developer</div>
-              </article>
+              </article> */}
 
               {/* <article className={Style.itemOne}>
               <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ isImageLoaded? rohithImg : compressedImage1 } />
@@ -630,7 +631,7 @@ export default function MeetOurTeam() {
                   <img src={linkedIn}></img>
                 </div>
                 <div className={Style.name}>Deeksha</div>
-                <div className={Style.role}>UI/UX Designer</div>
+                <div className={Style.role}>Sr UI/UX Designer</div>
               </article>
 
               <article className={Style.itemOne}>
@@ -705,7 +706,7 @@ export default function MeetOurTeam() {
                   <img src={linkedIn}></img>
                 </div>
                 <div className={Style.name}>Krishna</div>
-                <div className={Style.role}>SDE Intern</div>
+                <div className={Style.role}>Junior Software Developer </div>
               </article>
             </div>
           </section>
@@ -796,7 +797,7 @@ export default function MeetOurTeam() {
           </section>
 
           <section className={Style.salesTeamContainer}>
-            <div className={Style.salesHeader}> Accounts Team</div>
+            <div className={Style.salesHeader}> Accounts & HR Team</div>
 
             <div className={Style.salesTeamImages}>
               {/* <article className={Style.itemOne}>
@@ -836,6 +837,31 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>Finance Head</div>
               </article>
 
+              <article className={Style.itemOne}>
+                <img
+                  loading="lazy"
+                  alt="team mate image"
+                  onLoad={handleImageLoad}
+                  className={
+                    isImageLoaded ? Style.itemImage : Style.placeholderImage
+                  }
+                  src={isImageLoaded ? hemanthImg : compressedImage1}
+                />
+                <div
+                  className={Style.linkedInContainer}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/hemanth-kumar-72b42525b/",
+                      "_blank"
+                    )
+                  }
+                >
+                  <img src={linkedIn}></img>
+                </div>
+                <div className={Style.name}>Hemanth</div>
+                <div className={Style.role}>Growth & Culture Manager</div>
+              </article>
+
               {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
@@ -860,7 +886,6 @@ export default function MeetOurTeam() {
                 <div className={Style.name}>Srujana</div>
                 <div className={Style.role}>Jr HR</div>
               </article> */}
-
             </div>
           </section>
 
@@ -907,7 +932,7 @@ export default function MeetOurTeam() {
                   <img src={linkedIn}></img>
                 </div>
                 <div className={Style.name}>Vivek</div>
-                <div className={Style.role}>Hospitality Sales</div>
+                <div className={Style.role}>Hospitality Operations Manager</div>
               </article>
 
               {/* <article className={Style.itemOne}>

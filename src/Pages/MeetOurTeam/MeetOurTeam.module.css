@@ -154,6 +154,8 @@
 .role{
     text-align: center;
     font-family: 'Poppins';
+    width: 15vw;
+    /* border: 1px solid green; */
 }
 
 .linkedInContainer{
@@ -193,7 +195,7 @@
     /* margin-right: 5vw; */
     margin-top: 2vh;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     /* justify-content: space-between; */
     flex-wrap: wrap;
 
