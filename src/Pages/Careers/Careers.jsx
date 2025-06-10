@@ -38,13 +38,9 @@ function Careers() {
 
             <div className={Style.jobsContainer}>
 
-              <article className={Style.jobItem}>
+              {/* <article className={Style.jobItem}>
                 <div className={Style.jobRoleContainer}>
                   <div className={Style.jobRole}>Jr HR</div>
-                  {/* <div className={Style.joblocation}>
-                    {" "}
-                    Hyderabad,Telangana,India
-                  </div> */}
                 </div>
                 <div className={Style.description}>
                   Fracspace is seeking a motivated and talented Junior HR
@@ -70,7 +66,7 @@ function Careers() {
                     Apply
                   </button>
                 </div>
-              </article>
+              </article> */}
 
              
             </div>
