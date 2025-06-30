@@ -12,6 +12,7 @@ import appleStore from "../../assets/appImages/apple-store.png";
 
 import teamImage from "../../assets/MeetOurTeam/team/team.jpeg";
 
+import diptiImg from "../../assets/MeetOurTeam/sales/dipti.jpg";
 import sameekshaImg from "../../assets/MeetOurTeam/sales/sm.jpeg";
 import ganeshImg from "../../assets/MeetOurTeam/sales/ganesh.jpeg";
 import hemanthImg from "../../assets/MeetOurTeam/sales/hemanth.jpeg";
@@ -38,6 +39,9 @@ import rohithImg from "../../assets/MeetOurTeam/tech/rohith.jpeg";
 import saitejaImg from "../../assets/MeetOurTeam/tech/saiteja.jpeg";
 import arunImg from "../../assets/MeetOurTeam/tech/arun.jpg";
 import krishnaImg from "../../assets/MeetOurTeam/tech/krishna.jpg";
+import akhilImg from "../../assets/MeetOurTeam/tech/akhil.jpg";
+import yeshwanthImg from "../../assets/MeetOurTeam/tech/yeshwanth.jpg";
+import sanjanaImg from "../../assets/MeetOurTeam/tech/sanjana.jpg";
 
 import tarunReddyImg from "../../assets/MeetOurTeam/construction/tarunReddy.jpg";
 import moinImg from "../../assets/MeetOurTeam/construction/moin.jpeg";
@@ -48,6 +52,7 @@ import akhilaImg from "../../assets/MeetOurTeam/hrAndAccounts/akhila.jpeg";
 import naveenSirImg from "../../assets/MeetOurTeam/hrAndAccounts/naveenSir.jpeg";
 import aryanImg from "../../assets/MeetOurTeam/hrAndAccounts/aryan.jpeg";
 import jrhr from "../../assets/MeetOurTeam/hrAndAccounts/jrhr2.jpg";
+import prajnaImg from "../../assets/MeetOurTeam/hrAndAccounts/prajna.jpg";
 
 import unnathSirImg from "../../assets/MeetOurTeam/founder/unnathSir.jpeg";
 
@@ -191,7 +196,7 @@ export default function MeetOurTeam() {
                 </div>
               </article>
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -216,9 +221,9 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>
                   Director of sales - Dreamscape Expo
                 </div>
-              </article>
+              </article> */}
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -242,7 +247,7 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Ganesh</div>
                 <div className={Style.role}>Resource Commander</div>
-              </article>
+              </article> */}
 
               {/* <article  className={!isImageLoaded ? Style.skeleton : Style.itemOne}>
               <img loading="lazy" alt="team mate image"  onLoad={handleImageLoad}  className={isImageLoaded ? Style.itemImage : Style.placeholderImage} src={ganeshImg }></img>
@@ -364,6 +369,31 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Prashanth</div>
                 <div className={Style.role}>Hospitality & Growth Manager</div>
+              </article>
+
+              <article className={Style.itemOne}>
+                <img
+                  loading="lazy"
+                  alt="team mate image"
+                  onLoad={handleImageLoad}
+                  className={
+                    isImageLoaded ? Style.itemImage : Style.placeholderImage
+                  }
+                  src={isImageLoaded ? diptiImg : compressedImage2}
+                />
+                <div
+                  className={Style.linkedInContainer}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/diptimayee-sahu-5172b929b",
+                      "_blank"
+                    )
+                  }
+                >
+                  <img src={linkedIn}></img>
+                </div>
+                <div className={Style.name}>Diptimayee Sahu</div>
+                <div className={Style.role}>Presales Executive</div>
               </article>
 
               {/* <article className={Style.itemOne}>
@@ -488,7 +518,6 @@ export default function MeetOurTeam() {
                 <div className={Style.name}>Harsh Vardhan</div>
                 <div className={Style.role}>Graphic Designer</div>
               </article> */}
-
             </div>
           </section>
 
@@ -543,7 +572,9 @@ export default function MeetOurTeam() {
                   <img src={linkedIn}></img>
                 </div>
                 <div className={Style.name}>Rakesh</div>
-                <div className={Style.role}>Second Engineer In Command(SDE-2)</div>
+                <div className={Style.role}>
+                  Second Engineer In Command(SDE-2)
+                </div>
               </article>
 
               <article className={Style.itemOne}>
@@ -635,7 +666,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>Sr UI/UX Designer</div>
               </article>
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -658,7 +689,7 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Aparna</div>
                 <div className={Style.role}>UI/UX Designer</div>
-              </article>
+              </article> */}
 
               {/* <article className={Style.itemOne}>
                 <img
@@ -708,6 +739,81 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Krishna</div>
                 <div className={Style.role}>Junior Software Developer </div>
+              </article>
+
+              <article className={Style.itemOne}>
+                <img
+                  loading="lazy"
+                  alt="team mate image"
+                  onLoad={handleImageLoad}
+                  className={
+                    isImageLoaded ? Style.itemImage : Style.placeholderImage
+                  }
+                  src={isImageLoaded ? akhilImg : compressedImage1}
+                />
+                <div
+                  className={Style.linkedInContainer}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/akhil-balthi-0382892bb/",
+                      "_blank"
+                    )
+                  }
+                >
+                  <img src={linkedIn}></img>
+                </div>
+                <div className={Style.name}>Akhil</div>
+                <div className={Style.role}>Junior Software Developer </div>
+              </article>
+
+              <article className={Style.itemOne}>
+                <img
+                  loading="lazy"
+                  alt="team mate image"
+                  onLoad={handleImageLoad}
+                  className={
+                    isImageLoaded ? Style.itemImage : Style.placeholderImage
+                  }
+                  src={isImageLoaded ? yeshwanthImg : compressedImage1}
+                />
+                {/* <div
+                  className={Style.linkedInContainer}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/akhil-balthi-0382892bb/",
+                      "_blank"
+                    )
+                  }
+                >
+                  <img src={linkedIn}></img>
+                </div> */}
+                <div className={Style.name}>Yeshwanth</div>
+                <div className={Style.role}>IT Admin </div>
+              </article>
+
+              <article className={Style.itemOne}>
+                <img
+                  loading="lazy"
+                  alt="team mate image"
+                  onLoad={handleImageLoad}
+                  className={
+                    isImageLoaded ? Style.itemImage : Style.placeholderImage
+                  }
+                  src={isImageLoaded ? sanjanaImg : compressedImage2}
+                />
+                <div
+                  className={Style.linkedInContainer}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/sanjana-s-470533339/",
+                      "_blank"
+                    )
+                  }
+                >
+                  <img src={linkedIn}></img>
+                </div>
+                <div className={Style.name}>Sanjana</div>
+                <div className={Style.role}>Motion Graphic Designer </div>
               </article>
             </div>
           </section>
@@ -861,6 +967,31 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Hemanth</div>
                 <div className={Style.role}>Growth & Culture Manager</div>
+              </article>
+
+              <article className={Style.itemOne}>
+                <img
+                  loading="lazy"
+                  alt="team mate image"
+                  onLoad={handleImageLoad}
+                  className={
+                    isImageLoaded ? Style.itemImage : Style.placeholderImage
+                  }
+                  src={isImageLoaded ? prajnaImg : compressedImage2}
+                />
+                <div
+                  className={Style.linkedInContainer}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/prajna-kamath-56a625363/",
+                      "_blank"
+                    )
+                  }
+                >
+                  <img src={linkedIn}></img>
+                </div>
+                <div className={Style.name}>Prajna</div>
+                <div className={Style.role}>HR Executive</div>
               </article>
 
               {/* <article className={Style.itemOne}>
@@ -1019,7 +1150,6 @@ export default function MeetOurTeam() {
             <div className={Style.salesHeader}>House Team</div>
 
             <div className={Style.salesTeamImages}>
-              
               {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
