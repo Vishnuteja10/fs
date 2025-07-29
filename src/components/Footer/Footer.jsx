@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Style from "./Footer.module.css";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
@@ -12,9 +12,9 @@ import img4 from "../../assets/footer/Youtube.png";
 import img5 from "../../assets/footer/apple.png";
 import img6 from "../../assets/footer/android.png";
 
-import contactIcon from '../../assets/ContactIcons/contact.png'
-import emailIcon from '../../assets/ContactIcons/email.png'
-import addressIcon from '../../assets/ContactIcons/location.png'
+import contactIcon from "../../assets/ContactIcons/contact.png";
+import emailIcon from "../../assets/ContactIcons/email.png";
+import addressIcon from "../../assets/ContactIcons/location.png";
 
 import { useNavigate } from "react-router-dom";
 
@@ -23,54 +23,62 @@ import axios from "axios";
 function Footer() {
   const navigate = useNavigate();
 
-  const [email,setEmail] = useState("");
+  const [email, setEmail] = useState("");
 
   const [error, setError] = useState("");
 
-  const URL = 'https://apitest.fracspace.com/api/v1/webApi/newsLetter'
+  const [isIndia, setIsIndia] = useState(true);
 
-   // Email validation function
-   const validateEmail = (email) => {
+  useEffect(() => {
+    const domain = window.location.hostname;
+    const address = domain.includes(".lk");
+    console.log("domain name is", domain, "is srilanka", address);
+    if (address) {
+      setIsIndia(false);
+    }
+  }, []);
+
+  const URL = "https://apitest.fracspace.com/api/v1/webApi/newsLetter";
+
+  // Email validation function
+  const validateEmail = (email) => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailPattern.test(email);
   };
 
-  const submitEmailDetails = async()=>{
-
+  const submitEmailDetails = async () => {
     try {
-       
-      const response = await axios.post(URL, {email } ,{
-        headers: {
-          'Content-Type': 'application/json',
-          'x-api-key': 'Fracspace@2024'
+      const response = await axios.post(
+        URL,
+        { email },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            "x-api-key": "Fracspace@2024"
+          }
         }
-      });
+      );
 
       // console.log("response is",response?.data?.success)
 
-      if(response?.data?.success){
-
+      if (response?.data?.success) {
         setError("Thanks for subscribing!");
-         
+
         setTimeout(() => {
           setEmail(""); // Clear the email input
           setError(""); // Clear any existing error
         }, 2000);
       }
-     
-      
     } catch (error) {
-        setError("Something Went Wrong! we are working on it")
-        setTimeout(() => {
-          setEmail(""); // Clear the email input
-          setError(""); // Clear any existing error
-        }, 2000);
+      setError("Something Went Wrong! we are working on it");
+      setTimeout(() => {
+        setEmail(""); // Clear the email input
+        setError(""); // Clear any existing error
+      }, 2000);
     }
-    
-      
-  }
+  };
 
-  const handleEmailSubscription  = () =>{
+  const handleEmailSubscription = () => {
     if (email === "") {
       setError("Please enter your email address.");
     } else if (!validateEmail(email)) {
@@ -78,17 +86,17 @@ function Footer() {
     } else {
       // console.log("Email is:", email);
       // setError("Thanks for subscribing!");
-      
-      submitEmailDetails() 
-    }
-  }
 
+      submitEmailDetails();
+    }
+  };
 
   return (
     <div className={Style.main}>
       <div className={Style.section1}>
         <h2 className={Style.content}>
-        Subscribe to our newsletter! <br></br> To receive  updates and special offers 
+          Subscribe to our newsletter! <br></br> To receive updates and special
+          offers
         </h2>
         <div className={Style.emailContainer}>
           <div>
@@ -97,11 +105,13 @@ function Footer() {
               placeholder="Enter your email"
               type="email"
               value={email}
-              onChange={(e)=>setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
             ></input>
           </div>
           <div>
-            <button onClick={handleEmailSubscription} className={Style.btn}>Subscribe</button>
+            <button onClick={handleEmailSubscription} className={Style.btn}>
+              Subscribe
+            </button>
           </div>
         </div>
       </div>
@@ -138,18 +148,43 @@ function Footer() {
           <div className={Style.addressContainer}>
             <h3 className={Style.header2}>Contact Info</h3>
 
-            <div className={Style.address}>
-              <div><img className={Style.icon} src={addressIcon}></img>136A, Lane No-12</div>
-              <div>MLA Colony, NBT Nagar</div>
-              <div>Road No.12, Banjara Hills,</div>
-              <div>Hyderabad,Telangana, 500034</div>
-            </div>
+            {!isIndia ? (
+              <>
+                <div className={Style.address}>
+                  <div>
+                    <img className={Style.icon} src={addressIcon}></img>No.59,
+                    Gregorys Road
+                  </div>
+                  <div>Colombo 07</div>
+                  <div>Western Province</div>
+                  <div>Srilanka</div>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className={Style.address}>
+                  <div>
+                    <img className={Style.icon} src={addressIcon}></img>136A,
+                    Lane No-12
+                  </div>
+                  <div>MLA Colony, NBT Nagar</div>
+                  <div>Road No.12, Banjara Hills,</div>
+                  <div>Hyderabad,Telangana, 500034</div>
+                </div>
+              </>
+            )}
 
-            <div className={Style.email}> <img className={Style.icon}  src={emailIcon}></img> support@fracspace.com</div>
-            <div className={Style.phone}><img className={Style.icon}  src={contactIcon}></img> +91 93555 65604, +91 98806 26111 </div>
+            <div className={Style.email}>
+              {" "}
+              <img className={Style.icon} src={emailIcon}></img>{" "}
+              support@fracspace.com
+            </div>
+            <div className={Style.phone}>
+              <img className={Style.icon} src={contactIcon}></img> +91 93555
+              65604, +91 98806 26111{" "}
+            </div>
             {/* <div className={Style.phone2}>  +91 98806 26111</div> */}
           </div>
-          
         </div>
       </div>
 
@@ -157,12 +192,28 @@ function Footer() {
         <div className={Style.followUs}>Follow us at</div>
 
         <div className={Style.images}>
-
-          <span className={Style.imageContainer} onClick={() => window.open("https://www.instagram.com/fracspace/", "_blank")}>
-            <img alt="Instagram" src={img1} className={Style.instagramIcon}></img>
+          <span
+            className={Style.imageContainer}
+            onClick={() =>
+              window.open("https://www.instagram.com/fracspace/", "_blank")
+            }
+          >
+            <img
+              alt="Instagram"
+              src={img1}
+              className={Style.instagramIcon}
+            ></img>
           </span>
 
-          <span className={Style.imageContainer} onClick={() => window.open("https://m.facebook.com/p/Fracspace-100085853381915/", "_blank")}>
+          <span
+            className={Style.imageContainer}
+            onClick={() =>
+              window.open(
+                "https://m.facebook.com/p/Fracspace-100085853381915/",
+                "_blank"
+              )
+            }
+          >
             <img alt="Facebook" src={img2} className={Style.facebookIcon}></img>
           </span>
 
@@ -170,10 +221,14 @@ function Footer() {
             <img src={img3} className={Style.twitterIcon}></img>
           </span> */}
 
-          <span className={Style.imageContainer} onClick={() => window.open("https://www.youtube.com/@FracspaceLimited", "_blank")}>
+          <span
+            className={Style.imageContainer}
+            onClick={() =>
+              window.open("https://www.youtube.com/@FracspaceLimited", "_blank")
+            }
+          >
             <img alt="Youtube" src={img4} className={Style.youtubeIcon}></img>
           </span>
-
         </div>
       </div>
 
@@ -181,12 +236,27 @@ function Footer() {
         <div>
           <div className={Style.getApp}>Get the app</div>
           <div className={Style.btnsContainer}>
-            <button onClick={() => window.open("https://apps.apple.com/in/app/fracspace/id6498551006", "_blank")}>
+            <button
+              onClick={() =>
+                window.open(
+                  "https://apps.apple.com/in/app/fracspace/id6498551006",
+                  "_blank"
+                )
+              }
+            >
               <img src={img5} alt="ios logo"></img>{" "}
               <div className={Style.iosContent}>IOS</div>
             </button>
 
-            <button className={Style.btn} onClick={() => window.open("https://play.google.com/store/apps/details?id=com.fracspace", "_blank")} >
+            <button
+              className={Style.btn}
+              onClick={() =>
+                window.open(
+                  "https://play.google.com/store/apps/details?id=com.fracspace",
+                  "_blank"
+                )
+              }
+            >
               <img src={img6} alt="android logo"></img>{" "}
               <div className={Style.btnContent}>Android</div>
             </button>
@@ -198,7 +268,8 @@ function Footer() {
 
       <div className={Style.section3}>
         <div className={Style.copyRights}>
-          © 2024 <span className={Style.fs}>Fracspace</span>. All rights reserved
+          © 2024 <span className={Style.fs}>Fracspace</span>. All rights
+          reserved
         </div>
         <div className={Style.terms}>
           <div onClick={() => navigate("/privacypolicy")}>Privacy Policy</div>
@@ -206,7 +277,6 @@ function Footer() {
           <div onClick={() => navigate("/refundpolicy")}>Refund Policy</div>
         </div>
       </div>
-
     </div>
   );
 }
