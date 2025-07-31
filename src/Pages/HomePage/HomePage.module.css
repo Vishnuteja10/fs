@@ -60,8 +60,9 @@
   }
 
 .navbar{
+  top: 5vh;
     position: fixed;
-    padding-top: 2vh;
+    padding-top: 4vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,8 +72,9 @@
 }
 
 .nav{
+  top: 5vh;
     position: fixed;
-    padding-top: 2vh;
+    padding-top: 4vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -86,6 +88,13 @@
 
 .banner{
     /* border: 5px solid green; */
+    /* margin-top: 5vh; */
+}
+
+.topBanner{
+  position: fixed;
+  z-index: 99999;
+  height: 3vh;
 }
 
 
@@ -106,12 +115,14 @@
 @media (max-width:600px) {
 
   .navbar{
+    top: 6vh;
     padding-top: 10vh;
     height: 10vh;
    }
 
 
   .nav{
+    top: 6vh;
     padding-top: 8vh;
     height: 10vh;
     padding-bottom: 2vh;

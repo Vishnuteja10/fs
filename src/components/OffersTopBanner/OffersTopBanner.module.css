@@ -1,0 +1,138 @@
+
+/* .main{
+    display: flex;
+    align-items: center;
+    padding-left: 30vw;
+    background-color: rgb(4, 4, 82);
+    width: 100vw;
+    height: 5vh;
+    color: white;
+} */
+
+/* @keyframes movingLine {
+    0% { background-position: -100% 0; }
+    100% { background-position: 100% 0; }
+  }
+  
+  .main {
+      display: flex;
+      align-items: center;
+      padding-left: 30vw;
+      width: 100vw;
+      height: 5vh;
+      color: white;
+      background: linear-gradient(90deg, rgba(90, 156, 197, 0.8) 30%, rgba(255, 255, 255, 0.3) 50%, rgba(106, 172, 201, 0.8) 70%);
+      background-size: 200% 100%;
+      animation: movingLine 3s linear infinite;
+  }
+
+
+.knowMore{
+    cursor: pointer;
+} */
+
+@keyframes movingLine {
+    0% { background-position: -100% 0; }
+    100% { background-position: 100% 0; }
+  }
+  
+  .main {
+      display: flex;
+      align-items: center;
+      padding-left: 30vw;
+      width: 100vw;
+      height: 5vh;
+      color: white;
+      /* background: linear-gradient(90deg, rgba(0, 87, 146, 0.9) 30%, rgba(255, 255, 255, 0.7) 50%, rgba(1, 57, 103, 0.8) 70%); */
+
+      background: rgba(128, 128, 128, 0.3);
+      background-size: 200% 100%;
+      animation: movingLine 3s linear infinite;
+      backdrop-filter: blur(10px); 
+      -webkit-backdrop-filter: blur(10px); 
+  }
+
+/* 
+  .knowMore {
+    cursor: pointer;
+    background-color: inherit;
+    color: rgb(254, 254, 254);
+    padding: 3px 9px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+} */
+
+.knowMore {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2); /* Light translucent background */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(5px); /* Safari support */
+    color: rgb(254, 254, 254);
+    padding: 3px 9px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.knowMore:hover {
+    background-color: #d1d8da;
+    transform: scale(1.1);
+}
+
+@media (max-width:600px){
+    /* .main{
+        height: auto;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        background: gray;
+    } */
+
+    .main{
+        height: auto;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-top: 2vh;
+        padding-bottom: 3vh;
+        background: rgba(128, 128, 128, 0.3); /* Semi-transparent gray */
+        backdrop-filter: blur(10px); /* Blurred background effect */
+        -webkit-backdrop-filter: blur(10px); /* Safari support */
+        /* border-radius: 5px; */
+
+        display: block;
+    }
+
+    .knowMore{
+        top: 3vh;
+        /* margin-left: 4vw; */
+        background-color: inherit;
+        background: inherit;
+        cursor: pointer;
+        color: white;
+        text-align: center;
+        padding: none;
+    }
+
+    .knowMoreBtn{
+        margin-left: 2vw;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .knowMoreBtn:hover {
+       color: #99aab1;
+    }
+    
+    .content{
+        text-align: center;
+    }
+}
+
+@media(min-width:300px) and (max-width:400px) and (min-height:500px) and (max-height:700px){
+
+    .main{
+        padding-top: 1vh;
+        padding-bottom: 2.5vh;
+    }
+}

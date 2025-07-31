@@ -17,6 +17,7 @@ import { Element } from "react-scroll";
 import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
 
 import { Helmet } from "react-helmet";
+import OffersTopBanner from "../../components/OffersTopBanner/OffersTopBanner";
 
 function Services() {
   return (
@@ -55,6 +56,10 @@ function Services() {
           <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
         </div>
       </div> */}
+
+      <div className={Style.topBanner}>
+        <OffersTopBanner />
+      </div>
 
       <div className={Style.navBar}>
         <Navbar2 />

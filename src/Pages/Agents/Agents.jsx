@@ -17,6 +17,7 @@ import ContactForm from '../../components/Agents/ContactForm/ContactForm';
 import { Element } from "react-scroll";
 
 import { Helmet } from 'react-helmet';
+import OffersTopBanner from '../../components/OffersTopBanner/OffersTopBanner';
 
 
 function Agents() {
@@ -64,6 +65,10 @@ function Agents() {
       </Helmet>
 
         <AppIconsComponent />
+
+        <div className={Style.topBanner}>
+          <OffersTopBanner />
+        </div>
 
         <div className={Style.navbar}>
             <Navbar2/>

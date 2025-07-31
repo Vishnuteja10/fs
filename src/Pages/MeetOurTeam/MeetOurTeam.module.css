@@ -59,6 +59,7 @@
 }
 
 .navBar{
+    top: 8vh;
     position: fixed;
     margin-top: -5vh;
     padding-top: 5vh;
@@ -222,6 +223,13 @@
     border-radius: 50%;
     animation: shimmer 1.5s infinite;
   }
+
+  .topBanner{
+    top: 0;
+    position: fixed;
+    z-index: 99999;
+    height: 3vh;
+  }
   
   /* Shimmer keyframes */
   @keyframes shimmer {
@@ -286,6 +294,7 @@
       }
 
     .navBar{
+        top: 12vh;
         padding-top: 10vh;
         height: 10vh;
     }
