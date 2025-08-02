@@ -39,7 +39,7 @@ function OffersTopBanner() {
       {!isMobile ? (
         <div className={Style.main}>
           <div>
-          ✨Unlock Exclusive  Deals – Invest & Enjoy! 🎉{" "}
+          ✨Celebrate Rakhi, Celebrate Returns – Exclusive Deals Inside! 🎉{" "}
             <span className={Style.knowMore} onClick={handleKnowMoreClick}>
               Know More
             </span>
@@ -48,7 +48,7 @@ function OffersTopBanner() {
       ) : (
         <div className={Style.main}>
           <div className={Style.content}>
-          ✨Unlock Exclusive  Deals !
+          ✨Exclusive Rakhi Deals !
             <span className={Style.knowMoreBtn} onClick={handleKnowMoreClick}>
               Know More
             </span>
