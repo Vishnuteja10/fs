@@ -4,13 +4,8 @@ import Style from "./OffersBanner.module.css";
 
 import { Carousel } from "react-bootstrap";
 
-import banner1 from "../../assets/Banner/banner1.png";
-import banner2 from "../../assets/Banner/banner2.png";
-
-import mobileBanner1 from "../../assets/Banner/mobileBanner01.png";
-import mobileBanner2 from "../../assets/Banner/mobileBanner2.png";
-
-import rakhiBanner from '../../assets/Banner/rakiBanner2.png'
+import rakhiBanner from "../../assets/Banner/rakhiBanner.webp";
+import rakhiMobile from "../../assets/Banner/rakhiMobile.webp";
 
 import { useMediaQuery } from "react-responsive";
 
@@ -23,34 +18,34 @@ function OffersBanner() {
 
       {!isMobile ? (
         <div className={Style.bannerContainer}>
-          <Carousel controls={true} indicators={true} interval={5000} fade>
+          <Carousel controls={false} indicators={false}>
             <Carousel.Item>
               <div className={Style.bannerImageContainer}>
                 <img src={rakhiBanner}></img>
               </div>
             </Carousel.Item>
 
-            <Carousel.Item>
+            {/* <Carousel.Item>
               <div className={Style.bannerImageContainer}>
-                <img src={rakhiBanner}></img>
+                <img ></img>
               </div>
-            </Carousel.Item>
+            </Carousel.Item> */}
           </Carousel>
         </div>
       ) : (
         <div className={Style.bannerContainer}>
-          <Carousel controls={true} indicators={true} interval={5000} fade>
+          <Carousel controls={false} indicators={false}>
             <Carousel.Item>
               <div className={Style.bannerImageContainer}>
-                {/* <img src={mobileBanner1}></img> */}
+                <img src={rakhiMobile}></img>
               </div>
             </Carousel.Item>
 
-            <Carousel.Item>
+            {/* <Carousel.Item>
               <div className={Style.bannerImageContainer}>
-                {/* <img src={mobileBanner2}></img> */}
+                <img ></img>
               </div>
-            </Carousel.Item>
+            </Carousel.Item> */}
           </Carousel>
         </div>
       )}

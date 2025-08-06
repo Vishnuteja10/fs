@@ -532,7 +532,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>Finance Head</div>
               </article>
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -540,22 +540,12 @@ export default function MeetOurTeam() {
                   className={
                     isImageLoaded ? Style.itemImage : Style.placeholderImage
                   }
-                  src={isImageLoaded ? hemanthImg : compressedImage1}
+                  src={isImageLoaded ? dikshith : compressedImage1}
                 />
-                <div
-                  className={Style.linkedInContainer}
-                  onClick={() =>
-                    window.open(
-                      "https://www.linkedin.com/in/hemanth-kumar-72b42525b/",
-                      "_blank"
-                    )
-                  }
-                >
-                  <img src={linkedIn}></img>
-                </div>
-                <div className={Style.name}>Hemanth</div>
+              
+                <div className={Style.name}>Dikshith</div>
                 <div className={Style.role}>Growth & Culture Manager</div>
-              </article>
+              </article> */}
 
               <article className={Style.itemOne}>
                 <img

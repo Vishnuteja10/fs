@@ -30,7 +30,8 @@ function OffersTopBanner() {
           duration: 500,
           smooth: "easeInOutQuart"
         });
-      }, 500); // Delay ensures Home page is fully loaded before scrolling
+      }, 500); 
+      // Delay ensures Home page is fully loaded before scrolling
     }
   };
 

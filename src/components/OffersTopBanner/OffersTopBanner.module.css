@@ -78,6 +78,12 @@
     transform: scale(1.1);
 }
 
+@media (max-width:1030px){
+    .main{
+        padding-left: 10vw;
+    }
+}
+
 @media (max-width:600px){
     /* .main{
         height: auto;
