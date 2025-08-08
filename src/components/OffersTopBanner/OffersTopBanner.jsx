@@ -10,6 +10,9 @@ import { scroller } from "react-scroll";
 
 import { useMediaQuery } from "react-responsive";
 
+import rakhiImg from "../../assets/Banner/rakhiImg4.png";
+import rakhiImg2 from '../../assets/Banner/rakhiImg25.png'
+
 function OffersTopBanner() {
   const isMobile = useMediaQuery({ maxWidth: 600 });
 
@@ -30,7 +33,7 @@ function OffersTopBanner() {
           duration: 500,
           smooth: "easeInOutQuart"
         });
-      }, 500); 
+      }, 500);
       // Delay ensures Home page is fully loaded before scrolling
     }
   };
@@ -39,17 +42,20 @@ function OffersTopBanner() {
     <>
       {!isMobile ? (
         <div className={Style.main}>
+          <span className={Style.lightGlow}></span>
+          <img className={Style.topImg} src={rakhiImg}></img>
           <div>
-          ✨Celebrate Rakhi, Celebrate Returns – Exclusive Deals Inside! 🎉{" "}
+            ✨Celebrate Rakhi, Celebrate Returns – Exclusive Deals Inside! 🎉{" "}
             <span className={Style.knowMore} onClick={handleKnowMoreClick}>
               Know More
             </span>
           </div>
+          <img className={Style.topImg2} src={rakhiImg2}></img>
         </div>
       ) : (
         <div className={Style.main}>
           <div className={Style.content}>
-          ✨Exclusive Rakhi Deals !
+            ✨Exclusive Rakhi Deals !
             <span className={Style.knowMoreBtn} onClick={handleKnowMoreClick}>
               Know More
             </span>

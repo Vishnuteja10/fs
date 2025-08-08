@@ -4,7 +4,7 @@ import Style from "./OffersBanner.module.css";
 
 import { Carousel } from "react-bootstrap";
 
-import rakhiBanner from "../../assets/Banner/rakhiBanner.webp";
+import rakhiBanner from "../../assets/Banner/rakhiBanner2.webp";
 import rakhiMobile from "../../assets/Banner/rakhiMobile.webp";
 
 import { useMediaQuery } from "react-responsive";

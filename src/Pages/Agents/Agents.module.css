@@ -10,7 +10,7 @@
     z-index: 9999;
     background-color: white;
     width: 100vw;
-    height: 15vh;
+    height: 18vh;
     margin-top: 0vh;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 
@@ -36,8 +36,8 @@
 
     .navbar{
       top: 7vh;
-        padding-top: 10vh;
-       height: 10vh;
+        padding-top: 5vh;
+       height: 5vh;
     }    
   
   }

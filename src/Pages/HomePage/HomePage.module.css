@@ -109,9 +109,6 @@
 }
 
 
- 
-
-
 @media (max-width:600px) {
 
   .navbar{
@@ -140,8 +137,7 @@
   .playStore{
      width: 20vw;
   }
-
-  
+ 
   .watsapp{
     width: 8vw;
     margin-left: 5.5vw;
