@@ -73,9 +73,7 @@ function Navbar() {
           )}
 
           {!isMobile ? (
-            
             <div className={Style.content}>
-             
               {!scrolled ? (
                 <ul className={Style.navBar}>
                   <li>

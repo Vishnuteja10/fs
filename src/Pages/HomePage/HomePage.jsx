@@ -103,7 +103,6 @@ export default function HomePage() {
 
         <div className={scrolled ? Style.nav : Style.navbar}>
           {/* <SpecialOffers /> */}
-
           <Navbar />
         </div>
 

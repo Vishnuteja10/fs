@@ -4,8 +4,8 @@ import Style from "./OffersBanner.module.css";
 
 import { Carousel } from "react-bootstrap";
 
-import rakhiBanner from "../../assets/Banner/rakhiBanner2.webp";
-import rakhiMobile from "../../assets/Banner/rakhiMobile.webp";
+import rakhiBanner from "../../assets/Banner/janmastami.webp";
+import rakhiMobile from "../../assets/Banner/janmastamiMobile.webp";
 
 import { useMediaQuery } from "react-responsive";
 
@@ -14,7 +14,7 @@ function OffersBanner() {
 
   return (
     <div className={Style.main}>
-      <div className={Style.header}>Celebrate Rakhi with Fracspace Offers!</div>
+      <div className={Style.header}>Celebrate Janmashtami with Fracspace Offers!</div>
 
       {!isMobile ? (
         <div className={Style.bannerContainer}>
@@ -37,7 +37,7 @@ function OffersBanner() {
           <Carousel controls={false} indicators={false}>
             <Carousel.Item>
               <div className={Style.bannerImageContainer}>
-                <img src={rakhiMobile}></img>
+                <img className={Style.mobileBannerImg} src={rakhiMobile}></img>
               </div>
             </Carousel.Item>
 

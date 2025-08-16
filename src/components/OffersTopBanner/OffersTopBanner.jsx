@@ -10,8 +10,8 @@ import { scroller } from "react-scroll";
 
 import { useMediaQuery } from "react-responsive";
 
-import rakhiImg from "../../assets/Banner/rakhiImg4.png";
-import rakhiImg2 from '../../assets/Banner/rakhiImg25.png'
+import rakhiImg from "../../assets/Banner/j12.png";
+import rakhiImg2 from "../../assets/Banner/j4.png";
 
 function OffersTopBanner() {
   const isMobile = useMediaQuery({ maxWidth: 600 });
@@ -43,19 +43,19 @@ function OffersTopBanner() {
       {!isMobile ? (
         <div className={Style.main}>
           <span className={Style.lightGlow}></span>
-          <img className={Style.topImg} src={rakhiImg}></img>
+          <img className={Style.topImg} src={rakhiImg2}></img>
           <div>
-            ✨Celebrate Rakhi, Celebrate Returns – Exclusive Deals Inside! 🎉{" "}
+            ✨Celebrate Janmashtami with ₹20,000 Festive Bonus! 🎉{" "}
             <span className={Style.knowMore} onClick={handleKnowMoreClick}>
               Know More
             </span>
           </div>
-          <img className={Style.topImg2} src={rakhiImg2}></img>
+          {/* <img className={Style.topImg2} src={rakhiImg}></img> */}
         </div>
       ) : (
         <div className={Style.main}>
           <div className={Style.content}>
-            ✨Exclusive Rakhi Deals !
+            ✨Janmashtami Deals !
             <span className={Style.knowMoreBtn} onClick={handleKnowMoreClick}>
               Know More
             </span>
