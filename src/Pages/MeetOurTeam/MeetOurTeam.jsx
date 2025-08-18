@@ -271,7 +271,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>Sales Manager</div>
               </article>
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -294,7 +294,7 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Diptimayee Sahu</div>
                 <div className={Style.role}>Presales Executive</div>
-              </article>
+              </article> */}
             </div>
           </section>
 
@@ -502,7 +502,7 @@ export default function MeetOurTeam() {
                 >
                   <img src={linkedIn}></img>
                 </div>
-                <div className={Style.name}>Tarun Reddy</div>
+                <div className={Style.name}>Tarun </div>
                 <div className={Style.role}>Project Commander</div>
               </article>
             </div>
@@ -527,7 +527,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>Finance Head</div>
               </article>
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -537,15 +537,10 @@ export default function MeetOurTeam() {
                   }
                   src={isImageLoaded ? dikshith : compressedImage1}
                 />
-                {/* <div
-                  className={Style.linkedInContainer}
-                  onClick={() => window.open("_", "_blank")}
-                >
-                  <img src={linkedIn}></img>
-                </div> */}
+               
                 <div className={Style.name}>Dikshith</div>
                 <div className={Style.role}>Growth & Culture Manager</div>
-              </article>
+              </article> */}
 
               {/* <article className={Style.itemOne}>
                 <img
