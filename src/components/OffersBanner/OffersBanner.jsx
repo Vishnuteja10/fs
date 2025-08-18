@@ -4,8 +4,8 @@ import Style from "./OffersBanner.module.css";
 
 import { Carousel } from "react-bootstrap";
 
-import rakhiBanner from "../../assets/Banner/janmastami.webp";
-import rakhiMobile from "../../assets/Banner/janmastamiMobile.webp";
+import rakhiBanner from "../../assets/Banner/ganeshChaturthi.webp";
+import rakhiMobile from "../../assets/Banner/ganeshBannerMobile.webp";
 
 import { useMediaQuery } from "react-responsive";
 
@@ -14,7 +14,7 @@ function OffersBanner() {
 
   return (
     <div className={Style.main}>
-      <div className={Style.header}>Celebrate Janmashtami with Fracspace Offers!</div>
+      <div className={Style.header}>Celebrate Ganesh Chaturthi with Fracspace Offers!</div>
 
       {!isMobile ? (
         <div className={Style.bannerContainer}>

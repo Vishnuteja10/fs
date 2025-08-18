@@ -63,7 +63,7 @@
 
 .topImg {
   width: 6vw;
-  height: 8vh;
+  height: 10vh;
   margin-left: 2vw;
 }
 
@@ -85,14 +85,13 @@
   font-family: "Poppins", sans-serif;
   position: relative;
   overflow: hidden;
-
   background: linear-gradient(
     90deg,
-    #c8e4ff 0%,
-    /* Soft sky blue */ #bafbe2 30%,
-    /* Pastel peacock green */ #fff6b3 55%,
-    /* Gentle yellow (pitambar) */ #ffd89b 80%,
-    /* Warm golden peach */ #ffc2d1 100% /* Light festive pink */
+    #ffd4d4 0%,
+    /* Soft pink */ #fff3b0 50%,
+    /* Creamy yellow */ #ffc371 75%,
+    /* Festive orange/gold */ #f56fad 100%
+      /* Pink/magenta tone for Rakhi thread touch */
   );
   background-size: 300% 100%;
   animation: shimmerBackground 6s ease-in-out infinite;
@@ -178,8 +177,6 @@
 
     display: block;
   } */
-
-  
 
   .main {
     display: flex;
