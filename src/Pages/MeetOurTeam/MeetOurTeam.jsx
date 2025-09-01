@@ -246,31 +246,6 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>Hospitality & Growth Manager</div>
               </article>
 
-              <article className={Style.itemOne}>
-                <img
-                  loading="lazy"
-                  alt="team mate image"
-                  onLoad={handleImageLoad}
-                  className={
-                    isImageLoaded ? Style.itemImage : Style.placeholderImage
-                  }
-                  src={isImageLoaded ? hemanthImg : compressedImage1}
-                />
-                <div
-                  className={Style.linkedInContainer}
-                  onClick={() =>
-                    window.open(
-                      "https://www.linkedin.com/in/hemanth-kumar-72b42525b/",
-                      "_blank"
-                    )
-                  }
-                >
-                  <img src={linkedIn}></img>
-                </div>
-                <div className={Style.name}>Hemanth</div>
-                <div className={Style.role}>Sales Manager</div>
-              </article>
-
               {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
@@ -458,21 +433,6 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Akhil</div>
                 <div className={Style.role}>Junior Software Developer </div>
-              </article>
-
-              <article className={Style.itemOne}>
-                <img
-                  loading="lazy"
-                  alt="team mate image"
-                  onLoad={handleImageLoad}
-                  className={
-                    isImageLoaded ? Style.itemImage : Style.placeholderImage
-                  }
-                  src={isImageLoaded ? yeshwanthImg : compressedImage1}
-                />
-
-                <div className={Style.name}>Yeshwanth</div>
-                <div className={Style.role}>IT Admin </div>
               </article>
             </div>
           </section>
