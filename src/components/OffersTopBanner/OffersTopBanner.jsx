@@ -11,7 +11,7 @@ import { scroller } from "react-scroll";
 import { useMediaQuery } from "react-responsive";
 
 import rakhiImg from "../../assets/Banner/g1.png";
-import rakhiImg2 from "../../assets/Banner/g6.png";
+import rakhiImg2 from "../../assets/Banner/navIcon.png";
 
 function OffersTopBanner() {
   const isMobile = useMediaQuery({ maxWidth: 600 });
@@ -45,7 +45,7 @@ function OffersTopBanner() {
           <span className={Style.lightGlow}></span>
           <img className={Style.topImg} src={rakhiImg2}></img>
           <div>
-            ✨Celebrate Ganesh Chaturthi with prosperity and ₹25,000 instant savings! 🎉{" "}
+            ✨Celebrate Navratri with joy and unlock ₹25,000 instant savings!🎉{" "}
             <span className={Style.knowMore} onClick={handleKnowMoreClick}>
               Know More
             </span>
@@ -55,7 +55,7 @@ function OffersTopBanner() {
       ) : (
         <div className={Style.main}>
           <div className={Style.content}>
-            ✨Ganesh Chaturthi Deals !
+            ✨Explore Navratri Deals !
             <span className={Style.knowMoreBtn} onClick={handleKnowMoreClick}>
               Know More
             </span>
