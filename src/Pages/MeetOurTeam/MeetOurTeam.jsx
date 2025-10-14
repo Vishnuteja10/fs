@@ -12,6 +12,8 @@ import diptiImg from "../../assets/MeetOurTeam/sales/dipti.jpg";
 import hemanthImg from "../../assets/MeetOurTeam/sales/hemanth.jpeg";
 import dnsImg from "../../assets/MeetOurTeam/sales/dns.jpeg";
 import prashanthImg from "../../assets/MeetOurTeam/sales/prashanth.jpeg";
+import avinashImg from "../../assets/MeetOurTeam/sales/avinash.jpg";
+import harirajImg from "../../assets/MeetOurTeam/sales/hariraj.jpg";
 
 import divyaImg from "../../assets/MeetOurTeam/sales/divya.jpeg";
 import rishabImg from "../../assets/MeetOurTeam/sales/rishab.jpeg";
@@ -31,7 +33,7 @@ import akhilImg from "../../assets/MeetOurTeam/tech/akhil.jpg";
 import yeshwanthImg from "../../assets/MeetOurTeam/tech/yeshwanth.jpg";
 
 import tarunReddyImg from "../../assets/MeetOurTeam/construction/tarunReddy.jpg";
-import moinImg from "../../assets/MeetOurTeam/construction/moin.jpeg";
+import madhuImg from "../../assets/MeetOurTeam/construction/madhu.webp";
 
 import naveenSirImg from "../../assets/MeetOurTeam/hrAndAccounts/naveenSir.jpeg";
 
@@ -249,6 +251,56 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Prashanth</div>
                 <div className={Style.role}>Hospitality & Growth Manager</div>
+              </article>
+
+              <article className={Style.itemOne}>
+                <img
+                  loading="lazy"
+                  alt="team mate image"
+                  onLoad={handleImageLoad}
+                  className={
+                    isImageLoaded ? Style.itemImage : Style.placeholderImage
+                  }
+                  src={isImageLoaded ? avinashImg : compressedImage1}
+                />
+                {/* <div
+                  className={Style.linkedInContainer}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/prashanth-reddy-05987a1a1/",
+                      "_blank"
+                    )
+                  }
+                >
+                  <img src={linkedIn}></img>
+                </div> */}
+                <div className={Style.name}>Avinash</div>
+                <div className={Style.role}>Sales Manager</div>
+              </article>
+
+              <article className={Style.itemOne}>
+                <img
+                  loading="lazy"
+                  alt="team mate image"
+                  onLoad={handleImageLoad}
+                  className={
+                    isImageLoaded ? Style.itemImage : Style.placeholderImage
+                  }
+                  src={isImageLoaded ? harirajImg : compressedImage1}
+                />
+                {/* <div
+                  className={Style.linkedInContainer}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/prashanth-reddy-05987a1a1/",
+                      "_blank"
+                    )
+                  }
+                >
+                  <img src={linkedIn}></img>
+                </div> */}
+                <div className={Style.name}>Hari Raj</div>
+                <div className={Style.role}>Pre Sales Executive</div>
               </article>
 
               {/* <article className={Style.itemOne}>
@@ -490,7 +542,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>Junior Software Developer </div>
               </article>
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -513,7 +565,7 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Sadikh</div>
                 <div className={Style.role}>IT Admin </div>
-              </article>
+              </article> */}
 
               <article className={Style.itemOne}>
                 <img
@@ -570,6 +622,31 @@ export default function MeetOurTeam() {
                 <div className={Style.name}>Tarun </div>
                 <div className={Style.role}>Project Commander</div>
               </article>
+
+              <article className={Style.itemOne}>
+                <img
+                  loading="lazy"
+                  alt="team mate image"
+                  onLoad={handleImageLoad}
+                  className={
+                    isImageLoaded ? Style.itemImage : Style.placeholderImage
+                  }
+                  src={isImageLoaded ? madhuImg : compressedImage2}
+                />
+                {/* <div
+                  className={Style.linkedInContainer}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/tarun-reddy-23a875272",
+                      "_blank"
+                    )
+                  }
+                >
+                  <img src={linkedIn}></img>
+                </div> */}
+                <div className={Style.name}>Madhu </div>
+                <div className={Style.role}>Site Engineer</div>
+              </article>
             </div>
           </section>
 
@@ -607,7 +684,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>Growth & Culture Manager</div>
               </article> */}
 
-         {/* <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
