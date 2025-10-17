@@ -1,142 +1,156 @@
-
-
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-10px);
-    }
-    60% {
-      transform: translateY(-5px);
-    }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
-  
-  .bounce {
-    animation: bounce 2s infinite;
+  40% {
+    transform: translateY(-10px);
   }
-
-.header{
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.main2{
-    margin-left: 5vw;
-    margin-right: 5vw;
-    padding-top: 20vh;
-}
-
-.watsapp{
-    margin-top: 10vh;
-     width: 2.5vw;
-     height: 5vh;
-     z-index: 999;
-     margin-left: 3vw;
+  60% {
+    transform: translateY(-5px);
   }
-
-.imageContainer{
-
 }
 
-.imageContainer img{
-    margin-top: 5vh;
-    width: 90vw;
+.downloadButton{
+  margin-top: 1vh;
+  background-color: rgba(2, 18, 101, 1);
+  color:white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }
 
-.jobCategory{
-    margin-top: 5vh;
-    font-size: 26px;
-    font-weight: 600;
+.applyJob {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
 }
 
-.jobItem{
-    margin-top: 3vh;
-    border: 1px solid gray;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    border-radius: 5px;
+.bounce {
+  animation: bounce 2s infinite;
 }
 
-.jobRoleContainer{
-    display: flex;
-    align-items: center;
+.header {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
 }
 
-.jobRole{
-    font-weight: 600;
-    font-size: 20px;
+.main2 {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding-top: 20vh;
 }
 
-.joblocation{
-    margin-left: 2vw;
-    border: 1px solid gray;
-    border-radius: 5px;
-    padding-left: 0.3vw;
-    padding-right: 0.3vw;
+.watsapp {
+  margin-top: 10vh;
+  width: 2.5vw;
+  height: 5vh;
+  z-index: 999;
+  margin-left: 3vw;
 }
 
-.description{
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
+.imageContainer {
 }
 
-.typeImg{
-    width: 1.5vw;
-    height: 3vh;
-    margin-right: 0.5vw;
+.imageContainer img {
+  margin-top: 5vh;
+  width: 90vw;
 }
 
-.footer{
-    margin-top: 8vh;
+.jobCategory {
+  margin-top: 5vh;
+  font-size: 26px;
+  font-weight: 600;
 }
 
-.jobTypeContainer{
-    display: flex;
-    align-items: center;
+.jobItem {
+  margin-top: 3vh;
+  border: 1px solid gray;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-radius: 5px;
 }
 
-.type{
-    display: flex;
-    align-items: center;
+.jobRoleContainer {
+  display: flex;
+  align-items: center;
 }
 
-.jobLoc{
-    margin-left: 2vw;
+.jobRole {
+  font-weight: 600;
+  font-size: 20px;
 }
 
-.applyContainer{
-   margin-top: 0.5vh;
+.joblocation {
+  margin-left: 2vw;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding-left: 0.3vw;
+  padding-right: 0.3vw;
 }
 
-.applyContainer button{
-    border: none;
-    margin-top: 0.5vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    border-radius: 5px;
-    font-size: 15px;
-    background-color:rgba(2, 18, 101, 1);
-    color: white;
+.description {
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
 }
 
-
-.appIconsContainer{
-    margin-top: 40vh;
-    position: fixed;
-    z-index: 999;
-    margin-left: 92.5vw;
+.typeImg {
+  width: 1.5vw;
+  height: 3vh;
+  margin-right: 0.5vw;
 }
 
+.footer {
+  margin-top: 8vh;
+}
 
-.appIconsContainer div{
+.jobTypeContainer {
+  display: flex;
+  align-items: center;
+}
+
+.type {
+  display: flex;
+  align-items: center;
+}
+
+.jobLoc {
+  margin-left: 2vw;
+}
+
+.applyContainer {
+  margin-top: 0.5vh;
+}
+
+.applyContainer button {
+  border: none;
+  margin-top: 0.5vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: rgba(2, 18, 101, 1);
+  color: white;
+}
+
+.appIconsContainer {
+  margin-top: 40vh;
+  position: fixed;
+  z-index: 999;
+  margin-left: 92.5vw;
+}
+
+.appIconsContainer div {
   cursor: pointer;
 }
 
-.appleStore{
+.appleStore {
   margin-top: 15vh;
   width: 9vw;
   height: 5vh;
@@ -144,126 +158,115 @@
   z-index: 999;
 }
 
-.playStore{
+.playStore {
   width: 9vw;
   height: 6.5vh;
   transform: rotate(-90deg);
   z-index: 999;
 }
 
-.navBar{
-    position: fixed;
-    margin-top: 0vh;
-    padding-top: 8vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 9999;
-    background-color: white;
-    width: 100vw;
-    height: 15vh;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+.navBar {
+  position: fixed;
+  margin-top: 0vh;
+  padding-top: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+  background-color: white;
+  width: 100vw;
+  height: 15vh;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.type{
-   font-weight: 600;
+.type {
+  font-weight: 600;
 }
 
-.jobLoc{
-   font-weight: 600;
+.jobLoc {
+  font-weight: 600;
 }
 
+@media (max-width: 700px) {
+  .jobRoleContainer {
+    display: block;
+  }
 
-@media(max-width:700px){
+  .navBar {
+    padding-top: 10vh;
+    height: 13vh;
+  }
 
-    .jobRoleContainer{
-        display: block;
-    }
+  .appIconsContainer {
+    margin-left: 85vw;
+  }
 
-    .navBar{
-        padding-top: 10vh;
-        height: 13vh;
-    }
-     
-    .appIconsContainer{
-       margin-left: 85vw;
-    }
+  .appleStore {
+    width: 20vw;
+  }
 
-      .appleStore{
-         width: 20vw;
-      }
+  .playStore {
+    width: 20vw;
+  }
 
-      .playStore{
-         width: 20vw;
-      }
+  .main2 {
+    padding-top: 15vh;
+  }
 
-      .main2{
-         padding-top: 15vh;
-      }
+  .applyContainer button {
+    width: 15vw;
+  }
 
-      .applyContainer button{
-        width: 15vw;
-      }
-
-      .watsapp{
-        width: 8vw;
-        margin-left: 5.5vw;
-      }
+  .watsapp {
+    width: 8vw;
+    margin-left: 5.5vw;
+  }
 }
 
-@media (max-width:600px){
-    
-  .navBar{
-     height: 10vh;
-  }    
-
+@media (max-width: 600px) {
+  .navBar {
+    height: 10vh;
+  }
 }
 
-@media (max-width:400px) and (max-height:700px){
-  .navBar{
+@media (max-width: 400px) and (max-height: 700px) {
+  .navBar {
     height: 12vh;
   }
 }
 
-@media(min-width:200px) and (max-width:350px){
-       
-    .appIconsContainer{
-        margin-left: 82vw;
-     }
+@media (min-width: 200px) and (max-width: 350px) {
+  .appIconsContainer {
+    margin-left: 82vw;
+  }
 
-    .appleStore{
-        width: 25vw;
-     }
+  .appleStore {
+    width: 25vw;
+  }
 
-     .playStore{
-        width: 25vw;
-     }
+  .playStore {
+    width: 25vw;
+  }
 }
 
-
-@media (min-width:340px) and (max-width:385px) and (min-height:810px) and (max-height:890px){
-
-  .appIconsContainer{
+@media (min-width: 340px) and (max-width: 385px) and (min-height: 810px) and (max-height: 890px) {
+  .appIconsContainer {
     margin-left: 78vw;
     margin-top: 20vh;
-}
+  }
 
-
-  .appleStore{
+  .appleStore {
     width: 30vw;
     height: 4vh;
-  
- }
+  }
 
- .playStore{
+  .playStore {
     width: 30vw;
     height: 5vh;
- }
+  }
 
- .watsapp{
-  width: 10vw;
-  margin-left: 9vw;
+  .watsapp {
+    width: 10vw;
+    margin-left: 9vw;
+  }
 }
-
-}
-
