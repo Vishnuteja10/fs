@@ -750,7 +750,7 @@ export default function MeetOurTeam() {
                   }
                   src={isImageLoaded ? dinuImg : compressedImage1}
                 />
-                <div
+                {/* <div
                   className={Style.linkedInContainer}
                   onClick={() =>
                     window.open(
@@ -760,7 +760,7 @@ export default function MeetOurTeam() {
                   }
                 >
                   <img src={linkedIn}></img>
-                </div>
+                </div> */}
                 <div className={Style.name}>Dinu</div>
                 <div className={Style.role}>General Manager / Operations</div>
               </article>

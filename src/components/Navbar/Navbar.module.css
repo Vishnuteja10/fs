@@ -119,9 +119,6 @@ ul li {
   /* border: 1px solid gray; */
 }
 
-
-
-
 .navBar2 li::after {
   content: "";
   position: absolute;
