@@ -4,8 +4,8 @@ import Style from "./OffersBanner.module.css";
 
 import { Carousel } from "react-bootstrap";
 
-import rakhiBanner from "../../assets/Banner/nav2.png";
-import rakhiMobile from "../../assets/Banner/nav4.png";
+import rakhiBanner from "../../assets/Banner/diwalilap.jpg";
+import rakhiMobile from "../../assets/Banner/diwaliMobi2.jpg";
 
 import { useMediaQuery } from "react-responsive";
 
@@ -15,7 +15,7 @@ function OffersBanner() {
   return (
     <div className={Style.main}>
       <div className={Style.header}>
-        Celebrate Navratri with Fracspace Offers!
+        Celebrate Diwali with Fracspace Offers!
       </div>
 
       {!isMobile ? (
