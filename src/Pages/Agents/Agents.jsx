@@ -51,24 +51,15 @@ function Agents() {
 
     
         
-          {/* Google Analytics (GA) Script */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DRDNCGMB0"></script>
-          <script>
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-9DRDNCGMB0');
-            `}
-          </script>
+         
 
       </Helmet>
 
         <AppIconsComponent />
 
-        <div className={Style.topBanner}>
+        {/* <div className={Style.topBanner}>
           <OffersTopBanner />
-        </div>
+        </div> */}
 
         <div className={Style.navbar}>
             <Navbar2/>

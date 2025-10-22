@@ -58,16 +58,16 @@
 
 
 .navBar{
-  top: 2vh;
+  /* top: 2vh; */
   position: fixed;
-  padding-top: 8vh;
+  /* padding-top: 8vh; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 9999;
   background-color: white;
   width: 100vw;
-  height: 18vh;
+  height: 16vh;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
@@ -90,7 +90,7 @@
   } */
 
   .navBar{
-    top: 5vh;
+    /* top: 5vh; */
     padding-top: 5vh;
     height: 10vh;
   }

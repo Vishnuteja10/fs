@@ -44,9 +44,9 @@
 
 
 .navbar{
-    top: 2vh;
+    /* top: 2vh; */
     position: fixed;
-    padding-top: 8vh;
+    /* padding-top: 8vh; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,7 +95,7 @@
 @media(max-width:700px){
 
   .navbar{
-    top: 5vh;
+    /* top: 5vh; */
     padding-top: 5vh;
     height: 14vh;
   }

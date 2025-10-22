@@ -60,9 +60,9 @@ function HowItWorks() {
         </div> 
       </div> */}
 
-      <div className={Style.topBanner}>
+      {/* <div className={Style.topBanner}>
          <OffersTopBanner />
-      </div>
+      </div> */}
 
       <div className={Style.navbar}>
         <Navbar2 />

@@ -96,10 +96,10 @@ export default function HomePage() {
         {/* <div onClick={() => window.open("https://apps.apple.com/in/app/fracspace/id6498551006", "_blank")}>
           <img className={Style.watsapp} src={watsappImg}></img>
         </div> */}
-
+{/* 
         <div className={Style.topBanner}>
           <OffersTopBanner />
-        </div>
+        </div> */}
 
         <div className={scrolled ? Style.nav : Style.navbar}>
           {/* <SpecialOffers /> */}
@@ -114,11 +114,11 @@ export default function HomePage() {
           <CoOwn />
         </div>
 
-        <Element name="offersBanner">
+        {/* <Element name="offersBanner">
           <div>
             <OffersBanner />
           </div>
-        </Element>
+        </Element> */}
 
         <Element name="portfolio">
           <div>

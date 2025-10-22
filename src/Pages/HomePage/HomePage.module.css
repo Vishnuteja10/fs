@@ -60,9 +60,9 @@
   }
 
 .navbar{
-  top: 5vh;
+  /* top: 5vh; */
     position: fixed;
-    padding-top: 4vh;
+    /* padding-top: 4vh; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,9 +72,9 @@
 }
 
 .nav{
-  top: 5vh;
+  /* top: 5vh; */
     position: fixed;
-    padding-top: 4vh;
+    /* padding-top: 4vh; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -112,14 +112,14 @@
 @media (max-width:600px) {
 
   .navbar{
-    top: 6vh;
+    /* top: 6vh; */
     padding-top: 5vh;
     height: 10vh;
    }
 
 
   .nav{
-    top: 5vh;
+    /* top: 5vh; */
     padding-top: 5vh;
     height: 10vh;
     padding-bottom: 2vh;

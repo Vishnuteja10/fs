@@ -57,9 +57,9 @@ function Services() {
         </div>
       </div> */}
 
-      <div className={Style.topBanner}>
+      {/* <div className={Style.topBanner}>
         <OffersTopBanner />
-      </div>
+      </div> */}
 
       <div className={Style.navBar}>
         <Navbar2 />
