@@ -48,11 +48,6 @@ function Agents() {
         <title>Agents | Fracspace</title>
         <meta name="description" content="Join our team of dedicated agents at Fracspace. We offer a vibrant and collaborative environment for real estate professionals." />
         <meta name="robots" content="index, follow" />
-
-    
-        
-         
-
       </Helmet>
 
         <AppIconsComponent />
