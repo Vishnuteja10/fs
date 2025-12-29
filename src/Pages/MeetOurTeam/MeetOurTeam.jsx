@@ -84,8 +84,6 @@ export default function MeetOurTeam() {
             content="Get to know the dedicated team behind Fracspace, including our visionary leaders and skilled agents."
           />
           <meta name="robots" content="index, follow" />
-
-         
         </Helmet>
 
         <AppIconsComponent />
@@ -408,7 +406,7 @@ export default function MeetOurTeam() {
             <div className={Style.salesHeader}>Tech Team</div>
 
             <div className={Style.salesTeamImages}>
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -431,7 +429,7 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Abha Tiwari</div>
                 <div className={Style.role}>Tech Lead</div>
-              </article>
+              </article> */}
 
               <article className={Style.itemOne}>
                 <img
@@ -733,7 +731,7 @@ export default function MeetOurTeam() {
             <div className={Style.salesHeader}>Hospitality Team</div>
 
             <div className={Style.salesTeamImages}>
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -743,20 +741,10 @@ export default function MeetOurTeam() {
                   }
                   src={isImageLoaded ? dinuImg : compressedImage1}
                 />
-                {/* <div
-                  className={Style.linkedInContainer}
-                  onClick={() =>
-                    window.open(
-                      "https://www.linkedin.com/in/vivek-athmakur/",
-                      "_blank"
-                    )
-                  }
-                >
-                  <img src={linkedIn}></img>
-                </div> */}
+             
                 <div className={Style.name}>Dinu</div>
                 <div className={Style.role}>General Manager / Operations</div>
-              </article>
+              </article> */}
 
               <article className={Style.itemOne}>
                 <img
@@ -803,7 +791,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>Fitness Trainer</div>
               </article>
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -813,15 +801,10 @@ export default function MeetOurTeam() {
                   }
                   src={isImageLoaded ? gopiImg : compressedImage1}
                 />
-                {/* <div
-                className={Style.linkedInContainer}
-                onClick={() => window.open(" ", "_blank")}
-              >
-                <img src={linkedIn}></img>
-              </div> */}
+                
                 <div className={Style.name}>Gopi</div>
                 <div className={Style.role}>Fitness Trainer</div>
-              </article>
+              </article> */}
             </div>
           </section>
 
@@ -841,7 +824,6 @@ export default function MeetOurTeam() {
                 />
 
                 <div className={Style.name}>Shiva</div>
-                {/* <div className={Style.role}>Finance Head</div> */}
               </article>
 
               <article className={Style.itemOne}>

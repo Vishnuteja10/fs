@@ -63,10 +63,10 @@ const router = createBrowserRouter([
     path: "/eachproperty/:id",
     element: <EachProperty />
   },
-  {
-    path: "/test",
-    element: <Test1 />
-  }
+  // {
+  //   path: "/test",
+  //   element: <Test1 />
+  // }
 ]);
 
 createRoot(document.getElementById("root")).render(

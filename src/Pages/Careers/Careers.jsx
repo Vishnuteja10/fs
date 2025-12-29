@@ -14,11 +14,22 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 import watsappImg from "../../assets/appImages/watsapp.png";
 import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
 
+import { Helmet } from "react-helmet";
+
 function Careers() {
   return (
     <ScrollToTop>
       <div className={Style.main}>
         <AppIconsComponent />
+
+        <Helmet>
+          <title>Careers at Fracspace</title>
+          <meta
+            name="description"
+            content="Join Fracspace and explore exciting career opportunities in sales,marketing,tech and operations."
+          />
+          <meta name="robots" content="index, follow" />
+        </Helmet>
 
         <div className={Style.navBar}>
           <Navbar2 />
@@ -26,11 +37,11 @@ function Careers() {
 
         <section className={Style.main2}>
           {/* <div>Careers</div> */}
-          <header className={Style.header}>
+          <h1 className={Style.header}>
             We're Looking For Talented People
-          </header>
+          </h1>
           <div className={Style.imageContainer}>
-            <img alt="background image" src={bgImg}></img>
+            <img alt="Fracspace Careers" src={bgImg}></img>
           </div>
 
           <div className={Style.Container}>
@@ -122,9 +133,7 @@ function Careers() {
                 <div className={Style.downloadContainer}>
                   <button
                     className={Style.downloadButton}
-                    onClick={() =>
-                      window.open("/presales.pdf", "_blank")
-                    }
+                    onClick={() => window.open("/presales.pdf", "_blank")}
                   >
                     📄 Download Job Description (PDF)
                   </button>
