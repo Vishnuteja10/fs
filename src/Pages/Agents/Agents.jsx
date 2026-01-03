@@ -3,7 +3,7 @@ import React ,{useState,useEffect}from 'react'
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 import Style from './Agents.module.css'
 import AppIconsComponent from '../../components/AppIconsComponent/AppIconsComponent';
-import Navbar from '../../components/Navbar/Navbar';
+
 import Navbar2 from '../../components/Navbar2/Navbar2';
 import MainComponent from '../../components/Agents/MainComponent/MainComponent';
 import JoinOurTeam from '../../components/Agents/JoinOurTeam/JoinOurTeam';

@@ -6,7 +6,6 @@ import img2 from "../../assets/images/backgroundImage002.jpeg";
 // import { useState } from "react";
 
 import { useMediaQuery } from "react-responsive";
-import Navbar from "../Navbar/Navbar";
 
 import logo1 from "../../assets/logo/logo1.png";
 import logo2 from "../../assets/logo/logo2.png";

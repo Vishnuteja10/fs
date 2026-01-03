@@ -1,0 +1,40 @@
+
+
+.main{
+    display: flex;
+    align-items: center;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    padding-top: 3vh;
+    padding-left: 3vw;
+    background-color: rgb(194, 189, 199);
+    border-radius: 10px;
+}
+
+.leftContainer{
+    width: 50vw;
+}
+
+.header{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.appStoreImagesContainer{
+    margin-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.appStoreImagesContainer img{
+     width: 9vw;
+     height: 5vh;
+     margin-right: 2vw;
+}
+
+.appMockup img{
+    position: absolute;
+    margin-top: -24vh;
+    margin-left: 5vw;
+    width: 20vw;
+    height: 40vh;
+}

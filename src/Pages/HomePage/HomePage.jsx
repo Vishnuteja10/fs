@@ -10,7 +10,7 @@ import Testimonials from "../../components/Testimonials/Testimonials";
 import AboutFracspace from "../../components/AboutFracspace/AboutFracspace";
 import UpComingServices from "../../components/UpComingServices/UpComingServices";
 import WhyChooseFs from "../../components/WhyChooseFs/WhyChooseFs";
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar-Fracspace";
 import Style from "./HomePage.module.css";
 
 import playStore from "../../assets/appImages/playstore.png";
@@ -31,23 +31,40 @@ import SpecialOffers from "../../components/SpecialOffers/SpecialOffers";
 import OffersBanner from "../../components/OffersBanner/OffersBanner";
 import OffersTopBanner from "../../components/OffersTopBanner/OffersTopBanner";
 
+import { X } from "lucide-react";
+
+import bannerImg from "../../assets/Banner/altairaBanner.png";
+import altairaMobileImg from "../../assets/Banner/altairaMobile.png";
+
+import { useMediaQuery } from "react-responsive";
+
 export default function HomePage() {
   const [scrolled, setScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const isMobile = useMediaQuery({ query: "(max-width: 600px)" });
 
   useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 2000);
+
     const handleScroll = () => {
       const isScrolled = window.scrollY > 0;
-      // console.log("scrolled is", isScrolled);
       setScrolled(isScrolled);
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener when component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      clearTimeout(timer);
     };
   }, []);
+
+  const closeBanner = () => {
+    setIsVisible(false);
+  };
 
   return (
     <ScrollToTop>
@@ -96,7 +113,7 @@ export default function HomePage() {
         {/* <div onClick={() => window.open("https://apps.apple.com/in/app/fracspace/id6498551006", "_blank")}>
           <img className={Style.watsapp} src={watsappImg}></img>
         </div> */}
-{/* 
+        {/* 
         <div className={Style.topBanner}>
           <OffersTopBanner />
         </div> */}
@@ -104,6 +121,40 @@ export default function HomePage() {
         <div className={scrolled ? Style.nav : Style.navbar}>
           {/* <SpecialOffers /> */}
           <Navbar />
+        </div>
+
+        <div
+          className={`${Style.altairaBannerContainer} ${
+            isVisible ? Style.show : Style.invisible
+          }`}
+        >
+          <button
+            onClick={closeBanner}
+            className={Style.closeButton}
+            aria-label="Close banner"
+          >
+            <X size={28} />
+          </button>
+
+          {isMobile ? (
+            <img
+              onClick={() =>
+                window.open("https://investments.altaira.lk", "_blank")
+              }
+              className={Style.altairaBannerImg}
+              src={altairaMobileImg}
+              alt="Altaira Banner"
+            />
+          ) : (
+            <img
+              onClick={() =>
+                window.open("https://investments.altaira.lk", "_blank")
+              }
+              className={Style.altairaBannerImg}
+              src={bannerImg}
+              alt="Altaira Banner"
+            />
+          )}
         </div>
 
         <div className={Style.banner}>

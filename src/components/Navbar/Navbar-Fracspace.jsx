@@ -106,6 +106,16 @@ function Navbar() {
                       Agents
                     </Link>
                   </li>
+                  <li className={`${Style.altaira} ${Style.linkAnimated}`}>
+                    <span
+                      className={Style.link2}
+                      onClick={() =>
+                        window.open("https://investments.altaira.lk", "_blank")
+                      }
+                    >
+                      Altaira
+                    </span>
+                  </li>
                 </ul>
               ) : (
                 <ul className={Style.navBar2}>
@@ -134,10 +144,20 @@ function Navbar() {
                       Contact
                     </Link>
                   </li>
-                  <li className={`${Style.agents2} ${Style.linkAnimated}`}>
+                  <li>
                     <Link to="/agents" className={Style.link2}>
                       Agents
                     </Link>
+                  </li>
+                  <li className={`${Style.altaira} ${Style.linkAnimated}`}>
+                    <span
+                      className={Style.link2}
+                      onClick={() =>
+                        window.open("https://investments.altaira.lk", "_blank")
+                      }
+                    >
+                      Altaira
+                    </span>
                   </li>
                 </ul>
               )}
@@ -192,6 +212,16 @@ function Navbar() {
                   <Link to="/agents" className={Style.link3}>
                     Agents
                   </Link>
+                </li>
+                <li className={Style.link3}>
+                  <span
+                    className={Style.altairaa}
+                    onClick={() =>
+                      window.open("https://investments.altaira.lk", "_blank")
+                    }
+                  >
+                    Altaira
+                  </span>
                 </li>
               </ul>
             </div>

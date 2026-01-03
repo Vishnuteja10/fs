@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../../components/HowItWorks/Banner/Banner";
-import Navbar from "../../components/Navbar/Navbar";
+
 
 import { useState, useEffect } from "react";
 

@@ -66,6 +66,17 @@ function Navbar2() {
                     Agents
                   </Link>
                 </li>
+
+                <li className={`${Style.altaira} ${Style.linkAnimated}`}>
+                  <span
+                    className={Style.link2}
+                    onClick={() =>
+                      window.open("https://investments.altaira.lk", "_blank")
+                    }
+                  >
+                    Altaira
+                  </span>
+                </li>
               </ul>
             </div>
           </div>
@@ -117,6 +128,17 @@ function Navbar2() {
                     <Link to="/agents" className={Style.link2}>
                       Agents
                     </Link>
+                  </li>
+
+                  <li>
+                    <span
+                      className={`${Style.link} ${Style.altairaa}`}
+                      onClick={() =>
+                        window.open("https://investments.altaira.lk", "_blank")
+                      }
+                    >
+                      Altaira
+                    </span>
                   </li>
                 </ul>
               </div>

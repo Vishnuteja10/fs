@@ -62,7 +62,7 @@ const router = createBrowserRouter([
   {
     path: "/eachproperty/:id",
     element: <EachProperty />
-  },
+  }
   // {
   //   path: "/test",
   //   element: <Test1 />
