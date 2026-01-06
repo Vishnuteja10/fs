@@ -30,7 +30,7 @@ function EachProperty() {
 
   const [propertyDetails, setPropertyDetails] = useState();
 
-  const PROPERTY_API = `https://apitest.fracspace.com/api/users/getPropertyDetailsById/${id}`;
+  const PROPERTY_API = `https://apitest.fracspace.com/api/users/getPropertyById/${id}`;
 
   const ENQUIRY_API =
     "https://apitest.fracspace.com/api/v1/webApi/enquiryFormRegardingCoownership";
@@ -56,7 +56,7 @@ function EachProperty() {
           "x-api-key": "Fracspace@2024"
         }
       });
-      // console.log(response.data);
+      // console.log("response is",response);
     } catch (error) {
       // console.log("error is", error);
     }
@@ -103,6 +103,7 @@ function EachProperty() {
     // console.log("property api is", PROPERTY_API, id);
     axios.get(PROPERTY_API, { headers }).then(
       (response) => {
+        
         propDetails = response?.data?.property;
         setPropertyDetails(response?.data?.property);
        

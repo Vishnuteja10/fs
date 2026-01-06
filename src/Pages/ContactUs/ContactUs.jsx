@@ -51,9 +51,9 @@ export default function ContactUs() {
           "x-api-key": "Fracspace@2024"
         }
       });
-      console.log(response.data);
+    
     } catch (error) {
-      console.log("error is", error);
+     
     }
   };
 

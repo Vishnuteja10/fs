@@ -2,11 +2,63 @@ import React from "react";
 import Style from "./Terms.module.css";
 import Footer from "../../components/Footer/Footer";
 
+// import playStore from "../../assets/appImages/playstore.png";
+// import appleStore from "../../assets/appImages/apple-store.png";
+
+import Navbar2 from "../../components/Navbar2/Navbar2";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
+
+import playStore from "../../assets/appImages/playstore.png";
+import appleStore from "../../assets/appImages/apple-store.png";
+
+import watsappImg from "../../assets/appImages/watsapp.png";
+import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
+
 function Terms() {
   return (
+    <ScrollToTop>
     <div className={Style.main}>
+
+      <AppIconsComponent />
+
+    {/* <div className={Style.appIconsContainer}>
+          <div
+            onClick={() =>
+              window.open(
+                "https://play.google.com/store/apps/details?id=com.fracspace",
+                "_blank"
+              )
+            }
+          >
+            <img className={Style.playStore} src={playStore}></img>
+          </div>
+
+          <div
+            onClick={() =>
+              window.open(
+                "https://apps.apple.com/in/app/fracspace/id6498551006",
+                "_blank"
+              )
+            }
+          >
+            <img className={Style.appleStore} src={appleStore}></img>
+          </div>
+
+          <div
+            onClick={() => window.open("https://wa.me/9880626111", "_blank")}
+          >
+            <img
+              className={`${Style.watsapp} ${Style.bounce}`}
+              src={watsappImg}
+            ></img>
+          </div>
+        </div> */}
+
+       <div className={Style.navBar}>
+            <Navbar2 />
+       </div>
       <div className={Style.terms}>
-        <h1>TERMS & CONDITIONS</h1>
+        <h1 className={Style.header}>TERMS & CONDITIONS</h1>
         <p>
           Below are essential points regarding your Fractional Ownership with
           FRACSPACE. Please review each point alongside the detailed Terms &
@@ -31,14 +83,9 @@ function Terms() {
             toward the entitlement fees.
           </li>
           <li>
-            I/We acknowledge that in case of my/our cancellation request,
-            Fracspace reserves the right to deduct cancellation charges as
-            outlined in the Terms and Conditions. Only the remaining balance
-            will be refunded. The booking amount serves as "Earnest Money" in
-            the event of cancellation after payment, Fracspace will forfeit 10%
-            of the "Earnest Money". However, there is a seven-day free look
-            period from the Onboarding date.
+          Booking Cancellation: I/We acknowledge that in case of my/our cancellation request, Fracspace reserves the right to deduct cancellation charges as outlined in the Terms and Conditions. The seven-day free look period applies only to the booking amount of ₹10,000 or ₹25,000. After the 7th day, if the customer chooses to opt out, the booking amount will not be refunded.
           </li>
+          <li>Exit Before Stipulated Lock-In Period: In the event of an exit before the stipulated lock-in period, Fracspace will forfeit 10% of the frac amount as part of the cancellation charges, with only the remaining balance being refunded.</li>
           <li>
             I/We acknowledge that I/we will become a FRAC Owner of FRACSPACE
             only upon the full realization of the entire amount and the two
@@ -74,8 +121,14 @@ function Terms() {
             Importantly, this maintenance cost will not impact the guaranteed 8%
             return on the investment amount.
           </li>
+          <li>
+          By submitting your contact details, you authorize Fracspace and its representatives to contact you for transactional purposes. Please note, this call is not promotional in nature.
+          </li>
+          <li>
+          Fracspace reserves the right to grant or deny admission to, and to dismiss, any customer at its sole discretion.
+          </li>
         </ul>
-        <h3>Cancellation & Refund Policy</h3>
+        <h3 className={Style.header2}>Cancellation & Refund Policy</h3>
         <ul>
           <li>
             Users must provide accurate payment information and use only legally
@@ -101,6 +154,7 @@ function Terms() {
         <Footer />
       </div>
     </div>
+    </ScrollToTop>
   );
 }
 

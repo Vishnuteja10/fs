@@ -244,7 +244,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>Hospitality & Growth Manager</div>
               </article>
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -254,20 +254,10 @@ export default function MeetOurTeam() {
                   }
                   src={isImageLoaded ? avinashImg : compressedImage1}
                 />
-                {/* <div
-                  className={Style.linkedInContainer}
-                  onClick={() =>
-                    window.open(
-                      "https://www.linkedin.com/in/prashanth-reddy-05987a1a1/",
-                      "_blank"
-                    )
-                  }
-                >
-                  <img src={linkedIn}></img>
-                </div> */}
+               
                 <div className={Style.name}>Avinash</div>
                 <div className={Style.role}>Sales Manager</div>
-              </article>
+              </article> */}
 
               <article className={Style.itemOne}>
                 <img
@@ -325,7 +315,7 @@ export default function MeetOurTeam() {
             <div className={Style.salesHeader}>Marketing Team</div>
 
             <div className={Style.salesTeamImages}>
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -348,7 +338,7 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Sudheer</div>
                 <div className={Style.role}> Sr Graphic Designer</div>
-              </article>
+              </article> */}
 
               <article className={Style.itemOne}>
                 <img

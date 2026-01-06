@@ -37,9 +37,7 @@ function Careers() {
 
         <section className={Style.main2}>
           {/* <div>Careers</div> */}
-          <h1 className={Style.header}>
-            We're Looking For Talented People
-          </h1>
+          <h1 className={Style.header}>We're Looking For Talented People</h1>
           <div className={Style.imageContainer}>
             <img alt="Fracspace Careers" src={bgImg}></img>
           </div>

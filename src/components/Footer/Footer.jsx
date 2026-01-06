@@ -32,7 +32,7 @@ function Footer() {
   useEffect(() => {
     const domain = window.location.hostname;
     const address = domain.includes(".lk");
-    console.log("domain name is", domain, "is srilanka", address);
+    // console.log("domain name is", domain, "is srilanka", address);
     if (address) {
       setIsIndia(false);
     }
