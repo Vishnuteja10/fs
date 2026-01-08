@@ -129,6 +129,10 @@
 
 @media(max-width:600px){
 
+  .PrivacyPolicy{
+    padding-top: 15vh;
+  }
+
     .appIconsContainer{
         margin-left: 85vw;
     }
@@ -148,7 +152,7 @@
     }
 
     .navBar{
-        padding-top: 10vh;
+        padding-top: 5vh;
         height: 10vh;
     }
 

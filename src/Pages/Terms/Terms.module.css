@@ -129,6 +129,10 @@
 
 @media(max-width:600px){
 
+  .terms{
+    padding-top: 15vh;
+  }
+
     .appIconsContainer{
         margin-left: 85vw;
     }
@@ -149,7 +153,7 @@
 
     .navBar{
         height: 10vh;
-        padding-top: 10vh;
+        padding-top: 5vh;
     }
 
     .header{
