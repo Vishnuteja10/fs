@@ -10,49 +10,53 @@ import teamImage from "../../assets/MeetOurTeam/team/team.jpeg";
 
 import diptiImg from "../../assets/MeetOurTeam/sales/dipti.jpg";
 import hemanthImg from "../../assets/MeetOurTeam/sales/hemanth.jpeg";
-import dnsImg from "../../assets/MeetOurTeam/sales/dns.jpeg";
-import prashanthImg from "../../assets/MeetOurTeam/sales/prashanth.jpeg";
-import avinashImg from "../../assets/MeetOurTeam/sales/avinash.jpg";
-import harirajImg from "../../assets/MeetOurTeam/sales/hariraj.jpg";
+import dnsImg from "../../assets/MeetOurTeam/sales/dns1.webp";
+import prashanthImg from "../../assets/MeetOurTeam/sales/prashant.webp";
+// import avinashImg from "../../assets/MeetOurTeam/sales/avinash.jpg";
+import harirajImg from "../../assets/MeetOurTeam/sales/hariRaj.webp";
+import abhishekImg from "../../assets/MeetOurTeam/sales/abhishek.webp";
 
-import divyaImg from "../../assets/MeetOurTeam/sales/divya.jpeg";
-import rishabImg from "../../assets/MeetOurTeam/sales/rishab.jpeg";
+import divyaImg from "../../assets/MeetOurTeam/sales/divya.webp";
+import rishabImg from "../../assets/MeetOurTeam/sales/rishab1.webp";
 
-import sudheerImg from "../../assets/MeetOurTeam/marketing/sudheer.jpeg";
+// import sudheerImg from "../../assets/MeetOurTeam/marketing/sudheer.jpeg";
 import hruthikImg from "../../assets/MeetOurTeam/marketing/hruthik.webp";
 import vivekanandaImg from "../../assets/MeetOurTeam/marketing/vivekananda.webp";
 
 import abhaImg from "../../assets/MeetOurTeam/tech/abha.jpeg";
 import rakeshImg from "../../assets/MeetOurTeam/tech/rakesh.jpeg";
-import vishnuImg from "../../assets/MeetOurTeam/tech/vishnuteja.jpeg";
+import vishnuImg from "../../assets/MeetOurTeam/tech/vishnu.webp";
 import sadikImg from "../../assets/MeetOurTeam/tech/sadikh.webp";
 import tejaswiniImg from "../../assets/MeetOurTeam/tech/tejaswini.webp";
 
-import krishnaImg from "../../assets/MeetOurTeam/tech/krishna.jpg";
-import akhilImg from "../../assets/MeetOurTeam/tech/akhil.jpg";
+import krishnaImg from "../../assets/MeetOurTeam/tech/krishna.webp";
+import akhilImg from "../../assets/MeetOurTeam/tech/akhil.webp";
+import nagamaniImg from "../../assets/MeetOurTeam/tech/nagamani.webp";
+import vasaviImg from "../../assets/MeetOurTeam/tech/vasavi.webp";
 import yeshwanthImg from "../../assets/MeetOurTeam/tech/yeshwanth.jpg";
 
-import tarunReddyImg from "../../assets/MeetOurTeam/construction/tarunReddy.jpg";
-import madhuImg from "../../assets/MeetOurTeam/construction/madhu.webp";
 
-import naveenSirImg from "../../assets/MeetOurTeam/hrAndAccounts/naveenSir.jpeg";
+import tarunReddyImg from "../../assets/MeetOurTeam/construction/tarun.webp";
+import madhuImg from "../../assets/MeetOurTeam/construction/madhu1.webp";
 
-import prajnaImg from "../../assets/MeetOurTeam/hrAndAccounts/prajna.jpg";
-import dikshith from "../../assets/MeetOurTeam/hrAndAccounts/dikshith.webp";
+import naveenSirImg from "../../assets/MeetOurTeam/hrAndAccounts/naveenSir.webp";
+
+import prajnaImg from "../../assets/MeetOurTeam/hrAndAccounts/prajna.webp";
+// import dikshith from "../../assets/MeetOurTeam/hrAndAccounts/dikshith.webp";
 
 import unnathSirImg from "../../assets/MeetOurTeam/founder/unnathSir.jpeg";
 
-import deepakImg from "../../assets/MeetOurTeam/fitnessteam/deepak.jpeg";
-import mansoorImg from "../../assets/MeetOurTeam/fitnessteam/mansoor.jpeg";
+import deepakImg from "../../assets/MeetOurTeam/fitnessteam/deepak.webp";
+import mansoorImg from "../../assets/MeetOurTeam/fitnessteam/mansoor.webp";
 
-import gopiImg from "../../assets/MeetOurTeam/fitnessteam/gopi1.jpeg";
-import vivekImg from "../../assets/MeetOurTeam/fitnessteam/vivek.jpeg";
-import dinuImg from "../../assets/MeetOurTeam/fitnessteam/dinu.webp";
+// import gopiImg from "../../assets/MeetOurTeam/fitnessteam/gopi1.jpeg";
+// import vivekImg from "../../assets/MeetOurTeam/fitnessteam/vivek.jpeg";
+// import dinuImg from "../../assets/MeetOurTeam/fitnessteam/dinu.webp";
 
-import shivaImg from "../../assets/MeetOurTeam/officeSupport/shiva.jpeg";
+import shivaImg from "../../assets/MeetOurTeam/officeSupport/shiva.webp";
 
-import srinivasImg from "../../assets/MeetOurTeam/officeSupport/srinivas.jpeg";
-import ranjithImg from "../../assets/MeetOurTeam/officeSupport/ranjith.jpeg";
+import srinivasImg from "../../assets/MeetOurTeam/officeSupport/srinivas.webp";
+import ranjithImg from "../../assets/MeetOurTeam/officeSupport/ranjith.webp";
 
 import compressedImage1 from "../../assets/shrimmer/ourteam/compressed1.jpeg";
 import compressedImage from "../../assets/shrimmer/ourteam/compressedImg.jpeg";
@@ -281,6 +285,31 @@ export default function MeetOurTeam() {
                   <img src={linkedIn}></img>
                 </div> */}
                 <div className={Style.name}>Hari Raj</div>
+                <div className={Style.role}>Pre Sales Executive</div>
+              </article>
+
+                 <article className={Style.itemOne}>
+                <img
+                  loading="lazy"
+                  alt="team mate image"
+                  onLoad={handleImageLoad}
+                  className={
+                    isImageLoaded ? Style.itemImage : Style.placeholderImage
+                  }
+                  src={isImageLoaded ? abhishekImg : compressedImage1}
+                />
+                {/* <div
+                  className={Style.linkedInContainer}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/prashanth-reddy-05987a1a1/",
+                      "_blank"
+                    )
+                  }
+                >
+                  <img src={linkedIn}></img>
+                </div> */}
+                <div className={Style.name}>Abhishek</div>
                 <div className={Style.role}>Pre Sales Executive</div>
               </article>
 
@@ -558,6 +587,31 @@ export default function MeetOurTeam() {
                   }
                   src={isImageLoaded ? tejaswiniImg : compressedImage1}
                 />
+                <div
+                  className={Style.linkedInContainer}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/tejaswini-kilaru01?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+                      "_blank"
+                    )
+                  }
+                >
+                  <img src={linkedIn}></img>
+                </div>
+                <div className={Style.name}>Tejaswini</div>
+                <div className={Style.role}>UI/UX Designer </div>
+              </article>
+
+               <article className={Style.itemOne}>
+                <img
+                  loading="lazy"
+                  alt="team mate image"
+                  onLoad={handleImageLoad}
+                  className={
+                    isImageLoaded ? Style.itemImage : Style.placeholderImage
+                  }
+                  src={isImageLoaded ? nagamaniImg : compressedImage1}
+                />
                 {/* <div
                   className={Style.linkedInContainer}
                   onClick={() =>
@@ -569,8 +623,33 @@ export default function MeetOurTeam() {
                 >
                   <img src={linkedIn}></img>
                 </div> */}
-                <div className={Style.name}>Tejaswini</div>
-                <div className={Style.role}>UI/UX designer </div>
+                <div className={Style.name}>Nagamani</div>
+                <div className={Style.role}>IT Admin </div>
+              </article>
+
+               <article className={Style.itemOne}>
+                <img
+                  loading="lazy"
+                  alt="team mate image"
+                  onLoad={handleImageLoad}
+                  className={
+                    isImageLoaded ? Style.itemImage : Style.placeholderImage
+                  }
+                  src={isImageLoaded ? vasaviImg : compressedImage1}
+                />
+                {/* <div
+                  className={Style.linkedInContainer}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/akhil-balthi-0382892bb/",
+                      "_blank"
+                    )
+                  }
+                >
+                  <img src={linkedIn}></img>
+                </div> */}
+                <div className={Style.name}>Vasavi</div>
+                <div className={Style.role}>Software Engineer </div>
               </article>
             </div>
           </section>

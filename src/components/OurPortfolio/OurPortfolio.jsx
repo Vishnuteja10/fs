@@ -536,7 +536,7 @@ function OurPortfolio() {
 
                 <div className={Style.propertyDetails}>
                   {property?.name}
-                  <h6>hiltop munnar,munnar,kerala </h6>
+                  <h6>hilltop munnar,munnar,kerala </h6>
 
                   {!isMobile ? (
                     <div className={Style.detailsContainer}>

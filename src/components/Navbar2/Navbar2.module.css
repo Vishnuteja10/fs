@@ -222,6 +222,10 @@
     margin-left: 4vw;
   }
 
+  /* .menu3{
+    border: 2px solid saddlebrown;
+  } */
+
   /* .link2{
         font-size: 21px;
     } */
@@ -291,9 +295,9 @@
     width: 20vw;
   }
 
-  .link2 {
+  /* .link2 {
     width: 20vw;
-  }
+  } */
 
   .logo1 {
     /* border: 2px solid gray; */
@@ -326,11 +330,12 @@
     background-color: rgba(2, 18, 101, 1);
     width: 120vw;
     margin-left: -50vw;
-    margin-top: 5vh;
+    margin-top: 4vh;
     margin-right: 0vw;
     padding-left: 0vw;
     padding-right: 0vw;
     z-index: 99999;
+    height:100vh;
 
     /* border: 2px solid green; */
   }

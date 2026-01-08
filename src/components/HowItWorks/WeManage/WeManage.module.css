@@ -89,6 +89,9 @@
         height: 9vh;
       }
 
+      .list{
+        width: 45vw;
+      }
 }
 
 /* style for small screen tabs */
@@ -107,10 +110,12 @@
 
 @media (max-width: 600px) {
   .header {
-    width: 80vw;
+    width: 90vw;
     font-size: 24px;
   }
-
+/* .text{
+  border: 2px solid greenyellow;
+} */
   .content {
     margin-top: -6vh;
   }
@@ -124,9 +129,10 @@
   }
 
   .manageList {
-    margin-left: 12vw;
+    /* margin-left: 12vw; */
     margin-right: 10vw;
     width: 60vw;
+    margin-left: 0vw;
   }
 
   .manageImageContainer {
@@ -134,7 +140,7 @@
   }
 
   .list {
-    width: 60vw;
+    width: 90vw;
     font-weight: 600;
     font-size: 16px;
   }

@@ -33,7 +33,7 @@ function WeManage() {
                 {" "}
                 <img className={Style.vectorImage} src={VectorIcon} alt="Comprehensive property management illustration"></img>{" "}
               </span>{" "}
-              Comprehensive Property Management
+              <span className={Style.text}>Comprehensive Property Management</span>
             </article>
 
             <article className={Style.list}>
@@ -42,7 +42,7 @@ function WeManage() {
                 {" "}
                 <img className={Style.vectorImage} src={VectorIcon}></img>{" "}
               </span>{" "}
-              Personalized Investment Planning
+              <span className={Style.text}>Personalized Investment Planning</span>
             </article>
 
             {/* <div className={Style.list}>
@@ -69,7 +69,7 @@ function WeManage() {
                 {" "}
                 <img className={Style.vectorImage} src={VectorIcon}></img>{" "}
               </span>{" "}
-              Free legal assistance
+              <span className={Style.text}>Free legal assistance</span>
             </article>
           </div>
         </div>

@@ -8,7 +8,7 @@ import img1 from '../../assets/MeetOurTeam/founder/unnathSir.jpeg'
 import img2 from '../../assets/MeetOurTeam/sales/divya.jpeg'
 import img3 from '../../assets/MeetOurTeam/sales/dns.jpeg'
 
-import img6 from '../../assets/MeetOurTeam/construction/moin.jpeg'
+// import img6 from '../../assets/MeetOurTeam/construction/moin.jpeg'
 import img7 from '../../assets/MeetOurTeam/tech/rakesh.jpeg'
 import img8 from '../../assets/MeetOurTeam/tech/abha.jpeg'
 

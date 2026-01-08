@@ -370,6 +370,7 @@
 }
 
     .header{
+        padding-top: 10vh;
         font-size: 24px;
         font-family: 'Montserrat';
     }
@@ -391,6 +392,9 @@
         font-size: 18px;
         font-size: 600;
         font-family: "Montserrat";
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .name{
@@ -570,6 +574,10 @@
         height: 3vh;
     }
 
+    .role{
+        /* border: 2px solid cadetblue; */
+        width: 40vw;
+    }
 }
 
 /* css for smaller tabs */

@@ -41,7 +41,7 @@ function Navbar() {
     e.preventDefault();
     // setScrolled(!scrolled)
     setMenuOpen(!menuOpen);
-    console.log("menu is", menuOpen);
+    //console.log("menu is", menuOpen);
   };
 
   return (
