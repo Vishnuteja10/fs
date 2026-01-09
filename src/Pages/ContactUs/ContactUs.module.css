@@ -70,7 +70,7 @@
 .main2{
     background-image: url('../../assets/ContactUs/bg.png');
     width: 98.5vw;
-    height: 97vh;
+    height:100vh;
     /* background-color: rgb(142, 185, 223); */
     background-size: cover;
     background-repeat: no-repeat;
