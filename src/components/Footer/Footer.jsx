@@ -185,7 +185,7 @@ function Footer() {
               </>
             )}
 
-            <div className={Style.email}>
+            <div className={Style.emailAddress}>
               {" "}
               <img className={Style.icon} src={emailIcon}></img>{" "}
               support@fracspace.com
