@@ -106,12 +106,11 @@ function Navbar() {
                       Agents
                     </Link>
                   </li>
-                  <li className={`${Style.altaira} ${Style.linkAnimated}`}>
+                  <li onClick={() =>
+                        window.open("https://investments.altaira.lk", "_blank")
+                      } className={`${Style.altaira} ${Style.linkAnimated}`}>
                     <span
                       className={Style.link2}
-                      onClick={() =>
-                        window.open("https://investments.altaira.lk", "_blank")
-                      }
                     >
                       Altaira
                     </span>
