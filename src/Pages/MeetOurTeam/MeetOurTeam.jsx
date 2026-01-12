@@ -637,17 +637,17 @@ export default function MeetOurTeam() {
                   }
                   src={isImageLoaded ? nagamaniImg : compressedImage1}
                 />
-                {/* <div
+                <div
                   className={Style.linkedInContainer}
                   onClick={() =>
                     window.open(
-                      "https://www.linkedin.com/in/akhil-balthi-0382892bb/",
+                      "https://www.linkedin.com/in/nallabothula-nagamani-ab0902337",
                       "_blank"
                     )
                   }
                 >
                   <img src={linkedIn}></img>
-                </div> */}
+                </div>
                 <div className={Style.name}>Nagamani</div>
                 <div className={Style.role}>IT Admin </div>
               </article>
