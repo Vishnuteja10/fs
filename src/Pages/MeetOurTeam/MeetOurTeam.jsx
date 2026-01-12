@@ -100,16 +100,6 @@ export default function MeetOurTeam() {
           <Navbar2 />
         </div>
 
-        <header className={Style.header}>Meet Our Team</header>
-        <div className={Style.imageContainer}>
-          <img
-            src={isImageLoaded ? teamImage : teamCompressedImage}
-            loading="lazy"
-            alt="team"
-            onLoad={handleImageLoad}
-            className={isImageLoaded ? Style.teamImage : Style.placeholderImage}
-          ></img>
-        </div>
 
         <div className={Style.teamContainer}>
           <div className={Style.header}>Meet The Team</div>
@@ -637,17 +627,16 @@ export default function MeetOurTeam() {
                   }
                   src={isImageLoaded ? vasaviImg : compressedImage1}
                 />
-                {/* <div
+                <div
                   className={Style.linkedInContainer}
                   onClick={() =>
                     window.open(
-                      "https://www.linkedin.com/in/akhil-balthi-0382892bb/",
-                      "_blank"
+                      "https://www.linkedin.com/in/vasavi-pillala-546821238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     )
                   }
                 >
                   <img src={linkedIn}></img>
-                </div> */}
+                </div>
                 <div className={Style.name}>Vasavi</div>
                 <div className={Style.role}>Software Engineer </div>
               </article>
