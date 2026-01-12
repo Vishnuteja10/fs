@@ -22,6 +22,7 @@ import rishabImg from "../../assets/MeetOurTeam/sales/rishab1.webp";
 // import sudheerImg from "../../assets/MeetOurTeam/marketing/sudheer.jpeg";
 import hruthikImg from "../../assets/MeetOurTeam/marketing/hruthik.webp";
 import vivekanandaImg from "../../assets/MeetOurTeam/marketing/vivekananda.webp";
+import simranImg from "../../assets/MeetOurTeam/marketing/simran.webp";
 
 import abhaImg from "../../assets/MeetOurTeam/tech/abha.jpeg";
 import rakeshImg from "../../assets/MeetOurTeam/tech/rakesh.jpeg";
@@ -34,7 +35,6 @@ import akhilImg from "../../assets/MeetOurTeam/tech/akhil.webp";
 import nagamaniImg from "../../assets/MeetOurTeam/tech/nagamani.webp";
 import vasaviImg from "../../assets/MeetOurTeam/tech/vasavi.webp";
 import yeshwanthImg from "../../assets/MeetOurTeam/tech/yeshwanth.jpg";
-
 
 import tarunReddyImg from "../../assets/MeetOurTeam/construction/tarun.webp";
 import madhuImg from "../../assets/MeetOurTeam/construction/madhu1.webp";
@@ -288,7 +288,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>Pre Sales Executive</div>
               </article>
 
-                 <article className={Style.itemOne}>
+              <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -417,6 +417,31 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Hruthik</div>
                 <div className={Style.role}>Video Editor</div>
+              </article>
+
+              <article className={Style.itemOne}>
+                <img
+                  loading="lazy"
+                  alt="team mate image"
+                  onLoad={handleImageLoad}
+                  className={
+                    isImageLoaded ? Style.itemImage : Style.placeholderImage
+                  }
+                  src={isImageLoaded ? simranImg : compressedImage1}
+                />
+                {/* <div
+                  className={Style.linkedInContainer}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/gundeti-hruthik-sai-a8ba09327/",
+                      "_blank"
+                    )
+                  }
+                >
+                  <img src={linkedIn}></img>
+                </div> */}
+                <div className={Style.name}>Simran</div>
+                <div className={Style.role}>Marketing Executive</div>
               </article>
             </div>
           </section>
@@ -602,7 +627,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>UI/UX Designer </div>
               </article>
 
-               <article className={Style.itemOne}>
+              <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -627,7 +652,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>IT Admin </div>
               </article>
 
-               <article className={Style.itemOne}>
+              <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
