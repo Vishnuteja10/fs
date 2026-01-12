@@ -29,6 +29,17 @@ function Footer() {
 
   const [isIndia, setIsIndia] = useState(true);
 
+  useEffect(()=>{
+    if(!error) return;
+
+    //mounting
+    const timer =setTimeout(()=>{
+      setError("");
+    },2000);
+
+    return ()=>clearTimeout(timer); //unmounting
+  },[error]);
+
   useEffect(() => {
     const domain = window.location.hostname;
     const address = domain.includes(".lk");
@@ -174,7 +185,7 @@ function Footer() {
               </>
             )}
 
-            <div className={Style.email}>
+            <div className={Style.emailAddress}>
               {" "}
               <img className={Style.icon} src={emailIcon}></img>{" "}
               support@fracspace.com

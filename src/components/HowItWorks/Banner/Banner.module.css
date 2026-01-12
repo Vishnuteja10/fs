@@ -16,7 +16,7 @@
     padding-bottom: 2vh;
     margin-left: 3vw;
     width: 60vw;
-    height: 40vh;
+    height: 30vh;
     position: absolute;
     margin-top: -60vh;
     background-color: rgba(0,0,0,0.2);
@@ -125,7 +125,7 @@
         padding-right: 8vw;
         margin-top: -70vh;
         width: 90vw;
-        height: 60vh;
+        height: 40vh;
     }
 
     .header{
@@ -140,6 +140,12 @@
          font-size: 16px;
     }
 
+}
+
+@media (min-width:390px) and (max-width:440px){
+    .imageContent{
+        height: 35vh;
+    }
 }
 
 

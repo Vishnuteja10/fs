@@ -25,7 +25,7 @@ import vivekanandaImg from "../../assets/MeetOurTeam/marketing/vivekananda.webp"
 import simranImg from "../../assets/MeetOurTeam/marketing/simran.webp";
 
 import abhaImg from "../../assets/MeetOurTeam/tech/abha.jpeg";
-import rakeshImg from "../../assets/MeetOurTeam/tech/rakesh.jpeg";
+import rakeshImg from "../../assets/MeetOurTeam/tech/rakesh1.webp";
 import vishnuImg from "../../assets/MeetOurTeam/tech/vishnu.webp";
 import sadikImg from "../../assets/MeetOurTeam/tech/sadikh.webp";
 import tejaswiniImg from "../../assets/MeetOurTeam/tech/tejaswini.webp";

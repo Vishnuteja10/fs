@@ -600,3 +600,14 @@
     }
 
 }
+
+
+@media (max-width:390px) and (max-height:260px){
+  .linkedInContainer{
+    width: 5vw !important;
+  }
+
+  .itemImage{
+    width: 10vw !important;
+  }
+}
