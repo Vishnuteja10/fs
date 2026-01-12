@@ -295,8 +295,8 @@
 
     .navBar{
         /* top: 12vh; */
-        padding-top: 5vh;
-        height: 10vh;
+        padding-top: 10vh;
+        height: 18vh !important;
     }
 
     .appIconsContainer{
@@ -370,7 +370,7 @@
 }
 
     .header{
-        padding-top: 10vh;
+        padding-top: 20vh;
         font-size: 24px;
         font-family: 'Montserrat';
     }
