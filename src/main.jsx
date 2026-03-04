@@ -17,6 +17,7 @@ import Careers from "./Pages/Careers/Careers.jsx";
 import Agents from "./Pages/Agents/Agents.jsx";
 import EachProperty from "./Pages/EachProperty/EachProperty.jsx";
 import Test1 from "./components/Test1/Test1.jsx";
+import DataDeletionPolicy from "./Pages/DataDeletion/DataDeletionPolicy.jsx";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: "/refundpolicy",
     element: <RefundPolicy />
+  },
+  {
+    path: "/deletionpolicy",
+    element: <DataDeletionPolicy />
   },
   {
     path: "/terms",
