@@ -122,10 +122,17 @@
     -50%,
     -20px
   ); /* Slides up completely with margin-bottom space */
+
+  /* transform: translate(-50%, 0); */
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .invisible {
-  display: none;
+  /* display: none; */
+  transform: translate(-50%, 100%);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .altairaBannerImg {
@@ -165,20 +172,16 @@
 }
 
 @media (max-width: 600px) {
-
-  
-.show {
-  transform: translate(
-    -50%,
-    -20%
-  ); /* Slides up completely with margin-bottom space */
-}
-
-
-  .altairaBannerImg{
-    height: 60vh;
+  .show {
+    transform: translate(
+      -50%,
+      -20%
+    ); /* Slides up completely with margin-bottom space */
   }
 
+  .altairaBannerImg {
+    height: 60vh;
+  }
 
   .navbar {
     /* top: 6vh; */

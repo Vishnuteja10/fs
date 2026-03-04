@@ -29,16 +29,16 @@ function Footer() {
 
   const [isIndia, setIsIndia] = useState(true);
 
-  useEffect(()=>{
-    if(!error) return;
+  useEffect(() => {
+    if (!error) return;
 
     //mounting
-    const timer =setTimeout(()=>{
+    const timer = setTimeout(() => {
       setError("");
-    },2000);
+    }, 2000);
 
-    return ()=>clearTimeout(timer); //unmounting
-  },[error]);
+    return () => clearTimeout(timer); //unmounting
+  }, [error]);
 
   useEffect(() => {
     const domain = window.location.hostname;
@@ -175,10 +175,10 @@ function Footer() {
               <>
                 <div className={Style.address}>
                   <div>
-                    <img className={Style.icon} src={addressIcon}></img>136A,
-                    Lane No-12
+                    <img className={Style.icon} src={addressIcon}></img>4th
+                    Floor, Dreamscape Hotel,
                   </div>
-                  <div>MLA Colony, NBT Nagar</div>
+                  <div>MLA Colony, NBT Nagar,</div>
                   <div>Road No.12, Banjara Hills,</div>
                   <div>Hyderabad,Telangana, 500034</div>
                 </div>
@@ -286,6 +286,7 @@ function Footer() {
           <div onClick={() => navigate("/privacypolicy")}>Privacy Policy</div>
           <div onClick={() => navigate("/terms")}>Terms Of Service</div>
           <div onClick={() => navigate("/refundpolicy")}>Refund Policy</div>
+          <div onClick={()=>navigate("/deletionpolicy")}>Data Deletion</div>
         </div>
       </div>
     </div>
