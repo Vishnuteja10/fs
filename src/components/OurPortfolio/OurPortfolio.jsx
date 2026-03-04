@@ -244,8 +244,7 @@ function OurPortfolio() {
 
       {!isMobile &&
         (selectedLoction == "goa" ||
-          selectedLoction == "hyderabad" ||
-          selectedLoction == "varanasi") && (
+          selectedLoction == "hyderabad") && (
           <div className={Style.arrowContainer}>
             <div className={Style.leftArrowContainer} onClick={handlePrev}>
               {/* <FontAwesomeIcon icon={faChevronLeft} style={{color: "#fcfcfc",}} /> */}

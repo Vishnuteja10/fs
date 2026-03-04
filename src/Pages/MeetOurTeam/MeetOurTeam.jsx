@@ -758,7 +758,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>Growth & Culture Manager</div>
               </article> */}
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -781,7 +781,7 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Prajna</div>
                 <div className={Style.role}>HR Executive</div>
-              </article>
+              </article> */}
             </div>
           </section>
 
