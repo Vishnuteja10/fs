@@ -38,7 +38,6 @@ function HowFsWorks() {
                 with our investment experts to craft your ideal investment plan.{" "}
               </span>
             </div>
-
           </div>
         </div>
       ) : (
@@ -48,8 +47,9 @@ function HowFsWorks() {
               How does <span className={Style.name}>Fracspace</span> Work?
             </h2>
             <div className={Style.content}>
-              <span className={Style.fracspaceContent}> </span>Fracspace is the
-              premier event for luxury real brought to you by Fracspace. 
+              <span className={Style.fracspaceContent}></span>
+              Explore our property catalog through our mobile app or consult
+              with our investment experts to craft your ideal investment plan.
             </div>
           </div>
           {/* <div className={Style.videoContainer}>

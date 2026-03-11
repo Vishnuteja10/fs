@@ -22,6 +22,7 @@ import watsappImg from "../../assets/appImages/watsapp.png";
 import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
 
 import { Helmet } from "react-helmet";
+import OffersTopBanner from "../../components/OffersTopBanner/OffersTopBanner";
 
 export default function ContactUs() {
   const initialFormData = {
@@ -50,9 +51,9 @@ export default function ContactUs() {
           "x-api-key": "Fracspace@2024"
         }
       });
-      console.log(response.data);
+    
     } catch (error) {
-      console.log("error is", error);
+     
     }
   };
 
@@ -161,6 +162,10 @@ export default function ContactUs() {
           <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
         </div>
 
+      </div> */}
+
+      {/* <div className={Style.topBanner}>
+        <OffersTopBanner />
       </div> */}
 
         <div className={Style.navBar}>

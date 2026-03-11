@@ -806,3 +806,42 @@
     margin-top: 2vh;
   }
 }
+
+
+
+@media (max-width:390px) and (max-height:260px){
+  .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+  }
+
+  .email{
+    width: 40vw !important;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon{
+    width: 2vw;
+    height: 7vh;
+  }
+
+  .instagramIcon{
+    width: 8vw;
+    height: 10vh;
+  }
+
+  .facebookIcon{
+     width: 8vw;
+    height: 10vh;
+  }
+
+  .youtubeIcon{
+     width: 8vw;
+    height: 10vh;
+  }
+}

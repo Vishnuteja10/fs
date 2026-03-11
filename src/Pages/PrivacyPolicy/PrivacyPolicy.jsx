@@ -7,7 +7,7 @@ import Footer from "../../components/Footer/Footer";
 
 import Navbar2 from "../../components/Navbar2/Navbar2";
 
-import Navbar from "../../components/Navbar/Navbar";
+
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 import playStore from "../../assets/appImages/playstore.png";

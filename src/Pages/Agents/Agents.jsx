@@ -3,7 +3,7 @@ import React ,{useState,useEffect}from 'react'
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 import Style from './Agents.module.css'
 import AppIconsComponent from '../../components/AppIconsComponent/AppIconsComponent';
-import Navbar from '../../components/Navbar/Navbar';
+
 import Navbar2 from '../../components/Navbar2/Navbar2';
 import MainComponent from '../../components/Agents/MainComponent/MainComponent';
 import JoinOurTeam from '../../components/Agents/JoinOurTeam/JoinOurTeam';
@@ -17,6 +17,7 @@ import ContactForm from '../../components/Agents/ContactForm/ContactForm';
 import { Element } from "react-scroll";
 
 import { Helmet } from 'react-helmet';
+import OffersTopBanner from '../../components/OffersTopBanner/OffersTopBanner';
 
 
 function Agents() {
@@ -47,23 +48,13 @@ function Agents() {
         <title>Agents | Fracspace</title>
         <meta name="description" content="Join our team of dedicated agents at Fracspace. We offer a vibrant and collaborative environment for real estate professionals." />
         <meta name="robots" content="index, follow" />
-
-    
-        
-          {/* Google Analytics (GA) Script */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DRDNCGMB0"></script>
-          <script>
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-9DRDNCGMB0');
-            `}
-          </script>
-
       </Helmet>
 
         <AppIconsComponent />
+
+        {/* <div className={Style.topBanner}>
+          <OffersTopBanner />
+        </div> */}
 
         <div className={Style.navbar}>
             <Navbar2/>

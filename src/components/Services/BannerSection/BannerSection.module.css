@@ -82,6 +82,10 @@
        .content{
         font-size: 16px;
        }
+
+       .mainContent{
+        margin-top: 15vh;
+       }
 }
 
 @media (min-width:320px) and (max-width:380px){

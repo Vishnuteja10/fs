@@ -52,16 +52,17 @@
 }
 
 .navBar{
+    /* top: 3vh; */
     position: fixed;
     margin-top: 0vh;
-    padding-top: 5vh;
+    /* padding-top: 5vh; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 9999;
     background-color: white;
     width: 100vw;
-    height: 15vh;
+    height: 16vh;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     /* border: 2px solid green; */
 }
@@ -69,7 +70,7 @@
 .main2{
     background-image: url('../../assets/ContactUs/bg.png');
     width: 98.5vw;
-    height: 97vh;
+    height:100vh;
     /* background-color: rgb(142, 185, 223); */
     background-size: cover;
     background-repeat: no-repeat;
@@ -279,6 +280,13 @@
     color: green;
 }
 
+.topBanner{
+    top: 0;
+    position: fixed;
+    z-index: 99999;
+    height: 3vh;
+  }
+
 
 /* css for small tab screens */
 @media (min-width:600px) and (max-width:840px) and (min-height:920px) and (max-height:1280px){
@@ -395,8 +403,8 @@
       }
 
     .navBar{
-        padding-top: 10vh;
-        height: 10vh;
+        padding-top: 4vh;
+        height: 12vh;
     }
 
     .header{
@@ -486,7 +494,9 @@
 
 @media (max-width:400px) and (max-height:700px){
     .navBar{
-      height: 12vh;
+      height: 14vh;
+      /* padding-top: 5vh; */
+      /* top: 5vh; */
     }
   }
 
@@ -635,7 +645,7 @@
       /* border: 2px solid green; */
       /* border: 3px solid green; */
 
-      height: 96vh;
+      height: 100vh;
   }
 
 }

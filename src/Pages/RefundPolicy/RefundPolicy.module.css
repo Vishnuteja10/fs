@@ -97,6 +97,10 @@
 
 @media(max-width:600px){
 
+  .refundPolicy{
+    padding-top: 15vh;
+  }
+
     .appIconsContainer{
         margin-left: 85vw;
     }
@@ -117,7 +121,7 @@
 
     .navBar{
         height: 10vh;
-        padding-top: 10vh;
+        padding-top: 5vh;
     }
 
     .header{

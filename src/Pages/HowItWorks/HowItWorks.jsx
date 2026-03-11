@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../../components/HowItWorks/Banner/Banner";
-import Navbar from "../../components/Navbar/Navbar";
+
 
 import { useState, useEffect } from "react";
 
@@ -20,6 +20,7 @@ import { Helmet } from "react-helmet";
 
 import watsappImg from '../../assets/appImages/watsapp.png'
 import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
+import OffersTopBanner from "../../components/OffersTopBanner/OffersTopBanner";
 
 function HowItWorks() {
   return (
@@ -57,6 +58,10 @@ function HowItWorks() {
         <div onClick={() => window.open("https://wa.me/9880626111", "_blank")}>
           <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
         </div> 
+      </div> */}
+
+      {/* <div className={Style.topBanner}>
+         <OffersTopBanner />
       </div> */}
 
       <div className={Style.navbar}>

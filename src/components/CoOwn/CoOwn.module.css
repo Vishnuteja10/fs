@@ -14,7 +14,7 @@
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 6vh;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   /* border: 2px solid green; */
 }
 
@@ -78,27 +78,24 @@
   color: white;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 
   /* border: 2px solid green; */
 }
 
 /* CSS for Tablet Screens */
-@media (min-width:600px) and (max-width:1024px){
-
-  .image1 .image2 .image3{
+@media (min-width: 600px) and (max-width: 1024px) {
+  .image1 .image2 .image3 {
     height: 60vh;
   }
 
-   .image3{
-     border-top-right-radius: 15vw;
-   }
-
+  .image3 {
+    border-top-right-radius: 15vw;
+  }
 }
 
 @media (max-width: 600px) {
-
-  .header{
+  .header {
     font-size: 24px;
   }
 
@@ -118,8 +115,7 @@
 }
 
 @media (min-width: 200px) and (max-width: 350px) {
-
-    .content{
-        font-size: 18px;
-    }
+  .content {
+    font-size: 18px;
+  }
 }

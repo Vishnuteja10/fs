@@ -37,6 +37,7 @@ function OurPortfolio() {
   const [karnatakaProperties, setKarnatakaProperties] = useState([{}]);
 
   const [varanasiProperties, setVaranasiProperties] = useState([{}]);
+  const [nelloreProperties, setNelloreProperties] = useState([{}]);
 
   const [allProperties, setAllProperties] = useState([{}]);
 
@@ -57,6 +58,7 @@ function OurPortfolio() {
   let keralaProp;
   let karnatakaProp;
   let varanasiProp;
+  let nelloreProp;
 
   const headers = {
     "x-api-key": "Fracspace@2024"
@@ -65,6 +67,7 @@ function OurPortfolio() {
   useEffect(() => {
     axios.get(PROPERTIES_API, { headers }).then(
       (response) => {
+        // console.log("response is", response);
         setAllProperties(response?.data?.properties);
         properties = response?.data?.properties;
         goaProp = properties
@@ -85,11 +88,16 @@ function OurPortfolio() {
           .filter((property) => property?.city?.toLowerCase() == "varanasi")
           .sort((a, b) => a.num - b.num);
 
+        nelloreProp = properties
+          .filter((property) => property?.city?.toLowerCase() == "nellore")
+          .sort((a, b) => a.num - b.num);
+
         setGoaProperties(goaProp);
         setHyderabadProperties(hydProp);
         setKeralaProperties(keralaProp);
         setKarnatakaProperties(karnatakaProp);
         setVaranasiProperties(varanasiProp);
+        setNelloreProperties(nelloreProp);
         // console.log("kerala properties", keralaProp);
 
         // console.log(
@@ -201,6 +209,22 @@ function OurPortfolio() {
           Hyderabad
         </div>
 
+        {/* <div
+          className={`${Style.location} ${
+            selectedLoction == "nellore" ? Style.selected : ""
+          }`}
+          onClick={() => {
+            setSelectedLocation("nellore");
+          }}
+        >
+          <img
+            className={Style.locationIcon}
+            src={locationIcon}
+            alt="location icon"
+          ></img>
+          Nellore
+        </div> */}
+
         <div
           className={`${Style.location} ${
             selectedLoction == "goa" ? Style.selected : ""
@@ -220,8 +244,7 @@ function OurPortfolio() {
 
       {!isMobile &&
         (selectedLoction == "goa" ||
-          selectedLoction == "hyderabad" ||
-          selectedLoction == "varanasi") && (
+          selectedLoction == "hyderabad") && (
           <div className={Style.arrowContainer}>
             <div className={Style.leftArrowContainer} onClick={handlePrev}>
               {/* <FontAwesomeIcon icon={faChevronLeft} style={{color: "#fcfcfc",}} /> */}
@@ -342,6 +365,80 @@ function OurPortfolio() {
           </div>
         )}
 
+        {selectedLoction === "nellore" && (
+          <div className={Style.properties}>
+            {nelloreProperties?.map((property, index) => (
+              <article
+                key={index}
+                className={Style.eachProperty}
+                onClick={() => navigate(`/eachProperty/${property?._id}`)}
+              >
+                <div className={Style.propertyImages}>
+                  <img
+                    className={Style.propertyImage}
+                    src={property?.image?.Image1}
+                  ></img>
+                  {property?.H_property == true ? (
+                    <img src={HotProperty} className={Style.hotProperty}></img>
+                  ) : (
+                    <img src={SoldOut} className={Style.soldOut}></img>
+                  )}
+                </div>
+
+                <div className={Style.propertyDetails}>
+                  <h6>{property?.name}</h6>
+
+                  {!isMobile ? (
+                    <div className={Style.detailsContainer}>
+                      <div className={Style.leftContainer}>
+                        <div>
+                          <div>Frac Price : ₹ {property?.FC_Price}</div>
+                          <div>
+                            {property?.Type} | {property?.area}
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className={Style.rightContainer}>
+                        <div>{property?.Location}</div>
+
+                        <div className={Style.btnContainer}>
+                          <button
+                            onClick={() =>
+                              navigate(`/eachproperty/${property?._id}`)
+                            }
+                          >
+                            View Details
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div>
+                      <div>
+                        <div>Frac Price : {property?.FC_Price}</div>
+                      </div>
+                      <div>{property?.Location}</div>
+                      <div>
+                        {property?.Type} | {property?.area}
+                      </div>
+                      <div className={Style.btnContainer}>
+                        <button
+                          onClick={() =>
+                            navigate(`/eachProperty/${property?._id}`)
+                          }
+                        >
+                          View Details
+                        </button>
+                      </div>{" "}
+                    </div>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+        )}
+
         {selectedLoction === "varanasi" && (
           <div className={Style.properties}>
             {varanasiProperties?.map((property, index) => (
@@ -437,7 +534,8 @@ function OurPortfolio() {
                 </div>
 
                 <div className={Style.propertyDetails}>
-                  <h6>{property?.name}</h6>
+                  {property?.name}
+                  <h6>hilltop munnar,munnar,kerala </h6>
 
                   {!isMobile ? (
                     <div className={Style.detailsContainer}>

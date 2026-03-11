@@ -11,16 +11,25 @@ import playStore from "../../assets/appImages/playstore.png";
 import appleStore from "../../assets/appImages/apple-store.png";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
-import watsappImg from '../../assets/appImages/watsapp.png'
+import watsappImg from "../../assets/appImages/watsapp.png";
 import AppIconsComponent from "../../components/AppIconsComponent/AppIconsComponent";
+
+import { Helmet } from "react-helmet";
 
 function Careers() {
   return (
     <ScrollToTop>
       <div className={Style.main}>
-
         <AppIconsComponent />
 
+        <Helmet>
+          <title>Careers at Fracspace</title>
+          <meta
+            name="description"
+            content="Join Fracspace and explore exciting career opportunities in sales,marketing,tech and operations."
+          />
+          <meta name="robots" content="index, follow" />
+        </Helmet>
 
         <div className={Style.navBar}>
           <Navbar2 />
@@ -28,16 +37,15 @@ function Careers() {
 
         <section className={Style.main2}>
           {/* <div>Careers</div> */}
-          <header className={Style.header}>We're Looking For Talented People</header>
+          <h1 className={Style.header}>We're Looking For Talented People</h1>
           <div className={Style.imageContainer}>
-            <img alt="background image" src={bgImg}></img>
+            <img alt="Fracspace Careers" src={bgImg}></img>
           </div>
 
           <div className={Style.Container}>
             <h2 className={Style.jobCategory}>Job Openings</h2>
 
             <div className={Style.jobsContainer}>
-
               {/* <article className={Style.jobItem}>
                 <div className={Style.jobRoleContainer}>
                   <div className={Style.jobRole}>Jr HR</div>
@@ -67,8 +75,6 @@ function Careers() {
                   </button>
                 </div>
               </article> */}
-
-             
             </div>
           </div>
 
@@ -77,20 +83,21 @@ function Careers() {
 
             <div className={Style.jobsContainer}>
               <article className={Style.jobItem}>
-              <div className={Style.jobRoleContainer}>
-                  <div className={Style.jobRole}>
-                    Sr Digital Marketing Executive
-                  </div>
+                <div className={Style.jobRoleContainer}>
+                  <div className={Style.jobRole}>Pre Sales Executive</div>
                   {/* <div className={Style.joblocation}>
                     {" "}
                     Hyderabad,Telangana,India
                   </div> */}
                 </div>
                 <div className={Style.description}>
-                  Junior CRM Executive-Real Estate role in Fracspace Private
-                  Limited, a leading fractional ownership company in real
-                  estate, headquartered in Hyderabad. Full-Time position with
-                  1-3 years experience.
+                  The Pre Sales Executive position at FracSpace Private Limited
+                  is an excellent opportunity for a fresher to join our team in
+                  Hyderabad. As a full-time role, the candidate will engage with
+                  our cutting-edge fractional ownership platform, assisting in
+                  driving business in both new and existing markets. The
+                  position invites those passionate about real estate and client
+                  interactions.
                 </div>
 
                 <div className={Style.jobTypeContainer}>
@@ -99,7 +106,7 @@ function Careers() {
                 </div>
 
                 <div className={Style.applyContainer}>
-                  <button
+                  {/* <button
                     onClick={() =>
                       window.open(
                         "https://www.linkedin.com/jobs/search/?currentJobId=4019918205&keywords=fracspace&origin=BLENDED_SEARCH_RESULT_NAVIGATION_JOB_CARD&originToLandingJobPostings=4019919199%2C4019911699%2C4019914692",
@@ -108,23 +115,60 @@ function Careers() {
                     }
                   >
                     Apply
+                  </button> */}
+                  <div className={Style.applyJob}>
+                    <div className={Style.type}>To Apply :</div>
+                    <div>
+                      <span className={Style.type}>
+                        Share Your Resume : hr@fracspace.com
+                      </span>
+                    </div>
+                    <div>
+                      <span className={Style.type}>Contact : 92814 43562</span>
+                    </div>
+                  </div>
+                </div>
+                <div className={Style.downloadContainer}>
+                  <button
+                    className={Style.downloadButton}
+                    onClick={() => window.open("/presales.pdf", "_blank")}
+                  >
+                    📄 Download Job Description (PDF)
                   </button>
                 </div>
               </article>
 
               <article className={Style.jobItem}>
                 <div className={Style.jobRoleContainer}>
-                  <div className={Style.jobRole}>Inside Sales Presales </div>
+                  <div className={Style.jobRole}>Hospitality Executive</div>
                   {/* <div className={Style.joblocation}>
                     {" "}
                     Hyderabad,Telangana,India
                   </div> */}
                 </div>
                 <div className={Style.description}>
-                  Inside Sales Presales Immediate position at FracSpace Private
-                  Limited is a Full-Time role based in Hyderabad. This is a
-                  Fresher level position with minimum 0 years and maximum 1
-                  years of experience.
+                  We are looking for a proactive and well-presented Hospitality
+                  Executive to manage operations across multiple properties. The
+                  ideal candidate should have strong communication skills, a
+                  problem solving mindset, and the ability to multitask
+                  efficiently. This role demands someone who can oversee guest
+                  satisfaction, coordinate maintenance, manage billing, and
+                  ensure operational excellence across 7 properties.
+                </div>
+                <div>
+                  <div className={Style.type}>Requirements</div>
+                  <div>
+                    <div>
+                      {" "}
+                      Minimum 1 year of relevant experience in the hospitality
+                      industry{" "}
+                    </div>
+                    <div>
+                      {" "}
+                      A Bachelor’s degree in Hospitality Management is
+                      preferred.
+                    </div>
+                  </div>
                 </div>
 
                 <div className={Style.jobTypeContainer}>
@@ -132,23 +176,35 @@ function Careers() {
                   <div className={Style.jobLoc}>On Site</div>
                 </div>
 
-                <div className={Style.applyContainer}>
-                  <button  onClick={() =>
-                      window.open(
-                        "https://www.linkedin.com/jobs/search/?currentJobId=4019923216&keywords=fracspace&origin=BLENDED_SEARCH_RESULT_NAVIGATION_JOB_CARD&originToLandingJobPostings=4019919199%2C4019911699%2C4019914692",
-                        "_blank"
-                      )
-                    }>Apply</button>
+                <div className={Style.applyJob}>
+                  <div className={Style.type}>To Apply :</div>
+                  <div>
+                    <span className={Style.type}>
+                      Share Your Resume : hr@fracspace.com
+                    </span>
+                  </div>
+                  <div>
+                    <span className={Style.type}>Contact : 92814 43562</span>
+                  </div>
+                </div>
+                <div className={Style.downloadContainer}>
+                  <button
+                    className={Style.downloadButton}
+                    onClick={() =>
+                      window.open("/hospitalityexecutive.pdf", "_blank")
+                    }
+                  >
+                    📄 Download Job Description (PDF)
+                  </button>
                 </div>
               </article>
 
-              <article className={Style.jobItem}>
+              {/* <article className={Style.jobItem}>
                 <div className={Style.jobRoleContainer}>
-                  <div className={Style.jobRole}>Junior Executive Personal Assistant (Male preffered)</div>
-                  {/* <div className={Style.joblocation}>
-                    {" "}
-                    Hyderabad,Telangana,India
-                  </div> */}
+                  <div className={Style.jobRole}>
+                    Junior Executive Personal Assistant (Male preffered)
+                  </div>
+                 
                 </div>
                 <div className={Style.description}>
                   Junior Executive Personal Assistant role with 1 to 3 years of
@@ -163,14 +219,18 @@ function Careers() {
                 </div>
 
                 <div className={Style.applyContainer}>
-                  <button  onClick={() =>
+                  <button
+                    onClick={() =>
                       window.open(
                         "https://www.linkedin.com/jobs/search/?currentJobId=4019918073&keywords=fracspace&origin=BLENDED_SEARCH_RESULT_NAVIGATION_JOB_CARD&originToLandingJobPostings=4019919199%2C4019911699%2C4019914692",
                         "_blank"
                       )
-                    }>Apply</button>
+                    }
+                  >
+                    Apply
+                  </button>
                 </div>
-              </article>
+              </article> */}
             </div>
           </div>
         </section>

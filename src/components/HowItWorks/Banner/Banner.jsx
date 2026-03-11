@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../../Navbar/Navbar";
+
 import img1 from "../../../assets/images/backgroundImage2.png";
 import Style from "./Banner.module.css";
 

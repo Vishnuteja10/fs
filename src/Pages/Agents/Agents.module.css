@@ -1,40 +1,43 @@
-
-
-.navbar{
-    position: fixed;
-    padding-top: 8vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 9999;
-    background-color: white;
-    width: 100vw;
-    height: 15vh;
-    margin-top: 0vh;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-
+.navbar {
+  /* top: 2vh; */
+  position: fixed;
+  /* padding-top: 8vh; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+  background-color: white;
+  width: 100vw;
+  height: 16vh;
+  margin-top: 0vh;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
-.mainComponent{
-    padding-top: 20vh;
+.mainComponent {
+  padding-top: 20vh;
 }
 
-@media (max-width:600px){
+.topBanner {
+  top: 0;
+  position: fixed;
+  z-index: 99999;
+  height: 3vh;
+}
 
-    .mainComponent{
-      padding-top: 13vh;
-    }
-
-    .navbar{
-        padding-top: 10vh;
-       height: 10vh;
-    }    
-  
+@media (max-width: 600px) {
+  .mainComponent {
+    padding-top: 13vh;
   }
 
-@media (max-width:400px) and (max-height:700px){
-    .navbar{
-      height: 12vh;
-    }
+  .navbar {
+    /* top: 5vh; */
+    padding-top: 5vh;
+    height: 10vh;
+  }
+}
+
+@media (max-width: 400px) and (max-height: 700px) {
+  .navbar {
+    height: 12vh;
+  }
 }

@@ -30,6 +30,8 @@
     font-weight: 600;
     font-family: 'Montserrat';
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
 }
 
 .location:hover{
@@ -274,7 +276,7 @@
 
     .propertyLocations{
         margin-top: 5vh;
-        margin-left: 20vw;
+        margin-left: 0vw;
         /* margin-left: 40vw; */
     }
 
@@ -285,12 +287,19 @@
 
     .propertyImage{
         height: 30vh;
+        width: 58vw;
+    }
+
+    .hotProperty{
+        margin-left: 42vw;
+        width: 18vw;
     }
 
     .soldOut{
        margin-top: -50vh;
        width: 6.5vw;
        height: 6vh;
+       margin-left: 48vw;
     }
 
     .eachProperty{

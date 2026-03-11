@@ -22,9 +22,7 @@ import PhoneInput from "react-phone-input-2";
 // import { useMediaQuery } from "react-responsive";
 
 function EachProperty() {
-
   // const isTablet = useMediaQuery('(min-width:600px) and (max-width:1024px)');
-
 
   const { id } = useParams();
 
@@ -32,7 +30,7 @@ function EachProperty() {
 
   const [propertyDetails, setPropertyDetails] = useState();
 
-  const PROPERTY_API = `https://apitest.fracspace.com/api/users/getPropertyDetailsById?_id=${id}`;
+  const PROPERTY_API = `https://apitest.fracspace.com/api/users/getPropertyById/${id}`;
 
   const ENQUIRY_API =
     "https://apitest.fracspace.com/api/v1/webApi/enquiryFormRegardingCoownership";
@@ -43,7 +41,7 @@ function EachProperty() {
     contact: "",
     countryCode: "",
     phoneNumber: "",
-    budget:"",
+    budget: "",
     agreeToContact: false
   };
 
@@ -58,7 +56,7 @@ function EachProperty() {
           "x-api-key": "Fracspace@2024"
         }
       });
-      // console.log(response.data);
+      // console.log("response is",response);
     } catch (error) {
       // console.log("error is", error);
     }
@@ -98,18 +96,20 @@ function EachProperty() {
   let propDetails;
 
   const headers = {
-    'x-api-key' : 'Fracspace@2024'
-  }
+    "x-api-key": "Fracspace@2024"
+  };
 
   useEffect(() => {
-    axios.get(PROPERTY_API,{headers}).then(
+    // console.log("property api is", PROPERTY_API, id);
+    axios.get(PROPERTY_API, { headers }).then(
       (response) => {
-        propDetails = response?.data?.data;
-        setPropertyDetails(response?.data?.data);
-        // console.log("response is", response, propDetails);
+        
+        propDetails = response?.data?.property;
+        setPropertyDetails(response?.data?.property);
+       
       },
       (error) => {
-        // console.log(error);
+        
       }
     );
   }, []);
@@ -199,18 +199,16 @@ function EachProperty() {
               showArrows={true}
               stopOnHover={false}
             >
-              
               {propertyDetails?.image &&
                 Object.values(propertyDetails.image).map((img, index) => (
-                 <div key={index}>
-                   <img
+                  <div key={index}>
+                    <img
                       className={Style.propertyImage}
                       src={img}
                       alt={`Property Image ${index + 1}`}
                     />
                   </div>
                 ))}
-
             </Carousel>
           </div>
 
@@ -314,7 +312,7 @@ function EachProperty() {
                       required
                       className={Style.formInput}
                     />
-                    
+
                     <PhoneInput
                       country={"in"}
                       value={formData.contact}
@@ -346,9 +344,7 @@ function EachProperty() {
                       required
                       className={Style.formInput}
                     >
-                      <option value="" >
-                        Select Your Budget
-                      </option>
+                      <option value="">Select Your Budget</option>
                       <option value="below 10,00,000">Below 10,00,000</option>
                       <option value="10,00,000 - 20,00,000">
                         10,00,000 - 20,00,000
@@ -385,7 +381,6 @@ function EachProperty() {
                         </p>
                       </div>
                     )}
-
                   </form>
                 </div>
               </article>
