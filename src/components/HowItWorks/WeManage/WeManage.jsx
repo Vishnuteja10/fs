@@ -1,11 +1,8 @@
 import React from "react";
 import Style from "./WeManage.module.css";
-import WeManageImg from "../../../assets/HowItWorks/WeManage.png";
 import  WeManageImg1 from '../../../assets/HowItWorks/WeManage1.png';
-import WeManageImg2 from '../../../assets/HowItWorks/WeManage4.png'
 
-
-import VectorIcon from "../../../assets/HowItWorks/VectorIcon.png";
+import VectorIcon from "../../../assets/HowItWorks/vectorIcon.png";
 
 import { useMediaQuery } from "react-responsive";
 
