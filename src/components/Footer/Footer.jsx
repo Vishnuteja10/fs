@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Style from "./Footer.module.css";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import { createTheme } from "@mui/material/styles";
+
 
 import img1 from "../../assets/footer/Instagram.png";
 import img2 from "../../assets/footer/Facebook.png";
-import img3 from "../../assets/footer/Twitter.png";
 import img4 from "../../assets/footer/Youtube.png";
 
 import img5 from "../../assets/footer/apple.png";
