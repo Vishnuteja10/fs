@@ -108,11 +108,12 @@ export default function HomePage() {
           <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
         </div>
 
-      </div> */}
+         </div> */}
 
         {/* <div onClick={() => window.open("https://apps.apple.com/in/app/fracspace/id6498551006", "_blank")}>
           <img className={Style.watsapp} src={watsappImg}></img>
         </div> */}
+
         {/* 
         <div className={Style.topBanner}>
           <OffersTopBanner />
@@ -202,8 +203,8 @@ export default function HomePage() {
         </div>
 
         {/* <div>
-         <Reviews />
-      </div> */}
+           <Reviews />
+          </div> */}
 
         <div>
           <DownloadApp />
