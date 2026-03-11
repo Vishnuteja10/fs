@@ -1,0 +1,75 @@
+
+
+.navBar {
+    width: 100%;
+  position: fixed;
+  background-color: white;
+}
+
+.container {
+    padding-top: 20vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  width: 100%;
+  background: #ffffff;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #1a1a1a;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.subheading {
+  font-size: 18px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.section ul {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.section li {
+  margin-bottom: 6px;
+}
+
+.link {
+  color: #c89b3c;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Mobile */
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .section h2 {
+    font-size: 20px;
+  }
+}
