@@ -5,7 +5,7 @@ import Style from "./OffersBanner.module.css";
 import { Carousel } from "react-bootstrap";
 
 import rakhiBanner from "../../assets/Banner/diwalilap.jpg";
-import rakhiMobile from "../../assets/Banner/diwaliMobi2.jpg";
+import rakhiMobile from "../../assets/Banner/diwalimobi2.jpg";
 
 import { useMediaQuery } from "react-responsive";
 
