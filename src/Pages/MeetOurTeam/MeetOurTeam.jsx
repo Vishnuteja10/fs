@@ -13,7 +13,7 @@ import hemanthImg from "../../assets/MeetOurTeam/sales/hemanth.jpeg";
 import dnsImg from "../../assets/MeetOurTeam/sales/dns1.webp";
 import prashanthImg from "../../assets/MeetOurTeam/sales/prashant.webp";
 // import avinashImg from "../../assets/MeetOurTeam/sales/avinash.jpg";
-import harirajImg from "../../assets/MeetOurTeam/sales/hariRaj.webp";
+import harirajImg from "../../assets/MeetOurTeam/sales/hariraj.webp";
 import abhishekImg from "../../assets/MeetOurTeam/sales/abhishek.webp";
 
 import divyaImg from "../../assets/MeetOurTeam/sales/divya.webp";
