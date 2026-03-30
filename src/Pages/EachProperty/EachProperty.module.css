@@ -46,13 +46,18 @@
   flex-wrap: wrap;
 }
 
+.distinctiveAmentiesText{
+  padding-bottom: 15px;
+}
+
 .amenityImageContainer img {
-  width: 8vw;
-  height: 10vh;
+  width: 4vw;
+  height: 7vh;
+  padding-bottom: 10px;
 }
 
 .eachAmenity {
-  text-align: center;
+  text-align: left;
   width: 12vw;
   height: 15vh;
 }
@@ -423,8 +428,8 @@
   }
 
   .amenityImageContainer img {
-    width: 25vw;
-    height: 15vh;
+    width: 10vw;
+    height: 10vh;
   }
 
   .eachAmenity {
@@ -440,7 +445,7 @@
   }
 
   .locationHighlights {
-    padding-top: 10vh;
+    padding-top: 0vh;
   }
 
   .locationImageContainer {
@@ -521,8 +526,8 @@
   }
 
   .amenityImageContainer img {
-    width: 25vw;
-    height: 15vh;
+    width: 12vw;
+    height: 10vh;
   }
 
   .eachAmenity {
@@ -538,7 +543,7 @@
   }
 
   .locationHighlights {
-    padding-top: 10vh;
+    /* padding-top: 10vh; */
   }
 
   .locationImageContainer {
