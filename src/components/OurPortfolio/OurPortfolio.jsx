@@ -67,7 +67,7 @@ function OurPortfolio() {
   useEffect(() => {
     axios.get(PROPERTIES_API, { headers }).then(
       (response) => {
-        // console.log("response is", response);
+        console.log("response is", response);
         setAllProperties(response?.data?.properties);
         properties = response?.data?.properties;
         goaProp = properties
