@@ -33,8 +33,8 @@ import OffersTopBanner from "../../components/OffersTopBanner/OffersTopBanner";
 
 import { X } from "lucide-react";
 
-import bannerImg from "../../assets/Banner/altairaBanner.png";
-import altairaMobileImg from "../../assets/Banner/altairaMobile.png";
+import bannerImg from "../../assets/Banner/alt2.webp";
+import altairaMobileImg from "../../assets/Banner/alt1.webp";
 
 import { useMediaQuery } from "react-responsive";
 
@@ -60,6 +60,7 @@ export default function HomePage() {
       window.removeEventListener("scroll", handleScroll);
       clearTimeout(timer);
     };
+    
   }, []);
 
   const closeBanner = () => {
@@ -94,31 +95,6 @@ export default function HomePage() {
 
         <AppIconsComponent />
 
-        {/* <div className={Style.appIconsContainer}>
-
-        <div onClick={() => window.open("https://play.google.com/store/apps/details?id=com.fracspace", "_blank")}>
-          <img className={Style.playStore} src={playStore}></img>
-        </div>
-
-        <div onClick={() => window.open("https://apps.apple.com/in/app/fracspace/id6498551006", "_blank")}>
-          <img className={Style.appleStore} src={appleStore}></img>
-        </div>
-
-        <div onClick={() => window.open("https://wa.me/9880626111", "_blank")}>
-          <img className={`${Style.watsapp} ${Style.bounce}`} src={watsappImg}></img>
-        </div>
-
-         </div> */}
-
-        {/* <div onClick={() => window.open("https://apps.apple.com/in/app/fracspace/id6498551006", "_blank")}>
-          <img className={Style.watsapp} src={watsappImg}></img>
-        </div> */}
-
-        {/* 
-        <div className={Style.topBanner}>
-          <OffersTopBanner />
-        </div> */}
-
         <div className={scrolled ? Style.nav : Style.navbar}>
           {/* <SpecialOffers /> */}
           <Navbar />
@@ -142,7 +118,7 @@ export default function HomePage() {
               onClick={() =>
                 window.open("https://investments.altaira.lk", "_blank")
               }
-              className={Style.altairaBannerImg}
+              className={Style.altairaMobileBannerImg}
               src={altairaMobileImg}
               alt="Altaira Banner"
             />
@@ -165,12 +141,6 @@ export default function HomePage() {
         <div>
           <CoOwn />
         </div>
-
-        {/* <Element name="offersBanner">
-          <div>
-            <OffersBanner />
-          </div>
-        </Element> */}
 
         <Element name="portfolio">
           <div>
@@ -201,10 +171,6 @@ export default function HomePage() {
         <div>
           <Testimonials />
         </div>
-
-        {/* <div>
-           <Reviews />
-          </div> */}
 
         <div>
           <DownloadApp />
