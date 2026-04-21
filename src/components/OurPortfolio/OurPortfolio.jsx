@@ -52,7 +52,6 @@ function OurPortfolio() {
     "https://apitest.fracspace.com/api/users/getPropertyDetailsById?_id=65ba3687d41d5864da966265";
 
   let properties;
-
   let goaProp;
   let hydProp;
   let keralaProp;
@@ -61,7 +60,7 @@ function OurPortfolio() {
   let nelloreProp;
 
   const headers = {
-    "x-api-key": "Fracspace@2024"
+    "x-api-key" : "Fracspace@2024"
   };
 
   useEffect(() => {
@@ -98,13 +97,14 @@ function OurPortfolio() {
         setKarnatakaProperties(karnatakaProp);
         setVaranasiProperties(varanasiProp);
         setNelloreProperties(nelloreProp);
-        // console.log("kerala properties", keralaProp);
 
+        // console.log("kerala properties", keralaProp);
         // console.log(
         //   "response while fetching properties",
         //   allProperties,
         //   hydProp
         // );
+
       },
       (error) => {
         // console.log("error while fetching properties", error);

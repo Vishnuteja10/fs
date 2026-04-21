@@ -46,7 +46,7 @@
   flex-wrap: wrap;
 }
 
-.distinctiveAmentiesText{
+.distinctiveAmentiesText {
   padding-bottom: 15px;
 }
 
@@ -78,7 +78,6 @@
   width: 50vw;
   display: none; /* Initially hidden */
   position: fixed;
-
   top: 15vh;
   transform: translateX(-50%);
   z-index: 999;
