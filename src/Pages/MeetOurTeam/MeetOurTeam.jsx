@@ -261,31 +261,6 @@ export default function MeetOurTeam() {
                   className={
                     isImageLoaded ? Style.itemImage : Style.placeholderImage
                   }
-                  src={isImageLoaded ? harirajImg : compressedImage1}
-                />
-                {/* <div
-                  className={Style.linkedInContainer}
-                  onClick={() =>
-                    window.open(
-                      "https://www.linkedin.com/in/prashanth-reddy-05987a1a1/",
-                      "_blank"
-                    )
-                  }
-                >
-                  <img src={linkedIn}></img>
-                </div> */}
-                <div className={Style.name}>Hari Raj</div>
-                <div className={Style.role}>Pre Sales Executive</div>
-              </article>
-
-              <article className={Style.itemOne}>
-                <img
-                  loading="lazy"
-                  alt="team mate image"
-                  onLoad={handleImageLoad}
-                  className={
-                    isImageLoaded ? Style.itemImage : Style.placeholderImage
-                  }
                   src={isImageLoaded ? abhishekImg : compressedImage1}
                 />
                 {/* <div
@@ -630,30 +605,6 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Nagamani</div>
                 <div className={Style.role}>IT Admin </div>
-              </article>
-
-              <article className={Style.itemOne}>
-                <img
-                  loading="lazy"
-                  alt="team mate image"
-                  onLoad={handleImageLoad}
-                  className={
-                    isImageLoaded ? Style.itemImage : Style.placeholderImage
-                  }
-                  src={isImageLoaded ? vasaviImg : compressedImage1}
-                />
-                <div
-                  className={Style.linkedInContainer}
-                  onClick={() =>
-                    window.open(
-                      "https://www.linkedin.com/in/vasavi-pillala-546821238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                    )
-                  }
-                >
-                  <img src={linkedIn}></img>
-                </div>
-                <div className={Style.name}>Vasavi</div>
-                <div className={Style.role}>Software Engineer </div>
               </article>
             </div>
           </section>

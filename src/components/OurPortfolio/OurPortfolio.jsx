@@ -104,10 +104,9 @@ function OurPortfolio() {
         //   allProperties,
         //   hydProp
         // );
-
       },
       (error) => {
-        // console.log("error while fetching properties", error);
+        console.log("error while fetching properties", error);
       }
     );
   }, []);
