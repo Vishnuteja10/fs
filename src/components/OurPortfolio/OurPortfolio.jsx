@@ -60,13 +60,13 @@ function OurPortfolio() {
   let nelloreProp;
 
   const headers = {
-    "x-api-key" : "Fracspace@2024"
+    "x-api-key": "Fracspace@2024"
   };
 
   useEffect(() => {
     axios.get(PROPERTIES_API, { headers }).then(
       (response) => {
-        console.log("response is", response);
+        // console.log("response is", response);
         setAllProperties(response?.data?.properties);
         properties = response?.data?.properties;
         goaProp = properties
@@ -76,7 +76,11 @@ function OurPortfolio() {
           .filter((property) => property?.city?.toLowerCase() == "hyderabad")
           .sort((a, b) => a.num - b.num);
         keralaProp = properties
-          .filter((property) => property?.city?.toLowerCase() == "munnar")
+          .filter(
+            (property) =>
+              property?.city?.toLowerCase() == "munnar" ||
+              property?.city?.toLowerCase() === "alleppey"
+          )
           .sort((a, b) => a.num - b.num);
 
         karnatakaProp = properties
@@ -157,7 +161,7 @@ function OurPortfolio() {
             src={locationIcon}
             alt="location icon"
           ></img>
-          Munnar
+          Kerala
         </div>
 
         <div
@@ -242,8 +246,7 @@ function OurPortfolio() {
       </section>
 
       {!isMobile &&
-        (selectedLoction == "goa" ||
-          selectedLoction == "hyderabad") && (
+        (selectedLoction == "goa" || selectedLoction == "hyderabad") && (
           <div className={Style.arrowContainer}>
             <div className={Style.leftArrowContainer} onClick={handlePrev}>
               {/* <FontAwesomeIcon icon={faChevronLeft} style={{color: "#fcfcfc",}} /> */}
@@ -281,7 +284,7 @@ function OurPortfolio() {
                         className={Style.propertyImage}
                         src={property?.image?.Image1}
                       ></img>
-                      {property?.H_property == true ? (
+                      {property?.AvailableFractions != 0 ? (
                         <img
                           src={HotProperty}
                           className={Style.hotProperty}
@@ -525,7 +528,7 @@ function OurPortfolio() {
                     className={Style.propertyImage}
                     src={property?.image?.Image1}
                   ></img>
-                  {property?.H_property == true ? (
+                  {property?.AvailableFractions !== 0 ? (
                     <img src={HotProperty} className={Style.hotProperty}></img>
                   ) : (
                     <img src={SoldOut} className={Style.soldOut}></img>
@@ -534,7 +537,9 @@ function OurPortfolio() {
 
                 <div className={Style.propertyDetails}>
                   {property?.name}
-                  <h6>hilltop munnar,munnar,kerala </h6>
+                  {property?.name == "HILLTOP BY FRACSPACE" && (
+                    <h6>hilltop munnar,munnar,kerala </h6>
+                  )}
 
                   {!isMobile ? (
                     <div className={Style.detailsContainer}>
