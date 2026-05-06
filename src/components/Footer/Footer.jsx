@@ -276,7 +276,7 @@ function Footer() {
 
       <div className={Style.section3}>
         <div className={Style.copyRights}>
-          © 2025 <span className={Style.fs}>Fracspace</span>. All rights
+          © 2025 <span className={Style.fs}>FRACSPACE PRIVATE LIMITED</span>. All rights
           reserved
         </div>
         <div className={Style.terms}>

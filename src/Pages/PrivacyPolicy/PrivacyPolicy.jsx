@@ -28,7 +28,7 @@ function PrivacyPolicy() {
         <div className={Style.PrivacyPolicy}>
           <h1 className={Style.mainHeader}>PRIVACY POLICY</h1>
           <p>
-            This Privacy Policy describes how Fracspace (“we,” “us,” or “our”)
+            This Privacy Policy describes how Fracspace Private Limited (“we,” “us,” or “our”)
             collects, uses, discloses, and protects your personal information
             when you access or use our app and website (collectively referred to
             as the “Service”). We are committed to safeguarding your privacy and
