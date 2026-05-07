@@ -46,11 +46,11 @@ function Navbar2() {
                     How it works
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/services" className={Style.link2}>
                     Services
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link to="/meetourteam" className={Style.link2}>
                     Our Team
@@ -67,14 +67,13 @@ function Navbar2() {
                   </Link>
                 </li>
 
-                <li onClick={() =>
-                      window.open("https://investments.altaira.lk", "_blank")
-                    } className={`${Style.altaira} ${Style.linkAnimated}`}>
-                  <span
-                    className={Style.link2}
-                  >
-                    Altaira
-                  </span>
+                <li
+                  onClick={() =>
+                    window.open("https://investments.altaira.lk", "_blank")
+                  }
+                  className={`${Style.altaira} ${Style.linkAnimated}`}
+                >
+                  <span className={Style.link2}>Altaira</span>
                 </li>
               </ul>
             </div>
@@ -108,11 +107,11 @@ function Navbar2() {
                       How it works
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/services" className={Style.link2}>
                       Services
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/meetourteam" className={Style.link2}>
                       Our Team

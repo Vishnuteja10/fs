@@ -86,11 +86,11 @@ function Navbar() {
                       How it works
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/services" className={Style.link}>
                       Services
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/meetourteam" className={Style.link}>
                       Our Team
@@ -128,11 +128,11 @@ function Navbar() {
                       How it works
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/services" className={Style.link2}>
                       Services
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/meetourteam" className={Style.link2}>
                       Our Team
@@ -192,11 +192,11 @@ function Navbar() {
                     How it works
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/services" className={Style.link3}>
                     Services
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link to="/meetourteam" className={Style.link3}>
                     Our Team

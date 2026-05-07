@@ -158,9 +158,9 @@ export default function HomePage() {
           </div>
         </Element>
 
-        <div>
+        {/* <div>
           <UpComingServices />
-        </div>
+        </div> */}
 
         <div>{/* <MeetOurTeam /> */}</div>
 
