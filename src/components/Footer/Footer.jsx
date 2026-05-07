@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Style from "./Footer.module.css";
 
-
 import img1 from "../../assets/footer/Instagram.png";
 import img2 from "../../assets/footer/Facebook.png";
 import img4 from "../../assets/footer/Youtube.png";
@@ -145,7 +144,7 @@ function Footer() {
             <nav className={Style.links}>
               <div onClick={() => navigate("/")}>Home</div>
               <div onClick={() => navigate("/howitworks")}>How it works</div>
-              <div onClick={() => navigate("/services")}>Services</div>
+              {/* <div onClick={() => navigate("/services")}>Services</div> */}
               <div onClick={() => navigate("/meetourteam")}>Our Team</div>
               <div onClick={() => navigate("/contact")}>Contact</div>
               <div onClick={() => navigate("/agents")}>Agents</div>
@@ -276,14 +275,14 @@ function Footer() {
 
       <div className={Style.section3}>
         <div className={Style.copyRights}>
-          © 2025 <span className={Style.fs}>FRACSPACE PRIVATE LIMITED</span>. All rights
-          reserved
+          © 2025 <span className={Style.fs}>FRACSPACE PRIVATE LIMITED</span>.
+          All rights reserved
         </div>
         <div className={Style.terms}>
           <div onClick={() => navigate("/privacypolicy")}>Privacy Policy</div>
           <div onClick={() => navigate("/terms")}>Terms Of Service</div>
           <div onClick={() => navigate("/refundpolicy")}>Refund Policy</div>
-          <div onClick={()=>navigate("/deletionpolicy")}>Data Deletion</div>
+          <div onClick={() => navigate("/deletionpolicy")}>Data Deletion</div>
         </div>
       </div>
     </div>
