@@ -148,7 +148,17 @@ function Footer() {
               <div onClick={() => navigate("/meetourteam")}>Our Team</div>
               <div onClick={() => navigate("/contact")}>Contact</div>
               <div onClick={() => navigate("/agents")}>Agents</div>
-              <div onClick={() => navigate("/careers")}>Careers</div>
+              <div
+                onClick={() =>
+                  window.open(
+                    "https://careers.fracspace.com",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+              >
+                Careers
+              </div>
             </nav>
           </div>
 
