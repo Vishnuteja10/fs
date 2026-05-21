@@ -15,11 +15,10 @@ import img3 from "../../assets/newsImages/ET_Now.jpg";
 import img4 from "../../assets/newsImages/5.png";
 import img5 from "../../assets/newsImages/et.png";
 import img6 from "../../assets/newsImages/aroundtelugu-logo.png";
-import img7 from '../../assets/newsImages/Et_Insights.png'
+import img7 from "../../assets/newsImages/Et_Insights.png";
 
-import img01 from '../../assets/newsImages/forbes1.png'
-import img02 from '../../assets/newsImages/forbes2.png'
-
+import img01 from "../../assets/newsImages/forbes1.png";
+import img02 from "../../assets/newsImages/forbes2.png";
 
 export default function News() {
   const newsContainerRef = useRef(null);
@@ -82,8 +81,7 @@ export default function News() {
       <div className={Style.header}>In the News</div>
 
       <div className={Style.newsContainer} ref={newsContainerRef}>
-
-      <a
+        <a
           className={Style.newsImage}
           href="https://www.etnownews.com/companies/tech-horizons-unveiling-forbes-picks-for-the-next-global-players-article-115661660"
           target="_blank"
@@ -173,7 +171,10 @@ export default function News() {
           href="https://etedge-insights.com/in-focus/trending/fracspace-launches-in-app-features-for-interiors-and-real-estate-enthusiasts-in-hyderabad-and-bangalore/"
           target="_blank"
         >
-          <img src={img7} alt="ET INSIGHTS - Fracspace app launches new features"></img>
+          <img
+            src={img7}
+            alt="ET INSIGHTS - Fracspace app launches new features"
+          ></img>
         </a>
 
         {/* repeat - 2 */}
@@ -267,7 +268,10 @@ export default function News() {
           href="https://etedge-insights.com/in-focus/trending/fracspace-launches-in-app-features-for-interiors-and-real-estate-enthusiasts-in-hyderabad-and-bangalore/"
           target="_blank"
         >
-          <img src={img7} alt="ET INSIGHTS - Fracspace app launches new features"></img>
+          <img
+            src={img7}
+            alt="ET INSIGHTS - Fracspace app launches new features"
+          ></img>
         </a>
 
         {/* repeat 3 */}
@@ -357,13 +361,15 @@ export default function News() {
           <img src={img6} alt="Around Telugu - Latest news feature"></img>
         </a>
 
-
         <a
           className={Style.newsImage}
           href="https://etedge-insights.com/in-focus/trending/fracspace-launches-in-app-features-for-interiors-and-real-estate-enthusiasts-in-hyderabad-and-bangalore/"
           target="_blank"
         >
-          <img src={img7} alt="ET INSIGHTS - Fracspace app launches new features"></img>
+          <img
+            src={img7}
+            alt="ET INSIGHTS - Fracspace app launches new features"
+          ></img>
         </a>
 
         {/* repeat 4 */}
@@ -458,7 +464,10 @@ export default function News() {
           href="https://etedge-insights.com/in-focus/trending/fracspace-launches-in-app-features-for-interiors-and-real-estate-enthusiasts-in-hyderabad-and-bangalore/"
           target="_blank"
         >
-          <img src={img7} alt="ET INSIGHTS - Fracspace app launches new features"></img>
+          <img
+            src={img7}
+            alt="ET INSIGHTS - Fracspace app launches new features"
+          ></img>
         </a>
 
         {/* repeat 5 */}
@@ -553,7 +562,10 @@ export default function News() {
           href="https://etedge-insights.com/in-focus/trending/fracspace-launches-in-app-features-for-interiors-and-real-estate-enthusiasts-in-hyderabad-and-bangalore/"
           target="_blank"
         >
-          <img src={img7} alt="ET INSIGHTS - Fracspace app launches new features"></img>
+          <img
+            src={img7}
+            alt="ET INSIGHTS - Fracspace app launches new features"
+          ></img>
         </a>
 
         {/* repeat 6 */}
@@ -624,7 +636,10 @@ export default function News() {
           href="https://etedge-insights.com/in-focus/trending/fracspace-launches-in-app-features-for-interiors-and-real-estate-enthusiasts-in-hyderabad-and-bangalore/"
           target="_blank"
         >
-          <img src={img7} alt="ET INSIGHTS - Fracspace app launches new features"></img>
+          <img
+            src={img7}
+            alt="ET INSIGHTS - Fracspace app launches new features"
+          ></img>
         </a>
 
         {/* 

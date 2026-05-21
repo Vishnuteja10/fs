@@ -188,7 +188,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>Special Projects Commander</div>
               </article>
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -211,7 +211,7 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Rishab</div>
                 <div className={Style.role}>Director of Sales - Fracspace</div>
-              </article>
+              </article> */}
 
               <article className={Style.itemOne}>
                 <img
@@ -666,7 +666,7 @@ export default function MeetOurTeam() {
           </section>
 
           <section className={Style.salesTeamContainer}>
-            <div className={Style.salesHeader}> Accounts & HR Team</div>
+            <div className={Style.salesHeader}> Accounts Team</div>
 
             <div className={Style.salesTeamImages}>
               <article className={Style.itemOne}>
@@ -724,7 +724,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>HR Executive</div>
               </article> */}
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -747,7 +747,7 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Zohaib</div>
                 <div className={Style.role}>Junior HR Executive</div>
-              </article>
+              </article> */}
             </div>
           </section>
 
@@ -882,6 +882,9 @@ export default function MeetOurTeam() {
             </article> */}
             </div>
           </section>
+          <div className={Style.noteContainer}>
+            <p>Note : Rishab is no longer associated with Fracspace</p>
+          </div>
         </div>
 
         <div>

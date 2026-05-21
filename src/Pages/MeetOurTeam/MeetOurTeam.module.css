@@ -17,6 +17,17 @@
     animation: bounce 2s infinite;
   }
 
+  .noteContainer{
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .noteContainer p{
+    font-weight: 600;
+  }
+
 
 .appIconsContainer{
     margin-top: 40vh;
