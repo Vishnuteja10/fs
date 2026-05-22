@@ -1,47 +1,58 @@
-
-
-
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-10px);
-    }
-    60% {
-      transform: translateY(-5px);
-    }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
-  
-  .bounce {
-    animation: bounce 2s infinite;
+  40% {
+    transform: translateY(-10px);
   }
-
-  .noteContainer{
-    margin-top: 8vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  60% {
+    transform: translateY(-5px);
   }
-
-  .noteContainer p{
-    font-weight: 600;
-  }
-
-
-.appIconsContainer{
-    margin-top: 40vh;
-    position: fixed;
-    z-index: 999;
-    margin-left: 92.5vw;
 }
 
+.bounce {
+  animation: bounce 2s infinite;
+}
 
-.appIconsContainer div{
-    cursor: pointer;
- }
+.noteContainer {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 8vh;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  /* text-align: center; */
+}
 
-.appleStore{
+.impInfo {
+  /* font-weight: 600; */
+}
+
+.noteContainer p {
+  font-size: 20px;
+  font-weight: 600;
+  width: 80vw;
+  /* text-align: center; */
+}
+
+.appIconsContainer {
+  margin-top: 40vh;
+  position: fixed;
+  z-index: 999;
+  margin-left: 92.5vw;
+}
+
+.appIconsContainer div {
+  cursor: pointer;
+}
+
+.appleStore {
   margin-top: 15vh;
   width: 9vw;
   height: 5vh;
@@ -49,101 +60,98 @@
   z-index: 999;
 }
 
-.playStore{
+.playStore {
   width: 9vw;
   height: 6.5vh;
   transform: rotate(-90deg);
   z-index: 999;
 }
 
-.watsapp{
-    margin-top: 10vh;
-     width: 2.5vw;
-     height: 5vh;
-     z-index: 999;
-     margin-left: 3vw;
-  }
-
-
-.navBar{
-    /* margin-top: 5vh; */
+.watsapp {
+  margin-top: 10vh;
+  width: 2.5vw;
+  height: 5vh;
+  z-index: 999;
+  margin-left: 3vw;
 }
 
-.navBar{
-    /* top: 8vh; */
-    position: fixed;
-    margin-top: -5vh;
-    /* padding-top: 5vh; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 9999;
-    background-color: white;
-    width: 100vw;
-    height: 16vh;   
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+.navBar {
+  /* margin-top: 5vh; */
 }
 
-
-
-.header{
-    padding-top: 15vh;
-    margin-top: 5vh;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    font-family: 'Montserrat';
+.navBar {
+  /* top: 8vh; */
+  position: fixed;
+  margin-top: -5vh;
+  /* padding-top: 5vh; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+  background-color: white;
+  width: 100vw;
+  height: 16vh;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.imageContainer{
-    margin-top: 8vh;
-    width: 98vw;
+.header {
+  padding-top: 15vh;
+  margin-top: 5vh;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Montserrat";
 }
 
-.imageContainer img{
-    width: 88vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+.imageContainer {
+  margin-top: 8vh;
+  width: 98vw;
 }
 
-.info{
-    text-align: center;
-    font-family: 'Poppins';
+.imageContainer img {
+  width: 88vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
-.salesTeamContainer{
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 10vh;
-    /* border: 1px solid gray; */
+.info {
+  text-align: center;
+  font-family: "Poppins";
 }
 
-.salesTeamContainer1{
-    margin-top: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.salesTeamContainer {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 10vh;
+  /* border: 1px solid gray; */
 }
 
-.salesHeader1{
-    font-size: 30px;
-    font-weight: 600;
-    font-family: 'Montserrat';
-    text-align: center;
+.salesTeamContainer1 {
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.itemOne{
-   margin-left: 2vw;
-   margin-top: 5vh;
+.salesHeader1 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-align: center;
 }
 
-.itemImage{
-    width: 15vw;
-    height: 30vh;
-    /* border: 2px solid gray; */
-    border-radius: 50%;
-    object-fit: cover;
-    /* background-size: cover; */
+.itemOne {
+  margin-left: 2vw;
+  margin-top: 5vh;
+}
+
+.itemImage {
+  width: 15vw;
+  height: 30vh;
+  /* border: 2px solid gray; */
+  border-radius: 50%;
+  object-fit: cover;
+  /* background-size: cover; */
 }
 
 /* .placeholderImage{
@@ -155,134 +163,128 @@
     object-fit: cover;
 } */
 
-.name{
-    margin-top: 3vh;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: 'Poppins';
+.name {
+  margin-top: 3vh;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins";
 }
 
-.role{
-    text-align: center;
-    font-family: 'Poppins';
-    width: 15vw;
-    /* border: 1px solid green; */
+.role {
+  text-align: center;
+  font-family: "Poppins";
+  width: 15vw;
+  /* border: 1px solid green; */
 }
 
-.linkedInContainer{
-    width: 4vw;
-    background-color:rgba(2, 18, 101, 1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    margin-top: -3vh;
-    margin-left: 5vw;
-    padding-top: 0.3vh;
-    padding-bottom: 0.3vh;
-    border-radius: 20px;
-    cursor: pointer;
+.linkedInContainer {
+  width: 4vw;
+  background-color: rgba(2, 18, 101, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: -3vh;
+  margin-left: 5vw;
+  padding-top: 0.3vh;
+  padding-bottom: 0.3vh;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-
-.linkedInContainer img{
-    margin-top: 0.5vh;
-    margin-bottom: 0.5vh;
-    padding-top: 0.3vh;
-    padding-bottom: 0.3vh;
-    width: 2vw;
-    height: 4vh;
-    
+.linkedInContainer img {
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+  padding-top: 0.3vh;
+  padding-bottom: 0.3vh;
+  width: 2vw;
+  height: 4vh;
 }
 
-.salesHeader{
-    font-size: 30px;
-    font-weight: 600;
-    font-family: 'Montserrat';
+.salesHeader {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Montserrat";
 }
 
-.salesTeamImages{
-    /* margin-left: 5vw; */
-    /* margin-right: 5vw; */
-    margin-top: 2vh;
-    display: flex;
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    flex-wrap: wrap;
+.salesTeamImages {
+  /* margin-left: 5vw; */
+  /* margin-right: 5vw; */
+  margin-top: 2vh;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
 
-    /* border: 2px solid gray; */
+  /* border: 2px solid gray; */
 }
 
-.teamContainer{
-    /* margin-top: 5vh; */
-    margin-bottom: 10vh;
+.teamContainer {
+  /* margin-top: 5vh; */
+  margin-bottom: 10vh;
 }
-
 
 /* Skeleton shimmer effect */
 .skeleton {
-    width: 15vw;
-    height: 30vh;
-    background: linear-gradient(
-      90deg,
-      rgba(200, 200, 200, 0.2) 25%,
-      rgba(200, 200, 200, 0.5) 50%,
-      rgba(200, 200, 200, 0.2) 75%
-    );
-    background-size: 200% 100%;
-    border-radius: 50%;
-    animation: shimmer 1.5s infinite;
+  width: 15vw;
+  height: 30vh;
+  background: linear-gradient(
+    90deg,
+    rgba(200, 200, 200, 0.2) 25%,
+    rgba(200, 200, 200, 0.5) 50%,
+    rgba(200, 200, 200, 0.2) 75%
+  );
+  background-size: 200% 100%;
+  border-radius: 50%;
+  animation: shimmer 1.5s infinite;
+}
+
+.topBanner {
+  top: 0;
+  position: fixed;
+  z-index: 99999;
+  height: 3vh;
+}
+
+/* Shimmer keyframes */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .teamContainer {
+    margin-top: -6vh;
   }
 
-  .topBanner{
-    top: 0;
-    position: fixed;
-    z-index: 99999;
-    height: 3vh;
-  }
-  
-  /* Shimmer keyframes */
-  @keyframes shimmer {
-    0% {
-      background-position: -200% 0;
-    }
-    100% {
-      background-position: 200% 0;
-    }
+  .imageContainer {
+    /* margin-top: -2vh; */
+    height: auto;
+    width: 98vw;
+    /* border: 2px solid green; */
   }
 
+  .teamContainer {
+    /* margin-top: -10vh; */
+  }
 
-@media(max-width:600px){
+  .teamImage {
+    object-fit: contain;
+    /* height: 6vh; */
+    width: 96vw;
+    /* border: 2px solid gray; */
+  }
 
-    .teamContainer{
-        margin-top: -6vh;
-    }
+  .appIconsContainer {
+    margin-left: 78vw;
+  }
 
-
-    .imageContainer{
-        /* margin-top: -2vh; */
-        height: auto;
-        width: 98vw;
-        /* border: 2px solid green; */
-    }
-
-    .teamContainer{
-        /* margin-top: -10vh; */
-    }
-
-    .teamImage{
-        object-fit: contain;
-        /* height: 6vh; */
-        width: 96vw;
-        /* border: 2px solid gray; */
-    }
-
-    .appIconsContainer{
-        margin-left: 78vw;
-    }
-    
-/*     
+  /*     
       .appleStore{
         width: 30vw;
         height: 4.5vh;
@@ -299,35 +301,35 @@
       margin-left: 9vw;
     } */
 
-    .watsapp{
-        width: 8vw;
-        margin-left: 5.5vw;
-      }
+  .watsapp {
+    width: 8vw;
+    margin-left: 5.5vw;
+  }
 
-    .navBar{
-        /* top: 12vh; */
-        padding-top: 10vh;
-        height: 18vh !important;
-    }
+  .navBar {
+    /* top: 12vh; */
+    padding-top: 10vh;
+    height: 18vh !important;
+  }
 
-    .appIconsContainer{
-        margin-left: 85vw;
-     }
- 
-       .appleStore{
-          width: 20vw;
-       }
- 
-       .playStore{
-          width: 20vw;
-       }
+  .appIconsContainer {
+    margin-left: 85vw;
+  }
 
-    /* .itemOne{
+  .appleStore {
+    width: 20vw;
+  }
+
+  .playStore {
+    width: 20vw;
+  }
+
+  /* .itemOne{
         width: 35vw;
         margin-left: 8vw;
     } */
 
-    /* .itemImage{
+  /* .itemImage{
         width: 34vw;
     }
 
@@ -341,284 +343,267 @@
          height: 4vh;
     } */
 
-    .salesTeamContainer1 .itemOne{
-        margin-left: -3vw;
-    }
+  .salesTeamContainer1 .itemOne {
+    margin-left: -3vw;
+  }
 
-    
-    .salesTeamImages{
-        display: block;
-   }
+  .salesTeamImages {
+    display: block;
+  }
 
-   .itemOne{
-       margin-left: 13vw;
-   }
+  .itemOne {
+    margin-left: 13vw;
+  }
 
-   .itemOne img{
-       width: 60vw;
-   }
+  .itemOne img {
+    width: 60vw;
+  }
 
-   .linkedInContainer{
-       margin-left: 23vw;
-       width: 15vw;
-   }
+  .linkedInContainer {
+    margin-left: 23vw;
+    width: 15vw;
+  }
 
-   .linkedInContainer img{
-       width: 8vw;
-   }
+  .linkedInContainer img {
+    width: 8vw;
+  }
 
-   
-   .name{
+  .name {
     margin-left: 8vw;
     width: 45vw;
     text-align: center;
-}
+  }
 
-.role{
+  .role {
     margin-left: 9vw;
     width: 45vw;
     text-align: center;
-}
-
-    .header{
-        padding-top: 20vh;
-        font-size: 24px;
-        font-family: 'Montserrat';
-    }
-
-    .info{
-        font-family: "poppins";
-        margin-left: 2vw;
-        margin-right: 2vw;
-    }
-
-    .salesHeader1{
-        font-size: 18px;
-        font-size: 600;
-        font-family: "Montserrat"; 
-        margin-left: 3vw;
-    }
-
-    .salesHeader{
-        font-size: 18px;
-        font-size: 600;
-        font-family: "Montserrat";
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .name{
-        font-size: 16px;
-        font-family: 'Poppins';
-
-    }
-
-    .role{
-        font-size: 13px;
-        font-family: 'Poppins';
-    }
-
-}
-
-@media (max-width:400px) and (max-height:700px){
-    .navBar{
-      height: 12vh;
-    }
   }
 
-@media (min-width:350px) and (max-width:400px){
+  .header {
+    padding-top: 20vh;
+    font-size: 24px;
+    font-family: "Montserrat";
+  }
 
-    .itemOne{
-        margin-left: 16vw;
-    }
+  .info {
+    font-family: "poppins";
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
 
+  .salesHeader1 {
+    font-size: 18px;
+    font-size: 600;
+    font-family: "Montserrat";
+    margin-left: 3vw;
+  }
+
+  .salesHeader {
+    font-size: 18px;
+    font-size: 600;
+    font-family: "Montserrat";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .name {
+    font-size: 16px;
+    font-family: "Poppins";
+  }
+
+  .role {
+    font-size: 13px;
+    font-family: "Poppins";
+  }
 }
 
-@media(min-width:320px) and (max-width:400px){
+@media (max-width: 400px) and (max-height: 700px) {
+  .navBar {
+    height: 12vh;
+  }
+}
 
-    .itemImg{
-        width: 60vw;
-        height: 40vh;
-    }
+@media (min-width: 350px) and (max-width: 400px) {
+  .itemOne {
+    margin-left: 16vw;
+  }
+}
 
-    .teamContainer{
-        margin-top: -8vh;
-    }
+@media (min-width: 320px) and (max-width: 400px) {
+  .itemImg {
+    width: 60vw;
+    height: 40vh;
+  }
 
-    .imageContainer img{
-        /* width: 90vw;
+  .teamContainer {
+    margin-top: -8vh;
+  }
+
+  .imageContainer img {
+    /* width: 90vw;
        height: 50vh; */
-    }
+  }
 
-    .itemOne{
-        width: 40vw;
-        /* margin-left: 5vw; */
-    }  
+  .itemOne {
+    width: 40vw;
+    /* margin-left: 5vw; */
+  }
 
-    .itemImage{
-        width: 38vw;
-    }
-
+  .itemImage {
+    width: 38vw;
+  }
 }
 
-@media (min-width:200px) and (max-width:300px){
+@media (min-width: 200px) and (max-width: 300px) {
+  .appIconsContainer {
+    margin-left: 85vw;
+  }
 
-    .appIconsContainer{
-        margin-left: 85vw;
-     }
- 
-       .appleStore{
-          width: 20vw;
-       }
- 
-       .playStore{
-          width: 20vw;
-       }
-       
-    .itemOne{
-        width: 80vw;
-    }
+  .appleStore {
+    width: 20vw;
+  }
 
-    .itemImage{
-        margin-left: 10vw;
-        width: 60vw;
-    }
+  .playStore {
+    width: 20vw;
+  }
 
-    .linkedInContainer{
-        margin-left: 32vw;
-        width: 15vw;
-    }
+  .itemOne {
+    width: 80vw;
+  }
 
-    .linkedInContainer img{
-        width: 8vw;
-    }
+  .itemImage {
+    margin-left: 10vw;
+    width: 60vw;
+  }
+
+  .linkedInContainer {
+    margin-left: 32vw;
+    width: 15vw;
+  }
+
+  .linkedInContainer img {
+    width: 8vw;
+  }
 }
 
-@media (min-width:340px) and (max-width:385px) and (min-height:810px) and (max-height:890px){
+@media (min-width: 340px) and (max-width: 385px) and (min-height: 810px) and (max-height: 890px) {
+  .teamContainer {
+    margin-top: -10vh;
+  }
 
-    .teamContainer{
-        margin-top: -10vh;
-    }
+  .appIconsContainer {
+    margin-left: 78vw;
+    margin-top: 16vh;
+  }
 
-    .appIconsContainer{
-        margin-left: 78vw;
-        margin-top: 16vh;
-    }
-    
-    
-      .appleStore{
-        width: 30vw;
-        height: 4vh;
-      
-     }
-    
-     .playStore{
-        width: 30vw;
-        height: 5vh;
-     }
-    
-     .watsapp{
-      width: 10vw;
-      margin-left: 9vw;
-    }
+  .appleStore {
+    width: 30vw;
+    height: 4vh;
+  }
 
-    .imageContainer img{
-        /* object-fit: cover; */
-    }
+  .playStore {
+    width: 30vw;
+    height: 5vh;
+  }
 
-    .salesTeamContainer1 .itemOne{
-        margin-left: -10vw;
-    }
+  .watsapp {
+    width: 10vw;
+    margin-left: 9vw;
+  }
 
-    .salesTeamImages{
-         display: block;
-    }
+  .imageContainer img {
+    /* object-fit: cover; */
+  }
 
-    .itemOne{
-        margin-left: 10vw;
-    }
+  .salesTeamContainer1 .itemOne {
+    margin-left: -10vw;
+  }
 
-    .itemOne img{
-        width: 70vw;
-    }
+  .salesTeamImages {
+    display: block;
+  }
 
-    .linkedInContainer{
-        margin-left: 27vw;
-        width: 15vw;
-    }
+  .itemOne {
+    margin-left: 10vw;
+  }
 
-    .linkedInContainer img{
-        width: 8vw;
-    }
+  .itemOne img {
+    width: 70vw;
+  }
 
-    .name{
-        margin-left: 10vw;
-        width: 50vw;
-        text-align: center;
-    }
+  .linkedInContainer {
+    margin-left: 27vw;
+    width: 15vw;
+  }
 
-    .role{
-        margin-left: 11vw;
-        width: 50vw;
-        text-align: center;
-    }
+  .linkedInContainer img {
+    width: 8vw;
+  }
 
+  .name {
+    margin-left: 10vw;
+    width: 50vw;
+    text-align: center;
+  }
+
+  .role {
+    margin-left: 11vw;
+    width: 50vw;
+    text-align: center;
+  }
 }
 
 /* css for medium screen tabs */
-@media (min-width:768px) and (max-width:1025px) and (min-height:1024px) and (max-height:1366px){
-      
-    .itemOne img{
-        width: 40vw;
-        height: 30vh;
-    }
+@media (min-width: 768px) and (max-width: 1025px) and (min-height: 1024px) and (max-height: 1366px) {
+  .itemOne img {
+    width: 40vw;
+    height: 30vh;
+  }
 
-    .linkedInContainer{
-        margin-left: 16vw;
-        width: 8vw;
-        height: 4vh;
-    }
+  .linkedInContainer {
+    margin-left: 16vw;
+    width: 8vw;
+    height: 4vh;
+  }
 
-    .linkedInContainer img{
-        width: 4vw;
-        height: 3vh;
-    }
+  .linkedInContainer img {
+    width: 4vw;
+    height: 3vh;
+  }
 
-    .role{
-        /* border: 2px solid cadetblue; */
-        width: 40vw;
-    }
+  .role {
+    /* border: 2px solid cadetblue; */
+    width: 40vw;
+  }
 }
 
 /* css for smaller tabs */
-@media (min-width:600px) and (max-width:840px) and (min-height:920px) and (max-height:1280px){
+@media (min-width: 600px) and (max-width: 840px) and (min-height: 920px) and (max-height: 1280px) {
+  .itemOne img {
+    width: 40vw;
+    height: 30vh;
+  }
 
-    .itemOne img{
-        width: 40vw;
-        height: 30vh;
-    }
+  .linkedInContainer {
+    margin-left: 16vw;
+    width: 8vw;
+    height: 4vh;
+  }
 
-    .linkedInContainer{
-        margin-left: 16vw;
-        width: 8vw;
-        height: 4vh;
-    }
-
-    .linkedInContainer img{
-        width: 4vw;
-        height: 3vh;
-    }
-
+  .linkedInContainer img {
+    width: 4vw;
+    height: 3vh;
+  }
 }
 
-
-@media (max-width:390px) and (max-height:260px){
-  .linkedInContainer{
+@media (max-width: 390px) and (max-height: 260px) {
+  .linkedInContainer {
     width: 5vw !important;
   }
 
-  .itemImage{
+  .itemImage {
     width: 10vw !important;
   }
 }
