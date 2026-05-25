@@ -882,18 +882,7 @@ export default function MeetOurTeam() {
             </article> */}
             </div>
           </section>
-          <div className={Style.noteContainer}>
-            <p>
-              <span className={Style.impInfo}>Important Customer Advisory:</span> Mr. Rishab Tirunahari,
-              Former Director of Sales, is no longer associated with Fracspace
-              and is not authorised to represent, communicate, collect payments,
-              make commitments, or act on behalf of Fracspace Private Limited or
-              its group entities in any manner. Customers and investors are
-              requested to verify all communication only through official
-              Fracspace channels. We wish him all the best in his future
-              endeavors.
-            </p>
-          </div>
+         
         </div>
 
         <div>
