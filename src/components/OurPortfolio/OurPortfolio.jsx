@@ -159,7 +159,7 @@ function OurPortfolio() {
           ></img>
           Kerala
         </div>
-        {/* 
+
         <div
           className={`${Style.location} ${
             selectedLoction == "karnataka" ? Style.selected : ""
@@ -174,9 +174,9 @@ function OurPortfolio() {
             alt="location icon"
           ></img>
           Kabini
-        </div> */}
+        </div>
 
-        {/* <div
+        <div
           className={`${Style.location} ${
             selectedLoction == "varanasi" ? Style.selected : ""
           }`}
@@ -190,7 +190,7 @@ function OurPortfolio() {
             alt="location icon"
           ></img>
           Varanasi
-        </div> */}
+        </div>
 
         <div
           className={`${Style.location} ${
