@@ -103,11 +103,7 @@ function OurPortfolio() {
         setNelloreProperties(nelloreProp);
 
         // console.log("kerala properties", keralaProp);
-        // console.log(
-        //   "response while fetching properties",
-        //   allProperties,
-        //   hydProp
-        // );
+        console.log("response while fetching properties", allProperties);
       },
       (error) => {
         console.log("error while fetching properties", error);
@@ -163,7 +159,7 @@ function OurPortfolio() {
           ></img>
           Kerala
         </div>
-
+        {/* 
         <div
           className={`${Style.location} ${
             selectedLoction == "karnataka" ? Style.selected : ""
@@ -178,9 +174,9 @@ function OurPortfolio() {
             alt="location icon"
           ></img>
           Kabini
-        </div>
+        </div> */}
 
-        <div
+        {/* <div
           className={`${Style.location} ${
             selectedLoction == "varanasi" ? Style.selected : ""
           }`}
@@ -194,7 +190,7 @@ function OurPortfolio() {
             alt="location icon"
           ></img>
           Varanasi
-        </div>
+        </div> */}
 
         <div
           className={`${Style.location} ${

@@ -197,8 +197,8 @@ function Footer() {
               support@fracspace.com
             </div>
             <div className={Style.phone}>
-              <img className={Style.icon} src={contactIcon}></img> +91 93555
-              65604, +91 98806 26111{" "}
+              <img className={Style.icon} src={contactIcon}></img>
+              +91 98806 26111 , +91 91548 67608
             </div>
             {/* <div className={Style.phone2}>  +91 98806 26111</div> */}
           </div>
