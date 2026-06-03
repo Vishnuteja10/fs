@@ -1,0 +1,154 @@
+
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  z-index: 9999;
+
+  animation: fadeIn 0.25s ease;
+}
+
+.modal {
+  width: 100%;
+  max-width: 550px;
+
+  background: #fff;
+  border-radius: 20px;
+
+  padding: 30px;
+  position: relative;
+
+  max-height: 80vh;
+  overflow-y: auto;
+
+  animation: slideUp 0.35s ease-out;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  border: none;
+  background: none;
+
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.modal h2 {
+  margin-bottom: 25px;
+  font-family: "Poppins";
+}
+
+.formGroup {
+  margin-bottom: 18px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-family: 'Poppins';
+}
+
+.formGroup input,.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 12px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: 'Poppins';
+
+  outline: none;
+}
+
+.submitBtn {
+  width: 100%;
+  border: none;
+  font-family: 'Poppins';
+
+  background: #0c1c77;
+  color: white;
+
+  padding: 14px;
+  border-radius: 10px;
+
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+/* .modal::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background: #71706b;
+  border-radius: 10px;
+}
+
+.modal::-webkit-scrollbar-track {
+  background: #f3f3f3;
+} */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .modal {
+    width: 100%;
+    max-width: 100%;
+
+    border-radius: 24px 24px 0 0;
+
+    max-height: 85vh;
+
+    animation: mobileSlideUp 0.35s ease;
+  }
+}
+
+@keyframes mobileSlideUp {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

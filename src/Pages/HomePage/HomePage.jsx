@@ -37,6 +37,7 @@ import bannerImg from "../../assets/Banner/alt2.webp";
 import altairaMobileImg from "../../assets/Banner/alt1.webp";
 
 import { useMediaQuery } from "react-responsive";
+import Membership from "../../components/Membership/Membership";
 
 export default function HomePage() {
   const [scrolled, setScrolled] = useState(false);
@@ -60,7 +61,6 @@ export default function HomePage() {
       window.removeEventListener("scroll", handleScroll);
       clearTimeout(timer);
     };
-    
   }, []);
 
   const closeBanner = () => {
@@ -148,7 +148,9 @@ export default function HomePage() {
           </div>
         </Element>
 
-      
+        <div>
+          <Membership />
+        </div>
 
         <div>
           <WhyChooseFs />
@@ -159,7 +161,6 @@ export default function HomePage() {
             <AboutFracspace />
           </div>
         </Element>
-
         {/* <div>
           <UpComingServices />
         </div> */}

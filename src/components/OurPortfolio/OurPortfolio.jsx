@@ -35,8 +35,8 @@ function OurPortfolio() {
   const [hyderabadProperties, setHyderabadProperties] = useState([{}]);
   const [keralaProperties, setKeralaProperties] = useState([{}]);
   const [karnatakaProperties, setKarnatakaProperties] = useState([{}]);
-
   const [varanasiProperties, setVaranasiProperties] = useState([{}]);
+
   const [nelloreProperties, setNelloreProperties] = useState([{}]);
 
   const [allProperties, setAllProperties] = useState([{}]);

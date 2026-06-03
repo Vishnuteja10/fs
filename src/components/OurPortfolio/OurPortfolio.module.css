@@ -330,7 +330,7 @@
 @media (max-width:600px){
 
     .main{
-        height: 90vh;
+        min-height: 90vh;
     }
 
     .propertyLocations{
