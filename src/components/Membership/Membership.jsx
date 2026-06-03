@@ -12,15 +12,15 @@ import baliImg from "../../assets/Memberships/bali.png";
 import miamiImg from "../../assets/Memberships/miami.png";
 import colomboImg from "../../assets/Memberships/colombo.png";
 
-import premimuB from "../../assets/Memberships/premiumB.png";
-import creditB from "../../assets/Memberships/creditB.png";
-import stayB from "../../assets/Memberships/stayB.png";
-import rewardsB from "../../assets/Memberships/rewardsB.png";
+import premimuB from "../../assets/Memberships/premiumB.svg";
+import creditB from "../../assets/Memberships/creditB.svg";
+import stayB from "../../assets/Memberships/stayB.svg";
+import rewardsB from "../../assets/Memberships/rewardsB.svg";
 
-import intl from "../../assets/Memberships/intl.png";
-import creditG from "../../assets/Memberships/creditG.png";
-import stayG from "../../assets/Memberships/stayG.png";
-import rewardsG from "../../assets/Memberships/rewardsG.png";
+import intl from "../../assets/Memberships/intl.svg";
+import creditG from "../../assets/Memberships/creditG.svg";
+import stayG from "../../assets/Memberships/stayG.svg";
+import rewardsG from "../../assets/Memberships/rewardsG.svg";
 
 import membershipBg from "../../assets/Memberships/memBg.png";
 import MembershipForm from "../MembershipForm/MembershipForm";

@@ -103,7 +103,7 @@ function OurPortfolio() {
         setNelloreProperties(nelloreProp);
 
         // console.log("kerala properties", keralaProp);
-        console.log("response while fetching properties", allProperties);
+        // console.log("response while fetching properties", allProperties);
       },
       (error) => {
         console.log("error while fetching properties", error);
