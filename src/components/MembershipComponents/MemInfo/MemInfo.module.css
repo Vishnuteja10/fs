@@ -1,0 +1,160 @@
+.container {
+  width: 100%;
+  padding: 80px 6%;
+  background: #f7f8fb;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 400;
+  margin-bottom: 60px;
+  color: #111827;
+  font-family: "Montserrat";
+}
+
+.heading span {
+  color: #071f78;
+  font-weight: 700;
+}
+
+.content {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.leftSection {
+  flex: 1;
+}
+
+.imageWrapper {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.quoteBox {
+  margin-top: 14px;
+  background: #071f78;
+  color: white;
+  padding: 18px 20px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-family: "Poppins";
+}
+
+.rightSection {
+  flex: 1.2;
+}
+
+.rightSection > p {
+  color: #6b7280;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-family: "Poppins";
+}
+
+.rightSection strong {
+  color: #071f78;
+}
+
+.benefits {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.benefitCard {
+  display: flex;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid #dfe3ea;
+  border-radius: 8px;
+  background: white;
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: 8px;
+  background: #071f78;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.benefitCard h4 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  color: #111827;
+  font-family: "Montserrat";
+}
+
+.benefitCard p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.6;
+  font-family: "Poppins";
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 20px;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .benefitCard {
+    padding: 15px;
+  }
+
+  .icon {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .quoteBox {
+    font-size: 0.85rem;
+  }
+
+  .rightSection > p {
+    font-size: 0.95rem;
+  }
+}

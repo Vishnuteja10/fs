@@ -101,19 +101,19 @@ function Navbar() {
                       Contact
                     </Link>
                   </li>
-                  <li className={Style.agents}>
-                    <Link to="/agents" className={Style.link}>
-                      Agents
+                  <li>
+                    <Link to="/membership" className={Style.link}>
+                      Membership
                     </Link>
                   </li>
-                  <li onClick={() =>
-                        window.open("https://investments.altaira.lk", "_blank")
-                      } className={`${Style.altaira} ${Style.linkAnimated}`}>
-                    <span
-                      className={Style.link2}
-                    >
-                      Altaira
-                    </span>
+
+                  <li
+                    onClick={() =>
+                      window.open("https://investments.altaira.lk", "_blank")
+                    }
+                    className={`${Style.altaira} ${Style.linkAnimatedd}`}
+                  >
+                    <span className={Style.link2}>Altaira</span>
                   </li>
                 </ul>
               ) : (
@@ -144,10 +144,16 @@ function Navbar() {
                     </Link>
                   </li>
                   <li>
+                    <Link to="/membership" className={Style.link2}>
+                      Membership
+                    </Link>
+                  </li>
+                  {/* <li>
                     <Link to="/agents" className={Style.link2}>
                       Agents
                     </Link>
-                  </li>
+                  </li> */}
+
                   <li className={`${Style.altaira} ${Style.linkAnimated}`}>
                     <span
                       className={Style.link2}
@@ -208,8 +214,8 @@ function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/agents" className={Style.link3}>
-                    Agents
+                  <Link to="/membership" className={Style.link3}>
+                    Membership
                   </Link>
                 </li>
                 <li className={Style.link3}>

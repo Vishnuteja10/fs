@@ -19,6 +19,12 @@ import EachProperty from "./Pages/EachProperty/EachProperty.jsx";
 import Test1 from "./components/Test1/Test1.jsx";
 import DataDeletionPolicy from "./Pages/DataDeletion/DataDeletionPolicy.jsx";
 
+import Membership from "./Pages/Membership/Membership.jsx";
+import MembershipPaymentForm from "./components/MembershipComponents/MembershipPaymentForm/MembershipPaymentForm.jsx";
+import MembershipForm from "./Pages/MembershipForm/MembershipForm.jsx";
+import PaymentSuccess from "./Pages/PaymentSuccess/PaymentSuccess.jsx";
+import PaymentFailure from "./Pages/PaymentFailure/PaymentFailure.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -67,6 +73,22 @@ const router = createBrowserRouter([
   {
     path: "/eachproperty/:id",
     element: <EachProperty />
+  },
+  {
+    path: "/membership",
+    element: <Membership />
+  },
+  {
+    path: "/membershipform",
+    element: <MembershipForm />
+  },
+  {
+    path: "/paymentsuccess",
+    element: <PaymentSuccess />
+  },
+  {
+    path: "/paymentfailure",
+    element: <PaymentFailure />
   }
   // {
   //   path: "/test",

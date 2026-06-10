@@ -50,7 +50,7 @@
 }
 
 .content {
-  margin-left: 18vw;
+  margin-left: 14vw;
   margin-top: 4vh;
 
   /* border: 1px solid gray; */
@@ -90,7 +90,7 @@ ul li {
   /* border: 1px solid gray; */
 }
 
-.altairaa{
+.altairaa {
   color: rgb(248, 227, 109);
 }
 
@@ -254,6 +254,37 @@ ul li {
   }
 }
 
+.membershipLink {
+  margin-top: -0.5vh;
+  cursor: pointer;
+  padding-top: 0.2vh;
+  padding-bottom: 0.2vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-radius: 20px;
+
+  /* Premium dark forest / luxury tone */
+  background: linear-gradient(135deg, #030468, #202885, #4f4994);
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: color 0.3s ease;
+
+  /* Set up initial background with gradient */
+  /* background: linear-gradient(to right, #021265, #4a90e2, #021265); */
+  background-size: 200% 100%;
+  background-position: 0 0;
+
+  /* Apply the animation */
+  animation: slideBg 3s linear infinite;
+
+  /* Smooth transition for hover state */
+  transition: all 0.3s ease-in-out;
+}
+
+.membershipLink .link2 {
+  color: white;
+}
+
 .altaira {
   margin-top: -0.5vh;
   cursor: pointer;
@@ -290,7 +321,6 @@ ul li {
   padding-top: 0.2vh;
   padding-bottom: 0.2vh;
   font-size: 18px;
-
 }
 
 .agents2 {
@@ -458,7 +488,7 @@ ul li {
     color: white;
   }
 
-  .main2 .menuButton2{
+  .main2 .menuButton2 {
     margin-top: 1vh;
     /* border: 2px solid black; */
   }
@@ -469,12 +499,12 @@ ul li {
     /* border: 2px solid gray; */
   }
 
-  .mobileMain{
+  .mobileMain {
     margin-top: 3vh;
     /* border: 2px solid sienna; */
   }
 
-  .main3 .menuButton2{
+  .main3 .menuButton2 {
     margin-top: 1vh;
   }
 
@@ -492,7 +522,7 @@ ul li {
     font-weight: 600;
   } */
 
-  .logoMain2 .logo1{
+  .logoMain2 .logo1 {
     margin-top: 1vh;
   }
 
