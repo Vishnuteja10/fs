@@ -1,0 +1,68 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 99999;
+}
+
+.card {
+  position: relative;
+
+  width: 420px;
+  background: white;
+
+  padding: 30px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  width: 36px;
+  height: 36px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #f3f4f6;
+  cursor: pointer;
+
+  font-size: 18px;
+}
+
+.card input {
+  margin-top: 15px;
+
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.verifyBtn {
+  margin-top: 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 14px;
+
+  background: #0b1f78;
+  color: white;
+
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}

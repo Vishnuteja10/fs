@@ -61,11 +61,16 @@ function Navbar2() {
                     Contact
                   </Link>
                 </li>
-                <li className={`${Style.agents2} ${Style.linkAnimated}`}>
+                <li>
+                  <Link to="/membership" className={Style.link2}>
+                    Membership
+                  </Link>
+                </li>
+                {/* <li className={`${Style.agents2} ${Style.linkAnimated}`}>
                   <Link to="/agents" className={Style.link2}>
                     Agents
                   </Link>
-                </li>
+                </li> */}
 
                 <li
                   onClick={() =>
@@ -123,8 +128,8 @@ function Navbar2() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/agents" className={Style.link2}>
-                      Agents
+                    <Link to="/membership" className={Style.link2}>
+                      Membership
                     </Link>
                   </li>
 

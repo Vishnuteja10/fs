@@ -1,127 +1,120 @@
 import React from "react";
-import Style from "./Membership.module.css";
 import { useState } from "react";
+import Style from "./ChoosePlan.module.css";
 
-import hydImg from "../../assets/Memberships/hyd.png";
-import goaImg from "../../assets/Memberships/goa.png";
-import allepyImg from "../../assets/Memberships/allepy.png";
-import munnarImg from "../../assets/Memberships/munnar.png";
+import hydImg from "../../../assets/Memberships/hyd.png";
+import goaImg from "../../../assets/Memberships/goa.png";
+import allepyImg from "../../../assets/Memberships/allepy.png";
+import munnarImg from "../../../assets/Memberships/munnar.png";
 
-import bankokImg from "../../assets/Memberships/bankok.png";
-import baliImg from "../../assets/Memberships/bali.png";
-import miamiImg from "../../assets/Memberships/miami.png";
-import colomboImg from "../../assets/Memberships/colombo.png";
+import bankokImg from "../../../assets/Memberships/bankok.png";
+import baliImg from "../../../assets/Memberships/bali.png";
+import miamiImg from "../../../assets/Memberships/miami.png";
+import colomboImg from "../../../assets/Memberships/colombo.png";
 
-import premimuB from "../../assets/Memberships/premiumB.png";
-import creditB from "../../assets/Memberships/creditB.png";
-import stayB from "../../assets/Memberships/stayB.png";
-import rewardsB from "../../assets/Memberships/rewardsB.png";
+import premimuB from "../../../assets/Memberships/premiumB.png";
+import creditB from "../../../assets/Memberships/creditB.png";
+import stayB from "../../../assets/Memberships/stayB.png";
+import rewardsB from "../../../assets/Memberships/rewardsB.png";
 
-import intl from "../../assets/Memberships/intl.png";
-import creditG from "../../assets/Memberships/creditG.png";
-import stayG from "../../assets/Memberships/stayG.png";
-import rewardsG from "../../assets/Memberships/rewardsG.png";
+import intl from "../../../assets/Memberships/intl.png";
+import creditG from "../../../assets/Memberships/creditG.png";
+import stayG from "../../../assets/Memberships/stayG.png";
+import rewardsG from "../../../assets/Memberships/rewardsG.png";
 
-import membershipBg from "../../assets/Memberships/memBg.png";
-import MembershipForm from "../MembershipForm/MembershipForm";
+import membershipBg from "../../../assets/Memberships/memBg.png";
 import { useNavigate } from "react-router-dom";
+// import MembershipForm from "../MembershipForm/MembershipForm";
 
-const silverDestinations = [
-  {
-    name: "Alleppey",
-    image: allepyImg
-  },
-  {
-    name: "Goa",
-    image: goaImg
-  },
-  {
-    name: "Hyderabad",
-    image: hydImg
-  },
-  {
-    name: "Munnar",
-    image: munnarImg
-  }
-];
+function ChoosePlan() {
+  const silverDestinations = [
+    {
+      name: "Alleppey",
+      image: allepyImg
+    },
+    {
+      name: "Goa",
+      image: goaImg
+    },
+    {
+      name: "Hyderabad",
+      image: hydImg
+    },
+    {
+      name: "Munnar",
+      image: munnarImg
+    }
+  ];
 
-const blackDestinations = [
-  {
-    name: "Bali",
-    image: baliImg
-  },
-  {
-    name: "Miami",
-    image: miamiImg
-  },
-  {
-    name: "Bangkok",
-    image: bankokImg
-  },
-  {
-    name: "Colombo",
-    image: colomboImg
-  }
-];
+  const blackDestinations = [
+    {
+      name: "Bali",
+      image: baliImg
+    },
+    {
+      name: "Miami",
+      image: miamiImg
+    },
+    {
+      name: "Bangkok",
+      image: bankokImg
+    },
+    {
+      name: "Colombo",
+      image: colomboImg
+    }
+  ];
 
-const silverFeatures = [
-  {
-    icon: stayB,
-    text: "2 Complimentary Stays per year"
-  },
-  {
-    icon: creditB,
-    text: "4 Annual Credits"
-  },
-  {
-    icon: rewardsB,
-    text: "Up to 8% Annual Rewards"
-  },
-  {
-    icon: premimuB,
-    text: "Premium Domestic Escapes"
-  }
-];
+  const silverFeatures = [
+    {
+      icon: stayB,
+      text: "2 Complimentary Stays per year"
+    },
+    {
+      icon: creditB,
+      text: "4 Annual Credits"
+    },
+    {
+      icon: rewardsB,
+      text: "Up to 8% Annual Rewards"
+    },
+    {
+      icon: premimuB,
+      text: "Premium Domestic Escapes"
+    }
+  ];
 
-const blackFeatures = [
-  {
-    icon: stayG,
-    text: "4 Complimentary Stays per year"
-  },
-  {
-    icon: creditG,
-    text: "4 Annual Credits"
-  },
-  {
-    icon: rewardsG,
-    text: "Up to 8% Annual Rewards"
-  },
-  {
-    icon: intl,
-    text: "International Destination Access"
-  }
-];
+  const blackFeatures = [
+    {
+      icon: stayG,
+      text: "4 Complimentary Stays per year"
+    },
+    {
+      icon: creditG,
+      text: "4 Annual Credits"
+    },
+    {
+      icon: rewardsG,
+      text: "Up to 8% Annual Rewards"
+    },
+    {
+      icon: intl,
+      text: "International Destination Access"
+    }
+  ];
 
-function Membership() {
   const [showForm, setShowForm] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState("");
   const navigate = useNavigate();
+
   return (
-    <section
-      className={Style.membershipSection}
-      style={{
-        "--membership-bg": `url(${membershipBg})`
-      }}
-    >
+    <section className={Style.membershipSection}>
       <div className={Style.membershipContainer}>
         <div className={Style.header}>
-          <h2 className={Style.heading}>
-            The Luxury Membership That Pays You Back
-          </h2>
+          <h2 className={Style.heading}>Choose Your Escape</h2>
 
           <p className={Style.description}>
-            Enjoy curated luxury stays, exclusive privileges, and annual rewards
-            through a membership designed to deliver value beyond vacations.
+            Two tiers. Both extraordinary. Pick the one that matches your world.
           </p>
         </div>
 
@@ -172,9 +165,9 @@ function Membership() {
             <button
               className={Style.silverBtn}
               onClick={() => {
+                  navigate("/membershipform", { state: { plan: "silver" } });
                 // setSelectedPlan("Escape Silver");
                 // setShowForm(true);
-                navigate("/membershipform", { state: { plan: "silver" } });
               }}
             >
               CHOOSE ESCAPE SILVER
@@ -227,9 +220,9 @@ function Membership() {
             <button
               className={Style.blackBtn}
               onClick={() => {
-                navigate("/membershipform", { state: { plan: "black" } });
                 // setSelectedPlan("Escape Black");
                 // setShowForm(true);
+                  navigate("/membershipform", { state: { plan: "black" } });
               }}
             >
               CHOOSE ESCAPE BLACK
@@ -247,4 +240,4 @@ function Membership() {
   );
 }
 
-export default Membership;
+export default ChoosePlan;
