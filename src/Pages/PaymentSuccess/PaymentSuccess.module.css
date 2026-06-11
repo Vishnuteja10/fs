@@ -96,6 +96,37 @@
   background: #08124f;
 }
 
+.playStore {
+  width: 12vw;
+}
+
+.appStore {
+  width: 12vw;
+  margin-left: 3vw;
+}
+
+.storeButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.storeBadge {
+  height: 55px;
+  width: auto;
+
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.storeBadge:hover {
+  transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
   .card {
     padding: 25px;

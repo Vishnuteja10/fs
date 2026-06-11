@@ -18,6 +18,7 @@ import { useLocation } from "react-router-dom";
 function MembershipForm() {
   const location = useLocation();
   const [showAgreementModal, setShowAgreementModal] = useState(false);
+  const [regLoader, setRegLoader] = useState(false);
   const [otp, setOtp] = useState();
   const [userId, setUserId] = useState();
   const [pdfBase64, setPdfBase64] = useState("");
@@ -99,6 +100,8 @@ function MembershipForm() {
       return;
     }
 
+    setRegLoader(true);
+
     try {
       const response = await axios.post(
         REGISTER,
@@ -119,9 +122,11 @@ function MembershipForm() {
 
       // console.log("user registration", response);
       if (response.data.success) {
+        setRegLoader(false);
         await loginUser();
       }
     } catch (error) {
+      setRegLoader(false);
       if (error.response?.status == 409) {
         loginUser();
       }
@@ -133,6 +138,7 @@ function MembershipForm() {
   };
 
   const loginUser = async () => {
+    setRegLoader(true);
     try {
       // console.log("inside user login!", formData?.phoneNumber);
       const response = await axios.post(
@@ -147,9 +153,11 @@ function MembershipForm() {
       );
       // console.log("user login response", response);
       if (response?.data?.success) {
+        setRegLoader(false);
         setShowOtpScreen(true);
       }
     } catch (error) {
+      setRegLoader(false);
       console.log("error is", error);
       // console.log("Status:", error.response?.status);
       // console.log("Data:", error.response?.data);
@@ -159,6 +167,7 @@ function MembershipForm() {
 
   const verifyUser = async () => {
     // console.log("Inside user verification");
+    setRegLoader(true);
     if (!otp || otp.length !== 6) {
       alert("Please enter a valid 6-digit OTP");
       return;
@@ -182,17 +191,20 @@ function MembershipForm() {
       setShowOtpScreen(false);
       const userId = decoded?.id;
       setOtp("");
+      setRegLoader(false);
       await handleSubmit(userId);
     } catch (error) {
       console.log("error is", error);
-      // console.log("Status:", error.response?.status);
-      // console.log("Data:", error.response?.data);
-      // console.log("Message:", error.message);
+      console.log("Status:", error.response?.status);
+      console.log("Data:", error.response?.data);
+      console.log("Message:", error.message);
+      setRegLoader(false);
     }
   };
 
   const handleSubmit = async (userId) => {
-    // console.log("form data is", formData, "user id is", userId);
+    setRegLoader(true);
+    console.log("form data is", formData, "user id is", userId);
     const payload = {
       ...formData,
       userId
@@ -204,20 +216,23 @@ function MembershipForm() {
           "x-api-key": "Fracspace@2024"
         }
       });
-      // console.log("resp is", response);
+      console.log("resp is", response);
+
+      setRegLoader(false);
 
       setPdfBase64(response.data.base64);
       setShowAgreementModal(true);
     } catch (error) {
+      setRegLoader(false);
       console.log("error is", error);
-      // console.log("Status:", error.response?.status);
-      // console.log("Data:", error.response?.data);
-      // console.log("Message:", error.message);
+      console.log("Status:", error.response?.status);
+      console.log("Data:", error.response?.data);
+      console.log("Message:", error.message);
     }
   };
 
   const handlePayNow = async () => {
-    // console.log("handling payment", "userid", userId);
+    console.log("handling payment", "userid", userId);
     const paymentDetails = {
       userId: userId,
       email: formData?.email,
@@ -259,9 +274,9 @@ function MembershipForm() {
       }
     } catch (error) {
       console.log("error creating payment", error);
-      // console.log("Status:", error?.response?.status);
-      // console.log("Data:", error?.response?.data);
-      // console.log("URL:", error?.config?.url);
+      console.log("Status:", error?.response?.status);
+      console.log("Data:", error?.response?.data);
+      console.log("URL:", error?.config?.url);
     }
   };
 
@@ -274,6 +289,12 @@ function MembershipForm() {
         <div className={Style.memForm}>
           <div className={Style.container}>
             <form className={Style.form} onSubmit={registerUser}>
+              <div className={Style.noteBox}>
+                <span className={Style.noteLabel}>Note:</span>
+                Existing Fracspace clients and registered users must use their
+                registered email address and phone number while completing this
+                form.
+              </div>
               <h2 className={Style.heading}>Investor Details</h2>
 
               <div className={Style.grid}>
@@ -327,16 +348,31 @@ function MembershipForm() {
                   /> */}
                 </div>
 
-                <div className={Style.formGroup}>
-                  <label>Select Membership Plan</label>
-                  {/* <input
-                    required
-                    type="text"
-                    name="bankName"
-                    value={formData.bankName}
+                <div className={`${Style.formGroup} ${Style.highlightField}`}>
+                  <label>
+                    Select Membership Plan
+                    <span className={Style.requiredBadge}>Important</span>
+                  </label>
+
+                  <select
+                    name="investmentPlanId"
+                    value={formData.investmentPlanId}
                     onChange={handleChange}
-                    placeholder="Enter Bank Name"
-                  /> */}
+                    required
+                  >
+                    <option value="">Select Plan</option>
+
+                    <option value="6a1fea05bde30274e617d727">
+                      Escape Silver
+                    </option>
+
+                    <option value="6a1fe9fcbde30274e617d723">
+                      Escape Black
+                    </option>
+                  </select>
+                </div>
+                {/* <div className={Style.formGroup}>
+                  <label>Select Membership Plan</label>
                   <select
                     name="investmentPlanId"
                     value={formData.investmentPlanId}
@@ -352,7 +388,7 @@ function MembershipForm() {
                       Escape Black
                     </option>
                   </select>
-                </div>
+                </div> */}
 
                 <div className={Style.formGroup}>
                   <label>Bank Name</label>
@@ -426,9 +462,13 @@ function MembershipForm() {
                 />
               </div>
 
-              <button type="submit" className={Style.submitButton}>
-                Register
-              </button>
+              {!regLoader ? (
+                <button type="submit" className={Style.submitButton}>
+                  Register
+                </button>
+              ) : (
+                <button className={Style.submitButton}>Please Wait...</button>
+              )}
             </form>
 
             {showOtpScreen && (

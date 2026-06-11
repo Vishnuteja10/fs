@@ -3,7 +3,7 @@ import Style from "./MemComparison.module.css";
 
 function MemComparison() {
   const oldWay = [
-    "Pay upfront with nothing in return",
+    "Limited to discounted stays, not complete stays",
     "Limited flexibility on usage",
     "Benefits that expire unused",
     "Zero financial return",

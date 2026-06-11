@@ -12,6 +12,87 @@
   padding: 20px;
 }
 
+.paymentSummary {
+  margin-top: 24px;
+  padding: 18px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  background: #f8fafc;
+}
+
+.summaryHeading {
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 600;
+
+  color: #0b1f78;
+  font-family: "Montserrat";
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 12px;
+
+  font-size: 14px;
+  font-family: "Poppins";
+}
+
+.summaryDivider {
+  height: 1px;
+  background: #d1d5db;
+  margin: 12px 0;
+}
+
+.totalRow {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0b1f78;
+}
+
+.openAgreementContainer {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.openAgreementButton {
+  margin-top: 3vh;
+  background-color: #0b1f78;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+}
+
+.openAgreementButton:hover {
+  background-color: #170e65;
+  transform: translateY(-2px);
+}
+
+.openAgreementButton:active {
+  transform: translateY(0);
+}
+
+.openAgreementButton:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+}
+
 .modal {
   background: white;
   width: 95%;
@@ -25,6 +106,12 @@
 
   display: flex;
   flex-direction: column;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.react-pdf__Page {
+  margin-bottom: 20px;
 }
 
 .closeBtn {
@@ -76,6 +163,11 @@
   font-family: "Poppins";
 }
 
+.checkboxContainer input {
+  margin-top: 0.7vh;
+  margin-left: 2vw;
+}
+
 .payBtn {
   border: none;
 
@@ -97,20 +189,69 @@
 }
 
 @media (max-width: 768px) {
-  .modal {
+  .overlay {
     padding: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .iframe {
-    height: 55vh;
+  .modal {
+    width: 100%;
+    max-width: 500px;
+
+    max-height: 85vh;
+
+    height: auto;
+
+    border-radius: 16px;
+
+    padding: 20px;
+
+    overflow-y: auto;
+  }
+
+  .heading {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .closeBtn {
+    width: 40px;
+    height: 40px;
+
+    top: 12px;
+    right: 12px;
+  }
+
+  .openAgreementContainer {
+    width: 100%;
+  }
+
+  .openAgreementButton {
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 20px;
+
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .checkboxContainer {
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   .bottomSection {
     flex-direction: column;
     align-items: stretch;
+    gap: 16px;
   }
 
   .payBtn {
     width: 100%;
+    padding: 14px;
   }
 }

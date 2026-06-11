@@ -7,6 +7,9 @@ import { CheckCircle } from "lucide-react";
 
 import qrCodeImg from "../../assets/Memberships/qr.png";
 
+import appStoreImg from "../../assets/appImages/apple-store.png";
+import playStoreImg from "../../assets/appImages/playstore.png";
+
 function PaymentSuccess() {
   return (
     <ScrollToTop>
@@ -50,14 +53,31 @@ function PaymentSuccess() {
                 Scan this QR code using your phone camera
               </p>
 
-              {/* <button
-                className={Style.button}
-                onClick={() =>
-                  window.open("https://your-app-link.com", "_blank")
-                }
-              >
-                Download App
-              </button> */}
+              <div className={Style.storeButtons}>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.fracspace"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={playStoreImg}
+                    alt="Get it on Google Play"
+                    className={Style.playStore}
+                  />
+                </a>
+
+                <a
+                  href="https://apps.apple.com/in/app/fracspace/id6498551006"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={appStoreImg}
+                    alt="Download on the App Store"
+                    className={Style.appStore}
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>

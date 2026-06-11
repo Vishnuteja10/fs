@@ -1,6 +1,6 @@
 import React from "react";
 import Style from "./MemInfo.module.css";
-import membershipBadgesImg from "../../../assets/Memberships/membershipBadges.webp";
+import membershipBadgesImg from "../../../assets/Memberships/allepeyImg.webp";
 
 function MemInfo() {
   const benefits = [
@@ -56,9 +56,9 @@ function MemInfo() {
           </p>
 
           <p>
-            We partnered with India's finest luxury hotels and international
-            destinations to build a membership that rewards loyalty, celebrates
-            spontaneity, and delivers genuine financial returns.
+            Unlike conventional holiday memberships, our program offers complete
+            stay experiences, exclusive member benefits, and financial returns
+            that continue to add value over time.
           </p>
 
           <div className={Style.benefits}>

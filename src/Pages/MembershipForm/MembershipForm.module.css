@@ -14,6 +14,30 @@
   /* border: 2px solid green; */
 }
 
+.noteBox {
+  background: #fff8e6;
+  border: 1px solid #facc15;
+  border-left: 5px solid #eab308;
+
+  padding: 14px 16px;
+  border-radius: 8px;
+
+  margin-bottom: 24px;
+
+  text-align: left;
+
+  color: #854d0e;
+  font-size: 14px;
+  line-height: 1.6;
+
+  font-family: "Poppins";
+}
+
+.noteLabel {
+  font-weight: 700;
+  margin-right: 4px;
+}
+
 .memForm {
   padding-top: 20vh;
   padding-bottom: 10vh;
@@ -50,6 +74,45 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+
+.highlightField {
+  position: relative;
+}
+
+.highlightField select {
+  border: 2px solid #0b1f78 !important;
+  background: #f8faff;
+
+  box-shadow: 0 0 0 4px rgba(11, 31, 120, 0.08);
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.highlightField select:focus {
+  box-shadow: 0 0 0 6px rgba(11, 31, 120, 0.15);
+}
+
+.highlightField label {
+  color: #0b1f78;
+  font-weight: 700;
+}
+
+.requiredBadge {
+  margin-left: 8px;
+
+  background: #0b1f78;
+  color: white;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  padding: 3px 8px;
+  border-radius: 20px;
+
+  vertical-align: middle;
 }
 
 .formGroup {
