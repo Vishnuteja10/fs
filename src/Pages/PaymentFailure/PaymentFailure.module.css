@@ -124,6 +124,10 @@
     font-size: 28px;
   }
 
+  .description {
+    font-size: 15px;
+  }
+
   .buttonContainer {
     flex-direction: column;
   }
@@ -131,5 +135,27 @@
   .retryButton,
   .homeButton {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .reasonBox {
+    padding: 18px;
   }
 }

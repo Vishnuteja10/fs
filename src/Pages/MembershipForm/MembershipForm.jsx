@@ -216,7 +216,7 @@ function MembershipForm() {
           "x-api-key": "Fracspace@2024"
         }
       });
-      console.log("resp is", response);
+      // console.log("resp is", response);
 
       setRegLoader(false);
 
@@ -237,7 +237,7 @@ function MembershipForm() {
       userId: userId,
       email: formData?.email,
       investmentPlanId: formData?.investmentPlanId,
-      amount: "25649",
+      amount: "1",
       surl: "https://www.fracspace.com/paymentsuccess",
       furl: "https://www.fracspace.com/paymentfailure",
       memberDetails: {
@@ -260,7 +260,53 @@ function MembershipForm() {
         }
       });
       console.log("payment response", response);
-      if (response.data.success) {
+
+      // if (response?.data?.success) {
+      //   const txnId = response?.data?.investment?.paymentProof?.txnId;
+      //   console.log("transcation id", txnId);
+      //   const div = document.createElement("div");
+      //   div.innerHTML = response.data.form;
+
+      //   document.body.appendChild(div);
+
+      //   const form = document.getElementById("payment_post");
+
+      //   const surlInput = form.querySelector('input[name="surl"]');
+      //   const furlInput = form.querySelector('input[name="furl"]');
+
+      //   if (txnId) {
+      //     surlInput.value = `${surlInput.value}?txnid=${txnId}`;
+      //     furlInput.value = `${furlInput.value}?txnid=${txnId}`;
+      //   }
+
+      //   console.log("surl after", surlInput.value);
+      //   console.log("furl after", furlInput.value);
+
+      //   if (form) {
+      //     console.log("form is", form);
+      //     console.log(form.outerHTML);
+
+      //     const formData = new FormData(form);
+
+      //     for (const [key, value] of formData.entries()) {
+      //       console.log(key, value);
+      //     }
+      //     form.submit();
+      //   }
+      // }
+
+      if (response?.data?.success) {
+        const txnId = response?.data?.investment?.paymentProof?.txnId;
+
+        // console.log("transaction id", txnId);
+
+        // Remove any old payment form
+        const existingForm = document.getElementById("payment_post");
+        if (existingForm) {
+          existingForm.remove();
+        }
+
+        // Create wrapper and inject form
         const div = document.createElement("div");
         div.innerHTML = response.data.form;
 
@@ -268,9 +314,50 @@ function MembershipForm() {
 
         const form = document.getElementById("payment_post");
 
-        if (form) {
-          form.submit();
+        if (!form) {
+          console.error("PayU form not found");
+          return;
         }
+
+        const surlInput = form.querySelector('input[name="surl"]');
+        const furlInput = form.querySelector('input[name="furl"]');
+
+        if (txnId && surlInput && furlInput) {
+          // Build URLs from scratch
+          const successUrl = new URL(
+            "https://www.fracspace.com/paymentsuccess"
+          );
+
+          const failureUrl = new URL(
+            "https://www.fracspace.com/paymentfailure"
+          );
+
+          successUrl.searchParams.set("txnid", txnId);
+          failureUrl.searchParams.set("txnid", txnId);
+
+          surlInput.value = successUrl.toString();
+          furlInput.value = failureUrl.toString();
+
+          // Update DOM attributes too
+          surlInput.setAttribute("value", surlInput.value);
+          furlInput.setAttribute("value", furlInput.value);
+        }
+
+        // console.log("surl:", surlInput?.value);
+        // console.log("furl:", furlInput?.value);
+
+        // console.log("Final Form HTML:");
+        // console.log(form.outerHTML);
+
+        // const fd = new FormData(form);
+
+        // console.log("Submitted values:");
+        // for (const [key, value] of fd.entries()) {
+        //   console.log(key, value);
+        // }
+
+        // Submit to PayU
+        form.submit();
       }
     } catch (error) {
       console.log("error creating payment", error);
