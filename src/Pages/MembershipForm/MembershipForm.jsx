@@ -204,7 +204,7 @@ function MembershipForm() {
 
   const handleSubmit = async (userId) => {
     setRegLoader(true);
-    console.log("form data is", formData, "user id is", userId);
+    // console.log("form data is", formData, "user id is", userId);
     const payload = {
       ...formData,
       userId
@@ -225,19 +225,19 @@ function MembershipForm() {
     } catch (error) {
       setRegLoader(false);
       console.log("error is", error);
-      console.log("Status:", error.response?.status);
-      console.log("Data:", error.response?.data);
-      console.log("Message:", error.message);
+      // console.log("Status:", error.response?.status);
+      // console.log("Data:", error.response?.data);
+      // console.log("Message:", error.message);
     }
   };
 
   const handlePayNow = async () => {
-    console.log("handling payment", "userid", userId);
+    // console.log("handling payment", "userid", userId);
     const paymentDetails = {
       userId: userId,
       email: formData?.email,
       investmentPlanId: formData?.investmentPlanId,
-      amount: "1",
+      amount: "25649",
       surl: "https://www.fracspace.com/paymentsuccess",
       furl: "https://www.fracspace.com/paymentfailure",
       memberDetails: {
@@ -274,9 +274,9 @@ function MembershipForm() {
       }
     } catch (error) {
       console.log("error creating payment", error);
-      console.log("Status:", error?.response?.status);
-      console.log("Data:", error?.response?.data);
-      console.log("URL:", error?.config?.url);
+      // console.log("Status:", error?.response?.status);
+      // console.log("Data:", error?.response?.data);
+      // console.log("URL:", error?.config?.url);
     }
   };
 
