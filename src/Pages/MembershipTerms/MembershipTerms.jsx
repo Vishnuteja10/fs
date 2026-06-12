@@ -7,9 +7,9 @@ import Footer from "../../components/Footer/Footer";
 function MembershipTerms() {
   return (
     <div>
-      <div>
+      {/* <div>
         <Navbar2 />
-      </div>
+      </div> */}
       <div className={Style.container}>
         <div className={Style.card}>
           <div className={Style.header}>
@@ -383,9 +383,9 @@ function MembershipTerms() {
           </div>
         </div>
       </div>
-      <div>
+      {/* <div>
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

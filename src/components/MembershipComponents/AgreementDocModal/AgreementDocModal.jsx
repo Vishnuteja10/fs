@@ -1,12 +1,14 @@
 import React from "react";
 import Style from "./AgreementDocModal.module.css";
+import MembershipTerms from "../../../Pages/MembershipTerms/MembershipTerms";
+import MembershipTermsModal from "../MembershipTermsModal";
 
-function AgreementDocModal({ agreementHtml, onClose }) {
+function AgreementDocModal({ onClose }) {
   return (
     <div className={Style.overlay}>
       <div className={Style.modal}>
         <div className={Style.header}>
-          <h2 className={Style.heading}>Membership Agreement</h2>
+          <h2 className={Style.heading}>Membership Terms and Conditions</h2>
           <button
             className={Style.closeBtn}
             onClick={onClose}
@@ -15,10 +17,14 @@ function AgreementDocModal({ agreementHtml, onClose }) {
             ✕
           </button>
         </div>
-        <div
+        <div className={Style.termsModalContent}>
+          {/* <MembershipTerms /> */}
+          <MembershipTermsModal />
+        </div>
+        {/* <div
           className={Style.content}
           dangerouslySetInnerHTML={{ __html: agreementHtml }}
-        />
+        /> */}
       </div>
     </div>
   );

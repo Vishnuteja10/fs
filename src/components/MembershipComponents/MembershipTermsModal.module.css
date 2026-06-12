@@ -1,0 +1,263 @@
+/* Main wrapper */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f5f7;
+  padding: 24px 16px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Document card */
+.card {
+  width: 100%;
+  max-width: 950px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 36px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1f2937;
+  text-transform: uppercase;
+}
+
+.header h2 {
+  margin-top: 10px;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #6b7280;
+  letter-spacing: 0.5px;
+}
+
+/* Individual section */
+.formGroup {
+  margin-bottom: 2rem;
+}
+
+.formGroup:last-child {
+  margin-bottom: 0;
+}
+
+.formGroup h3 {
+  /* margin: 0 0 1rem; */
+  /* padding-left: 12px; */
+  /* border-left: 4px solid #1f2937; */
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.formGroup h4 {
+  /* margin: 1.25rem 0 0.75rem; */
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.formGroup p {
+  margin: 0 0 12px;
+  line-height: 1.8;
+  font-size: 0.97rem;
+  color: #4b5563;
+  text-align: justify;
+}
+
+/* Plan cards */
+.planCard {
+  margin: 1rem 0;
+  padding: 18px 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+/* Keep actual bullet points */
+.formGroup ul {
+  margin: 10px 0 16px 24px;
+  padding-left: 20px;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+.formGroup ol {
+  margin: 10px 0 16px 24px;
+  padding-left: 20px;
+  list-style-position: outside;
+}
+
+.formGroup li {
+  display: list-item; /* Prevent reset styles from removing bullets */
+  margin-bottom: 8px;
+  line-height: 1.75;
+  font-size: 0.97rem;
+  color: #4b5563;
+}
+
+.formGroup ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.formGroup li {
+  position: relative;
+  padding-left: 8px;
+  margin-bottom: 8px;
+}
+
+.formGroup li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+/* Reward table */
+.table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+.table th,
+.table td {
+  border: 1px solid #d1d5db;
+  padding: 12px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.table td {
+  background: #fff;
+}
+
+/* Horizontal scroll for small devices */
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Tablet */
+/* @media (max-width: 768px) {
+  .container {
+    padding: 16px 10px;
+  }
+
+  .card {
+    padding: 24px 20px;
+    border-radius: 8px;
+  }
+
+  .header {
+    margin-bottom: 28px;
+  }
+
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .header h2 {
+    font-size: 1rem;
+  }
+
+  .formGroup h3 {
+    font-size: 1.2rem;
+  }
+
+  .formGroup h4 {
+    font-size: 1rem;
+  }
+
+  .formGroup p,
+  .formGroup li {
+    font-size: 0.94rem;
+    line-height: 1.7;
+  }
+
+  .table th,
+  .table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+} */
+
+/* Mobile */
+/* @media (max-width: 480px) {
+  .container {
+    padding: 10px 6px;
+  }
+
+  .card {
+    padding: 18px 14px;
+    border-radius: 6px;
+    box-shadow: none;
+  }
+
+  .header h1 {
+    font-size: 1.35rem;
+  }
+
+  .header h2 {
+    font-size: 0.9rem;
+  }
+
+  .formGroup {
+    margin-bottom: 1.5rem;
+  }
+
+  .formGroup h3 {
+    font-size: 1.05rem;
+  }
+
+  .formGroup h4 {
+    font-size: 0.95rem;
+  }
+
+  .formGroup p,
+  .formGroup li {
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  .planCard {
+    padding: 14px;
+  }
+
+  .formGroup ul {
+    margin-left: 18px;
+    padding-left: 18px;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.82rem;
+    padding: 8px;
+    white-space: nowrap;
+  }
+} */

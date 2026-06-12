@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Style from "./AgreementModal.module.css";
+import AgreementDocModal from "../AgreementDocModal/AgreementDocModal";
 
 function AgreementModal({ onClose, onPayNow }) {
   const [accepted, setAccepted] = useState(false);
+  const [showDocModal, setShowDocModal] = useState(false);
 
   return (
     <div className={Style.overlay}>
@@ -96,10 +98,11 @@ function AgreementModal({ onClose, onPayNow }) {
             <span className={Style.checkboxLabel}>
               I have read and agree to the{" "}
               <a
-                href="/membership-terms"
-                target="_blank"
-                rel="noopener noreferrer"
+                // href="/membership-terms"
+                // target="_blank"
+                // rel="noopener noreferrer"
                 className={Style.termsLink}
+                onClick={() => setShowDocModal(true)}
               >
                 Membership Terms & Conditions
               </a>
@@ -118,6 +121,9 @@ function AgreementModal({ onClose, onPayNow }) {
           </button>
         </div>
       </div>
+      {showDocModal && (
+        <AgreementDocModal onClose={() => setShowDocModal(false)} />
+      )}
     </div>
   );
 }

@@ -131,9 +131,9 @@ function MembershipForm() {
         loginUser();
       }
       console.log("error is", error);
-      // console.log("Status:", error.response?.status);
-      // console.log("Data:", error.response?.data);
-      // console.log("Message:", error.message);
+      console.log("Status:", error.response?.status);
+      console.log("Data:", error.response?.data);
+      console.log("Message:", error.message);
     }
   };
 
@@ -159,9 +159,9 @@ function MembershipForm() {
     } catch (error) {
       setRegLoader(false);
       console.log("error is", error);
-      // console.log("Status:", error.response?.status);
-      // console.log("Data:", error.response?.data);
-      // console.log("Message:", error.message);
+      console.log("Status:", error.response?.status);
+      console.log("Data:", error.response?.data);
+      console.log("Message:", error.message);
     }
   };
 
@@ -195,9 +195,9 @@ function MembershipForm() {
       await handleSubmit(userId);
     } catch (error) {
       console.log("error is", error);
-      // console.log("Status:", error.response?.status);
-      // console.log("Data:", error.response?.data);
-      // console.log("Message:", error.message);
+      console.log("Status:", error.response?.status);
+      console.log("Data:", error.response?.data);
+      console.log("Message:", error.message);
       setRegLoader(false);
     }
   };
@@ -225,9 +225,9 @@ function MembershipForm() {
     } catch (error) {
       setRegLoader(false);
       console.log("error is", error);
-      // console.log("Status:", error.response?.status);
-      // console.log("Data:", error.response?.data);
-      // console.log("Message:", error.message);
+      console.log("Status:", error.response?.status);
+      console.log("Data:", error.response?.data);
+      console.log("Message:", error.message);
     }
   };
 
@@ -361,9 +361,9 @@ function MembershipForm() {
       }
     } catch (error) {
       console.log("error creating payment", error);
-      // console.log("Status:", error?.response?.status);
-      // console.log("Data:", error?.response?.data);
-      // console.log("URL:", error?.config?.url);
+      console.log("Status:", error?.response?.status);
+      console.log("Data:", error?.response?.data);
+      console.log("URL:", error?.config?.url);
     }
   };
 
