@@ -24,6 +24,7 @@ import MembershipPaymentForm from "./components/MembershipComponents/MembershipP
 import MembershipForm from "./Pages/MembershipForm/MembershipForm.jsx";
 import PaymentSuccess from "./Pages/PaymentSuccess/PaymentSuccess.jsx";
 import PaymentFailure from "./Pages/PaymentFailure/PaymentFailure.jsx";
+import MembershipTerms from "./Pages/MembershipTerms/MembershipTerms.jsx";
 
 const router = createBrowserRouter([
   {
@@ -89,6 +90,10 @@ const router = createBrowserRouter([
   {
     path: "/paymentfailure",
     element: <PaymentFailure />
+  },
+  {
+    path: "/membership-terms",
+    element: <MembershipTerms />
   }
   // {
   //   path: "/test",

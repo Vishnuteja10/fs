@@ -35,7 +35,7 @@ function MembershipForm() {
     panNumber: "",
     guardianName: "",
     address: "",
-    convertToBase64: true,
+    convertToBase64: false,
     investmentPlanId: "",
     investmentPlanName: ""
   });
@@ -195,9 +195,9 @@ function MembershipForm() {
       await handleSubmit(userId);
     } catch (error) {
       console.log("error is", error);
-      console.log("Status:", error.response?.status);
-      console.log("Data:", error.response?.data);
-      console.log("Message:", error.message);
+      // console.log("Status:", error.response?.status);
+      // console.log("Data:", error.response?.data);
+      // console.log("Message:", error.message);
       setRegLoader(false);
     }
   };
@@ -241,13 +241,13 @@ function MembershipForm() {
       surl: "https://www.fracspace.com/paymentsuccess",
       furl: "https://www.fracspace.com/paymentfailure",
       memberDetails: {
-        name: formData.name,
-        ifscCode: formData.ifscCode,
-        bankName: formData.bankName,
-        adhaarNumber: formData.aadharNumber,
-        panNumber: formData.panNumber,
-        guardianName: formData.guardianName,
-        address: formData.address
+        name: formData?.name,
+        ifscCode: formData?.ifscCode,
+        bankName: formData?.bankName,
+        adhaarNumber: formData?.aadharNumber,
+        panNumber: formData?.panNumber,
+        guardianName: formData?.guardianName,
+        address: formData?.address
       }
     };
 
@@ -259,7 +259,7 @@ function MembershipForm() {
           "x-api-key": "Fracspace@2024"
         }
       });
-      console.log("payment response", response);
+      // console.log("payment response", response);
 
       // if (response?.data?.success) {
       //   const txnId = response?.data?.investment?.paymentProof?.txnId;
@@ -391,7 +391,7 @@ function MembershipForm() {
                     required
                     type="text"
                     name="name"
-                    value={formData.name}
+                    value={formData?.name}
                     onChange={handleChange}
                     placeholder="Enter Full Name"
                   />
@@ -403,7 +403,7 @@ function MembershipForm() {
                     required
                     type="email"
                     name="email"
-                    value={formData.email}
+                    value={formData?.email}
                     onChange={handleChange}
                     placeholder="Enter Email"
                   />
@@ -413,7 +413,7 @@ function MembershipForm() {
                   <label>Phone Number</label>
                   <PhoneInput
                     country={"in"}
-                    value={formData.contact}
+                    value={formData?.contact}
                     onChange={handlePhoneChange}
                     inputStyle={{
                       width: "100%",
@@ -443,7 +443,7 @@ function MembershipForm() {
 
                   <select
                     name="investmentPlanId"
-                    value={formData.investmentPlanId}
+                    value={formData?.investmentPlanId}
                     onChange={handleChange}
                     required
                   >
@@ -483,7 +483,7 @@ function MembershipForm() {
                     required
                     type="text"
                     name="bankName"
-                    value={formData.bankName}
+                    value={formData?.bankName}
                     onChange={handleChange}
                     placeholder="Enter Bank Name"
                   />
@@ -495,7 +495,7 @@ function MembershipForm() {
                     required
                     type="text"
                     name="ifscCode"
-                    value={formData.ifscCode}
+                    value={formData?.ifscCode}
                     onChange={handleChange}
                     placeholder="Enter IFSC Code"
                   />
@@ -507,7 +507,7 @@ function MembershipForm() {
                     required
                     type="text"
                     name="aadharNumber"
-                    value={formData.aadharNumber}
+                    value={formData?.aadharNumber}
                     onChange={handleChange}
                     placeholder="XXXX XXXX XXXX"
                   />
@@ -519,7 +519,7 @@ function MembershipForm() {
                     required
                     type="text"
                     name="panNumber"
-                    value={formData.panNumber}
+                    value={formData?.panNumber}
                     onChange={handleChange}
                     placeholder="ABCDE1234F"
                   />
@@ -530,7 +530,7 @@ function MembershipForm() {
                   <input
                     type="text"
                     name="guardianName"
-                    value={formData.guardianName}
+                    value={formData?.guardianName}
                     onChange={handleChange}
                     placeholder="Enter Guardian Name"
                   />
@@ -542,7 +542,7 @@ function MembershipForm() {
                 <textarea
                   required
                   name="address"
-                  value={formData.address}
+                  value={formData?.address}
                   onChange={handleChange}
                   rows="4"
                   placeholder="Enter Address"
@@ -560,7 +560,7 @@ function MembershipForm() {
 
             {showOtpScreen && (
               <OtpVerification
-                phoneNumber={formData.contact}
+                phoneNumber={formData?.contact}
                 otp={otp}
                 setOtp={setOtp}
                 onVerify={verifyUser}
@@ -575,7 +575,7 @@ function MembershipForm() {
 
             {showAgreementModal && (
               <AgreementModal
-                base64Pdf={pdfBase64}
+                // agreementHtml={agreementTemplate}
                 onClose={() => setShowAgreementModal(false)}
                 onPayNow={handlePayNow}
               />

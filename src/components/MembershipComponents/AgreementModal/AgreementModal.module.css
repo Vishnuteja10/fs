@@ -1,257 +1,319 @@
+
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-
+  background: rgba(10, 10, 20, 0.72);
   display: flex;
-  justify-content: center;
   align-items: center;
-
+  justify-content: center;
   z-index: 99999;
-
   padding: 20px;
+  box-sizing: border-box;
 }
 
-.paymentSummary {
-  margin-top: 24px;
-  padding: 18px;
-
+.modal {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 20px;
   border: 1px solid #e5e7eb;
-  border-radius: 10px;
-
-  background: #f8fafc;
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.28);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.summaryHeading {
-  margin: 0 0 16px;
+/* ---------- Header ---------- */
+
+.modalHeader {
+  padding: 24px 24px 18px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.modalIcon {
+  width: 48px;
+  height: 48px;
+  background: #e6f1fb;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.headerTitle {
+  margin: 0;
   font-size: 18px;
   font-weight: 600;
+  color: #111827;
+  font-family: "Poppins", sans-serif;
+}
 
-  color: #0b1f78;
-  font-family: "Montserrat";
+.headerSubtitle {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #6b7280;
+  font-family: "Poppins", sans-serif;
+}
+
+.closeBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #6b7280;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.closeBtn:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  color: #111827;
+}
+
+.divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 0 24px;
+}
+
+/* ---------- Summary ---------- */
+
+.summaryBlock {
+  padding: 20px 24px 0;
+}
+
+.summaryLabel {
+  margin: 0 0 14px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: "Poppins", sans-serif;
 }
 
 .summaryRow {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-
-  margin-bottom: 12px;
-
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f3f4f6;
   font-size: 14px;
-  font-family: "Poppins";
+  color: #4b5563;
+  font-family: "Poppins", sans-serif;
 }
 
-.summaryDivider {
-  height: 1px;
-  background: #d1d5db;
-  margin: 12px 0;
+.summaryValue {
+  color: #111827;
+  font-weight: 600;
+}
+
+.priceGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.strikePrice {
+  color: #9ca3af;
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+  font-weight: 500;
+}
+
+.freeTag {
+  background: #ecfdf5;
+  border: 1px solid #bbf7d0;
+  color: #15803d;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.offerBanner {
+  margin-top: 16px;
+  padding: 10px 12px;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 10px;
+  color: #c2410c;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .totalRow {
-  font-size: 16px;
-  font-weight: 700;
-  color: #0b1f78;
-}
-
-.openAgreementContainer {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-}
-
-.openAgreementButton {
-  margin-top: 3vh;
-  background-color: #0b1f78;
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 20vw;
-}
-
-.openAgreementButton:hover {
-  background-color: #170e65;
-  transform: translateY(-2px);
-}
-
-.openAgreementButton:active {
-  transform: translateY(0);
-}
-
-.openAgreementButton:disabled {
-  background-color: #94a3b8;
-  cursor: not-allowed;
-  transform: none;
-}
-
-.modal {
-  background: white;
-  width: 95%;
-  max-width: 1100px;
-
-  border-radius: 12px;
-
-  position: relative;
-
-  padding: 24px;
-
-  display: flex;
-  flex-direction: column;
-  max-height: 90vh;
-  overflow-y: auto;
-}
-
-.react-pdf__Page {
-  margin-bottom: 20px;
-}
-
-.closeBtn {
-  position: absolute;
-  right: 16px;
-  top: 16px;
-
-  width: 40px;
-  height: 40px;
-
-  border: none;
-  border-radius: 50%;
-
-  cursor: pointer;
-
-  font-size: 20px;
-
-  background: #f3f4f6;
-}
-
-.heading {
-  margin-bottom: 20px;
-  font-family: "Montserrat";
-}
-
-.iframe {
-  width: 100%;
-  height: 70vh;
-
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
-
-.bottomSection {
-  margin-top: 20px;
-
+  margin-top: 16px;
+  padding: 15px 16px;
+  background: #f8fafc;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  gap: 20px;
 }
 
-.checkboxContainer {
+.totalLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  font-family: "Poppins", sans-serif;
+}
+
+.totalAmount {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0b1f78;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  margin-top: 20px;
+  padding: 20px 24px 24px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.checkboxRow {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-
-  font-family: "Poppins";
+  margin-bottom: 18px;
+  cursor: pointer;
 }
 
-.checkboxContainer input {
-  margin-top: 0.7vh;
-  margin-left: 2vw;
+.checkboxRow input {
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  accent-color: #0b1f78;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.checkboxLabel {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+}
+
+.termsLink {
+  color: #0b1f78;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.termsLink:hover {
+  color: #0d2490;
 }
 
 .payBtn {
+  width: 100%;
   border: none;
-
+  border-radius: 10px;
+  padding: 14px;
   background: #0b1f78;
-  color: white;
-
-  padding: 14px 28px;
-
-  border-radius: 8px;
-
-  cursor: pointer;
-
+  color: #ffffff;
+  font-size: 15px;
   font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: background 0.2s ease;
 }
 
-.disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+.payBtn:hover:not(:disabled) {
+  background: #0d2490;
 }
 
-@media (max-width: 768px) {
+.payBtnDisabled {
+  background: #f3f4f6 !important;
+  color: #9ca3af !important;
+  border: 1px solid #e5e7eb !important;
+  cursor: not-allowed !important;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 640px) {
   .overlay {
-    padding: 16px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 12px;
   }
 
   .modal {
-    width: 100%;
-    max-width: 500px;
-
-    max-height: 85vh;
-
-    height: auto;
-
     border-radius: 16px;
-
-    padding: 20px;
-
-    overflow-y: auto;
   }
 
-  .heading {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 16px;
+  .modalHeader,
+  .summaryBlock,
+  .footer {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
-  .closeBtn {
-    width: 40px;
-    height: 40px;
-
-    top: 12px;
-    right: 12px;
+  .divider {
+    margin-left: 18px;
+    margin-right: 18px;
   }
 
-  .openAgreementContainer {
-    width: 100%;
+  .headerLeft {
+    gap: 10px;
   }
 
-  .openAgreementButton {
-    width: 100%;
-    margin-top: 12px;
-    margin-bottom: 20px;
-
-    padding: 14px;
-    font-size: 15px;
+  .modalIcon {
+    width: 42px;
+    height: 42px;
   }
 
-  .checkboxContainer {
-    font-size: 14px;
-    line-height: 1.5;
+  .headerTitle {
+    font-size: 16px;
   }
 
-  .bottomSection {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 16px;
+  .headerSubtitle {
+    font-size: 12px;
+  }
+
+  .summaryRow {
+    font-size: 13px;
+  }
+
+  .totalAmount {
+    font-size: 18px;
+  }
+
+  .offerBanner {
+    font-size: 11px;
+  }
+
+  .freeTag {
+    font-size: 9px;
+    padding: 2px 6px;
   }
 
   .payBtn {
-    width: 100%;
-    padding: 14px;
+    font-size: 14px;
+    padding: 13px;
   }
 }
