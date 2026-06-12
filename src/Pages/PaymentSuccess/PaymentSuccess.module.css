@@ -197,6 +197,10 @@
   .invalidHeading {
     font-size: 1.8rem;
   }
+
+  .storeButtons img {
+    width: 30vw;
+  }
 }
 
 /* ---------- MOBILE ---------- */

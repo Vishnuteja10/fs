@@ -165,9 +165,7 @@ function ChoosePlan() {
             <button
               className={Style.silverBtn}
               onClick={() => {
-                navigate("/membershipform", { state: { plan: "silver" } });
-                // setSelectedPlan("Escape Silver");
-                // setShowForm(true);
+                navigate("/membershipform?id=6a1fea05bde30274e617d727");
               }}
             >
               CHOOSE ESCAPE SILVER
@@ -222,7 +220,7 @@ function ChoosePlan() {
               onClick={() => {
                 // setSelectedPlan("Escape Black");
                 // setShowForm(true);
-                navigate("/membershipform", { state: { plan: "black" } });
+                navigate("/membershipform?id=6a1fe9fcbde30274e617d723");
               }}
             >
               CHOOSE ESCAPE BLACK

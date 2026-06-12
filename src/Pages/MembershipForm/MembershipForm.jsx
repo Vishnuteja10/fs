@@ -13,7 +13,7 @@ import PhoneInput from "react-phone-input-2";
 import OtpVerification from "../../components/MembershipComponents/OtpVerification/OtpVerification";
 
 import { jwtDecode } from "jwt-decode";
-import { useLocation } from "react-router-dom";
+import { useLocation, useSearchParams } from "react-router-dom";
 
 function MembershipForm() {
   const location = useLocation();
@@ -35,10 +35,27 @@ function MembershipForm() {
     panNumber: "",
     guardianName: "",
     address: "",
-    convertToBase64: false,
+    convertToBase64: true,
     investmentPlanId: "",
     investmentPlanName: ""
   });
+
+  const [searchParams] = useSearchParams();
+
+  const id = searchParams.get("id");
+
+  // console.log("id is", id);
+
+  useEffect(() => {
+    const planName =
+      id === "6a1fea05bde30274e617d727" ? "Escape Silver" : "Escape Black";
+
+    setFormData((prev) => ({
+      ...prev,
+      investmentPlanId: id,
+      investmentPlanName: planName
+    }));
+  }, [id]);
 
   const CREATE_AGREEMENT =
     "https://apitest.fracspace.com/api/v1/escapeInvestment/createAgreement";
@@ -130,10 +147,10 @@ function MembershipForm() {
       if (error.response?.status == 409) {
         loginUser();
       }
-      console.log("error is", error);
-      console.log("Status:", error.response?.status);
-      console.log("Data:", error.response?.data);
-      console.log("Message:", error.message);
+      // console.log("error is", error);
+      // console.log("Status:", error.response?.status);
+      // console.log("Data:", error.response?.data);
+      // console.log("Message:", error.message);
     }
   };
 
@@ -158,10 +175,10 @@ function MembershipForm() {
       }
     } catch (error) {
       setRegLoader(false);
-      console.log("error is", error);
-      console.log("Status:", error.response?.status);
-      console.log("Data:", error.response?.data);
-      console.log("Message:", error.message);
+      // console.log("error is", error);
+      // console.log("Status:", error.response?.status);
+      // console.log("Data:", error.response?.data);
+      // console.log("Message:", error.message);
     }
   };
 
@@ -194,10 +211,10 @@ function MembershipForm() {
       setRegLoader(false);
       await handleSubmit(userId);
     } catch (error) {
-      console.log("error is", error);
-      console.log("Status:", error.response?.status);
-      console.log("Data:", error.response?.data);
-      console.log("Message:", error.message);
+      // console.log("error is", error);
+      // console.log("Status:", error.response?.status);
+      // console.log("Data:", error.response?.data);
+      // console.log("Message:", error.message);
       setRegLoader(false);
     }
   };
@@ -224,10 +241,10 @@ function MembershipForm() {
       setShowAgreementModal(true);
     } catch (error) {
       setRegLoader(false);
-      console.log("error is", error);
-      console.log("Status:", error.response?.status);
-      console.log("Data:", error.response?.data);
-      console.log("Message:", error.message);
+      // console.log("error is", error);
+      // console.log("Status:", error.response?.status);
+      // console.log("Data:", error.response?.data);
+      // console.log("Message:", error.message);
     }
   };
 
@@ -315,7 +332,7 @@ function MembershipForm() {
         const form = document.getElementById("payment_post");
 
         if (!form) {
-          console.error("PayU form not found");
+          // console.error("PayU form not found");
           return;
         }
 
@@ -360,10 +377,17 @@ function MembershipForm() {
         form.submit();
       }
     } catch (error) {
-      console.log("error creating payment", error);
-      console.log("Status:", error?.response?.status);
-      console.log("Data:", error?.response?.data);
-      console.log("URL:", error?.config?.url);
+      // console.log("error creating payment", error);
+      // console.log("Status:", error?.response?.status);
+      // console.log("Data:", error?.response?.data);
+      // console.log("URL:", error?.config?.url);
+      if (error) {
+        alert(
+          "User Registration Failed!, If you are an existing user please use your registered email and phone number in the form!"
+        );
+        setShowAgreementModal(false);
+      }
+      // setShowAgreementModal(false);
     }
   };
 
