@@ -38,7 +38,7 @@ function Properties() {
     {
       image: dsbhImg,
       title: "Dreamscape Hotel",
-      location: "Banjara Hilla, Hyderabad"
+      location: "Banjara Hills, Hyderabad"
     },
     {
       image: elevenViewsImg,
@@ -55,7 +55,7 @@ function Properties() {
   const globalProperties = [
     {
       image: miamiImg,
-      title: "Fracspace Bickell Bay",
+      title: "Fracspace Brickell Bay",
       location: "Miami, Florida"
     },
     {
