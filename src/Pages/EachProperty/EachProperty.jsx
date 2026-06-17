@@ -103,14 +103,10 @@ function EachProperty() {
     // console.log("property api is", PROPERTY_API, id);
     axios.get(PROPERTY_API, { headers }).then(
       (response) => {
-        
         propDetails = response?.data?.property;
         setPropertyDetails(response?.data?.property);
-       
       },
-      (error) => {
-        
-      }
+      (error) => {}
     );
   }, []);
 
@@ -255,7 +251,9 @@ function EachProperty() {
               </div>
 
               <div className={Style.amenitiesContainer}>
-                <h3 className={Style.distinctiveAmentiesText}>Distinctive Amenities</h3>
+                <h3 className={Style.distinctiveAmentiesText}>
+                  Distinctive Amenities
+                </h3>
                 <div className={Style.distinctiveAmenities}>
                   <ul>
                     {propertyDetails?.DistinctiveAmenities?.map(

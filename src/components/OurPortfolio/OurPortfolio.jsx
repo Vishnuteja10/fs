@@ -66,11 +66,15 @@ function OurPortfolio() {
   useEffect(() => {
     axios.get(PROPERTIES_API, { headers }).then(
       (response) => {
-        // console.log("response is", response);
+        console.log("response is", response);
         setAllProperties(response?.data?.properties);
         properties = response?.data?.properties;
         goaProp = properties
-          .filter((property) => property?.city?.toLowerCase() == "goa")
+          .filter(
+            (property) =>
+              property?.PropertyType !== "forKiosk" &&
+              property?.city?.toLowerCase() == "goa"
+          )
           .sort((a, b) => a.num - b.num);
         hydProp = properties
           .filter((property) => property?.city?.toLowerCase() == "hyderabad")
@@ -78,8 +82,9 @@ function OurPortfolio() {
         keralaProp = properties
           .filter(
             (property) =>
-              property?.city?.toLowerCase() == "munnar" ||
-              property?.city?.toLowerCase() === "alleppey"
+              property?.PropertyType !== "forKiosk" &&
+              (property?.city?.toLowerCase() === "munnar" ||
+                property?.city?.toLowerCase() === "alleppey")
           )
           .sort((a, b) => a.num - b.num);
 
