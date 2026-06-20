@@ -125,7 +125,9 @@ function ChoosePlan() {
 
             <h3 className={Style.planTitle}>Silver Plan</h3>
 
-            <div className={Style.price}>₹1,00,000</div>
+            <div className={Style.price}>
+              ₹1,00,000 <span className={Style.usdPrice}> (~$1,199)</span>
+            </div>
 
             <p className={Style.planSubtitle}>
               Perfect for domestic luxury travel.
@@ -178,7 +180,9 @@ function ChoosePlan() {
 
             <h3 className={Style.planTitle}>Black Plan</h3>
 
-            <div className={Style.price}>₹5,00,000</div>
+            <div className={Style.price}>
+              ₹5,00,000 <span className={Style.usdPrice}> (~$5,999)</span>
+            </div>
 
             <p className={Style.planSubtitle}>
               For travellers without borders.
