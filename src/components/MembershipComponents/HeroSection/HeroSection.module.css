@@ -1,10 +1,9 @@
 .container {
   position: relative;
   width: 100%;
-  min-height: 380px;
+  min-height: 700px;
   overflow: hidden;
 
-  /* Replace with your actual image */
   background-image: url("https://images.unsplash.com/photo-1566073771259-6a8506099945");
   background-size: cover;
   background-position: center;
@@ -12,13 +11,14 @@
 
   display: flex;
   align-items: center;
-  padding: 60px 8%;
-  padding-top: 20vh;
+
+  padding: 120px 8% 80px;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
+
   background: linear-gradient(
     90deg,
     rgba(7, 34, 93, 0.9) 0%,
@@ -28,19 +28,30 @@
 }
 
 .content {
-  margin-top: 10vh;
   position: relative;
   z-index: 2;
-  max-width: 550px;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.leftContent {
+  flex: 1;
+  max-width: 650px;
 }
 
 .heading {
-  color: #ffffff;
-  font-size: 3.2rem;
+  color: #fff;
+  font-size: 3.5rem;
   font-weight: 300;
-  line-height: 1.25;
+  line-height: 1.2;
   margin-bottom: 24px;
-  font-family: "Montserrat";
+
+  font-family: "Montserrat", sans-serif;
 }
 
 .heading span {
@@ -49,11 +60,115 @@
 }
 
 .description {
+  max-width: 500px;
+
   color: rgba(255, 255, 255, 0.85);
+
   font-size: 1rem;
-  line-height: 1.7;
-  max-width: 460px;
-  font-family: "Poppins";
+  line-height: 1.8;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.formCard {
+  width: 100%;
+  max-width: 420px;
+
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.98);
+
+  border-radius: 16px;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+.formTitle {
+  margin-bottom: 20px;
+
+  color: #07225d;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  height: 50px;
+
+  padding: 0 14px;
+
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 0.95rem;
+}
+
+.form textarea {
+  width: 100%;
+
+  padding: 0 14px;
+
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 0.95rem;
+}
+
+.form input:focus,
+.form select:focus {
+  border-color: #07225d;
+}
+
+.form button {
+  height: 52px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #07225d;
+  color: #fff;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  background: #051944;
+}
+
+.contactInfo {
+  margin-top: 18px;
+  padding-top: 18px;
+
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+}
+
+.contactInfo p {
+  margin: 6px 8px;
+
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.contactInfo strong {
+  color: #07225d;
 }
 
 .bottomCurve {
@@ -61,8 +176,10 @@
   left: 0;
   right: 0;
   bottom: -1px;
+
   height: 70px;
-  background: #ffffff;
+
+  background: #fff;
 
   clip-path: polygon(0 70%, 100% 25%, 100% 100%, 0 100%);
 }
@@ -70,24 +187,28 @@
 /* Tablet */
 @media (max-width: 992px) {
   .container {
-    min-height: 320px;
-    padding: 50px 6%;
+    min-height: auto;
+    padding: 100px 6% 80px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .heading {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+  }
+
+  .formCard {
+    max-width: 100%;
   }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .content {
-    padding-top: 5vh;
-  }
-
   .container {
-    min-height: 280px;
-    padding: 40px 24px;
+    padding: 150px 24px 60px;
   }
 
   .heading {
@@ -98,11 +219,20 @@
     font-size: 0.95rem;
   }
 
+  .formCard {
+    padding: 24px;
+  }
+
   .bottomCurve {
     height: 40px;
   }
+
+  .contactInfo {
+    display: block;
+  }
 }
 
+/* Small Mobile */
 @media (max-width: 480px) {
   .heading {
     font-size: 1.7rem;
@@ -110,5 +240,9 @@
 
   .description {
     font-size: 0.9rem;
+  }
+
+  .formTitle {
+    font-size: 1.25rem;
   }
 }
