@@ -126,7 +126,7 @@ function ChoosePlan() {
             <h3 className={Style.planTitle}>Silver Plan</h3>
 
             <div className={Style.price}>
-              ₹1,00,000 <span className={Style.usdPrice}> (~$1,199)</span>
+              ₹1,00,000 <span className={Style.usdPrice}> (~$1,059)</span>
             </div>
 
             <p className={Style.planSubtitle}>
@@ -181,7 +181,7 @@ function ChoosePlan() {
             <h3 className={Style.planTitle}>Black Plan</h3>
 
             <div className={Style.price}>
-              ₹5,00,000 <span className={Style.usdPrice}> (~$5,999)</span>
+              ₹5,00,000 <span className={Style.usdPrice}> (~$5,294)</span>
             </div>
 
             <p className={Style.planSubtitle}>
