@@ -48,7 +48,7 @@ function DetailsExplaination() {
           <div className={Style.timelineWrapper}>
             <div className={`${Style.box} ${Style.activeBox}`}>
               <div className={Style.boxTitle}>1 Credit</div>
-              <div className={Style.boxLabel}>ANNUAL</div>
+              {/* <div className={Style.boxLabel}>ANNUAL</div> */}
             </div>
 
             <div className={Style.connector}></div>
