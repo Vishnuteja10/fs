@@ -57,6 +57,7 @@ function MembershipForm() {
     }));
   }, [id]);
 
+
   const CREATE_AGREEMENT =
     "https://apitest.fracspace.com/api/v1/escapeInvestment/createAgreement";
 
@@ -72,8 +73,10 @@ function MembershipForm() {
   const VERIFY_API =
     "https://apitest.fracspace.com/api/users/loginOTPverificationWithPhoneNumber";
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
+  
+    const handleChange = (e) => {
+    
+      const { name, value } = e.target;
 
     if (name === "investmentPlanId") {
       const planName =
@@ -92,6 +95,7 @@ function MembershipForm() {
       ...prev,
       [name]: value
     }));
+    
   };
 
   const handlePhoneChange = (value, country) => {

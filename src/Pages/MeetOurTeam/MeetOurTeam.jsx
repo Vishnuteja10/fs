@@ -213,7 +213,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>Director of Sales - Fracspace</div>
               </article> */}
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -236,7 +236,7 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Prashanth</div>
                 <div className={Style.role}>Hospitality & Growth Manager</div>
-              </article>
+              </article> */}
 
               {/* <article className={Style.itemOne}>
                 <img
@@ -582,7 +582,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>UI/UX Designer </div>
               </article>
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -605,7 +605,8 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Nagamani</div>
                 <div className={Style.role}>IT Admin </div>
-              </article>
+              </article> */}
+
             </div>
           </section>
 
