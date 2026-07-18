@@ -7,6 +7,7 @@ import HomePage from "./Pages/HomePage/HomePage.jsx";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy.jsx";
 import RefundPolicy from "./Pages/RefundPolicy/RefundPolicy.jsx";
 import Terms from "./Pages/Terms/Terms.jsx";
+import CookieConsent from "./components/CookieConsent/CookieConsent.jsx";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import HowItWorks from "./Pages/HowItWorks/HowItWorks.jsx";
@@ -104,6 +105,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router}></RouterProvider>
-    {/* <App /> */}
+    <CookieConsent />
   </StrictMode>
 );

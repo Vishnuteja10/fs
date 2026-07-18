@@ -76,23 +76,31 @@
 }
 
 .terms ul li{
-    list-style: decimal;
+    list-style: disc;
     margin-left: 1vw;
     padding-left: 1vw;
+    font-family: 'Poppins';
 }
 
-.terms ul li{
-    margin-top: 2vh;
+.terms ul{
+    margin-top: -2vh;
+}
+
+.subHeader{
+    padding-top: 2vh;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.boldContent{
+  font-weight: 600;
 }
 
 .header2{
     font-size: 25px;
     font-weight: 700;
     font-family: "Montserrat";
-}
-
-.terms ul li{
-    font-family: 'Poppins';
 }
 
 .terms p{
@@ -158,6 +166,10 @@
 
     .header{
         font-size: 24px;
+    }
+
+    .subHeader{
+        font-size: 18px;
     }
 
     .header2{

@@ -23,6 +23,37 @@ import AppIconsComponent from "../../components/AppIconsComponent/AppIconsCompon
 import OffersTopBanner from "../../components/OffersTopBanner/OffersTopBanner";
 
 function HowItWorks() {
+  const [hasConsent, setHasConsent] = useState(() => localStorage.getItem("cookieConsent") === "accept");
+
+  useEffect(() => {
+    const handleConsentChange = () => {
+      setHasConsent(localStorage.getItem("cookieConsent") === "accept");
+    };
+    window.addEventListener("cookie-consent-change", handleConsentChange);
+    return () => {
+      window.removeEventListener("cookie-consent-change", handleConsentChange);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (hasConsent) {
+      if (!window.gaInitialized) {
+        window.gaInitialized = true;
+        const script = document.createElement("script");
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-9DRDNCGMB0";
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = window.gtag || function () {
+          window.dataLayer.push(arguments);
+        };
+        window.gtag('js', new Date());
+        window.gtag('config', 'G-9DRDNCGMB0');
+      }
+    }
+  }, [hasConsent]);
+
   return (
     <ScrollToTop>
     <div>
@@ -31,17 +62,6 @@ function HowItWorks() {
         <title>How It Works | Fracspace</title>
         <meta name="description" content="Discover how Fracspace works for you. Explore our step-by-step guide to seamless property management and services." />
         <meta name="robots" content="index, follow" />
-
-          {/* Google Analytics (GA) Script */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DRDNCGMB0"></script>
-          <script>
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-9DRDNCGMB0');
-            `}
-          </script>
       </Helmet>
 
       <AppIconsComponent />

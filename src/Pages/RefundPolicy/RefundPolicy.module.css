@@ -75,6 +75,27 @@
     color: rgba(2, 18, 101, 1);
 }
 
+.subHeader{
+    padding-top: 2vh;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.boldContent{
+  font-weight: 600;
+}
+
+.refundPolicy ul li{
+    list-style: disc;
+    margin-left: 1vw;
+    font-family: 'Poppins';
+}
+
+.refundPolicy ul{
+    margin-top: -2vh;
+}
+
 .refundPolicy p{
     font-family: 'Poppins';
 }
@@ -126,6 +147,14 @@
 
     .header{
        font-size: 24px;
+    }
+
+    .subHeader{
+        font-size: 18px;
+    }
+
+    .refundPolicy ul li{
+        font-size: 16px;
     }
 
     .refundPolicy p{

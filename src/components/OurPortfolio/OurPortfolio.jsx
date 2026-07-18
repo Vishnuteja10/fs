@@ -66,7 +66,7 @@ function OurPortfolio() {
   useEffect(() => {
     axios.get(PROPERTIES_API, { headers }).then(
       (response) => {
-        console.log("response is", response);
+        // console.log("response is", response);
         setAllProperties(response?.data?.properties);
         properties = response?.data?.properties;
         goaProp = properties
@@ -150,9 +150,8 @@ function OurPortfolio() {
 
       <section className={Style.propertyLocations}>
         <div
-          className={`${Style.location} ${
-            selectedLoction == "kerala" ? Style.selected : ""
-          }`}
+          className={`${Style.location} ${selectedLoction == "kerala" ? Style.selected : ""
+            }`}
           onClick={() => {
             setSelectedLocation("kerala");
           }}
@@ -166,9 +165,8 @@ function OurPortfolio() {
         </div>
 
         <div
-          className={`${Style.location} ${
-            selectedLoction == "karnataka" ? Style.selected : ""
-          }`}
+          className={`${Style.location} ${selectedLoction == "karnataka" ? Style.selected : ""
+            }`}
           onClick={() => {
             setSelectedLocation("karnataka");
           }}
@@ -182,9 +180,8 @@ function OurPortfolio() {
         </div>
 
         <div
-          className={`${Style.location} ${
-            selectedLoction == "varanasi" ? Style.selected : ""
-          }`}
+          className={`${Style.location} ${selectedLoction == "varanasi" ? Style.selected : ""
+            }`}
           onClick={() => {
             setSelectedLocation("varanasi");
           }}
@@ -198,9 +195,8 @@ function OurPortfolio() {
         </div>
 
         <div
-          className={`${Style.location} ${
-            selectedLoction == "hyderabad" ? Style.selected : ""
-          }`}
+          className={`${Style.location} ${selectedLoction == "hyderabad" ? Style.selected : ""
+            }`}
           onClick={() => {
             setSelectedLocation("hyderabad");
           }}
@@ -230,9 +226,8 @@ function OurPortfolio() {
         </div> */}
 
         <div
-          className={`${Style.location} ${
-            selectedLoction == "goa" ? Style.selected : ""
-          }`}
+          className={`${Style.location} ${selectedLoction == "goa" ? Style.selected : ""
+            }`}
           onClick={() => {
             setSelectedLocation("goa");
           }}
@@ -704,7 +699,7 @@ function OurPortfolio() {
                       <div className={Style.rightContainer}>
                         <div>
                           {property?.name ==
-                          "STREAM BY INDULGE POWERED BY FRACSPACE"
+                            "STREAM BY INDULGE POWERED BY FRACSPACE"
                             ? "Revora, Goa"
                             : property?.Location}
                         </div>
@@ -727,7 +722,7 @@ function OurPortfolio() {
                       </div>
                       <div>
                         {property?.name ==
-                        "STREAM BY INDULGE POWERED BY FRACSPACE"
+                          "STREAM BY INDULGE POWERED BY FRACSPACE"
                           ? "Revora, Goa"
                           : property?.Location}
                       </div>

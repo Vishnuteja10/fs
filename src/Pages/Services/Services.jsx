@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Style from "./Services.module.css";
 import Navbar2 from "../../components/Navbar2/Navbar2";
 import BannerSection from "../../components/Services/BannerSection/BannerSection";
@@ -20,6 +20,37 @@ import { Helmet } from "react-helmet";
 import OffersTopBanner from "../../components/OffersTopBanner/OffersTopBanner";
 
 function Services() {
+  const [hasConsent, setHasConsent] = useState(() => localStorage.getItem("cookieConsent") === "accept");
+
+  useEffect(() => {
+    const handleConsentChange = () => {
+      setHasConsent(localStorage.getItem("cookieConsent") === "accept");
+    };
+    window.addEventListener("cookie-consent-change", handleConsentChange);
+    return () => {
+      window.removeEventListener("cookie-consent-change", handleConsentChange);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (hasConsent) {
+      if (!window.gaInitialized) {
+        window.gaInitialized = true;
+        const script = document.createElement("script");
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-9DRDNCGMB0";
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = window.gtag || function () {
+          window.dataLayer.push(arguments);
+        };
+        window.gtag('js', new Date());
+        window.gtag('config', 'G-9DRDNCGMB0');
+      }
+    }
+  }, [hasConsent]);
+
   return (
     <ScrollToTop>
     <div className={Style.main}>
@@ -28,17 +59,6 @@ function Services() {
         <title>Our Services | Fracspace</title>
         <meta name="description" content="Explore the range of services offered by Fracspace including construction, interior design, and property management." />
         <meta name="robots" content="index, follow" />
-
-          {/* Google Analytics (GA) Script */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DRDNCGMB0"></script>
-          <script>
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-9DRDNCGMB0');
-            `}
-          </script>
       </Helmet>
 
       <AppIconsComponent />

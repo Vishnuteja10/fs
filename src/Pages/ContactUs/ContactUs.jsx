@@ -5,7 +5,7 @@ import videoImg from "../../assets/ContactUs/video.png";
 import callImg from "../../assets/ContactUs/call.png";
 import locationImg from "../../assets/ContactUs/location.png";
 import smsImg from "../../assets/ContactUs/sms.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Footer2 from "../../components/Footer2/Footer2";
 import Footer from "../../components/Footer/Footer";
 
@@ -25,6 +25,37 @@ import { Helmet } from "react-helmet";
 import OffersTopBanner from "../../components/OffersTopBanner/OffersTopBanner";
 
 export default function ContactUs() {
+  const [hasConsent, setHasConsent] = useState(() => localStorage.getItem("cookieConsent") === "accept");
+
+  useEffect(() => {
+    const handleConsentChange = () => {
+      setHasConsent(localStorage.getItem("cookieConsent") === "accept");
+    };
+    window.addEventListener("cookie-consent-change", handleConsentChange);
+    return () => {
+      window.removeEventListener("cookie-consent-change", handleConsentChange);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (hasConsent) {
+      if (!window.gaInitialized) {
+        window.gaInitialized = true;
+        const script = document.createElement("script");
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-9DRDNCGMB0";
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = window.gtag || function () {
+          window.dataLayer.push(arguments);
+        };
+        window.gtag('js', new Date());
+        window.gtag('config', 'G-9DRDNCGMB0');
+      }
+    }
+  }, [hasConsent]);
+
   const initialFormData = {
     lastName: "",
     firstName: "",
@@ -118,19 +149,6 @@ export default function ContactUs() {
           content="Reach out to our Concierge for assistance with property management, construction, and interior design services. We're here to help you!"
         />
         <meta name="robots" content="index, follow" />
-        {/* Google Analytics (GA) Script */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-9DRDNCGMB0"
-        ></script>
-        <script>
-          {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-9DRDNCGMB0');
-            `}
-        </script>
       </Helmet>
       <div className={Style.main}>
         <AppIconsComponent />

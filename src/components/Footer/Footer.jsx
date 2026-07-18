@@ -285,14 +285,15 @@ function Footer() {
 
       <div className={Style.section3}>
         <div className={Style.copyRights}>
-          © 2025 <span className={Style.fs}>FRACSPACE PRIVATE LIMITED</span>.
+          © 2026 <span className={Style.fs}>FRACSPACE PRIVATE LIMITED</span>.
           All rights reserved
         </div>
         <div className={Style.terms}>
           <div onClick={() => navigate("/privacypolicy")}>Privacy Policy</div>
           <div onClick={() => navigate("/terms")}>Terms Of Service</div>
           <div onClick={() => navigate("/refundpolicy")}>Refund Policy</div>
-          <div onClick={() => navigate("/deletionpolicy")}>Data Deletion</div>
+          {/* <div onClick={() => navigate("/deletionpolicy")}>Data Deletion</div> */}
+          {/* <div onClick={() => window.dispatchEvent(new Event("show-cookie-banner"))}>Cookie Preferences</div> */}
         </div>
       </div>
     </div>
