@@ -8,9 +8,8 @@ import img1 from '../../assets/MeetOurTeam/founder/unnathSir.jpeg'
 import img2 from '../../assets/MeetOurTeam/sales/divya.jpeg'
 import img3 from '../../assets/MeetOurTeam/sales/dns.jpeg'
 
-// import img6 from '../../assets/MeetOurTeam/construction/moin.jpeg'
-import img7 from '../../assets/MeetOurTeam/tech/rakesh.jpeg'
-import img8 from '../../assets/MeetOurTeam/tech/abha.jpeg'
+
+
 
 import { useNavigate } from "react-router-dom";
 
@@ -70,45 +69,6 @@ function MeetOurTeam() {
             <div className={Style.role}>Revenue Captain</div>
           </div>
 
-          <div className={Style.eachItem}>
-            <div className={Style.imageContainer}>
-              <img src={img4}></img>
-            </div>
-            <div className={Style.name}>Diksha</div>
-            <div className={Style.role}>Marketing Head</div>
-          </div>
-
-          <div className={Style.eachItem}>
-            <div className={Style.imageContainer}>
-              <img src={img5}></img>
-            </div>
-            <div className={Style.name}>Ganesh</div>
-            <div className={Style.role}>Customer Cultivator</div>
-          </div>
-
-          <div className={Style.eachItem}>
-            <div className={Style.imageContainer}>
-              <img src={img6}></img>
-            </div>
-            <div className={Style.name}>Moin</div>
-            <div className={Style.role}>Site Manager</div>
-          </div>
-
-          <div className={Style.eachItem}>
-            <div className={Style.imageContainer}>
-              <img src={img8}></img>
-            </div>
-            <div className={Style.name}>Abha</div>
-            <div className={Style.role}>App Developer</div>
-          </div>
-
-          <div className={Style.eachItem}>
-            <div className={Style.imageContainer}>
-              <img src={img7}></img>
-            </div>
-            <div className={Style.name}>Rakesh</div>
-            <div className={Style.role}>Backend Developer</div>
-          </div>
 
           {/* <div className={Style.eachItem}>
             <div>
