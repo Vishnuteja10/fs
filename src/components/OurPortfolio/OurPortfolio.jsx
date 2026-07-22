@@ -66,7 +66,7 @@ function OurPortfolio() {
   useEffect(() => {
     axios.get(PROPERTIES_API, { headers }).then(
       (response) => {
-        // console.log("response is", response);
+        console.log("response is", response);
         setAllProperties(response?.data?.properties);
         properties = response?.data?.properties;
         goaProp = properties
@@ -89,7 +89,10 @@ function OurPortfolio() {
           .sort((a, b) => a.num - b.num);
 
         karnatakaProp = properties
-          .filter((property) => property?.city?.toLowerCase() == "kabini")
+          .filter((property) => {
+            const city = property?.city?.toLowerCase();
+            return city === "kabini" || city === "manipal";
+          })
           .sort((a, b) => a.num - b.num);
 
         varanasiProp = properties
@@ -108,6 +111,7 @@ function OurPortfolio() {
         setNelloreProperties(nelloreProp);
 
         // console.log("kerala properties", keralaProp);
+        // console.log("karnataka properties", karnatakaProp)
         // console.log("response while fetching properties", allProperties);
       },
       (error) => {
@@ -176,7 +180,7 @@ function OurPortfolio() {
             src={locationIcon}
             alt="location icon"
           ></img>
-          Kabini
+          Karnataka
         </div>
 
         <div
