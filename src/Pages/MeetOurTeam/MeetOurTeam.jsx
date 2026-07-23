@@ -798,7 +798,7 @@ export default function MeetOurTeam() {
             <div className={Style.salesHeader}>Hospitality Team</div>
 
             <div className={Style.salesTeamImages}>
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -808,20 +808,10 @@ export default function MeetOurTeam() {
                   }
                   src={isImageLoaded ? hospitalityManagerImg : compressedImage1}
                 />
-                {/* <div
-                className={Style.linkedInContainer}
-                onClick={() =>
-                  window.open(
-                    "",
-                    "_blank"
-                  )
-                }
-              >
-                <img src={linkedIn}></img>
-              </div> */}
+             
                 <div className={Style.name}>Faraz</div>
                 <div className={Style.role}>Assistant General Manager </div>
-              </article>
+              </article> */}
 
               <article className={Style.itemOne}>
                 <img
