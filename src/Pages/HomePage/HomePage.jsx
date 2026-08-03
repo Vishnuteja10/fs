@@ -44,7 +44,6 @@ export default function HomePage() {
   const [isVisible, setIsVisible] = useState(false);
   const [hasConsent, setHasConsent] = useState(() => localStorage.getItem("cookieConsent") === "accept");
   const [consentDecision, setConsentDecision] = useState(() => localStorage.getItem("cookieConsent"));
-
   useEffect(() => {
     const handleConsentChange = () => {
       const consent = localStorage.getItem("cookieConsent");
@@ -130,9 +129,8 @@ export default function HomePage() {
         </div>
 
         <div
-          className={`${Style.altairaBannerContainer} ${
-            isVisible ? Style.show : Style.invisible
-          }`}
+          className={`${Style.altairaBannerContainer} ${isVisible ? Style.show : Style.invisible
+            }`}
         >
           <button
             onClick={closeBanner}

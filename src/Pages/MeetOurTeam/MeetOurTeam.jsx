@@ -595,7 +595,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>Junior Software Developer </div>
               </article>
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -618,7 +618,7 @@ export default function MeetOurTeam() {
                 </div>
                 <div className={Style.name}>Akhil</div>
                 <div className={Style.role}>Junior Software Developer </div>
-              </article>
+              </article> */}
 
               <article className={Style.itemOne}>
                 <img
@@ -747,7 +747,7 @@ export default function MeetOurTeam() {
                 <div className={Style.role}>HR</div>
               </article>
 
-              <article className={Style.itemOne}>
+              {/* <article className={Style.itemOne}>
                 <img
                   loading="lazy"
                   alt="team mate image"
@@ -760,7 +760,7 @@ export default function MeetOurTeam() {
 
                 <div className={Style.name}>Naveen</div>
                 <div className={Style.role}>Finance Head</div>
-              </article>
+              </article> */}
 
               <article className={Style.itemOne}>
                 <img

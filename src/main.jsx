@@ -26,7 +26,6 @@ import MembershipForm from "./Pages/MembershipForm/MembershipForm.jsx";
 import PaymentSuccess from "./Pages/PaymentSuccess/PaymentSuccess.jsx";
 import PaymentFailure from "./Pages/PaymentFailure/PaymentFailure.jsx";
 import MembershipTerms from "./Pages/MembershipTerms/MembershipTerms.jsx";
-
 const router = createBrowserRouter([
   {
     path: "/",
