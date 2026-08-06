@@ -189,6 +189,7 @@ export default function ContactUs() {
         <div className={Style.navBar}>
           <Navbar2 />
         </div>
+        
         <div className={Style.main2}>
           <header>
             <h1 className={Style.header}>
