@@ -7,6 +7,13 @@ import video1 from "../../assets/videos/AbdulBasith.mp4";
 import video2 from "../../assets/videos/PrashantGudipudi.mp4";
 import video3 from "../../assets/videos/Srivivasbonnam.mp4";
 
+import video4 from "../../assets/videos/test4.mp4";
+import video5 from "../../assets/videos/test5.mp4";
+import video6 from "../../assets/videos/test6.mp4";
+import video7 from "../../assets/videos/test7.mp4";
+import video8 from "../../assets/videos/test8.mp4";
+import video9 from "../../assets/videos/test9.mp4";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,

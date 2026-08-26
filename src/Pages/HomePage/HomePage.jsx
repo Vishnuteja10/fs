@@ -44,6 +44,7 @@ export default function HomePage() {
   const [isVisible, setIsVisible] = useState(false);
   const [hasConsent, setHasConsent] = useState(() => localStorage.getItem("cookieConsent") === "accept");
   const [consentDecision, setConsentDecision] = useState(() => localStorage.getItem("cookieConsent"));
+  
   useEffect(() => {
     const handleConsentChange = () => {
       const consent = localStorage.getItem("cookieConsent");
